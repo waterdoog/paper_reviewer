@@ -149,9 +149,8 @@ The webpage uses JavaScript to dynamically load content, so Python's `requests` 
 
 The script will get forum IDs in the following priority order:
 
-1. **优先** / **Priority**: 从 `downloads/table_data.json` 读取（推荐）
-2. **备用** / **Alternative**: 从 `downloads/forum_ids.txt` 读取（每行一个 forum ID）
-3. **最后** / **Last resort**: 尝试从网页或 API 提取
+1. **优先** / **Priority**: 从 `downloads/table_data.json` 读取（推荐，包含所有 forum ID 和表格数据）
+2. **备用** / **Alternative**: 尝试从网页或 API 提取 forum IDs（不推荐，无法获取表格数据）
 
 **运行示例 / Run Example**:
 
@@ -200,8 +199,7 @@ downloads/
 ├── metadata/                        # 论文元数据（包含表格数据）
 │   └── {forum_id}_metadata.json     # 元数据（标题、作者、摘要、表格数据等）
 │
-├── forum_ids.txt                    # Forum ID列表（备份，自动生成）
-└── table_data.json                  # 表格数据（推荐，包含所有forum_id和表格信息）
+└── table_data.json                  # 表格数据（包含所有forum_id和表格信息）
 ```
 
 **重要说明 / Important Notes**:
@@ -289,9 +287,9 @@ time.sleep(2)  # 改为 2 秒延迟
 
 ### Q2: 如果没有表格数据可以下载吗？/ Can I download without table data?
 
-**A**: 可以。如果没有 `table_data.json`，脚本会尝试从 `forum_ids.txt` 读取，或从网页/API 提取 forum IDs。但表格数据（status、topics、scores 等）将无法获取。
+**A**: 可以，但不推荐。如果没有 `table_data.json`，脚本会尝试从网页/API 提取 forum IDs。但表格数据（status、topics、scores 等）将无法获取。建议先运行 `extract_table_data.js` 提取表格数据。
 
-**A**: Yes. If there's no `table_data.json`, the script will try to read from `forum_ids.txt`, or extract forum IDs from the webpage/API. However, table data (status, topics, scores, etc.) will not be available.
+**A**: Yes, but not recommended. If there's no `table_data.json`, the script will try to extract forum IDs from the webpage/API. However, table data (status, topics, scores, etc.) will not be available. It's recommended to run `extract_table_data.js` first to extract table data.
 
 ### Q3: 下载中断了怎么办？/ What if download is interrupted?
 
@@ -301,9 +299,9 @@ time.sleep(2)  # 改为 2 秒延迟
 
 ### Q4: 如何只下载特定论文？/ How to download specific papers only?
 
-**A**: 编辑 `downloads/forum_ids.txt` 或 `downloads/table_data.json`，只保留需要的 forum IDs。
+**A**: 编辑 `downloads/table_data.json`，只保留需要的 forum ID 条目。脚本会自动从该文件读取 forum IDs。
 
-**A**: Edit `downloads/forum_ids.txt` or `downloads/table_data.json`, keeping only the forum IDs you need.
+**A**: Edit `downloads/table_data.json`, keeping only the forum ID entries you need. The script will automatically read forum IDs from this file.
 
 ### Q5: 遇到网络错误怎么办？/ What if I encounter network errors?
 
