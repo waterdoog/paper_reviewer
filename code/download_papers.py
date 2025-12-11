@@ -8,6 +8,7 @@ import requests
 import os
 import json
 import re
+import csv
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 import time
@@ -204,15 +205,44 @@ def get_paper_details(forum_id):
 
 def load_table_data():
     """
-    从保存的表格数据文件加载表格信息
-    Load table data from saved table data file
+    从保存的表格数据文件加载表格信息（支持 CSV 格式）
+    Load table data from saved table data file (supports CSV format)
     格式: {forum_id: {title, status, primary_topic, ...}}
     Format: {forum_id: {title, status, primary_topic, ...}}
     """
-    table_data_path = BASE_DIR / "table_data.json"
-    if table_data_path.exists():
+    # 优先尝试 CSV 格式
+    # Priority: try CSV format
+    table_data_path_csv = BASE_DIR / "table_data.csv"
+    if table_data_path_csv.exists():
         try:
-            with open(table_data_path, 'r', encoding='utf-8') as f:
+            table_data = {}
+            with open(table_data_path_csv, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    forum_id = row.get('forum_id', '').strip()
+                    if forum_id:
+                        table_data[forum_id] = {
+                            'title': row.get('title', '').strip(),
+                            'status': row.get('status', '').strip(),
+                            'primary_topic': row.get('primary_topic', '').strip(),
+                            'secondary_topic': row.get('secondary_topic', '').strip(),
+                            'human_review': row.get('human_review', '').strip(),
+                            'ai_reviewer_1': row.get('ai_reviewer_1', '').strip(),
+                            'ai_reviewer_2': row.get('ai_reviewer_2', '').strip(),
+                            'ai_reviewer_3': row.get('ai_reviewer_3', '').strip(),
+                            'hypothesis_development': row.get('hypothesis_development', '').strip(),
+                        }
+            if table_data:
+                return table_data
+        except Exception as e:
+            print(f"⚠️  加载 CSV 表格数据失败 / Failed to load CSV table data: {e}")
+    
+    # 备用：尝试 JSON 格式（向后兼容）
+    # Fallback: try JSON format (backward compatibility)
+    table_data_path_json = BASE_DIR / "table_data.json"
+    if table_data_path_json.exists():
+        try:
+            with open(table_data_path_json, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 # 确保数据格式正确：forum_id 作为 key
                 # Ensure data format is correct: forum_id as key
@@ -222,8 +252,9 @@ def load_table_data():
                     print("⚠️  表格数据格式不正确，应为 {forum_id: {...}} / Table data format incorrect, should be {forum_id: {...}}")
                     return {}
         except Exception as e:
-            print(f"⚠️  加载表格数据失败 / Failed to load table data: {e}")
+            print(f"⚠️  加载 JSON 表格数据失败 / Failed to load JSON table data: {e}")
             return {}
+    
     return {}
 
 def download_paper(forum_id, paper_info, table_data=None):
@@ -341,14 +372,14 @@ def main():
     print("🚀 Agents4Science 2025 Paper Batch Download Tool")
     print("=" * 60)
     
-    # 方法0：优先从 table_data.json 获取 forum IDs（推荐方式）
-    # Method 0: Priority: get forum IDs from table_data.json (recommended)
+    # 方法0：优先从 table_data.csv 获取 forum IDs（推荐方式）
+    # Method 0: Priority: get forum IDs from table_data.csv (recommended)
     table_data = load_table_data()
     forum_ids = []
     
     if table_data:
         forum_ids = list(table_data.keys())
-        print(f"✅ 从 table_data.json 读取到 {len(forum_ids)} 个 forum ID / Read {len(forum_ids)} forum IDs from table_data.json")
+        print(f"✅ 从 table_data.csv 读取到 {len(forum_ids)} 个 forum ID / Read {len(forum_ids)} forum IDs from table_data.csv")
     
     # 方法1：如果 table_data.json 不存在，检查是否已有forum_ids.txt文件
     # Method 1: If table_data.json doesn't exist, check if forum_ids.txt exists
@@ -377,8 +408,8 @@ def main():
     
     if not forum_ids:
         print("❌ 未找到任何论文 / No papers found")
-        print("💡 提示：请运行 extract_table_data.js 提取表格数据，或手动编辑 forum_ids.txt 文件")
-        print("💡 Tip: Please run extract_table_data.js to extract table data, or manually edit forum_ids.txt file")
+        print("💡 提示：请运行 extract_table_data.js 提取表格数据（会生成 CSV 格式），或手动编辑 forum_ids.txt 文件")
+        print("💡 Tip: Please run extract_table_data.js to extract table data (will generate CSV format), or manually edit forum_ids.txt file")
         return
     
     # 如果没有表格数据，尝试从 forum_ids.txt 生成空的表格数据结构
