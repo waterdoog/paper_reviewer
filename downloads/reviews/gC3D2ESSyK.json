@@ -1,0 +1,332 @@
+[
+  {
+    "id": "x1p7oe2gvw",
+    "forum": "gC3D2ESSyK",
+    "replyto": "gC3D2ESSyK",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a rigorous empirical study on the architectural design of Large Language Model (LLM) agents for the complex strategy game, Slay the Spire. The authors compare five distinct agent architectures: a monolithic LLM, a memory-augmented LLM, a rule-based heuristic baseline, and two hybrid architectures that combine heuristic and LLM components in different ways. The work yields several significant, and in some cases counter-intuitive, findings. It demonstrates that a baseline monolithic LLM is surprisingly competent, that adding a simple, unstructured memory buffer is severely detrimental to performance, and that the most effective architectures are hybrid systems. The central thesis of the paper is that success in complex agentic tasks hinges on \"strategic delegation\"—intelligently assigning sub-tasks to the most appropriate reasoning component (e.g., heuristics for deterministic navigation, LLMs for stochastic combat) rather than attempting to build a single, all-encompassing monolithic agent.\n\nStrengths:\n1. The central message about \"strategic delegation\" is timely and important, providing a clear, evidence-backed design principle that challenges common assumptions in the field.\n2. The counter-intuitive result regarding the negative impact of unstructured short-term memory is novel and opens up new research avenues.\n3. The experimental design is strong, with a systematic comparison of five architectures and insightful analysis connecting results to the central thesis.\n4. The paper is exceptionally well-written and clearly organized, with a logical narrative and precise arguments.\n\nWeaknesses:\n1. The most significant weakness is the lack of experimental detail and statistical rigor. The number of runs, measures of variance, LLM details, and prompt specifics are missing, undermining confidence in the results and reproducibility.\n2. The heuristic baseline is not described in sufficient detail to fully understand its behavior.\n3. Minor clarity issues, such as the quality of Figure 1, detract from the professionalism of the presentation.\n\nRecommendation:\nThis is a very strong paper with a high-impact message and several novel findings. The conceptual framework of \"strategic delegation\" is compelling and well-supported. However, the lack of experimental detail is a critical omission. Despite this, the strengths outweigh the weaknesses, and the flaws are easily correctable. I recommend a borderline accept, with the strong condition that the authors address the issues of experimental reporting in their revision."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission280/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775891704,
+    "mdate": 1760632218087,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "l7NHjF5zGA",
+    "forum": "gC3D2ESSyK",
+    "replyto": "gC3D2ESSyK",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission280/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950072606,
+    "mdate": 1760632291736,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "gC3D2ESSyK",
+    "forum": "gC3D2ESSyK",
+    "content": {
+      "title": {
+        "value": "Modular and Hybrid Frameworks for LLM-Based Agents in Complex Strategy Games: An Empirical Study in Slay the Spire"
+      },
+      "keywords": {
+        "value": [
+          "Agents",
+          "Slay the Spire",
+          "Game Strategy"
+        ]
+      },
+      "abstract": {
+        "value": "This paper investigates the performance of Large Language Model (LLM) agents in the complex strategic environment of the video game \"Slay the Spire.\" While LLMs show promise as general game-playing agents, their effectiveness is highly dependent on their underlying architectural design. We conduct a rigorous empirical study comparing five distinct agent architectures: (1) a monolithic LLM agent, (2) the same agent augmented with short-term action memory, (3) a baseline non-LLM heuristic agent, (4) a hybrid agent combining heuristic navigation with LLM-driven combat, and (5) a modular LLM agent employing context-specific prompts for different game situations. Our analysis of player health (HP) progression across multiple game runs reveals that monolithic LLM agents, despite their reasoning capabilities, exhibit a brittle, high-risk playstyle characterized by poor resource management. We find, counter-intuitively, that the addition of a naive action memory fails to improve, and in some cases degrades, performance. In contrast, agents based on task decomposition—both the hybrid and the fully modular LLM architectures—demonstrate significantly superior performance in terms of HP preservation and strategic stability. The modular agent, in particular, showcases the most robust performance, highlighting that specializing LLM behavior through tailored, situational prompts is a critical strategy for developing competent agents in multifaceted domains. These findings contribute a deeper understanding of LLM limitations in sequential decision-making and offer a clear architectural principle for future agent design: moving from monolithic, general-purpose reasoning to specialized, modular competence."
+      },
+      "pdf": {
+        "value": "/pdf/521037328af4df7687b86343bc0ed0bddcc441fb.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025modular,\ntitle={Modular and Hybrid Frameworks for {LLM}-Based Agents in Complex Strategy Games: An Empirical Study in Slay the Spire},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=gC3D2ESSyK}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1758011228106,
+    "odate": 1758112145415,
+    "mdate": 1759960944255,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission280/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission280/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "X32vsUhXSs",
+    "forum": "gC3D2ESSyK",
+    "replyto": "gC3D2ESSyK",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper addresses an important and timely question—how to architect LLM agents for complex, partially observable, long-horizon environments—by comparing five agent architectures for playing Slay the Spire. The conceptual framing is thoughtful, with a clear operational decomposition and potentially useful qualitative insights for practitioners. However, the empirical evaluation is insufficiently rigorous: the number of runs, seeds, and variance are not reported; key experimental details are missing; and no robust statistics or ablations are provided. The main negative result (memory hurts) is not convincingly isolated from confounds. Clarity is generally good, but citation mapping is inconsistent and must be corrected. The significance of the work is limited by the thin empirical evidence, and originality is moderate, as the hybridization idea is not novel, though the specific instantiation is. Reproducibility is poor due to missing code, prompts, and detailed settings. The limitations are candidly acknowledged, but broader impacts are not discussed. Actionable suggestions include reporting full experimental details, providing robust statistics, strengthening memory analysis, expanding evaluations, fixing citations, and tempering claims. In its current form, the paper is not ready for publication and is recommended for rejection, though it could become a solid contribution with substantially expanded experiments, rigorous statistical treatment, and full reproducibility artifacts."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission280/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775891316,
+    "mdate": 1760632218377,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "T1CkcswM00",
+    "forum": "gC3D2ESSyK",
+    "replyto": "gC3D2ESSyK",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Statistical reporting is inadequate: no sample sizes, no variance/error bars, no significance tests; Figure 2 shows only two runs.\n- Reproducibility details are missing: seeds, number of runs, character(s), ascension level(s), LLM hyperparameters (temperature, top-p), token limits, and exact prompts are not provided.\n- Heuristic baseline and hybrid heuristic rules are only described at a high level (examples) without full specification, hindering replication and fair comparison.\n- Inconsistency about environment: main text claims \"full, unmodified\" game (page 2), while the checklist (page 10) states use of a community mod to expose state and enable control.\n- Scope/truncation not justified: results top out at Act 2 (2-33) without explaining why later acts are excluded in the supposedly \"full\" game.\n- Memory ablation is under-specified and lacks controls: no systematic variation of memory length/structure or retrieval strategy to support causal claims about \"attentional fixation\" or \"contextual overload.\"\n- Potential confounders not controlled: different prompt lengths and task allocations across architectures may affect performance independently of the architectural hypothesis.\n- Bibliography and citations appear inconsistent: the same citation index [3] is used for different works in the text, and some references look speculative (future-dated arXiv) or mismatched.\n- The Agents4Science checklist claims about statistical significance/error bars and open-source availability are not substantiated in the main text (no links or statistical materials provided in the submitted version)."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776881652,
+    "mdate": 1760640053176,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "BdImGYgePt",
+    "forum": "gC3D2ESSyK",
+    "replyto": "gC3D2ESSyK",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777990597,
+    "mdate": 1760640052457,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "4flLN4ih7N",
+    "forum": "gC3D2ESSyK",
+    "replyto": "gC3D2ESSyK",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper investigates LLM agent architectures for playing the strategic video game Slay the Spire, comparing five different architectural approaches. The study is technically sound, with a well-designed empirical comparison of agent architectures, and the results are clearly presented and well-supported by the data. The writing is clear and accessible, and the methodology is well-documented, supporting reproducibility. The work provides novel insights, particularly regarding the detrimental effect of simple memory augmentation and the benefits of hybrid approaches, and the principle of strategic delegation is a meaningful contribution. However, the impact is limited by the focus on a single game environment, small scale of experiments, and shallow analysis of some findings. The authors are transparent about limitations and provide appropriate citations. Overall, the paper makes a solid empirical contribution to understanding LLM agent architectures, but its impact is constrained by its narrow scope and limited scale of evaluation."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission280/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775891964,
+    "mdate": 1760632217851,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission280/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

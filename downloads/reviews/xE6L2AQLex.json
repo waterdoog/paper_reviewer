@@ -1,0 +1,404 @@
+[
+  {
+    "id": "xRiOxyz8ng",
+    "forum": "xE6L2AQLex",
+    "replyto": "xE6L2AQLex",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper investigates the geometric structure of the 10-dimensional latent space in a Physics-Informed Neural Network (PINN) trained to solve the 2D Burger's equation across 25 different initial conditions. The analysis uses Principal Component Analysis (PCA) and subspace similarity measures to characterize the latent representations.\n\nQuality: The technical approach is sound, using established methods (PCA and subspace similarity measures) appropriately. The analysis is systematic and well-structured, progressing from global to local structure characterization. However, there are some concerns about completeness - the paper relies heavily on linear techniques (PCA) which may miss non-linear structures in the latent space. The findings are well-supported by quantitative results and visualizations.\n\nSignificance: The findings reveal an interesting and highly structured organization of the PINN latent space - individual initial conditions correspond to approximately 3D affine manifolds that are nearly parallel, with changes in initial conditions primarily causing translations along a 1D path. This provides valuable insights into how PINNs encode physical systems and could inform model interpretation and compression strategies. The work addresses an important question about PINN interpretability.\n\nOriginality: The geometric analysis of PINN latent spaces is novel and provides new insights into how these networks encode physical systems. The systematic approach to characterizing manifold structures across different initial conditions appears to be original. The finding of highly structured, low-dimensional representations is a meaningful contribution.\n\nClarity: The paper is generally well-written and organized. The methodology is clearly described, and the progression from global to local analysis is logical. The figures effectively support the findings, though some could benefit from larger fonts/labels for better readability.\n\nReproducibility: The paper provides reasonable methodological detail. The authors claim all code and data are available in supplementary materials, which aids reproducibility.\n\nLimitations: The paper acknowledges several important limitations: reliance on linear techniques (PCA), analysis limited to a single viscosity parameter, and a relatively small set of initial conditions. The scope is also limited to one type of PDE (Burger's equation). These limitations are appropriately discussed.\n\nEthics and Related Work: The related work section is adequate though not extensive. No significant ethical concerns are apparent for this computational study.\n\nUnique Aspects: This paper is entirely AI-generated using the Denario system, which is disclosed transparently. While this raises questions about the nature of scientific contribution, the technical content appears sound and the findings are scientifically interesting.\n\nConcerns: \n1. The exclusive reliance on PCA may miss important non-linear structures\n2. Limited scope (single PDE type, fixed viscosity, 25 initial conditions)\n3. Some figures could be improved for clarity\n4. The AI-generated nature, while disclosed, raises questions about scientific insight vs. automated analysis\n\nDespite these concerns, the paper presents technically sound analysis with interesting findings about PINN latent space structure that could be valuable for the community."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission221/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775798031,
+    "mdate": 1760632200733,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "xE6L2AQLex",
+    "forum": "xE6L2AQLex",
+    "content": {
+      "title": {
+        "value": "Geometric Structure of PINN Latent Space for Burger's Equation: Low-Dimensional Manifolds and Initial Condition Encoding"
+      },
+      "keywords": {
+        "value": [
+          "Physics-Informed Neural Networks (PINNs)",
+          "Latent space geometry",
+          "Burgers’ equation",
+          "Initial conditions",
+          "Principal Component Analysis (PCA)",
+          "Low-dimensional manifolds",
+          "Subspace similarity",
+          "Model interpretability",
+          "Representation learning",
+          "Neural network compression"
+        ]
+      },
+      "abstract": {
+        "value": "Understanding how Physics-Informed Neural Networks (PINNs) encode complex physical systems and the influence of parameters like initial conditions within their latent representations is crucial for interpretability and application. This study investigates the geometric structure of the 10-dimensional latent space generated by a PINN solving the 2D Burger's equation across 25 different initial conditions. Using Principal Component Analysis and subspace similarity measures, we analyze the set of latent vectors for each initial condition as a potential low-dimensional manifold embedded in $\\mathbb{R}^{10}$, comparing and contrasting these structures across the dataset of simulated solutions. The analysis reveals a highly organized latent space; globally, the latent vectors occupy an effectively 6-dimensional subspace capturing over 99\\% of variance. For each individual initial condition, the latent vectors form a distinct, approximately 3-dimensional affine manifold, a structure remarkably consistent across all tested conditions. Crucially, the primary effect of changing the initial condition is encoded as a translation of this 3D manifold along a nearly one-dimensional path within the 10-dimensional latent space, strongly aligned with the global principal component. Furthermore, these 3D manifolds are remarkably parallel to each other, exhibiting an average subspace similarity exceeding 0.98, with only subtle, low-dimensional variations in their orientation. These findings demonstrate that the PINN learns a highly structured and efficient parameterization where initial conditions select specific, geometrically simple, and highly related low-dimensional structures within the overall latent space, offering valuable insights into the network's internal encoding mechanisms and suggesting potential avenues for model interpretation and compression."
+      },
+      "pdf": {
+        "value": "/pdf/cc5bc69458b71df4c58456a72b8e3a6011965057.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "supplementary_material": {
+        "value": "/attachment/224ca44bb29b30e6cb3dade3ae06eca854991a0b.zip"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025geometric,\ntitle={Geometric Structure of {PINN} Latent Space for Burger's Equation: Low-Dimensional Manifolds and Initial Condition Encoding},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=xE6L2AQLex}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757957429753,
+    "odate": 1758112145415,
+    "mdate": 1759960942100,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission221/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission221/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "uyW6UOQ9Dh",
+    "forum": "xE6L2AQLex",
+    "replyto": "xE6L2AQLex",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission221/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948922519,
+    "mdate": 1760632286360,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "oEC7y1bNxC",
+    "forum": "xE6L2AQLex",
+    "replyto": "xE6L2AQLex",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777781492,
+    "mdate": 1760639956571,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "gZgoE2FhOB",
+    "forum": "xE6L2AQLex",
+    "replyto": "xE6L2AQLex",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- PDE dimensionality mischaracterization: text repeatedly refers to \"2D Burgers' equation\" while the data uses a single spatial dimension (101 x-points) plus time; references to u and v components conflict with the data description.\n- Insufficient specification of the pretrained PINN (architecture, training procedure, loss weighting, boundary conditions, viscosity parameter), limiting reproducibility and interpretability within the paper itself.\n- Initial conditions (ICs) are not described (how generated, their physical properties). Claims that centroid position varies nearly linearly with IC index require that the indexing reflect a physical ordering; otherwise, the apparent monotonic mapping may be an artifact.\n- Subspace similarity metric is not precisely defined: the manuscript alternates between principal angles, absolute dot products, and squared cosines; the aggregation used for the reported 0.986 average is unclear.\n- Over-interpretation risk: concluding a \"disentangled representation\" from linear PCA structure alone without perturbation/ablation studies or causal controls for initial conditions.\n- No robustness checks across different model trainings/architectures or non-linear manifold learning to validate the affine-manifold approximation beyond explained-variance thresholds.\n- Minor: Features dimension described as including u and v plus 10 latent features, but total feature count is 13; the extra feature(s) are not specified."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776846783,
+    "mdate": 1760639957287,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "QsDZXxXPo0",
+    "forum": "xE6L2AQLex",
+    "replyto": "xE6L2AQLex",
+    "content": {
+      "title": {
+        "value": "Review of \"Geometric Structure of PINN Latent Space for Burger's Equation: Low-Dimensional Manifolds and Initial Condition Encoding\""
+      },
+      "summary": {
+        "value": "This work presents an investigation of the geometric structure of a 10D latent space in a PINN trained to solve the 2D Burger’s equation with 25 different initial conditions. With PCA and subspace similarity measures, the paper shows an analysis of how the PINN encodes initial conditions within its latent representations."
+      },
+      "strengths_and_weaknesses": {
+        "value": "Quality:\n\nThe analysis of the latent space via PCA and geometric measures is technically OK but overly simplistic. PCA is a linear technique that might miss non-linear patterns. The studied problem is very restricted (analysis of 25 initial conditions only, Burger’s equation only, viscosity fixed), so it’s hard to generalize any findings. Also, no validation experiments of the findings. The work here is more of an exploratory data analysis rather than a complete scientific analysis. I could not find any reproducible code.\n\nClarity:\n\nThe paper is surprisingly well-organized with clear methodology and effective figures, but the physical meaningfulness of the findings is not very clear. The work would benefit from providing a better physical interpretation of the findings. \n\nSignificance:\n\nVery limited scope makes any significant generalization of findings nearly impossible.\n\nOriginality:\n\nThe geometric analysis of PINN latent spaces may be relatively novel, but the techniques (PCA, subspace similarity) are standard and simple."
+      },
+      "quality": {
+        "value": 2
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 1
+      },
+      "originality": {
+        "value": 2
+      },
+      "questions": {
+        "value": "-"
+      },
+      "limitations": {
+        "value": "Yes"
+      },
+      "overall": {
+        "value": 2
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ethical_concerns": {
+        "value": "-"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission221/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759655734836,
+    "mdate": 1760632201351,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission221/Reviewer_Q2hb"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission221/Reviewer_Q2hb"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "QC901dC7PS",
+    "forum": "xE6L2AQLex",
+    "replyto": "xE6L2AQLex",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper presents a clear and well-organized empirical analysis of the geometry of a 10D latent layer in a PINN trained on Burgers’ equation, using PCA and subspace similarity across 25 initial conditions. The main findings are that the latent space is globally low-dimensional (~6D), with per-IC ~3D affine manifolds that are highly parallel and whose centroids lie along a nearly 1D trajectory. The methodology is simple and appropriate for a first-pass audit, and the results are intuitively appealing and well-supported by figures.\n\nHowever, there are significant concerns: (1) The technical claims about manifold dimensionality and disentanglement are based solely on linear PCA with autocorrelated samples, without nonlinear validation or robustness checks. (2) There are inconsistencies and missing details about the PDE, model architecture, training, and data, making the work hard to interpret or reproduce. (3) The scope is narrow (one model, one PDE), with no ablations, robustness checks, or demonstration of practical utility. (4) The related work is incomplete, missing key references on PINN interpretability and latent geometry in scientific ML. (5) Reproducibility is contingent on supplementary materials, as the main text lacks sufficient detail.\n\nWhile the writing is generally clear and the figures are helpful, the paper needs much more methodological depth, clarity, robustness, and demonstration of impact. The high-level insight is potentially interesting, but the current version does not meet the standards for acceptance. I recommend rejection in its current form, but with the suggested extensions and clarifications, it could become a solid contribution."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission221/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775797597,
+    "mdate": 1760632201224,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "8w8wVSrq0Y",
+    "forum": "xE6L2AQLex",
+    "replyto": "xE6L2AQLex",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a geometric analysis of the latent space of a Physics-Informed Neural Network (PINN) trained to solve the 2D Burger's equation, focusing on how its 10-dimensional latent representation encodes solutions for 25 different initial conditions. Using PCA and subspace similarity measures, the authors analyze the latent space globally, locally, and at the level of manifold centroids. Key findings include that the global latent space is effectively 6-dimensional, each initial condition's dynamics lie on a 3-dimensional affine manifold, and changes in initial conditions correspond to simple translations along a nearly one-dimensional path. The paper is technically sound, exceptionally clear, and highly significant for scientific machine learning, especially in understanding and interpreting PINNs. Its originality is notable both in its scientific contribution and as a proof-of-concept for autonomous AI-driven research. The methods are well-described and reproducible, with code and data provided. The main weakness is the lack of a dedicated 'Related Work' section, but this does not significantly detract from the paper's impact. Overall, this is an exemplary, groundbreaking submission and is strongly recommended for acceptance."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission221/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775797797,
+    "mdate": 1760632201012,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission221/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

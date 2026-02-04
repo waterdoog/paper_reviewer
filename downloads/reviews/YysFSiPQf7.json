@@ -1,0 +1,340 @@
+[
+  {
+    "id": "pX1aouHMwQ",
+    "forum": "YysFSiPQf7",
+    "replyto": "YysFSiPQf7",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission320/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950060898,
+    "mdate": 1760632302789,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "YysFSiPQf7",
+    "forum": "YysFSiPQf7",
+    "content": {
+      "title": {
+        "value": "HALT: A Framework for Hallucination Detection in Large Language Models"
+      },
+      "keywords": {
+        "value": [
+          "LLM",
+          "Artificial intelligence",
+          "Hallucination",
+          "GPT",
+          "reasoning"
+        ]
+      },
+      "TLDR": {
+        "value": "Hallucination detector to detect when LLM produces hallucinated responses."
+      },
+      "abstract": {
+        "value": "Large Language Models (LLMs) have demonstrated remarkable capabilities across many tasks, yet they notoriously \\textit{hallucinate} – producing outputs that are plausible-sounding but factually incorrect or ungrounded. These hallucinations undermine trust in LLMs for critical applications. Prior efforts to improve LLM truthfulness (e.g., via fine-tuning with human feedback) have yielded only partial success, highlighting the need for automated hallucination detection methods that can generalize to new queries. This paper presents a systematic study of the hallucination phenomenon and propose a novel detection framework. The framework combines multi-signal analysis – including model confidence, self-consistency checks, and cross-verification – to identify hallucinated content in a single LLM response without requiring multiple model calls or external knowledge bases. The experiments were conducted on two challenging reasoning tasks: GSM8K (math word problems) and StrategyQA (implicit commonsense reasoning), using outputs from a GPT-3.5-series model. Results show that the method can outperforms baseline detectors in some cases. The detailed analysis provides an empirical picture of \\emph{when} hallucinations occur – e.g., on out-of-distribution queries or multi-step reasoning – and demonstrate how the framework effectively flags these failures. The paper concludes with insights on integrating hallucination detectors to improve LLM reliability and discuss future directions for more fine-grained and interpretable hallucination evaluation."
+      },
+      "pdf": {
+        "value": "/pdf/c53251dc7c7c2493f10703b4921b1dcddbf07b4c.pdf"
+      },
+      "supplementary_material": {
+        "value": "/attachment/886ce2baa740c10e9126c57a148234af23ce3881.zip"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025halt,\ntitle={{HALT}: A Framework for Hallucination Detection in Large Language Models},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=YysFSiPQf7}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1758078012148,
+    "odate": 1758112145415,
+    "mdate": 1759960946074,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission320/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission320/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "HjlORJ6dvP",
+    "forum": "YysFSiPQf7",
+    "replyto": "YysFSiPQf7",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Core contradiction: Abstract and claimed contributions state no multiple model calls or external KB, but the method uses both re-sampling and web/Wiki retrieval with NLI (p.1 lines 10–11 vs. p.3 lines 104–136).\n- Unreported baseline: 'Oracle' baseline is defined but absent from Table 1 (p.4 lines 182–185, p.5).\n- Supervised HALT vs. mostly unsupervised baselines: unfair comparison without supervised counterparts or comprehensive ablations (p.4 lines 186–190).\n- No statistical significance, confidence intervals, or multi-run variance despite stochastic methods; checklist claim of significance reporting is inaccurate (p.10 Q7).\n- Under-specified components: math checker, entailment model, retrieval API, entropy computation, thresholds; limits reproducibility and technical validation.\n- Use of a task one-hot feature contradicts general-purpose claims and risks overfitting (p.4 lines 148–149).\n- Definition of 'hallucination' conflates any incorrect answer with hallucination, particularly in math, potentially misaligning with standard definitions.\n- No ablations of HALT’s components (Sc, Sv, Sp) to attribute gains; GSM8K performance (perfect recall) is not explained via component analysis.\n- Limited scope: only GPT-3.5 on GSM8K and StrategyQA; no cross-model or broader task evaluation.\n- Compute/resource reporting absent (admitted in checklist p.10–11), and key experimental details (sample sizes per split, seeds) are missing."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776849106,
+    "mdate": 1760640090770,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "DtjoHsl92E",
+    "forum": "YysFSiPQf7",
+    "replyto": "YysFSiPQf7",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces HALT, a modular hallucination detector that aggregates three signals from LLM outputs to predict hallucination. It shows strong results on GSM8K (F1=0.91, recall=1.0) but fails on StrategyQA (F1=0.0). Strengths include the unification of intuitive signals and candid analysis of failure cases. However, there is a core inconsistency between the claimed 'single-output/no external KB/no extra calls' approach and the actual methodology, which uses additional LLM calls and external retrieval. The evaluation lacks critical ablations, calibration, and robustness checks, and the compute/query budget is not reported, making practicality claims incomplete. Baseline comparisons are insufficient, and key implementation details are missing, hampering reproducibility. The novelty is incremental, and the approach is not convincingly differentiated from prior work. The paper would benefit from resolving methodological contradictions, providing thorough ablations, releasing code, reporting compute costs, expanding evaluation, improving baselines, and clarifying labeling policy. Given these issues, the recommendation is rejection."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission320/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775804134,
+    "mdate": 1760632230994,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "7ztSWDiFYr",
+    "forum": "YysFSiPQf7",
+    "replyto": "YysFSiPQf7",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- GPT-3.5 / ChatGPT Model Card by OpenAI"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777951237,
+    "mdate": 1760640089980,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "7JCCXYljFN",
+    "forum": "YysFSiPQf7",
+    "replyto": "YysFSiPQf7",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents HALT, a framework for detecting hallucinations in LLM outputs, addressing a highly relevant problem. The methodology is clearly explained and the authors are transparent about negative results. However, the paper suffers from major weaknesses: complete failure on the StrategyQA dataset, limited experimental scope (only two datasets, only GPT-3.5 evaluated, no recent baselines, no statistical significance testing), questionable evaluation setup, methodological inconsistencies (e.g., reliance on web search despite claims of no external knowledge), and reproducibility concerns. The feature engineering is simplistic, and the approach appears too specialized for mathematical reasoning, lacking generalizability. While the writing is clear, some claims are overstated. The paper's impact is limited by its narrow success and methodological flaws. Additionally, the heavy use of AI tools in the paper's creation raises concerns about genuine contribution. Overall, the work is more a proof-of-concept for a narrow domain than a strong, general-purpose hallucination detection framework."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission320/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775804623,
+    "mdate": 1760632230462,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "3VPzV1U5Q6",
+    "forum": "YysFSiPQf7",
+    "replyto": "YysFSiPQf7",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces HALT, a framework for detecting hallucinations in Large Language Models (LLMs) that operates on a single generated response. The framework combines three signals: internal self-consistency of the reasoning chain, a lightweight knowledge verification step, and a model confidence estimator. These signals are fed into a classifier to make a final prediction. The method is evaluated on two distinct reasoning tasks, GSM8K (mathematical reasoning) and StrategyQA (commonsense reasoning), using outputs from GPT-3.5. The results are strikingly polarized: HALT achieves excellent performance on GSM8K but fails completely on StrategyQA, yielding an F1-score of zero. The authors provide a candid analysis of this failure, attributing it to the different nature of reasoning and hallucination in the two tasks.\n\nQuality:\nThe paper is technically sound. The proposed HALT framework is a well-motivated and logical combination of several known techniques for uncertainty estimation and fact-checking. The adaptation of these techniques to a single-pass setting (e.g., checking consistency within a single chain-of-thought rather than across multiple generations) is a sensible engineering choice aimed at efficiency.\n\nThe experimental design is appropriate, using two distinct and challenging datasets to test the framework's capabilities. The choice of baselines is reasonable, covering consistency, confidence, and retrieval-based methods.\n\nA major strength of this paper is its intellectual honesty. The authors are exceptionally transparent about the framework's complete failure on the StrategyQA dataset. The analysis in Section 5.2, which dissects the reasons for this failure (lack of structured reasoning, silent knowledge verification failures, and classifier miscalibration), is insightful and arguably as valuable as the positive results on GSM8K. This honest reporting of both successes and failures is commendable and crucial for scientific progress.\n\nHowever, the starkly contrasting results reveal a significant weakness: the framework is not the general-purpose solution it is presented as. Its success is highly task-dependent, and the current set of signals is clearly insufficient for hallucinations in commonsense reasoning tasks that lack explicit, verifiable reasoning steps.\n\nClarity:\nThe paper is exceptionally well-written, clear, and well-organized. The methodology is explained in sufficient detail, and the experimental setup is easy to follow. The results are presented unambiguously in Table 1, and the subsequent analysis is lucid. The inclusion of the prompts used to generate the paper in the appendix is a laudable step towards transparency and reproducibility, particularly for the Agents4Science venue.\n\nA minor point for improvement would be to provide more specific details on the implementation of the Knowledge Verifier, such as the search API and the textual entailment model used.\n\nSignificance:\nThe problem of hallucination detection is of paramount importance for the safe and reliable deployment of LLMs. This paper makes a significant contribution in two ways. First, it demonstrates that for structured, procedural reasoning tasks like mathematics, a combination of lightweight, internal signals can be highly effective for detecting hallucinations. The near-perfect recall on GSM8K is impressive. Second, and perhaps more importantly, it provides a clear negative result, demonstrating that these same signals are entirely ineffective for more implicit, commonsense reasoning tasks. This finding is significant because it cautions the community against seeking a one-size-fits-all solution and highlights that different types of hallucinations may require fundamentally different detection methods.\n\nOriginality:\nThe paper's originality lies not in the invention of new fundamental techniques, but in the novel combination and adaptation of existing ideas into an efficient, single-pass framework. The idea of checking consistency *within* a single chain-of-thought is a clever adaptation of multi-sample consistency checks. While the components themselves are familiar (retrieval, confidence scores), their integration into the HALT pipeline is novel. The primary contribution is empirical—a systematic study of how these combined signals perform on different reasoning domains.\n\nReproducibility:\nThe authors have provided substantial information to facilitate reproducibility. The datasets are public, the base LLM is specified, and the methodology is clearly described. The authors state that code is provided in the supplementary material, which is essential for verifying the results. The inclusion of the generation prompts is an excellent and unique feature that enhances the transparency of the research process itself.\n\nEthics and Limitations:\nThe authors excel in their discussion of limitations. The paper is built around a key limitation—the framework's failure on StrategyQA—and discusses it in depth. The conclusion and future work sections are grounded in these acknowledged shortcomings. The paper does not raise immediate ethical concerns; its goal is to improve AI safety. The broader impact statement could have been more developed, but its absence is not a critical flaw.\n\nSummary and Recommendation:\nThis is a well-executed, clearly written, and intellectually honest piece of research. It presents a strong positive result on one task and a strong, well-analyzed negative result on another. While the failure on StrategyQA prevents HALT from being the general-purpose framework it was intended to be, the insights gained from both the success and the failure are valuable to the research community. The paper serves as an excellent case study on the task-dependent nature of hallucination detection. The transparency about the AI-assisted authoring process is also a welcome contribution to the Agents4Science conference. The paper is technically solid, and its strengths—particularly its clarity and honesty about limitations—outweigh its weaknesses."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission320/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775804390,
+    "mdate": 1760632230695,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission320/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "id": "yXYEbPQp8x",
+    "forum": "yXYEbPQp8x",
+    "content": {
+      "title": {
+        "value": "Reasoning Models Outperform Standard Language Models in De Novo Protein Design"
+      },
+      "authors": {
+        "value": [
+          "Alfred Greisen",
+          "Longfei Cong",
+          "Per Jr. Greisen",
+          "Sergey Ovchinnikov"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "greisenalfred@gmail.com",
+          "longfei@biomap.com",
+          "pgreisen@gmail.com",
+          "~Sergey_Ovchinnikov2"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "ChatGPT",
+          "AlphaFold",
+          "Protein Design",
+          "CD"
+        ]
+      },
+      "TLDR": {
+        "value": "Large language models can design stable, correctly folded proteins from a single natural-language prompt, as confirmed by AlphaFold predictions and experimental CD validation."
+      },
+      "abstract": {
+        "value": "We compared reasoning-enhanced versus standard large language models for de novo protein design using four-helix bundles as a benchmark. Testing five ChatGPT variants with identical prompts, we discovered a dramatic capability divide: reasoning models (o3, o4-mini) achieved 44\\% and 20\\% success rates respectively, while all standard language models achieved 0\\% success using pLDDT > 75 as the threshold. Two of the top-scoring sequences were experimentally tested. One was validated via circular dichroism (CD) spectroscopy, confirming α-helical structure. These results suggest reasoning capabilities, not just model scale, are critical for complex scientific tasks like protein design."
+      },
+      "pdf": {
+        "value": "/pdf/764044320bbffd9447c0778300c009a28808ea25.pdf"
+      },
+      "supplementary_material": {
+        "value": "/attachment/88612068d2340c5ec88bb9a8a28e00c803b21980.zip"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\ngreisen2025reasoning,\ntitle={Reasoning Models Outperform Standard Language Models in De Novo Protein Design},\nauthor={Alfred Greisen and Longfei Cong and David La and Per Jr. Greisen and Sergey Ovchinnikov},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=yXYEbPQp8x}\n}"
+      },
+      "paperhash": {
+        "value": "greisen|reasoning_models_outperform_standard_language_models_in_de_novo_protein_design"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission256/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/-/PC_Revision",
+      "Agents4Science/2025/Conference/Submission256/-/Camera_Ready"
+    ],
+    "cdate": 1757996161402,
+    "pdate": 1759960943406,
+    "odate": 1758112145415,
+    "mdate": 1761836433442,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission256/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission256/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "sigDHHhV1I",
+    "forum": "yXYEbPQp8x",
+    "replyto": "yXYEbPQp8x",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a timely and impactful comparison between \"reasoning-enhanced\" and \"standard\" large language models (LLMs) on the task of de novo protein design. The authors use a well-defined benchmark—the design of a four-helix bundle—to demonstrate a striking performance gap between these two classes of models. The findings are supported by both computational screening and rigorous experimental validation, making this a significant contribution to the burgeoning field of AI-driven science.\n\nQuality: The technical quality of this work is exceptionally high. The methodology is straightforward, robust, and well-justified. The authors use a standard, well-understood problem in protein design as a testbed. The computational pipeline, which involves prompting different LLM variants, screening the outputs with AlphaFold, and applying a clear success criterion (pLDDT > 0.75 and correct topology), is sound. Crucially, the authors do not stop at computational results; they proceed to synthesize and characterize their designs experimentally. The comprehensive biophysical characterization of Helix02 (including SDS-PAGE, SEC, and Circular Dichroism) provides compelling evidence that the model-generated sequence folds into the intended stable, a-helical structure. The inclusion and detailed discussion of a high-confidence failure case (Helix01) is a mark of scientific rigor, adding nuance and highlighting important limitations of current methods, such as the disconnect between computational confidence (pLDDT) and experimental expressibility.\n\nClarity: The paper is written with outstanding clarity. The abstract and introduction concisely frame the research question and summarize the key findings. The structure is logical, guiding the reader from the high-level concept to the detailed experimental results and their implications. Figure 1 provides an excellent visual summary of the entire workflow. The results are presented clearly in tables and figures, with the experimental data in Figure 3 being particularly convincing. The writing is direct, professional, and free of jargon, making the work accessible to a broad scientific audience.\n\nSignificance: The significance of this work is profound. It moves the conversation about AI in science beyond simply using models as black-box tools, and instead begins to investigate *which* architectural properties of AI systems are necessary for scientific problem-solving. The central finding—that reasoning-enabled models show a qualitative leap in capability for this design task compared to standard LLMs (44% success vs. 0%)—is a landmark result. It suggests that for complex tasks requiring the application of underlying principles (like the biophysical rules of protein folding), simple pattern recognition is insufficient. This work establishes a strong baseline for future research into AI agents for science and demonstrates a remarkably accessible path to generating novel, functional biomolecules from natural language prompts, which could have a democratizing effect on the field of protein engineering.\n\nOriginality: The paper is highly original. To my knowledge, this is the first work to systematically compare different classes of LLMs (reasoning vs. standard) for de novo protein design and validate the results experimentally. The discovery that a viable, foldable protein can be generated from a single, non-iterative prompt is itself a novel and surprising finding that challenges previous assumptions about the complexity of the required workflow.\n\nReproducibility: The authors have done an excellent job of ensuring the work is reproducible. They provide the exact prompt used, the specific AlphaFold parameters, the explicit success criteria, and the full amino acid sequences for the key designs in the appendix. They also commit to releasing all data upon acceptance. This level of transparency is commendable and sets a high standard for the field.\n\nEthics and Limitations: The authors are commendably transparent about the limitations of their work. They frankly discuss the modest overall success rates (even for the best models), the failure of Helix01 to express, and the challenges posed by repetitive sequences. This honest self-assessment strengthens the paper's conclusions. No ethical issues are apparent in the research.\n\nConclusion:\nThis is a groundbreaking study that is technically flawless, highly original, and of great significance. It provides a clear and compelling demonstration that reasoning capabilities are a critical component for AI models tasked with complex scientific discovery. The combination of a clean experimental design, stark results, and rigorous experimental validation makes this a model paper. It is an unequivocal \"Strong Accept\" and is likely to become a foundational paper in the field of AI for science."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission256/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775926987,
+    "mdate": 1760632211093,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "qcQTrpPRyj",
+    "forum": "yXYEbPQp8x",
+    "replyto": "yXYEbPQp8x",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777727471,
+    "mdate": 1760639949629,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "XnrVViJMv5",
+    "forum": "yXYEbPQp8x",
+    "replyto": "yXYEbPQp8x",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission256/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948896174,
+    "mdate": 1760632289810,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "S7uTPpHFvh",
+    "forum": "yXYEbPQp8x",
+    "replyto": "yXYEbPQp8x",
+    "content": {
+      "title": {
+        "value": "Interesting proof-of-concept study with some lingering questions"
+      },
+      "summary": {
+        "value": "This paper examines the potential of language models to design proteins de novo. The authors design a prompt to provide to several LLMs, including both reasoning and non-reasoning models, and then generate proposed proteins using the LLMs. The generated proteins are then tested through a multi-step process involving AlphaFold and heuristic evaluation, and the authors record the success rate. For a few top proteins, the authors then synthesized these proteins in the lab and found that one of them was successfully synthesized. This paper overall is a proof-of-concept, examining the capabilities of LLMs to design simple proteins that are then validated by human experts."
+      },
+      "strengths_and_weaknesses": {
+        "value": "Strengths:\n- It is useful to study the properties of language models for this task and the difference between reasoning models versus standard language models. The hypothesis of the paper is simple and straightforward to test, and it is one of the first papers that I know of to test this idea.\n- It’s very positive that the authors were able to take the further step of synthesizing the proteins and testing them in the lab. This greatly strengthens the work and adds credibility to the method proposed.\n- The paper acknowledges the weaknesses of this study very well. In particular, the comment about optimization is appreciated as this was one my primary thoughts when reading the paper.\n- The paper is clearly written, with many of the steps in the methods and results being well-described.\n\nWeaknesses:\n- The paper claims on page 1 that “Protein design provides an ideal test case because it requires applying established design principles rather than memorizing patterns.” This claim is very weak, as it’s possible that the LLMs have memorized protein sequences from their training data, including from sequences available on UniProt or other online web sources. Have the authors tested that the models have not memorized the proteins generated?\n- The work is admittedly lacking in scale in terms of examined number of proteins as well as techniques and models tested. This work serves as an effective proof of concept, but more experimentation and tested variables would be much appreciated. \n- It would also be appreciated to provide the exact prompts to the models for reproducibility and transparency."
+      },
+      "quality": {
+        "value": 3
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 3
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "- It would be interesting to examine the rationales of the language models by examining their chain-of-thought reasoning. Were these proteins constructed with biologically-relevant reasoning steps or were there errors? This admittedly might be difficult for closed-source LMs, but could be examined on a model like DeepSeek-R1.\n- How difficult is it biologically to design these four-helix systems? The protein sequences seem quite repetitive, and I wonder how a simple HMM baseline would perform on this task. There is little discussion throughout the paper of how difficult the task of 4-helix design is beyond the statement of this being an easily-verifiable task. \n- What is the biological reasoning for the discrepancy in results for 4-helix bundle and confident 4-helix bundle? For example, o3 and o4-mini generate a much lower percentage of samples with any 4-helix bundle than GPT-4o, but GPT-4o generates no 4-helix bundles. Could this be due to low diversity of sampling by GPT-4o? Are the failed sequences from the reasoning models completely wrong? This could shed light into how the LLMs reason about protein chemistry. On top of this, some analysis across proteins for each model would be appreciated, such as diversity of the sequences within-model samples."
+      },
+      "limitations": {
+        "value": "See weaknesses. The main limitations of this paper are in lack of scale as well as a lack of explanation for if the synthesized proteins might be memorized from some internet-available training data."
+      },
+      "overall": {
+        "value": 4
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ethical_concerns": {
+        "value": "Some discussion of ethics around biosecurity of automatically-generated proteins would be helpful."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission256/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759100009602,
+    "mdate": 1760632211699,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission256/Reviewer_xNqL"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission256/Reviewer_xNqL"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Rk6ezu31zb",
+    "forum": "yXYEbPQp8x",
+    "replyto": "yXYEbPQp8x",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a comparison of reasoning-enhanced versus standard large language models for de novo protein design, specifically targeting four-helix bundles. The work is technically sound, using standard methods like AlphaFold and pLDDT, and includes experimental validation via circular dichroism spectroscopy. However, the sample sizes are small (4-16 sequences per model), limiting statistical power, and the binary success criteria is somewhat arbitrary. The paper is well-written, clearly organized, and sufficiently detailed for reproduction. The finding that reasoning models outperform standard models is potentially impactful, but the study is limited to a single, simple protein architecture, constraining generalizability. The originality is notable as this is the first systematic comparison of these model types for protein design. The methods are reproducible, and the authors promise to release data and code. Limitations are acknowledged, and the AI contribution disclosure is thorough. The related work section is brief and could be improved. Major concerns include small sample sizes, limited generalizability, only one successful experimental validation, lack of comparison with established tools, and variation among reasoning models. Minor issues include the need for more statistical analysis and mechanistic insights. Overall, the paper addresses an interesting question and provides valuable initial data, but its limited scope and small sample sizes constrain its impact."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission256/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775927268,
+    "mdate": 1760632210808,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "1zUECjVZqZ",
+    "forum": "yXYEbPQp8x",
+    "replyto": "yXYEbPQp8x",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper compares 'reasoning' LLMs (o3, o4‑mini, o4‑mini‑high) to 'standard' LLMs (GPT‑4o, GPT‑4.5) for de novo protein design of four-helix bundles, using a single natural-language prompt, AlphaFold2 screening (no MSA, 0 recycles), and experimental validation for top candidates. The main claim is that reasoning models outperform standard LLMs on confident designs (pLDDT > 0.75). One design (Helix02) was experimentally validated as predominantly α-helical; another (Helix01) failed expression.\n\nStrengths include a clear pipeline, empirical evidence of a large gap in confident designs between model types, inclusion of experimental validation, and transparent reporting of a failure case. Concerns include lack of controlled ablation to isolate 'reasoning' as the causal factor, small and unbalanced sample sizes, lack of statistical analysis, heavy reliance on pLDDT and visual inspection, minimal experimental validation, and possible confounding by sequence motifs. Clarity is generally good, but there are inconsistencies in reported pLDDT values and release timelines, and missing decoding settings. The significance is potentially high, but the evidence and controls are too limited to support strong claims. Reproducibility is undermined by missing details and reliance on proprietary endpoints. Ethics are not a concern, but related work coverage is thin.\n\nActionable suggestions include controlling confounds, strengthening evaluation, expanding experimental validation, addressing inconsistencies, and broadening baselines. The verdict is that the paper is intriguing and timely, but the central claim is insufficiently supported. The recommendation is a borderline reject, with the potential for a strong contribution if revisions are made."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission256/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775926522,
+    "mdate": 1760632211540,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "1bPO8cbxkv",
+    "forum": "yXYEbPQp8x",
+    "replyto": "yXYEbPQp8x",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- No statistical testing or uncertainty quantification; very small and unequal sample sizes per model (Table 1), undermining the claimed capability divide (Table 2).\n- AlphaFold run settings (no MSA, 0 recycles, model_2_ptm) are minimally justified; pLDDT threshold use is not validated for this configuration.\n- Subjective visual inspection to call four-helix bundles; no objective metrics or inter-rater reliability.\n- Temporal/model-version confound: models were queried over different dates with unspecified sampling parameters (temperature/seeds), and unequal sequence counts per model.\n- Inconsistent/omitted construct details: Ni-NTA purification reported but sequence lacks histidines; no tag/vector description or exact expressed construct mass, yet SDS-PAGE/SEC claims are made.\n- CD analysis and claims: \"100% helix\" is implausible and lacks methodological detail; near-UV CD interpretation is incompatible with the absence of aromatic residues in Helix02.\n- Abstract reports best pLDDT 0.891 not reconciled with listed sequences (0.887 and 0.876) in the Appendix.\n- Selection bias: experimental candidates were not randomly chosen; only one positive reasoning-model design was validated experimentally; no validation for standard LLM outputs.\n- Overinterpretation of causality: attributing performance to \"reasoning\" without controlling for confounds (sampling, output length, model updates) or performing statistical tests.\n- Lack of essential experimental details (expression constructs, codon optimization status, CD conditions, replicate counts), limiting reproducibility."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776894430,
+    "mdate": 1760639950371,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission256/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

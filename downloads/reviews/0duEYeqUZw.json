@@ -1,0 +1,402 @@
+[
+  {
+    "id": "tJ16GabB4T",
+    "forum": "0duEYeqUZw",
+    "replyto": "0duEYeqUZw",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission87/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948929873,
+    "mdate": 1760632270006,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ow9ZFNY3Yu",
+    "forum": "0duEYeqUZw",
+    "replyto": "0duEYeqUZw",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a structured literature synthesis of 124 knowledge tracing (KT) models/variants, introducing an eight-dimension context taxonomy and harmonizing heterogeneous results via normalized ranks and context-level, quality-weighted win rates. The main findings are context-specific: attention/Transformers excel on large/long logs, graph-based KT with reliable structure, time-aware/forgetting models under irregular gaps, content/LLM-augmented KT on text/code/dialogue, mixture-of-experts for heterogeneous cohorts, and logistic/factorization models in data-constrained settings. The paper is praised for its timely framing, clear taxonomy, methodological care, breadth, and transparency about limitations. However, it is criticized for lacking quantitative aggregate reporting (no per-context tables/figures or uncertainty), ad hoc weighting/capping choices, risk of bias from within-paper comparisons, unvalidated data extraction/coding, metric heterogeneity, incomplete corpus coverage, incremental insights, and minor reference/operational issues. The reproducibility claim is noted but artifacts are not yet accessible. Recommendations include reporting quantitative aggregates, providing corpus/accountability details, validating extraction/coding, addressing bias quantitatively, adding case studies, and cleaning up references/artifacts. Overall, the synthesis is promising but currently too qualitative and lacking in quantitative rigor and reliability checks to meet the standards of a selective venue."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission87/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775415024,
+    "mdate": 1760632162214,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "co5XTZ0p8S",
+    "forum": "0duEYeqUZw",
+    "replyto": "0duEYeqUZw",
+    "content": {
+      "title": {
+        "value": "."
+      },
+      "summary": {
+        "value": "This survey paper provides an analysis of Knowledge Tracing literature. This work is valuable in several ways: it demonstrates how AI can assist with large-scale literature synthesis, it covers 124 models/variants across multiple KT families, and it attempts to provide context-dependent guidance. The paper is well written and easy to read.\n\nHowever I do believe that for a survey this is not systematic enough. To make a few examples:\n\n* the paper lacks systematic search protocols. no structured queries, no reproducible screening methods. I understand the focus is automation, but in this context, the lack of systematic rigor does not allow me to assess whether the collection is complete or representative. Expressions like \"Iteration continued until further additions yielded diminishing returns.\" - need to be more precise for understanding and reproducibility.\n\n* each step of the pipeline seems to be done by the LLM, but to my understanding no validation is provided for the accuracy (e.g., taxonomy classifier). This is a bit concerning. without an additional eval, these downstream conclusions become unreliable.\n\nIn summary, this is a nice application of AI to do survey research but the lack of a systematic analysis makes me worry about the general validity of the results."
+      },
+      "strengths_and_weaknesses": {
+        "value": "."
+      },
+      "quality": {
+        "value": 2
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 2
+      },
+      "originality": {
+        "value": 4
+      },
+      "questions": {
+        "value": "."
+      },
+      "limitations": {
+        "value": "."
+      },
+      "overall": {
+        "value": 3
+      },
+      "confidence": {
+        "value": 2
+      },
+      "ethical_concerns": {
+        "value": "."
+      },
+      "ai_review_score": {
+        "value": 0
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission87/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759515924748,
+    "mdate": 1760632162363,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission87/Reviewer_LXP3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission87/Reviewer_LXP3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "RqmUOrkzd0",
+    "forum": "0duEYeqUZw",
+    "replyto": "0duEYeqUZw",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a systematic literature synthesis of 124 knowledge tracing (KT) models to understand which models work best in different contexts. The work is conducted primarily by an LLM with human-LLM partnership and aims to provide practical guidance for context-aware KT model selection.\n\nQuality: The paper is technically sound with a well-structured methodology. The approach of synthesizing literature rather than re-implementing models is reasonable given the practical constraints. The authors develop a comprehensive 8-dimensional context taxonomy and implement quality-aware weighting schemes to address evaluation biases. The methodology for harmonizing heterogeneous metrics and ranking systems is appropriate. However, some methodological choices appear arbitrary (as the authors acknowledge), particularly the novel weighting schemes that lack empirical validation.\n\nClarity: The paper is generally well-organized and clearly written. The context taxonomy is well-presented in Table 1, and the methodology is sufficiently detailed for understanding. The results section effectively summarizes findings for different contexts. However, some technical details about the aggregation methodology could be clearer, and the heavy reliance on AI-generated content occasionally results in surface-level explanations that require more depth.\n\nSignificance: This work addresses an important practical problem in educational technology. The synthesis of 124 KT models spanning three decades provides valuable insights for practitioners selecting appropriate models. The context-dependent findings (e.g., attention models for large-scale data, graph models for structured domains) offer actionable guidance. The identification of evaluation pitfalls and the quality-aware weighting approach contribute methodologically to the field.\n\nOriginality: While systematic reviews exist in this domain, the comprehensive scope (124 models), novel context taxonomy, and AI-powered synthesis approach provide original contributions. The quality-aware aggregation methodology and context-dependent analysis framework are innovative, though some elements lack theoretical grounding.\n\nReproducibility: The authors provide detailed methodology and promise to release data, code, and supplementary materials. The systematic approach with explicit inclusion/exclusion criteria supports reproducibility, though the stochastic nature of LLM involvement may introduce some variability in replication.\n\nEthics and Limitations: The authors appropriately discuss limitations including potential biases from metric heterogeneity, exclusion of papers without baselines, and focus on predictive performance over other important factors (fairness, interpretability, computational costs). The AI involvement is transparently disclosed through the checklist.\n\nCitations and Related Work: The paper appropriately cites relevant prior work and positions itself well within the literature. The comprehensive coverage of 124 models demonstrates thorough literature coverage.\n\nConcerns:\n1. Some methodological choices (particularly weighting schemes) appear arbitrary and lack validation\n2. Heavy AI involvement raises questions about depth of analysis and potential biases\n3. The focus on predictive performance may not fully capture practical deployment considerations\n4. The synthesis approach, while practical, cannot fully replace controlled empirical comparisons\n\nStrengths:\n1. Addresses an important practical problem with comprehensive scope\n2. Novel methodology combining systematic review with AI assistance\n3. Well-structured context taxonomy providing actionable insights\n4. Transparent about limitations and AI involvement\n5. Quality-aware approach to address evaluation biases\n\nThe paper makes a solid contribution to the knowledge tracing field by providing practical guidance for model selection across different contexts. Despite some methodological concerns, the comprehensive scope and novel approach provide value to the community."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission87/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775415505,
+    "mdate": 1760632161753,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "OVzd70ZoHF",
+    "forum": "0duEYeqUZw",
+    "replyto": "0duEYeqUZw",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Arbitrary, unvalidated quality weights (e.g., ×1.25/×0.50; ×1.10/×0.75) with no empirical calibration; sensitivity results are asserted but not quantitatively reported.\n- Capping rule (k=3) per (dataset × family × context) may introduce selection bias and causes families to be evaluated on different subsets of instances within the same context, complicating comparability.\n- Insufficient detail on literature search reproducibility (e.g., exact queries, databases per query, inter-rater agreement) and on human/AI validation of extracted fields; heavy reliance on AI extraction without quantified error rates.\n- Weighted median of ranks is not fully specified (algorithmic details; weight normalization), and notation inconsistencies (ai vs αi).\n- No tables/figures reporting the actual context-level weighted win rates and weighted median ranks; sensitivity analyses are described but numerical outcomes are not provided.\n- Publication bias not formally addressed (e.g., no funnel/selection diagnostics); reliance on within-paper comparisons only may under-represent newer families.\n- Context label imputation is described as conservative, but no dedicated sensitivity analysis for these imputations is reported.\n- Minor bibliographic irregularities/duplicates; while not critical, they slightly detract from formal polish and traceability."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776708994,
+    "mdate": 1760640308157,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "MWVxphDxlC",
+    "forum": "0duEYeqUZw",
+    "replyto": "0duEYeqUZw",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777882455,
+    "mdate": 1760640307468,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "EPSRGCjUKO",
+    "forum": "0duEYeqUZw",
+    "replyto": "0duEYeqUZw",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a large-scale, structured synthesis of the knowledge tracing (KT) literature, analyzing 124 papers to determine which KT models perform best in various contexts. The authors categorize papers and datasets along eight contextual dimensions and use a rigorous two-stage aggregation methodology, including a quality-weighted scheme that rewards robust evaluation protocols. Key findings are that no single model family is universally superior; performance is highly context-dependent. Attention/Transformer models excel on large-scale, long-sequence data; graph-based models perform best with reliable structural information; and simpler factorization models remain competitive in data-constrained or interpretability-critical settings. The paper is significant for its methodological rigor, clarity, originality, and commitment to reproducibility. Minor weaknesses include the unavoidable potential for publication bias and the necessary aggregation of models into broad families, which may obscure some nuances. Overall, this is a landmark, technically sound, and highly impactful paper, exemplary in its execution and presentation, and is highly recommended."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission87/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775415261,
+    "mdate": 1760632161938,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission87/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "0duEYeqUZw",
+    "forum": "0duEYeqUZw",
+    "content": {
+      "title": {
+        "value": "An AI-Powered Evaluation: Understanding which Knowledge Tracing Models Work Best in which Contexts"
+      },
+      "keywords": {
+        "value": [
+          "knowledge tracing",
+          "student modeling",
+          "digital learning",
+          "AI powered research"
+        ]
+      },
+      "abstract": {
+        "value": "Knowledge tracing (KT) models a learner’s evolving mastery from interaction logs and underpins personalization in tutors, practice systems, and learning analytics. Over three decades, many KT models have been proposed; however, performance varies by dataset characteristics for which the models are trained on, so a model that excels in one setting may under-perform in another. In this work, conducted by an LLM and conceptualized through human-LLM partnership, we explore this phenomenon by conducting a structured synthesis of 124 KT papers spanning classic probabilistic, generalized logistic/factorization, deep sequence, attention/transformer, graph-based, and LLM-augmented approaches (with each paper proposing one or more new models or variants). For each study, we extract key information, including modeling idea, data setting, and outcomes, then code them along eight key contextual dimensions (data scale; sequence length; structure availability: concept-item relations; temporal irregularity/forgetting cues; modality: binary vs. text/code/dialogue; cohort heterogeneity; cold-start/unseen items; interpretability/operational constraints). We apply a two-stage aggregation: (1) within-paper ranking of models on the authors’ primary metrics, and (2) context-level win rates/median ranks with quality weights favoring student-wise, chronological, and out-of-distribution protocols, with sensitivity checks for robustness. We find attention/transformers lead on large, long-history logs; graph/dynamic-graph KT dominates when reliable (static or evolving) structure is available; Hawkes/spacing-aware methods win when timing and forgetting matter; LLM/semantic KT excels on text/code/dialogue and improves unseen-item generalization; mixture-of-experts helps in heterogeneous cohorts; and generalized logistic/factorization families remain competitive, interpretable choices in data-constrained settings. We highlight common evaluation pitfalls and synthesize context-dependent patterns across models and datasets, providing practical guidance for context-aware KT model selection."
+      },
+      "pdf": {
+        "value": "/pdf/f751f4dcf165baf56a8014b70f01084320905891.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025an,\ntitle={An {AI}-Powered Evaluation: Understanding which Knowledge Tracing Models Work Best in which Contexts},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=0duEYeqUZw}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/8aa9836fdc3446ccb99d48a3bae2984de96241b0.zip"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission87/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757082151923,
+    "odate": 1758112145415,
+    "mdate": 1759960935450,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission87/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission87/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

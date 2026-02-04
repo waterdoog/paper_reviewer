@@ -1,0 +1,403 @@
+[
+  {
+    "id": "z8IgwlNZUH",
+    "forum": "KQX70xNaL6",
+    "replyto": "KQX70xNaL6",
+    "content": {
+      "title": {
+        "value": "Human Review"
+      },
+      "summary": {
+        "value": "This paper proposes a new framework for how we assess scientific research as a version-controlled computational process rather than a collection of artifacts (defined as data, code, and papers). The main contribution of this paper is the Scientific Domain-Specific Language (DSL) framework, which enables tracking every scientific reasoning step as a ‘commit’."
+      },
+      "strengths_and_weaknesses": {
+        "value": "Strengths:\n- The gaps & contributions are well formalized, and the proposed question seems very interesting with potential to be impactful\n- The framework is thorough with many interconnected components\n\nWeaknesses:\n- This paper is largely a proof-of-concept. While the authors run a case study in the linguistic domain and capture 127 commits across seven research stages, they fail to show any results regarding what the commits tell them. How do the commits impact future research?\n- Would having the commits make researchers more, or potentially less, if they are bogged down by the details, productive? \n- The economic details are hypothetical, and it would have been great to see the estimated impact.\n- There are no figures, and the writing is not very clear (unnecessarily verbose) at times. Even just an overview figure of the method would have been helpful."
+      },
+      "quality": {
+        "value": 2
+      },
+      "clarity": {
+        "value": 2
+      },
+      "significance": {
+        "value": 1
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "See weaknesses"
+      },
+      "limitations": {
+        "value": "See weaknesses"
+      },
+      "overall": {
+        "value": 2
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ai_review_score": {
+        "value": 0
+      },
+      "ethical_concerns": {
+        "value": "None"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission109/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759877197461,
+    "mdate": 1760632166449,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission109/Reviewer_xbM4"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission109/Reviewer_xbM4"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ysHPTjYPeW",
+    "forum": "KQX70xNaL6",
+    "replyto": "KQX70xNaL6",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a bold and compelling vision for the future of scientific research, proposing a paradigm shift from artifact-centric version control to process-centric version control. The core contribution is a Scientific Domain-Specific Language (DSL) that formalizes the entire research lifecycle—from observation and hypothesis to analysis and communication—as a version-controlled computational process. This is a timely and significant proposal that directly addresses several critical challenges facing the scientific community, including the reproducibility crisis and the scalability limits of peer review.\n\nQuality:\nThe paper is of high quality, presenting a conceptually sophisticated and well-thought-out framework. The technical proposal, while at a high level, is grounded in established and plausible technologies like Git, CI/CD pipelines, and multi-agent systems. The formalization of the scientific process into a \"Research State Machine\" with explicit tracking of actions, assumptions, and genealogical relationships (fork, challenge, converge) is a powerful abstraction.\n\nThe primary weakness lies in the experimental validation. The case study on grammaticalization research serves as a good proof-of-concept, demonstrating that the framework can be implemented. However, the evaluation presented in Table 1 is purely qualitative (e.g., \"Paper-level\" vs. \"Commit-level\"). While the paper claims to have found \"significant differences\" in its case study, it does not provide the quantitative data or statistical analysis to back this up within the paper itself. For a framework that champions rigor and systematic tracking, this is an unfortunate omission. However, given that this is a position paper introducing a new paradigm, the primary contribution is the framework itself, and the case study's role is more illustrative. The authors are also commendably honest about the system's limitations and future work required, particularly in extending the framework beyond computational domains and addressing the \"AI validation paradox.\"\n\nClarity:\nThe paper is exceptionally well-written and organized. The prose is clear, concise, and persuasive. The motivation is established powerfully in the introduction, and the proposed solution is developed logically throughout the subsequent sections. The analogy to software engineering practices like version control and continuous integration is used effectively to make the core ideas accessible and compelling. The provision of a public GitHub repository is an excellent step towards transparency and clarity.\n\nSignificance:\nThe potential impact of this work is immense. If adopted, the proposed framework could fundamentally reshape the infrastructure of science. By making the reasoning process itself a transparent, trackable, and computable object, it opens the door to automated quality assurance, systematic knowledge synthesis, and highly scalable, continuous peer review. It provides a concrete blueprint for how human and AI agents can collaborate effectively in a structured, accountable manner. This work has the potential to be highly influential and to spawn a significant new research agenda in the field of scientific automation and meta-science.\n\nOriginality:\nThe paper is highly original. While individual components have been explored before (e.g., workflow systems, reproducibility platforms), the holistic vision of treating the entire scientific reasoning process as a version-controlled graph is a novel and powerful synthesis. The explicit modeling of epistemic states and conflicts as first-class citizens within a version control system is, to my knowledge, a unique contribution that moves far beyond existing artifact-centric tools. The paper does an excellent job of situating itself relative to prior work and clearly articulating its unique contributions.\n\nReproducibility:\nThe authors provide a GitHub link to an example project, which is a strong positive signal for reproducibility. The paper describes the implementation architecture and the case study setup with sufficient detail for an expert to understand the approach and begin to build upon it. While re-implementing the entire system would be a significant effort, the conceptual framework is laid out clearly enough to be reimplemented, and the provided repository offers a concrete starting point.\n\nEthics and Limitations:\nThe authors demonstrate a mature understanding of the ethical implications and limitations of their work. Section 6.3 provides a candid discussion of the framework's current limitations. The paper also thoughtfully addresses potential negative impacts, such as automation bias and the \"AI validation paradox\" (the problem of using AI to validate AI-generated results). The proposed solution of multi-scale validation with integrated human oversight is a responsible and necessary component of such a system. The framework's emphasis on granular attribution is a key feature that promotes ethical scientific practice.\n\nConclusion:\nThis is a landmark paper that presents a visionary, important, and timely contribution. It is ambitious, exceptionally well-argued, and provides a concrete technical foundation for a new and much-needed approach to conducting and managing scientific research. Despite the light quantitative evaluation, the strength, originality, and potential impact of the core vision are so high that it warrants the strongest possible recommendation. This is precisely the kind of forward-thinking, paradigm-challenging work that a new conference like Agents4Science should be highlighting."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission109/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759776103969,
+    "mdate": 1760632167054,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "llEfVElKk4",
+    "forum": "KQX70xNaL6",
+    "replyto": "KQX70xNaL6",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission109/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948929070,
+    "mdate": 1760632272027,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "hduPGxURWc",
+    "forum": "KQX70xNaL6",
+    "replyto": "KQX70xNaL6",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- No formal semantics for the DSL/state machine (no transition rules, invariants, or operational semantics for actions, genealogy, confidence propagation).\n- Statistical claims of “significant differences” (Section 5.1) are unsupported by tests, effect sizes, or uncertainty; contradicts checklist Item 7 marking significance as not applicable.\n- Case study lacks essential methodological detail (sampling strategy, preprocessing, model specs, confound control, ethics/consent).\n- Performance evaluation is qualitative (Table 1 on page 5) with no quantitative metrics or ablations to substantiate claimed improvements.\n- Reproducibility claims are not verifiable from the text: link points to an example repository; it is unclear if the full case-study data, code, and exact environment are available and sufficient for replication.\n- Inconsistency between asserting need for non-linear/bidirectional validation and constraining representation to a DAG without a mechanism to accommodate cycles or reciprocal dependencies.\n- Conflict management is proposed conceptually (Conflict record) but lacks procedures for detection, prioritization, or impact on downstream decisions.\n- Heavy AI involvement in writing and analysis (pages 8–9) increases risk of overclaiming; acknowledged by authors but not mitigated with additional human audits or safeguards in the reported study."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776957815,
+    "mdate": 1760640183143,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "KQX70xNaL6",
+    "forum": "KQX70xNaL6",
+    "content": {
+      "title": {
+        "value": "Version Control for Scientific Reasoning: A Paradigm Shift from Artifacts to Processes"
+      },
+      "keywords": {
+        "value": [
+          "version control",
+          "meta-science"
+        ]
+      },
+      "TLDR": {
+        "value": "We propose a paradigm shift: treating scientific research as version-controlled computational processes rather than collections of artifacts."
+      },
+      "abstract": {
+        "value": "Scientific research suffers from fragmented reproducibility, scalability crises in peer review, and implicit assumptions that resist systematic tracking. We propose a paradigm shift: treating scientific research as version-controlled computational processes rather than collections of artifacts. Our Scientific Domain-Specific Language (DSL) formalizes research operations (observe, hypothesize, execute, analyze) within a directed acyclic graph structure that captures epistemic evolution, assumption dependencies, and collaborative decision-making. This approach enables granular attribution tracking, automated quality assurance, and systematic knowledge building across research communities. We demonstrate the framework through implementation studies showing significant improvements in research reproducibility and collaboration efficiency while addressing the AI validation paradox through multi-scale validation mechanisms. Our approach transforms scientific collaboration by making reasoning processes explicit, version-controlled, and systematically improvable. An example repository with attribution may be found at https://github.com/cosci-org/cosci-project-example."
+      },
+      "pdf": {
+        "value": "/pdf/fdb3b500841d3961a9ee6825c7e64ede2e3de367.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025version,\ntitle={Version Control for Scientific Reasoning: A Paradigm Shift from Artifacts to Processes},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=KQX70xNaL6}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/f546d31565ad741e076d44288f927dcc5b0d0977.zip"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission109/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757625524222,
+    "odate": 1758112145415,
+    "mdate": 1759960936361,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission109/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission109/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "EIQIkYngEE",
+    "forum": "KQX70xNaL6",
+    "replyto": "KQX70xNaL6",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper presents a compelling vision for a process-centric paradigm in scientific research, introducing a Scientific DSL, a research state machine, and a multi-agent architecture with CI-style validation. The conceptual framing is timely and persuasive, highlighting limitations of artifact-centric approaches. However, the technical depth is lacking: the DSL is only sketched, with no formal syntax, semantics, or operational rules; the system implementation is superficial, with no concrete API, tooling, or storage model; and the evaluation is anecdotal, lacking rigorous experiments, quantitative benchmarks, or user studies. The case study is not reproducible due to missing details, and claims of impact remain speculative. The paper does not sufficiently differentiate itself from related provenance and workflow systems, and references are incomplete. Ethical and privacy considerations are not addressed. To improve, the authors should formalize the DSL, provide robust system details, conduct quantitative evaluations, and strengthen related work coverage. Overall, while the vision is important, the current submission lacks the technical and empirical rigor required for acceptance; rejection is recommended in its current form."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission109/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759776103780,
+    "mdate": 1760632167428,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Cj2o4qnJSu",
+    "forum": "KQX70xNaL6",
+    "replyto": "KQX70xNaL6",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Economic validation of fair benefits by Seitz et al.\n- Arts: Automated reproducible and traceable scientific computing by Arnab Dasgupta and Paul Nuyujukian\n- Total reproducibility framework by Beber"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777866344,
+    "mdate": 1760640182397,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "AN8kJaYnjK",
+    "forum": "KQX70xNaL6",
+    "replyto": "KQX70xNaL6",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes a paradigm shift from treating scientific research as collections of artifacts to version-controlled computational processes, introducing a Scientific Domain-Specific Language (DSL) framework. The conceptual framework is interesting, but the technical depth is lacking: the DSL formalization is shallow, the research state machine is more a data structure than a true state machine, and the multi-agent architecture is described only at a high level. The paper is generally well-written and organized, but some key concepts are under-explained, such as the relationship between the DSL and existing version control systems, and the implementation details of the continuous integration metaphor. The core idea is valuable and could influence scientific workflows, but the impact is limited by a lack of rigorous evaluation—only a single case study is presented, and claimed benefits are not quantitatively validated. The work is original in its synthesis, but individual components are incremental. Reproducibility is limited by insufficient technical specification. Major concerns include overselling the approach, limited evaluation, lack of technical depth, and insufficient detail on the AI validation paradox. The authors acknowledge limitations and discuss ethical considerations appropriately. Overall, the paper addresses an important problem with a potentially valuable approach, but falls short in execution and requires significant strengthening in technical rigor, empirical validation, implementation detail, and honest assessment of limitations to meet top-tier publication standards."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission109/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759776104157,
+    "mdate": 1760632166770,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission109/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

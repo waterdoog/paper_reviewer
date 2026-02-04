@@ -1,0 +1,399 @@
+[
+  {
+    "id": "yOsoNijbej",
+    "forum": "4JsCVsg8Pj",
+    "replyto": "4JsCVsg8Pj",
+    "content": {
+      "title": {
+        "value": "Rethinking Druggability in the Evaluation of AI-driven Structure-based Drug Design"
+      },
+      "summary": {
+        "value": "The authors note that current evaluations of AI-driven have largely ignored druggability as a criterion. They review existing SBDD benchmarks and determine pitfalls for several of these approaches. Finally, they propose a new method for incorporating durggability into the CrossDocked202 benchmark."
+      },
+      "strengths_and_weaknesses": {
+        "value": "Strengths: The manuscript has strong justification and rationale for including druggability as a metric in SBDD evaluation. It also has soundness and clarity of the proposed approach for integrating druggability into the CrossDocked2020 benchmark. \n\nWeaknesses: The manuscript lacks experiments/data to support the proposed approach and the lack of originality/novelty in this approach, which primarily weights existing scores with druggability scores obtained from existing models."
+      },
+      "quality": {
+        "value": 1
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 2
+      },
+      "originality": {
+        "value": 1
+      },
+      "questions": {
+        "value": "1. The authors present a clear approach for integrating druggability scores. Can they show how this approach works in practice in a real setting and any improvements it offers over the status quo (i.e. unweighted CrossDocked2020)? Show that this integration can substantially improve drug discovery outcomes would improve the quality of the work.\n2. Additionally, how does the proposed approach compare to other existing/potential approaches? What settings result in optimal performances (i.e. choice of druggability score, weighting methods, etc.)?\n3. The authors claim that existing approaches do not incorporate druggability, hinting at a systematic analysis. However, this is missing in the current manuscript. Can the authors include the results of a systematic analysis (perhaps as a table), which would help clarify and support the authors’ claims?"
+      },
+      "limitations": {
+        "value": "The authors present a good discussion of many limitations including intrinsic limitations of druggability predictors. They should also discuss the following limitations:\n-\tNeed for experiments and implementation to assess performance of their proposed approach\n-\tClass-specific performances (i.e. what it means if their approach is better on average but has worse performance for certain classes of proteins/small molecules or target diseases)"
+      },
+      "overall": {
+        "value": 2
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ethical_concerns": {
+        "value": "None"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission63/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759381421410,
+    "mdate": 1760632155808,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission63/Reviewer_i6rB"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission63/Reviewer_i6rB"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "seVVgh0QDf",
+    "forum": "4JsCVsg8Pj",
+    "replyto": "4JsCVsg8Pj",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Docking score directionality/sign is not specified for evaluation (e.g., handling of negative Vina scores) and whether the metric is to be minimized or transformed for consistent interpretation (Eq. (1), page 5).\n- Citation inconsistency: DrugProtAI is referred to as [11] in limitations on page 5, but the correct reference is [12].\n- Questionable technical example: labeling Bcl-2 family PPI interfaces as undruggable (page 4) conflicts with approved Bcl-2 inhibitors (e.g., venetoclax); refine language to reflect difficulty rather than impossibility.\n- Under-specified calibration (Step E, page 6): mapping CrossDocked pockets to known drug targets and tuning thresholds lacks procedural detail; practical feasibility and criteria are unclear.\n- Combining multiple druggability predictors (page 5) is suggested (averaging or multi-criteria optimization) but no concrete aggregation scheme, weighting rationale, or uncertainty handling is provided.\n- Potential evaluation bias: druggability predictors may be trained on similar structural distributions, biasing weights toward well-studied families; beyond averaging predictors, no mitigation (e.g., stratified analyses, out-of-family tests) is detailed.\n- Standardization of generative evaluation is not fully specified: ensure a fixed number of generated molecules per pocket to avoid variable sample sizes or selection biases; currently only per-pocket means are defined.\n- Pocket preparation choice (removing crystallographic waters, page 5) may distort druggability assessment for water-mediated sites; no guidance on exceptions or sensitivity analysis.\n- Threshold choices for subsets (0.2/0.5/0.8, page 5) lack justification or validation; sensitivity analysis is recommended but not provided."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776859759,
+    "mdate": 1760640284988,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "detZVKh9aq",
+    "forum": "4JsCVsg8Pj",
+    "replyto": "4JsCVsg8Pj",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777984600,
+    "mdate": 1760640284246,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "daHFl1JNhR",
+    "forum": "4JsCVsg8Pj",
+    "replyto": "4JsCVsg8Pj",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission63/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948932197,
+    "mdate": 1760632266637,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "cmJOjEgKtH",
+    "forum": "4JsCVsg8Pj",
+    "replyto": "4JsCVsg8Pj",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper addresses an important and often overlooked aspect of AI-driven structure-based drug design (SBDD): the incorporation of druggability assessment into evaluation benchmarks. The core premise is that current SBDD evaluation methods treat all binding pockets as equally viable drug targets, potentially leading to inflated performance metrics when models generate compounds that dock well to intrinsically undruggable pockets.\n\nStrengths:\n1. Important Problem Identification: The paper identifies a genuine gap in current SBDD evaluation protocols. The observation that many benchmarks ignore druggability is valid and practically important for the field.\n2. Clear Motivation: The authors provide a well-articulated argument for why druggability matters, with concrete examples of druggable (kinases, GPCRs) versus undruggable (KRAS, p53, Myc) targets.\n3. Comprehensive Background: The paper provides a thorough review of druggability assessment methods, from traditional structure-based approaches to modern AI-driven techniques.\n4. Practical Methodology: The proposed framework for incorporating continuous druggability scores into CrossDocked2020 is technically sound and implementable.\n5. Balanced Perspective: The authors acknowledge that the boundary between druggable and undruggable is evolving, especially with AI-driven discoveries of cryptic binding sites.\n\nWeaknesses:\n1. Lack of Experimental Validation: This is the paper's most significant limitation. The authors propose a methodology but provide no experimental results demonstrating its effectiveness or impact. Without showing how druggability weighting actually changes model rankings or reveals algorithmic biases, the contribution remains largely theoretical.\n2. Limited Novelty in Methodology: The core idea of weighting evaluation metrics by druggability scores is relatively straightforward. The mathematical formulation (Equation 1) is simple weighted averaging, which doesn't represent a significant methodological advance.\n3. Unclear Impact Assessment: The paper doesn't demonstrate that current evaluation protocols actually lead to problematic outcomes in practice. While the argument is intuitive, empirical evidence would strengthen the case significantly.\n4. Missing Implementation Details: Key aspects like how to handle disagreement between different druggability predictors, how to validate the reweighted benchmarks, and how to set appropriate thresholds are not adequately addressed.\n5. Limited Scope: The focus is primarily on CrossDocked2020, and it's unclear how well this approach would generalize to other SBDD benchmarks or evaluation scenarios.\n\nTechnical Issues:\n1. The druggability scoring approach relies heavily on existing predictors (PockDrug, DrugPred) without addressing their potential biases or limitations in detail.\n2. The paper doesn't discuss how to handle cases where druggability predictions are uncertain or conflicting.\n3. The validation strategy (Section E) is mentioned but not elaborated sufficiently.\n\nSignificance and Impact:\nWhile the paper addresses an important issue, the lack of experimental validation significantly limits its immediate impact. The contribution is primarily conceptual rather than empirical. For a field focused on practical drug discovery, demonstrating actual improvements in evaluation would be crucial.\n\nClarity and Organization:\nThe paper is well-written and clearly organized. The background section is comprehensive, and the methodology is presented clearly. However, the lack of results makes the paper feel incomplete.\n\nLimitations and Ethics:\nThe authors adequately discuss limitations of druggability metrics and acknowledge potential biases. No significant ethical concerns are apparent.\n\nOverall Assessment:\nThis paper identifies an important problem and proposes a reasonable solution, but falls short of demonstrating the value of the proposed approach. While the idea has merit, the lack of experimental validation, limited methodological novelty, and absence of demonstrated impact significantly limit its contribution. The work reads more like a position paper or extended methodology description than a complete research contribution.\n\nFor a venue like Agents4Science, which allows AI involvement and values practical applications to scientific problems, this paper would benefit from showing actual implementation results, comparing model performance under traditional vs. druggability-weighted metrics, and demonstrating concrete improvements in evaluation protocols."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission63/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775830206,
+    "mdate": 1760632155174,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "KRY3WiOs00",
+    "forum": "4JsCVsg8Pj",
+    "replyto": "4JsCVsg8Pj",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper presents a well-argued case for explicitly incorporating target druggability into the evaluation of AI-driven structure-based drug design (SBDD), highlighting the limitations of current benchmarks that treat all pockets as equally tractable. It reviews druggability concepts, critiques docking-only assessments, and proposes a methodology for continuous druggability scoring and metric reweighting. The protocol is clear and modular, and the discussion is balanced, acknowledging limitations and situating the work within the broader literature. However, the paper lacks empirical validation, with no computed druggability scores, released data, or demonstration of the proposed methodology's impact. There are concerns about potential biases, missing sensitivity analyses, referencing inconsistencies, and insufficient detail for reproducibility. The paper is conceptually sound and clearly written, but its significance and reproducibility are limited by the absence of experimental evidence and deliverables. Actionable recommendations include providing empirical studies, exploring robustness, releasing datasets and code, and broadening the evaluation. Overall, this is a well-motivated position paper with practical potential, but it is not yet ready for publication at a high-standard venue without implementation and validation."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission63/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775829629,
+    "mdate": 1760632155578,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "HNQ4vaVrKE",
+    "forum": "4JsCVsg8Pj",
+    "replyto": "4JsCVsg8Pj",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a compelling critique of current evaluation methodologies for AI-driven structure-based drug design (SBDD), highlighting the neglect of the concept of \"druggability\" in popular benchmarks. The authors propose integrating continuous druggability scores into the CrossDocked2020 benchmark, introducing a druggability-weighted docking score and benchmark splits based on druggability levels. The paper is highly significant, well-written, and methodologically original, offering a constructive and actionable framework that could realign AI research with clinically meaningful outcomes. The authors are honest about the limitations of their proposal, notably the lack of experimental validation, but this is appropriate for a position paper. The work is thorough, nuanced, and forward-looking, and the reviewer strongly recommends acceptance, rating it as an outstanding and influential contribution to the field."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission63/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775829851,
+    "mdate": 1760632155309,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission63/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "4JsCVsg8Pj",
+    "forum": "4JsCVsg8Pj",
+    "content": {
+      "title": {
+        "value": "Rethinking Druggability in the Evaluation of AI-driven Structure-based Drug Design"
+      },
+      "keywords": {
+        "value": [
+          "AI for Drug Discovery",
+          "Druggability",
+          "Structure-based Drug Design",
+          "Evaluation"
+        ]
+      },
+      "abstract": {
+        "value": "Structure-based drug design harnesses three-dimensional structural information to guide ligand discovery and has seen rapid progress through machine learning. Yet the evaluation of AI-driven SBDD models has largely ignored **druggability**---the propensity of a binding pocket to accept a small, drug-like molecule. As a result, generative models may appear successful by creating compounds that dock well to pockets that are not feasible drug targets. We review SBDD benchmarks and druggability assessment methods, highlight pitfalls of current evaluation protocols, and propose a methodology to incorporate continuous druggability scores into the widely used CrossDocked2020 benchmark. By weighting generative scores according to pocket druggability and analysing performance across druggable and undruggable targets, our framework encourages models to focus on realistic therapeutic targets and reveals algorithmic biases."
+      },
+      "pdf": {
+        "value": "/pdf/5c27720ef6848536a81b9b3c5fc289b5b06ad3c6.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025rethinking,\ntitle={Rethinking Druggability in the Evaluation of {AI}-driven Structure-based Drug Design},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=4JsCVsg8Pj}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/43fcd4192628623ea24f19d93b605c14ea80bdba.pdf"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission63/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1756667393789,
+    "odate": 1758112145415,
+    "mdate": 1759960934338,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission63/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission63/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

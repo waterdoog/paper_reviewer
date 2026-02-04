@@ -1,0 +1,422 @@
+[
+  {
+    "id": "wU35L1GZud",
+    "forum": "wU35L1GZud",
+    "content": {
+      "title": {
+        "value": "Parameter vs. Test-Time Scaling in LLMs: FLOPs-Aware, Cross-Domain, Domain-Dependent, Pareto-Optimal Compute Allocation"
+      },
+      "authors": {
+        "value": [
+          "Bumjun Jung"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "~Bumjun_Jung2"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "Parameter scaling",
+          "Test-time scaling",
+          "Chain-of-Thought",
+          "Internal reasoning",
+          "External reasoning",
+          "Cost–accuracy trade-off",
+          "Large language models",
+          "Redundancy principle",
+          "FLOPs-aware analysis",
+          "Pareto frontier"
+        ]
+      },
+      "TLDR": {
+        "value": "cost-aware cross-domain study comparing parameter vs test-time scaling in LLMs; quantifies internal–external reasoning redundancy and provides cost-accuracy Pareto frontiers to guide economical high-performance deployment."
+      },
+      "abstract": {
+        "value": "We study how to allocate compute between model size and test-time scaling (inference-time reasoning) to achieve cost-effective accuracy in large language models. We introduce a controllable-reasoning experimental design that directly compares parameter scaling and test-time scaling on mathematical reasoning (GSM8K) and knowledge retrieval (PopQA), using rigorous FLOPs and cost accounting and Gemini’s thinking\\_budget to disentangle internal from external Chain-of-Thought (CoT) reasoning. Results show strong domain dependence. On GSM8K, internal reasoning alone reaches 95.36\\% accuracy at $\\$3.8\\times10^{-5}$ per sample, while CoT compensates for disabled internal reasoning to 95.60\\% at $\\$9.4\\times10^{-4}$, indicating near-perfect substitutability between internal and external mechanisms. On PopQA, external CoT often reduces both accuracy and cost-efficiency, with optimal settings consistently favoring direct generation over extended reasoning chains. We contribute: (1) the redundancy principle quantifying overlap between internal and external reasoning; (2) FLOPs-aware, domain-specific cost–accuracy Pareto frontiers that reveal distinct optimization strategies; and (3) actionable deployment policies that align test-time scaling with task characteristics and model architectures, providing evidence-based guidance for economical, high-performance LLM deployment."
+      },
+      "pdf": {
+        "value": "/pdf/05f546a560906d34ef6fd1e94a55e00ac86e3d1e.pdf"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\njung2025parameter,\ntitle={Parameter vs. Test-Time Scaling in {LLM}s: {FLOP}s-Aware, Cross-Domain, Domain-Dependent, Pareto-Optimal Compute Allocation},\nauthor={Bumjun Jung},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=wU35L1GZud}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/146b65f20a95483ab81e8b3d344b726da73974d7.zip"
+      },
+      "paperhash": {
+        "value": "jung|parameter_vs_testtime_scaling_in_llms_flopsaware_crossdomain_domaindependent_paretooptimal_compute_allocation"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission194/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757922561626,
+    "pdate": 1759960940197,
+    "odate": 1758112145415,
+    "mdate": 1760605585769,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission194/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission194/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "q1vmNdEbn2",
+    "forum": "wU35L1GZud",
+    "replyto": "wU35L1GZud",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper investigates the trade-off between parameter scaling and test-time scaling (external Chain-of-Thought, CoT) for LLMs under cost constraints, using GSM8K (math) and PopQA (knowledge QA). The authors use Gemini’s “internal reasoning” toggle (thinking_budget) to disentangle internal from explicit CoT, presenting cost-aware Pareto frontiers and proposing a “redundancy principle”: for strong models, internal and external reasoning are largely substitutable, and stacking them is inefficient. Key results show that on GSM8K, Gemini 2.5 Flash with internal reasoning and no CoT achieves 95.36% accuracy at low cost, while disabling internal reasoning drops accuracy but CoT can recover it at much higher cost. On PopQA, CoT generally reduces both accuracy and cost-efficiency.\n\nStrengths include clear problem framing, practical compute-aware analysis, compelling domain contrast, actionable “redundancy principle,” and good experimental hygiene. Weaknesses are the overstated “FLOPs-aware” claim (no actual FLOPs reported), reliance on a proprietary and underspecified “thinking_budget” control, surprising accuracy numbers needing validation, limited scope (only two text datasets, no retrieval baselines for PopQA), lack of statistical uncertainty, insufficient prompt/provider sensitivity analysis, a loosely defined redundancy principle, and minimal ethical/broader impacts discussion.\n\nClarity and organization are strong, but reproducibility is limited by closed APIs and undocumented controls, with missing error bars and ablations. Originality is moderate; the main contribution is systematic cost accounting and the Pareto-frontier lens, but the redundancy principle is not deeply novel. Practical significance is potentially high for practitioners, but guidance may overgeneralize due to narrow scope.\n\nActionable suggestions include: qualifying or replacing “FLOPs-aware” claims, validating the internal reasoning manipulation, adding uncertainty quantification, expanding domains and baselines (especially retrieval for knowledge QA), conducting prompt/CoT ablations, sanity-checking surprising accuracies, strengthening the redundancy principle definition, and expanding the broader impacts discussion.\n\nVerdict: An interesting and practically oriented study with clean presentation and valuable cost-frontier framing. However, the central identification strategy, lack of actual FLOPs, missing uncertainty quantification, narrow task coverage, and missing retrieval baselines for knowledge QA prevent acceptance at a top venue at this time. With the suggested revisions, this could become a solid, deployment-relevant empirical paper."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission194/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775842441,
+    "mdate": 1760632190538,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "pUtwKh7XgV",
+    "forum": "wU35L1GZud",
+    "replyto": "wU35L1GZud",
+    "content": {
+      "title": {
+        "value": "Interesting research idea, though some of the contents do not seem to justify the idea."
+      },
+      "summary": {
+        "value": "This paper studies how to allocate compute between model-size scaling and test-time scaling (inference-time reasoning) to achieve cost-effective accuracy in large language models. However, it is unclear whether the research question \"should compute be invested in scaling model parameters or in test-time scaling via enhanced reasoning at inference?\" is a solid question because scaling model parameter is a one-time investment cost whereas reasoning at inference is a many-time investment from which revenue is generated. Hence it does not seem natural to me to consider their tradeoff as they are not really comparable. \n\nMoreover, the paper claims using controllable-reasoning experimental design to compare parameter scaling and test-time scaling, however I am not sure whether this makes sense since controlling reasoning budget is not the same as changing parameter scales. To my knowledge reasoning time is controlled by a budget of tokens used, not by the number of transformers' parameters (the opening of the paper indicates that what they mean by \"parameter\" seems to be the model's size, not the number of tokens allowed in reasoning).\n\nThat said, I do found the tradeoff found between internal reasoning and external interesting. Also, the fact that reasoning tasks and knowledge tasks lead to different tradeoff is also interesting.    \n\nNot sure how to comprehend the sentence \"API pricing differentials  make the choice between parameter and test-time scaling central to practical deployment.\" \n\nI am not sure whether there is indeed redundancy between internal latent reasoning and external prompting since prompting is often viewed as a way to boot reasoning. In other words, they are complementary, not substitutes. \n\nThe paper is very nice structured, and clearly explained."
+      },
+      "strengths_and_weaknesses": {
+        "value": "See comments above."
+      },
+      "quality": {
+        "value": 3
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 2
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "Are the experiments with frontier models done by AI or by humans?"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "overall": {
+        "value": 3
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ethical_concerns": {
+        "value": "N/A"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission194/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759638717919,
+    "mdate": 1760632190658,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission194/Reviewer_Qzf9"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission194/Reviewer_Qzf9"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ZTcijokf6y",
+    "forum": "wU35L1GZud",
+    "replyto": "wU35L1GZud",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a rigorous and insightful empirical study on the trade-off between investing compute in model parameters (parameter scaling) versus inference-time reasoning (test-time scaling, specifically Chain-of-Thought). The authors conduct a FLOPs-aware (cost-aware) analysis across two distinct domains—mathematical reasoning (GSM8K) and knowledge retrieval (PopQA)—using state-of-the-art models from OpenAI and Google. The core contributions are: (1) the formulation and empirical validation of a \"redundancy principle,\" showing that internal (latent) and external (explicit) reasoning are largely substitutable; (2) the generation of domain-specific, cost-accuracy Pareto frontiers to guide optimal compute allocation; and (3) the derivation of actionable deployment policies. A key methodological innovation is the use of Gemini's `thinking_budget` to experimentally disentangle internal from external reasoning.\n\nStrengths:\n1. Significance and Impact: The research question is of paramount importance to both the academic community and industry practitioners. As LLM deployment becomes widespread, understanding the economics of compute allocation is critical. The paper's findings provide clear, evidence-based guidance that can lead to more efficient and cost-effective use of these powerful models. The derived \"deployment policies\" are immediately useful.\n\n2. Methodological Rigor and Originality: The experimental design is excellent. The choice of two contrasting tasks (GSM8K vs. PopQA) is perfectly suited to demonstrate the core hypothesis of domain dependence. The use of Gemini's `thinking_budget` to control for \"internal reasoning\" is a brilliant and novel technique that allows the authors to cleanly separate the effects of internal model capacity and external prompting strategies. This disentanglement is a significant methodological contribution that goes beyond prior work.\n\n3. Clarity and Presentation: The paper is exceptionally well-written and organized. The motivation is clearly articulated, the methodology is described in sufficient detail, and the results are presented through compelling tables and figures (the Pareto frontiers are particularly effective). The narrative is easy to follow, and the conclusions are drawn directly and logically from the evidence.\n\n4. Strong and Clear Results: The findings are strong and unambiguous. The stark contrast in the utility of CoT between mathematical reasoning and knowledge retrieval is convincingly demonstrated. The \"redundancy principle\"—that stacking external reasoning on a model with strong internal reasoning is economically inefficient—is a key takeaway, powerfully illustrated by the Gemini 2.5 Pro results on GSM8K (a 25x cost increase for a 0.23 point accuracy gain).\n\n5. Honesty about Limitations: The authors provide a thoughtful and comprehensive \"Limitations and Threats to Validity\" section. They are upfront about the reliance on closed-source APIs, the limited scope of datasets, and the sensitivity of their economic analysis to changing API prices. This transparency strengthens the credibility of the work.\n\nWeaknesses:\nThe paper is of very high quality, and any weaknesses are minor.\n\n1. Lack of Statistical Significance Testing: As the authors note in their checklist, the current draft reports point estimates for accuracy without confidence intervals or error bars. While the observed effects are large and likely significant, adding statistical validation (e.g., via bootstrapping) would make the claims even more robust. I trust the authors' commitment to add this in the final version.\n\n2. Generalizability: The study is confined to two (albeit well-chosen) domains and a specific set of models. While the principles are likely to generalize, the specific Pareto frontiers are, of course, specific to the tested configurations. The authors acknowledge this, but it is an inherent limitation. Future work extending this framework to more tasks (e.g., code generation, summarization) would be valuable.\n\n3. Dependence on Proprietary Features: The novel ability to disentangle reasoning types relies on a proprietary and poorly documented feature (`thinking_budget`). While this is a clever use of available tools, it somewhat limits the ability of other researchers to deeply probe or replicate the mechanism without access to similar controls in other models. This is not a fault of the authors but a reality of the current research landscape.\n\nOverall Recommendation:\nThis is an outstanding paper that I recommend for a strong accept. It is a model of high-quality, impactful empirical research in the field of large language models. The work is timely, the methodology is rigorous and novel, the results are clear and significant, and the conclusions provide immediate practical value. The concept of the \"redundancy principle\" and the framework of cost-accuracy Pareto analysis for compute allocation are important contributions that will likely influence future research and practice in the field. This paper sets a high bar for the inaugural Agents4Science conference."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission194/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775842711,
+    "mdate": 1760632190413,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ZQSVyNU6Ze",
+    "forum": "wU35L1GZud",
+    "replyto": "wU35L1GZud",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Compute metric mislabeling: The paper claims to be FLOPs-aware but reports only token-based and monetary costs; no FLOPs are measured or estimated.\n- Internal reasoning toggle validation: Gemini’s thinking_budget is assumed to disable internal reasoning, but there is no independent validation that it isolates only latent reasoning rather than altering other behaviors.\n- Statistical rigor: Single-seed runs, temperature=0.7, and no confidence intervals or significance tests; Pareto frontiers presented without uncertainty.\n- Parameter scaling claims with closed-source models: Parameter counts and architectures are unknown, weakening conclusions about parameter-scaling effects.\n- PopQA evaluation simplifications: EM with SQuAD-style normalization only; no alias mapping or comprehensive normalization, which may undercount correct answers.\n- Sampling details: \"Stratified random sample\" for PopQA is not operationally defined; reproducibility of the stratification is unclear.\n- Output length controls: The paper mentions fixed maximum generation lengths but does not specify the exact values; potential truncation effects and cost differences are not analyzed.\n- Overgeneralization of test-time scaling: Results are based on single-sample CoT; majority voting/self-consistency and other inference-scaling methods are not evaluated despite being part of the broader framing.\n- Answer extraction robustness: GSM8K fallback to the last number can select intermediate values if the model does not follow the \"####\" format; no audit of extraction errors is provided.\n- Latency measurement confounders: Latency is measured as API round-trip time, mixing network/service variability with computational latency, which complicates comparisons."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776864332,
+    "mdate": 1760639969175,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "B5jYvgWmR3",
+    "forum": "wU35L1GZud",
+    "replyto": "wU35L1GZud",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777878942,
+    "mdate": 1760639968493,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "80lwXecvQn",
+    "forum": "wU35L1GZud",
+    "replyto": "wU35L1GZud",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission194/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948905034,
+    "mdate": 1760632282473,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "0BLsD8gLBf",
+    "forum": "wU35L1GZud",
+    "replyto": "wU35L1GZud",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a comprehensive study comparing parameter scaling versus test-time scaling (inference-time reasoning) in large language models, with a focus on cost-effectiveness across different domains. The technical approach is sound, with a rigorous experimental design and clever use of Gemini's thinking_budget parameter to disentangle internal from external reasoning. The methodology is appropriate, with proper controls and transparent cost modeling. Results are well-supported, showing domain-dependent patterns: mathematical reasoning benefits from Chain-of-Thought prompting when internal reasoning is limited, while knowledge retrieval tasks favor direct parameter scaling. The redundancy principle is a valuable, empirically supported contribution. The paper is well-written, clearly organized, and the experimental setup is thoroughly described. The work addresses an important practical question in LLM deployment, with immediate implications for practitioners and future research. Novel contributions include the controllable internal reasoning design, systematic cross-domain comparison, and quantification of reasoning overlap. The methodology is well-documented and reproducible, though reliance on closed-source APIs is a limitation. The authors acknowledge key limitations, including limited domain coverage, lack of statistical significance testing, and no broader impact discussion. Strengths include the novel experimental design, rigorous cost-effectiveness analysis, clear findings, strong empirical validation, and comprehensive methodology. Weaknesses include limited domain coverage, lack of statistical testing, no broader impact discussion, dependence on proprietary APIs, and single random seed usage. Overall, the paper makes solid contributions to understanding the parameter vs. test-time scaling trade-off, with well-supported insights and practical guidance for LLM deployment, despite some limitations in scope and methodology."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission194/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775842934,
+    "mdate": 1760632190229,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission194/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

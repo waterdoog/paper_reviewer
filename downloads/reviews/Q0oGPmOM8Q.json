@@ -1,0 +1,338 @@
+[
+  {
+    "id": "oaPcycof1P",
+    "forum": "Q0oGPmOM8Q",
+    "replyto": "Q0oGPmOM8Q",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Core iterative mechanism (graph expansion, multi-round retrieval) is disabled in the validation, so the main boosting/FLARE-inspired claim is not empirically tested (Sections 4.1–4.5; Figure 1 on page 4).\n- Extremely small experiment (n=5 queries) with no repetitions, error bars, or significance analysis; no baselines or ablations (Table 1, page 6).\n- New metrics (Gap-FLARE, Diversity-FLARE) are introduced but not formally defined and not reported in the results table despite being listed as computed (Sections 3.5 and 4.2 vs. Table 1).\n- Retrieval fusion method (BM25 + dense embeddings) is under-specified (no description of the fusion algorithm, weights, or tuning).\n- Relevance labeling and nDCG details are unclear: use of 'citation types as proxy labels' is not operationalized; Table 1 shows nDCG@5 = 0.0 across all queries despite one semantically partial match claimed in text.\n- Key implementation details (embedding model, tokenization, BM25 parameters, indexing pipeline, compute resources) are missing.\n- A placeholder citation remains in Section 3.3 (\"[? ?]\") indicating incomplete referencing for knowledge graph construction.\n- Evaluator decisions always return 'expand', but expansion is disabled; thus the evaluator has no measurable effect on retrieval outcomes.\n- Reproducibility is deferred to an external repository; the paper itself lacks sufficient in-text details to reproduce results."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776701984,
+    "mdate": 1760640143447,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "gKGxWoJBse",
+    "forum": "Q0oGPmOM8Q",
+    "replyto": "Q0oGPmOM8Q",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces a novel validation framework for Retrieval-Augmented Generation (RAG) systems, focusing on an explicit validation loop to assess the adequacy of retrieved evidence. The framework is inspired by boosting and FLARE, and the authors conduct a small-scale pilot study to demonstrate feasibility. A unique aspect is the paper's meta-experimental nature: it was largely generated through human-AI collaboration, with full transparency into the process.\n\nThe review finds the conceptual framework sound and well-motivated, with a clear distinction between validation of retrieval adequacy and ranking. However, the empirical contribution is very weak: the pilot study is too limited to provide meaningful evidence, serving only as a trivial feasibility check. The paper is clearly written, well-organized, and highly original both in its technical framing and its meta-experimental transparency. The authors provide code, data, and chat history for reproducibility, but the scientific claims are not substantiated by rigorous results.\n\nThe paper's significance is higher in the context of the Agents4Science conference, as it serves as a transparent case study of AI-driven research. The authors are exemplary in their discussion of limitations and ethics. However, the lack of robust experimental validation means the paper is not ready for acceptance at a top-tier venue. The reviewer recommends a borderline reject, encouraging the authors to develop the work further with a full iterative implementation, larger-scale experiments, quantitative analysis, and demonstration of downstream improvements. The originality, conceptual framing, and transparency are commended, but the work is not yet a finished research contribution."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission170/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775398873,
+    "mdate": 1760632186151,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "bLXQMMISdQ",
+    "forum": "Q0oGPmOM8Q",
+    "replyto": "Q0oGPmOM8Q",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Towards active retrieval for language models by Gautier Izacard et al.\n- A survey on retrieval-augmented generation by Luyu Gao et al.\n- Retrieval-augmented generation for knowledge-intensive dialogue by Kurt Shuster, Aleksandra Piktus, et al."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777789622,
+    "mdate": 1760640142660,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ZdpaTON3nf",
+    "forum": "Q0oGPmOM8Q",
+    "replyto": "Q0oGPmOM8Q",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes a validation framework for Retrieval-Augmented Generation (RAG) that combines boosting-inspired residual tracking with FLARE-style expansion mechanisms. While the core idea has merit, the execution and evaluation are severely limited.\n\nQuality: The paper is technically unsound in several critical ways. The experimental validation is extremely limited (only 5 queries, no statistical significance testing, all exact string matching results are zero). The methodology lacks proper baselines, comparative evaluation, or rigorous experimental design. The authors acknowledge that their approach \"did not provide evidence that this approach delivers clear added value\" in their own checklist response. The connection between boosting principles and RAG validation is conceptually interesting but poorly executed and validated.\n\nClarity: The paper is reasonably well-written and organized. However, the methodology section lacks sufficient technical detail for reproduction. The relationship between the proposed framework and existing work like Self-RAG and CRA is not clearly differentiated. The authors conflate proof-of-concept feasibility with actual validation of their approach's effectiveness.\n\nSignificance: The impact is minimal. The paper addresses an important problem (RAG validation), but provides no evidence that their approach works better than existing methods. The experimental results show zero coverage on exact matching and only subjective assessment of semantic adequacy. The contribution is primarily conceptual without empirical validation of effectiveness.\n\nOriginality: While combining boosting concepts with RAG validation is novel, the execution is superficial. The paper doesn't adequately distinguish itself from existing corrective retrieval approaches (CRA, Self-RAG) beyond terminology. The use of Citavi as a testbed is reasonable but doesn't compensate for the weak experimental design.\n\nReproducibility: Despite providing code and data, the experimental setup is not reproducible in a meaningful way. The validation is too limited and subjective to be properly replicated. The authors acknowledge this limitation, stating reproducibility \"is not ensured within the paper itself.\"\n\nEthics and Limitations: The authors are transparent about limitations and the AI-assisted nature of the work. However, they fail to adequately address the fundamental weakness that their approach shows no empirical benefit over existing methods.\n\nCitations and Related Work: The related work section is comprehensive and appropriate citations are provided. However, the distinction from existing work is not sufficiently established.\n\nThe paper reads more like an initial idea exploration than a complete scientific contribution. The experimental validation is inadequate, showing no measurable improvements and relying on subjective evaluation. The authors themselves acknowledge in their checklist that the results \"did not provide evidence that this approach delivers clear added value\" and rate their work as equivalent to \"a satisfactory bachelor's thesis grade 3.0.\" While transparency about limitations is commendable, it cannot compensate for fundamental methodological flaws."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission170/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775399053,
+    "mdate": 1760632185950,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "XGlz9DnqUZ",
+    "forum": "Q0oGPmOM8Q",
+    "replyto": "Q0oGPmOM8Q",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission170/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950106419,
+    "mdate": 1760632280690,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Q0oGPmOM8Q",
+    "forum": "Q0oGPmOM8Q",
+    "content": {
+      "title": {
+        "value": "Boosting-Inspired Validation of Retrieval-Augmented Generation in Structured Scientific Knowledge Bases"
+      },
+      "keywords": {
+        "value": [
+          "proof-of-concept",
+          "human–AI collaboration",
+          "Large Language Models"
+        ]
+      },
+      "TLDR": {
+        "value": "A proof-of-concept study in which a human researcher supervised ChatGPT (GPT-4/5) in creating a scientific paper — resulting in the paper itself."
+      },
+      "abstract": {
+        "value": "Large Language Models (LLMs) enhanced with Retrieval-Augmented Generation (RAG) achieve remarkable results, yet they often hallucinate or provide incomplete answers. This poses critical challenges in scientific knowledge domains where factuality and precision are essential. In this paper, we propose a boosting-inspired evaluation framework for RAG that combines iterative error reduction with forward-looking retrieval mechanisms from FLARE. Unlike existing work that primarily optimizes retrieval or ranking, our focus is on the validation loop itself. We validate the framework in a controlled scenario using Citavi, a structured literature management system, serving as a reproducible environment for testing. Results indicate that strict substring matching underestimates semantic correctness, while boosting-inspired metrics highlight when expansion is necessary. This proof-of-concept demonstrates technical feasibility and motivates iterative, semantic validation for future scientific assistants."
+      },
+      "pdf": {
+        "value": "/pdf/e618e029a1739703aeb266ae49bcc59fb2c408f0.pdf"
+      },
+      "supplementary_material": {
+        "value": "/attachment/6d696e0268e47a6e37465e7ef51ed2d58836f7e1.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025boostinginspired,\ntitle={Boosting-Inspired Validation of Retrieval-Augmented Generation in Structured Scientific Knowledge Bases},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=Q0oGPmOM8Q}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757885597943,
+    "odate": 1758112145415,
+    "mdate": 1759960939375,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission170/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission170/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "PTDUZc0nRj",
+    "forum": "Q0oGPmOM8Q",
+    "replyto": "Q0oGPmOM8Q",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper proposes a boosting-inspired validation framework for Retrieval-Augmented Generation (RAG), using FLARE-style expansion to decide when to retrieve more evidence. The approach is conceptually motivated and the workflow is clearly illustrated, but the technical details are underdeveloped: key metrics (Gap-FLARE, Diversity-FLARE) are not formally defined, retrieval and evaluation details are missing, and the main iterative validation loop is not empirically tested. Experimental results are minimal (five queries, all-zero Coverage@5 and nDCG@5), with only a single manual semantic match as a positive signal. The paper is well-structured and the motivation is clear, but the lack of formal definitions, missing technical details, and incomplete citations undermine reproducibility and credibility. The contribution is mainly conceptual, with no demonstrated performance benefit or comparison to strong baselines. Limitations are acknowledged, but societal impacts and failure modes are not discussed. The recommendation is to reject, as the submission does not meet the bar for acceptance in its current form."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission170/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775398617,
+    "mdate": 1760632186360,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission170/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

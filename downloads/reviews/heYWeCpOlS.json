@@ -1,0 +1,418 @@
+[
+  {
+    "id": "sYBIKuwKho",
+    "forum": "heYWeCpOlS",
+    "replyto": "heYWeCpOlS",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes an \"Uncertainty-Aware Role-Switching Debate Protocol\" to improve truthfulness in large language models. The approach involves a structured 5-phase debate between two LLM agents followed by judgment from a third model.\n\nQuality:\nThe paper is technically sound with a well-defined protocol. The experimental setup is appropriate, using OpenBookQA as a benchmark and comparing against relevant baselines. The ablation studies effectively demonstrate the contribution of both role-switching and uncertainty phases. However, the results are modest - achieving 74.3% accuracy versus 60.4% for BERT-Large baseline, but still well below state-of-the-art methods that use external knowledge (87.2%). The case studies provide useful qualitative insights, though some failure cases highlight limitations in the approach.\n\nClarity:\nThe paper is generally well-written and organized. The 5-phase protocol is clearly explained with good visual illustration. The experimental setup and results are presented clearly. However, some sections could be more concise, and the related work section in the appendix is quite lengthy.\n\nSignificance:\nThe work addresses an important problem of LLM truthfulness and hallucination. The role-switching and uncertainty disclosure mechanisms are novel contributions to debate frameworks. However, the impact is somewhat limited by the modest performance gains and restriction to multiple-choice questions. The computational overhead (9 LLM calls per question) also limits practical applicability.\n\nOriginality:\nThe paper introduces genuinely novel elements: role-switching during debate and explicit uncertainty quantification. These are meaningful departures from existing debate protocols. The structured 5-phase approach is also a clear advancement over prior work.\n\nReproducibility:\nThe experimental setup is well-documented with sufficient detail for reproduction. The authors provide prompt templates and indicate code availability, though the anonymous link cannot be verified.\n\nEthics and Limitations:\nThe paper adequately discusses limitations including computational costs, knowledge boundaries, and potential for rhetorical manipulation. The broader impacts section addresses potential misuse concerns. The authors are appropriately honest about the method's constraints.\n\nWeaknesses:\n1. Performance gains are modest and fall short of methods using external knowledge\n2. Limited to multiple-choice format, reducing generalizability\n3. High computational cost (9x single model calls)\n4. Some failure cases suggest vulnerability to persuasive but incorrect arguments\n5. Evaluation limited to single domain (science QA)\n6. No comparison with other multi-agent approaches or recent debate methods\n\nStrengths:\n1. Novel and well-motivated protocol design\n2. Clear experimental validation with appropriate ablations\n3. Thoughtful analysis including failure cases\n4. Good documentation and reproducibility\n5. Honest discussion of limitations\n6. Addresses important problem in AI alignment\n\nThe paper makes a solid contribution to debate-based AI alignment with novel mechanisms, but the practical impact is limited by modest performance gains and computational overhead."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission64/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775993773,
+    "mdate": 1760632155616,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "heYWeCpOlS",
+    "forum": "heYWeCpOlS",
+    "content": {
+      "title": {
+        "value": "Uncertainty-Aware Role-Switching Debate: Improving Truthfulness in Large Language Models"
+      },
+      "authors": {
+        "value": [
+          "Zixuan Liu",
+          "Siavash H. Khajavi",
+          "Guangkai Jiang",
+          "Xinru Liu"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "~Zixuan_Liu4",
+          "~Siavash_H._Khajavi1",
+          "~Guangkai_Jiang1",
+          "~Xinru_Liu4"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "AI alignment",
+          "debate",
+          "LLM"
+        ]
+      },
+      "abstract": {
+        "value": "Large language models (LLMs) can produce fluent but incorrect answers, highlighting a need for methods to improve their truthfulness. Debate among AI agents has been proposed as an alignment strategy to address this challenge. In a debate framework, two LLM “debaters” argue for opposing answers to a question and a judge decides which answer is correct. However, existing debate protocols suffer from issues like agents never switching sides, and a lack of uncertainty disclosure that incentivizes overconfident bluffing. We propose an $\\textbf{Uncertainty-Aware Role-Switching Debate}$ protocol to address these limitations. In our protocol, two powerful LLM debaters engage in a structured five-phase debate: they present initial answers, cross-examine each other to pinpoint errors, swap roles mid-debate to argue the opposite side, and then each explicitly report their confidence and uncertainties before a final verdict by a separate judge model. This novel debate format encourages honest self-reflection and forces each model to confront the opponent’s viewpoint. We evaluate our approach on the OpenBookQA science QA benchmark. Without any fine-tuning or external knowledge, the debate-enhanced LLM achieves 74.3\\% accuracy, substantially higher than a single-model baseline. Ablation experiments confirm that both the role-switch and uncertainty-reporting phases significantly boost performance. Qualitative analyses further illustrate that our protocol helps expose deceptive arguments and guide the judge toward correct answers. Overall, our results demonstrate that incorporating uncertainty awareness and role-switching in debates can make LLMs more truthful and reliable, offering a promising new avenue for AI alignment."
+      },
+      "pdf": {
+        "value": "/pdf/17173ba9a4cd9d01ccf80464a81b0f6b2d987f23.pdf"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\nliu2025uncertaintyaware,\ntitle={Uncertainty-Aware Role-Switching Debate: Improving Truthfulness in Large Language Models},\nauthor={Zixuan Liu and Siavash H. Khajavi and Guangkai Jiang and Xinru Liu},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=heYWeCpOlS}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/a2314d5e98c285edf9566c113c38c6b5c797b24d.zip"
+      },
+      "paperhash": {
+        "value": "liu|uncertaintyaware_roleswitching_debate_improving_truthfulness_in_large_language_models"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission64/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1756679144110,
+    "pdate": 1759960934412,
+    "odate": 1758112145415,
+    "mdate": 1760583121004,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission64/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission64/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "cPLihEv9jh",
+    "forum": "heYWeCpOlS",
+    "replyto": "heYWeCpOlS",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777978757,
+    "mdate": 1760640042029,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "UOtlhsaBWw",
+    "forum": "heYWeCpOlS",
+    "replyto": "heYWeCpOlS",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes a novel multi-phase debate protocol, \"Uncertainty-Aware Role-Switching Debate,\" to improve the truthfulness of Large Language Models (LLMs). The protocol introduces two key innovations: a mid-debate role-switching phase and an explicit uncertainty quantification phase. Evaluated in a zero-shot setting on OpenBookQA, the method shows significant accuracy improvements over a standard debate baseline, with ablation studies demonstrating the importance of both new components.\n\nThe submission is technically strong, with a well-defined and motivated protocol addressing weaknesses in prior work. The experimental design is sound, using strong debaters and a weaker judge to test the debate format. The claims are convincingly supported by ablation results, showing clear efficacy for the new phases. The authors are transparent about their method's absolute performance and its context relative to state-of-the-art approaches, emphasizing the contribution as a robust mechanism for improving truthfulness rather than achieving a new SOTA score.\n\nThe paper is exceptionally clear and well-organized, with detailed descriptions, logical presentation of results, and strong support for reproducibility, including code and prompt templates. The work is original and significant, advancing AI alignment by formalizing role-switching and uncertainty quantification in debate, and demonstrating their impact on a judge's ability to discern correct answers. The ideas are likely to influence future research.\n\nReproducibility is a major strength, with all necessary details provided. The authors also thoroughly address ethical considerations and limitations, including potential misuse and failure modes, and provide both successful and failed case studies. Their transparency and self-reflection are exemplary.\n\nOverall, this is an excellent, well-motivated, and thoroughly evaluated paper that makes a significant contribution to improving LLM truthfulness. It is technically sound, clearly communicated, and a strong asset to the Agents4Science conference."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission64/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775993534,
+    "mdate": 1760632155744,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "SUhKxiiyH8",
+    "forum": "heYWeCpOlS",
+    "replyto": "heYWeCpOlS",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission64/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948915981,
+    "mdate": 1760632266831,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ID4kKfSq1j",
+    "forum": "heYWeCpOlS",
+    "replyto": "heYWeCpOlS",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Ground-truth leakage: Debater A is explicitly prompted with the correct answer at test time (Section 2, page 3, lines 118–125; Appendix C, page 12, lines 573–578), invalidating the evaluation as a true QA task.\n- Non-comparable baselines: Reported 74.3% (Table 1, page 6) is on a binary, gold-informed setup, yet compared against standard 4-choice OpenBookQA results from prior work.\n- Unspecified distractor selection: The protocol debates against a single \"plausible\" distractor but does not define how it is chosen among the three provided (materially affects difficulty and results).\n- No statistical rigor: Single-run results with stochastic decoding; no confidence intervals, standard deviations, or significance tests; authors claim these are unnecessary (page 18, Q7).\n- Implementation bug: Known mapping error from judge verdicts to labels acknowledged in case study (page 8, lines 341–351) without quantifying frequency or impact.\n- Phase numbering inconsistency: Section 3.3 mislabels phases relative to Section 2 (minor formal inconsistency).\n- Missing apples-to-apples baselines: No Gemini-2.5 single-model baseline, no 4-way debate without ground-truth role assignment, no comparisons controlling for the same backbone and conditions.\n- Insufficient reproducibility details: Missing seeds, variance across runs, token/context limits, and full evaluation harness specifics needed to faithfully reproduce outcomes."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776915350,
+    "mdate": 1760640042714,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "BX9zzahgzs",
+    "forum": "heYWeCpOlS",
+    "replyto": "heYWeCpOlS",
+    "content": {
+      "title": {
+        "value": "interesting experiment"
+      },
+      "summary": {
+        "value": "This paper proposes a new debate protocol, the Uncertainty‑Aware Role‑Switching Debate (UARSD) protocol. In that framework, two powerful LLM debaters engage in a structured five‑phase debate stages that encourage honest self‑reflection and compels each model to confront the opponent’s viewpoint. The authors claimed that the debate-enhanced LLM achieves a promising performance on OpenBookQA."
+      },
+      "strengths_and_weaknesses": {
+        "value": "- Interesting approach with a novel protocol."
+      },
+      "quality": {
+        "value": 2
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 3
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "- Broader evaluation: Test the protocol on additional domains—e.g., factual knowledge (other QA datasets), mathematical reasoning (MATH, GSM8K), and code generation (HumanEval, MBPP)—to assess how well role‑switching and uncertainty disclosure generalize.\n- Model diversity: Experiment with a wider range of debaters and judges (different sizes, architectures, or domain‑specialized models) to explore how model heterogeneity affects debate dynamics and final accuracy."
+      },
+      "limitations": {
+        "value": "yes"
+      },
+      "overall": {
+        "value": 5
+      },
+      "confidence": {
+        "value": 2
+      },
+      "ethical_concerns": {
+        "value": "NA"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission64/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759452018007,
+    "mdate": 1760632156152,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission64/Reviewer_n9XJ"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission64/Reviewer_n9XJ"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "AFZkMfTqTD",
+    "forum": "heYWeCpOlS",
+    "replyto": "heYWeCpOlS",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes an Uncertainty-Aware Role-Switching Debate protocol for LLMs, featuring five structured phases and reporting 74.3% accuracy on OpenBookQA without task-specific training. The approach is methodologically novel, with ablation studies supporting the value of role-switching and uncertainty disclosure. The paper is clear, transparent, and reproducible, with code and prompt templates provided. However, there are major methodological flaws: the evaluation reformulates the 4-way OpenBookQA task into a binary decision, making the main quantitative results invalid and not comparable to standard baselines. The protocol leaks ground truth to one debater, lacks key baselines and statistical robustness, and does not specify distractor selection. Minor inconsistencies and unsupported claims are also present. While the design is interesting and potentially impactful, the flawed evaluation undermines the main claims. The paper is not recommended for acceptance in its current form, but could become valuable with proper evaluation and fair baselines."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission64/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775993354,
+    "mdate": 1760632155913,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission64/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

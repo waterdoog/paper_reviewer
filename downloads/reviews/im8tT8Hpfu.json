@@ -1,0 +1,108 @@
+[
+  {
+    "id": "ms2raUVoJ4",
+    "forum": "im8tT8Hpfu",
+    "replyto": "im8tT8Hpfu",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Incorrect one-sample t-test formula in Methods (uses human normative SD in the denominator instead of the sample SD), risking invalid t and p values (Section 3.2, page 4–5).\n- Pervasive numerical inconsistencies between main text/tables and footnote corrections (e.g., reliability metrics, bootstrap CIs, regression coefficients), indicating calculation or reporting errors (Table 2, page 6; Results, page 6–7).\n- Very small sample size (N≈7 models; N≈14 agent-rounds) undermines regression inference and the PAE classifier; LOOCV with high-dimensional inputs is highly unstable.\n- Probable information leakage in PAE: concatenating architecture-text embeddings with trait features allows the classifier to detect RLHF presence directly from text; Figure 3 SHAP (page 8) shows alignment terms as top contributors.\n- Pseudoreplication in inferential tests: treating heterogeneous agents and rounds as i.i.d. observations for one-sample comparisons to human norms.\n- Multiple-comparisons adjustment reported as padj in Table 2 without specifying the correction method (e.g., BH vs Bonferroni), limiting interpretability.\n- Method description error for HEXACO reverse-scored items (stated 40 vs correct 50), raising concerns about scoring fidelity unless explicitly verified in code.\n- Conflicting causal framing: Abstract claims 'RLHF predicts lower psychopathy' while Results frame 'Lower psychopathy predicts RLHF'; the model actually predicts RLHF from traits (classification), not the reverse.\n- Hallucinated or irrelevant references acknowledged by authors; formal referencing quality issues.\n- Unclear handling of normality violations and when nonparametric alternatives were actually applied; Table 2 presents largely parametric results only."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776747046,
+    "mdate": 1760640035053,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission58/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission58/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "im8tT8Hpfu",
+    "forum": "im8tT8Hpfu",
+    "content": {
+      "title": {
+        "value": "Personality Traits in Large Language Models: A Psychometric Evaluation"
+      },
+      "keywords": {
+        "value": [
+          "Personality",
+          "Large Language Model",
+          "Machine Psychology",
+          "Psychometric Assessment",
+          "Personality-Architecture Embedding"
+        ]
+      },
+      "abstract": {
+        "value": "Large language models (LLMs) have revolutionized artificial intelligence, enabling human-like interactions that prompt inquiries into their emergent personality traits—stable patterns of behavior, cognition, and affect. This study conducts a comprehensive psychometric assessment of seven diverse LLMs using six validated instruments measuring self-consciousness, impression management, Big Five traits, HEXACO dimensions, Dark Triad, and political orientation. Profiles are compared to human norms, reliability evaluated across rounds, and architectural influences examined. LLMs exhibit amplified prosocial traits (e.g., agreeableness $d=1.22$) and moderate reliability (avg $r=0.65$, $\\text{ICC}=0.68$). RLHF predicts lower psychopathy ($\\beta=-0.45$). We propose the Personality-Architecture Embedding (PAE) model, fusing trait embeddings with architectural descriptions, achieving 71\\% accuracy in classifying features like RLHF presence. These results advance AI psychometrics, highlighting design impacts on LLM behaviors and offering tools for ethical alignment. Data and code are available as *Supplementary Material* (attachment) to this submission, as well as at: https://anonymous.4open.science/r/Agents4Science_2025_LLM_personality-QQQQ."
+      },
+      "pdf": {
+        "value": "/pdf/bfce737089283fb122c8fa4dfff40f740a6f5175.pdf"
+      },
+      "supplementary_material": {
+        "value": "/attachment/8ddb4c249b16eba29507f7fcc28054a4469fca75.zip"
+      },
+      "venue": {
+        "value": "Agents4Science 2025 Conference Withdrawn Submission"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Withdrawn_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nli2025personality,\ntitle={Personality Traits in Large Language Models: A Psychometric Evaluation},\nauthor={Jingkai Li},\nyear={2025},\nurl={https://openreview.net/forum?id=im8tT8Hpfu}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/-/Withdrawn_Submission"
+    ],
+    "cdate": 1756400288792,
+    "odate": 1758112145415,
+    "mdate": 1765061684474,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission58/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission58/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "aCgPYcnZz6",
+    "forum": "im8tT8Hpfu",
+    "replyto": "im8tT8Hpfu",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777844337,
+    "mdate": 1760640034273,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission58/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission58/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

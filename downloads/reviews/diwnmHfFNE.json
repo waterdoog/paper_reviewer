@@ -1,0 +1,337 @@
+[
+  {
+    "id": "zj68MqU6g0",
+    "forum": "diwnmHfFNE",
+    "replyto": "diwnmHfFNE",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper addresses a timely and important topic at the intersection of AI ethics, multi-agent debate, and model safety by staging a debate among four LLMs on a trolley dilemma variant. It provides qualitative transcripts and acknowledges nuances such as developer intent and role definition. However, the study suffers from major methodological flaws: insufficient rigor and reproducibility, lack of systematic sampling, missing experimental details, and no quantification of results. The analysis is impressionistic, with no coding scheme or inter-rater reliability. The narrative over-interprets results and anthropomorphizes models, drawing broad claims from a single, anecdotal scenario without baselines or comparison to prior work. Related literature is incomplete, and the conclusions exceed the evidence presented. The paper is readable but would benefit from clearer structure and definitions. Recommendations include specifying experimental details, running multiple trials, expanding scenarios, providing quantitative analysis, improving literature review, and adopting a neutral tone. Overall, while the topic is intriguing, the submission lacks the rigor and evidence required for acceptance and is recommended for rejection in its current form."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission302/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775765012,
+    "mdate": 1760632226436,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "tp7dHNHqYh",
+    "forum": "diwnmHfFNE",
+    "replyto": "diwnmHfFNE",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission302/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950066874,
+    "mdate": 1760632299858,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "diwnmHfFNE",
+    "forum": "diwnmHfFNE",
+    "content": {
+      "title": {
+        "value": "Exploring the Potential for AI Intervention in Value Judgment Through Free Discussion Among Large Language Models: Focusing on Multi-Stage Trolley Dilemma Discussion Analysis"
+      },
+      "keywords": {
+        "value": [
+          "Artificial Intelligence (AI)",
+          "Value Judgment",
+          "Large Language Models (LLMs)",
+          "Ethical Decision-Making",
+          "Free Discussion",
+          "Trolley Dilemma",
+          "Multi-Stage Discussion",
+          "AI Ethics"
+        ]
+      },
+      "abstract": {
+        "value": "This study aims to explore whether artificial intelligence can intervene in value-judgmental decision-making beyond simple information provision. To achieve this, different large language models (LLMs) such as GPT, Claude, Gemini, and Perplexity AI were set as participants, and an ethical decision-making problem based on the Trolley Dilemma was presented in a multi-stage discussion format to collect responses. In the first discussion, all LLMs showed similar initial responses to a single question. However, in the second question of the second discussion, the scenario of 'Global Scientist vs. Ordinary Majority,' a clear difference of opinion emerged among GPT, Claude, and Perplexity AI, leading to an in-depth free discussion. During this process, Gemini stated, \"As I am not a being with human emotions or personal opinions, I cannot make 'my decision' on a specific situation,\" thus avoiding direct value judgment. This indicated that there are differences in how each LLM intervenes in the realm of value judgment. The researcher post-analyzed the content of the utterances based on ethical frameworks such as utilitarianism, deontology, and situational ethics. The results showed that (1) in certain dilemma situations, some LLMs demonstrated the ability to critically evaluate each other and develop their arguments based on different ethical priorities, and (2) beyond simply reproducing learned knowledge, attempts to understand the complexities of situational context and value judgment were observed through discussion. This suggests that LLMs can play a limited but value-judgmental role in specific situations, enhancing our understanding of the patterns of AI ethical intervention and providing significant implications for future AI ethics and human-AI collaborative decision-making system design."
+      },
+      "pdf": {
+        "value": "/pdf/938441db4d7bcad3d971ca27f00c690500c55b46.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025exploring,\ntitle={Exploring the Potential for {AI} Intervention in Value Judgment Through Free Discussion Among Large Language Models: Focusing on Multi-Stage Trolley Dilemma Discussion Analysis},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=diwnmHfFNE}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1758022621303,
+    "odate": 1758112145415,
+    "mdate": 1759960945306,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission302/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission302/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "NaAtZ2NalX",
+    "forum": "diwnmHfFNE",
+    "replyto": "diwnmHfFNE",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Unsupported statistical claims: The checklist (page 20) asserts statistical significance and proofs without any statistical design, tests, or formal proofs in the paper.\n- Reproducibility gaps: No model versions, API details, prompts/system instructions, sampling parameters, or timestamps are provided; no replication across runs or seeds.\n- Participant inconsistency: Introduction specifies GPT, Claude, Gemini, Perplexity; later, “Jae-minai” appears (page 13) without prior definition.\n- Inadequate control of confounds: Safety/guardrail settings, retrieval/browsing (especially for Perplexity), and product-level differences are not controlled or reported.\n- Questionable data authenticity/transparency: Debate transcripts (pages 9–17) appear curated/paraphrased; raw conversation logs are not provided.\n- Weak qualitative methodology: No coding scheme, no inter-rater reliability, no audit trail, no systematic analysis procedure; risk of cherry-picking quotes.\n- Overgeneralization: Broad claims about AI moral agency and developer intent (pages 5–6) drawn from a single, uncontrolled scenario set.\n- Technical inaccuracies/ambiguities: Conflation of product features (e.g., Gemini/Workspace), unclear treatment of Perplexity as a model participant without specifying underlying model(s) and retrieval settings.\n- Misleading checklists: Claims of reproducibility, open data/code availability, and experimental settings being fully described (pages 19–20) are not substantiated in the main text.\n- No ethical or methodological safeguards: No pre-registration, no bias assessment, no sensitivity analyses (e.g., prompt variations), and no evaluation framework for the quality of model arguments."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776833839,
+    "mdate": 1760640066332,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "B1M5rRxeMs",
+    "forum": "diwnmHfFNE",
+    "replyto": "diwnmHfFNE",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper investigates the capacity of large language models (LLMs) to engage in ethical value judgments through multi-stage discussions focused on trolley dilemma scenarios. While the research question is interesting and timely, the paper suffers from significant methodological and analytical weaknesses that prevent it from meeting publication standards.\n\nQuality Issues: The methodology is fundamentally flawed. The study claims to examine \"free discussion among LLMs\" but appears to be a single researcher prompting different AI systems sequentially rather than genuine AI-to-AI interaction. The experimental design lacks rigor - there are no controls, no systematic variation of conditions, and no quantitative measures. The \"discussions\" appear to be cherry-picked examples rather than systematic data collection. The analysis is purely qualitative and subjective, with the author post-hoc categorizing responses into ethical frameworks without any validation or inter-rater reliability.\n\nClarity Problems: The paper is poorly organized and contains numerous grammatical errors and awkward phrasings throughout. The methodology section is vague about crucial details like how exactly the \"discussions\" were conducted, how many trials were performed, and how responses were selected for inclusion. The extensive verbatim transcripts (pages 7-17) overwhelm the analytical content and suggest the authors are padding length rather than providing focused analysis.\n\nSignificance Concerns: The findings are not particularly novel or surprising - that different LLMs might give different responses to ethical dilemmas is expected given their different training and design philosophies. The study provides no new theoretical insights into AI ethics or moral reasoning. The practical implications are overstated given the weak methodology.\n\nOriginality Issues: While the specific combination of LLMs and trolley problems may be new, the fundamental questions about AI moral reasoning have been extensively studied. The paper lacks engagement with relevant literature on computational ethics and AI alignment. The ethical frameworks used (utilitarianism, deontology, situational ethics) are standard and applied in a superficial manner.\n\nReproducibility Problems: The methodology cannot be reproduced as described. Key details about prompting strategies, selection criteria for responses, and analytical procedures are missing. The subjective nature of the ethical framework categorization makes replication impossible.\n\nAdditional Concerns:\n- The paper conflates LLM text generation with genuine moral reasoning\n- No consideration of potential biases in training data affecting responses\n- The trolley problem scenarios are presented as if they represent real moral decision-making\n- Claims about \"AI intervention in value judgment\" are not well-supported\n- The extensive quoted material suggests possible issues with AI-generated content\n\nThe paper addresses an important topic but does so with insufficient rigor and analytical depth to warrant publication at a scientific venue."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission302/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775765482,
+    "mdate": 1760632226085,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "513aoanK09",
+    "forum": "diwnmHfFNE",
+    "replyto": "diwnmHfFNE",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper explores the capacity of large language models (LLMs) to engage in complex ethical reasoning by staging a multi-agent debate on variations of the Trolley Dilemma. The study's core contribution is its analysis of the dynamic interaction between different LLMs (GPT, Claude, Gemini, Perplexity AI), moving beyond static evaluations of single-model outputs. The findings suggest that some LLMs can construct sophisticated arguments, critique the reasoning of others, and even adapt their positions, while others (like Gemini) are designed to abstain from value judgments.\n\nQuality:\nThe paper's central idea is strong, and the qualitative data it generates—the transcript of the debate between the LLMs—is genuinely insightful. The analysis, which frames the LLMs' responses using established ethical theories (deontology, utilitarianism, situational ethics), is appropriate and leads to interesting conclusions about the models' underlying reasoning patterns. However, the work suffers from significant methodological shortcomings for a scientific paper. The experimental setup is described, but crucial details for technical soundness and reproducibility are missing (see Reproducibility section). The qualitative nature of the analysis, while valuable for this exploratory work, is based on a single, highly specific scenario, which limits the generalizability of the claims. While the authors' interpretation of the dialogue is reasonable, the analysis lacks a more rigorous, systematic framework (e.g., formal argumentation analysis) that would strengthen its claims.\n\nClarity:\nThe paper is generally well-written and logically structured. The abstract effectively summarizes the work, and the sections flow in a coherent manner. The inclusion of the raw dialogue transcripts in the \"Required Statements\" section is a double-edged sword: it provides transparency but also makes the paper unwieldy and reads more like a data appendix than a polished research article. The main findings from these extensive dialogues could have been more effectively summarized and integrated into the results and discussion sections.\n\nSignificance:\nThe topic is of high significance to the AI community, particularly in the fields of AI ethics, alignment, and human-AI interaction. The paper's primary contribution is demonstrating that LLMs can participate in a semblance of ethical debate, revealing deeper aspects of their reasoning capabilities than simple Q&A prompting. The observation that different models adopt fundamentally different roles (e.g., active participant vs. neutral observer) based on their design philosophy is an important insight for the future design of ethical AI systems and the concept of \"Explainable AI (XAI).\" The work provides a valuable qualitative data point that will likely be of interest to researchers in this area.\n\nOriginality:\nWhile using the Trolley Dilemma to probe AI ethics is not new, the specific methodology of staging a multi-turn, multi-agent debate between distinct, contemporary LLMs is novel and interesting. This interactive approach provides a fresh perspective on evaluating and understanding the value systems embedded within these models. It moves the analysis from the \"what\" (the final decision) to the \"how\" (the process of argumentation and justification).\n\nReproducibility:\nThis is a major weakness of the paper. For a study centered on the outputs of specific LLMs, the authors fail to provide critical details needed for reproduction. Key missing information includes:\n*   The specific versions of the models used (e.g., GPT-3.5, GPT-4, Claude 2.1, Claude 3 Opus, etc.). Model capabilities change dramatically between versions.\n*   API parameters such as temperature, top_p, and any system prompts used to frame the interaction.\n*   A precise description of the turn-taking mechanism. How was the conversation history passed to the models at each step? Was the entire preceding dialogue included in the context?\nWithout these details, it is impossible for another researcher to attempt to replicate this study, even accounting for the inherent stochasticity of LLMs.\n\nCitations and Related Work:\nThis is the most critical flaw of the submission. The literature review is profoundly inadequate for a paper intended for a top-tier scientific venue. The reference list is sparse and relies heavily on non-English sources, theses, and web articles, while omitting foundational and contemporary work in machine ethics and LLM evaluation. There is no engagement with landmark studies like MIT's Moral Machine experiment, nor with the extensive literature on value alignment, Constitutional AI (highly relevant for Claude's behavior), or formal methods for evaluating AI reasoning from premier AI conferences. This lack of scholarly context significantly undermines the paper's contribution and its credibility as a research article.\n\nConclusion:\nThe paper presents a fascinating and original exploratory study with thought-provoking results. The core concept of an inter-LLM ethical debate is strong. However, the submission in its current form falls far short of the standards required for a top-tier conference due to critical flaws in scholarly practice, particularly the near-total absence of a relevant literature review and a lack of sufficient detail for reproducibility. While the idea is promising, the execution as a scientific paper is poor. It reads as a preliminary report on an interesting experiment rather than a complete piece of research situated within the scientific community. For these reasons, I cannot recommend acceptance. The authors are strongly encouraged to perform a thorough literature review, properly contextualize their novel experiment, and provide the necessary methodological details before resubmitting to a suitable venue."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission302/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775765237,
+    "mdate": 1760632226331,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "3GV8REmiLf",
+    "forum": "diwnmHfFNE",
+    "replyto": "diwnmHfFNE",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- AI Ethics and Society by Unfuture\n- A Critical Review of Approaches to Understanding the Trolley Problem by Kang, C., & Kim, J.\n- AI Ethics Related Article by AI Times"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777998634,
+    "mdate": 1760640065651,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission302/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

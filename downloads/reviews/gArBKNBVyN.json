@@ -1,0 +1,330 @@
+[
+  {
+    "id": "gArBKNBVyN",
+    "forum": "gArBKNBVyN",
+    "content": {
+      "title": {
+        "value": "Superior Energy Storage Performance in High-Entropy Dielectric Ceramics Discovered by AI Materials Scientist"
+      },
+      "keywords": {
+        "value": [
+          "AI Materials Scientist; Agent; Energy storage ceramics; Autonomous experimentation platform"
+        ]
+      },
+      "abstract": {
+        "value": "The design of advanced energy storage materials is hindered by vast and complex compositional spaces that are intractable for traditional trial-and-error methodologies. High-entropy ceramics (HECs) represent a promising class of dielectrics, but their multi-element nature exponentially expands this search space. To address this challenge, we deployed an \"AI Materials Scientist\"---an autonomous research agent---to navigate the high-dimensional landscape of lead-free perovskite HECs. The AI agent successfully identified a novel, non-intuitive five-component composition: 0.36 BaTiO3 - 0.32 BiFeO3 - 0.09 Bi0.5Na0.5TiO3 - 0.19 CaZrO3 - 0.04 Sr0.7La0.2TiO3. Experimental synthesis and characterization validated the AI's prediction, revealing a phase-pure ceramic with a dense, fine-grained microstructure. This material exhibits a breakthrough recoverable energy density (Wrec) of 10 J/cm3 and a high energy efficiency (η) of 80% at a breakdown strength of approximately 850 kV/cm, outperforming most existing lead-free dielectric ceramics. This work not only introduces a state-of-the-art energy storage material but also demonstrates the transformative potential of AI-driven autonomous systems to accelerate the discovery of complex, high-performance materials."
+      },
+      "pdf": {
+        "value": "/pdf/846b16b3b6762a4ef8f21933cbef49281059a6cc.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025superior,\ntitle={Superior Energy Storage Performance in High-Entropy Dielectric Ceramics Discovered by {AI} Materials Scientist},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=gArBKNBVyN}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1758026578423,
+    "odate": 1758112145415,
+    "mdate": 1759960945808,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission312/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission312/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "e0eun1bBUO",
+    "forum": "gArBKNBVyN",
+    "replyto": "gArBKNBVyN",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper presents an AI-driven discovery of a lead-free high-entropy perovskite ceramic with promising energy storage metrics (Wrec ≈ 10 J/cm3, η ≈ 80% at ~850 kV/cm). The AI “Materials Scientist” framework is described at a high level, and experimental validation includes XRD, SEM, and P–E loop measurements. Strengths include the ambitious and topical approach, competitive performance, clear qualitative evidence, and open discussion of AI limitations.\n\nHowever, there are major concerns regarding experimental rigor: lack of breakdown statistics, sample variability, endurance, temperature/frequency stability, leakage current, and charge–discharge rate testing. Measurement details are incomplete, and benchmarking against literature is insufficient. The relaxor behavior is not substantiated, and structural/compositional validation is limited. There is a potential stoichiometry inconsistency (Sr/La ratio) that must be clarified. Claims of outperforming existing ceramics are not rigorously substantiated.\n\nThe AI methodology is described only at a high level, lacking details on data, models, baselines, and exploration trajectory. The “self-driving lab” is not documented in sufficient detail. The rationale for compositional choices is speculative without ablation studies.\n\nWhile the narrative is generally clear, missing experimental and AI details limit reproducibility and verification. The significance could be high if validated, but current evidence and benchmarking are insufficient. The AI agent concept is not entirely new, and the contribution depends on demonstrating clear advances, which are not yet shown. Synthesis steps are described reasonably, but key parameters are missing. No ethical concerns are noted.\n\nActionable suggestions include: providing comprehensive materials characterization, reporting all measurement details, clarifying stoichiometry, adding benchmarking, detailing AI methodology, documenting the lab stack, and validating design rationale with ablations.\n\nRecommendation: The submission is promising but lacks the methodological and experimental rigor required for acceptance at a high-standard venue. A substantial revision is encouraged."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission312/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775661799,
+    "mdate": 1760632228531,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "OyfFgIq2FH",
+    "forum": "gArBKNBVyN",
+    "replyto": "gArBKNBVyN",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents the discovery of a high-performance lead-free dielectric ceramic for energy storage applications using an \"AI Materials Scientist\" autonomous agent. The experimental methodology is solid, with proper characterization techniques and impressive performance metrics for lead-free ceramics. However, there are significant concerns about the technical claims regarding the AI system: insufficient technical detail, lack of evidence for autonomous discovery, and post-hoc rationalization of the AI's choices. While the ceramic synthesis and characterization methods are clearly described and reproducible, the AI system lacks reproducibility and transparency, with no code or data availability. The significance of the ceramic performance is high, but the AI contribution appears overstated and not convincingly demonstrated. Major technical issues include lack of validation against traditional approaches, missing details on the AI system, and limited experimental validation. The authors are transparent about limitations, but the \"AI-discovered\" framing may be misleading. Overall, this is a strong materials science paper with excellent experimental results, but the AI claims are not sufficiently substantiated. The work would be stronger if presented as AI-assisted optimization rather than autonomous discovery. The paper contributes to lead-free ceramics but does not convincingly demonstrate breakthrough AI capabilities."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission312/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775662307,
+    "mdate": 1760632228288,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "NI5Ak13iaA",
+    "forum": "gArBKNBVyN",
+    "replyto": "gArBKNBVyN",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- No statistical treatment: single experimental iteration, no replicates or error bars; no Weibull analysis of breakdown strength (page 12, Q7).\n- Breakdown measurement protocol not described (environment, ramp rate, failure criterion), and exact specimen thickness for peak performance within the stated 50–100 μm range is not specified.\n- Dielectric/relaxor characterization incomplete: no ε(T, f) spectra, no dielectric loss or leakage current analysis, no cycling endurance or thermal stability of Wrec/η.\n- Phase and composition verification insufficient: no Rietveld refinement, no lattice parameters, no chemical/elemental mapping (EDS/WDS/ICP) to confirm cation incorporation and homogeneity; no measured relative density.\n- Microstructural quantification limited: grain size only qualitatively estimated; no distribution or method details; density inferred from SEM rather than measured.\n- ‘High-entropy’ claim is not rigorously justified (no configurational entropy calculation; composition far from equimolar on cation sublattices).\n- Performance comparison claim (“outperforming most existing lead-free ceramics”) lacks a normalized, quantitative benchmark table (e.g., accounting for thickness, frequency, temperature) and literature context.\n- AI methodology under-specified: no dataset description, training/validation details, metrics, ablations, or baselines; code/data not released (page 12, Q5: No), limiting reproducibility.\n- Ambiguity in processing conditions: XRD figure caption says “sintered at optimal temperature” without specifying the value; sintering is reported as a broad 1150–1250°C range.\n- Energy storage analysis pipeline not described (integration method for Wrec/η from P–E loops, leakage correction, measurement frequency/waveform)."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776797926,
+    "mdate": 1760640055950,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Kg3BIm5duD",
+    "forum": "gArBKNBVyN",
+    "replyto": "gArBKNBVyN",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission312/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950063215,
+    "mdate": 1760632301804,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "IkpiaPk58h",
+    "forum": "gArBKNBVyN",
+    "replyto": "gArBKNBVyN",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents the discovery of a novel, high-performance, lead-free, high-entropy dielectric ceramic for energy storage, designed by an autonomous AI agent. The material demonstrates state-of-the-art performance (10 J/cm³ recoverable energy density, >80% efficiency), and the work is both a significant materials science breakthrough and a landmark demonstration of AI for scientific discovery. The manuscript is exceptionally high quality, with thorough experimental validation and clear articulation of the connection between AI methodology and materials properties. The originality is very high, with a novel AI agent architecture and a new material composition. The paper is extremely well-written and clear. The main weaknesses are the lack of open-sourced code/data for computational reproducibility and the absence of statistical validation across multiple samples, though these are transparently discussed. Overall, this is a groundbreaking, visionary paper that exemplifies the potential of AI-driven scientific research and is highly suitable for the Agents4Science conference."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission312/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775662113,
+    "mdate": 1760632228405,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ISql9U8ECL",
+    "forum": "gArBKNBVyN",
+    "replyto": "gArBKNBVyN",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- High-entropy design for superior capacitive energy storage performance in lead-free ceramics by Ye, Y., Ren, S., Gao, B., Zhou, X., Yang, S., Hao, X., & Wu, H.\n- Recent progress of lead-free energy-storage ferroelectric ceramics by Li, F., Zhai, J., Shen, B., Liu, X., & Zhang, H.\n- Strategies to Improve the Energy Storage Properties of Perovskite Lead-Free Relaxor Ferroelectrics: A Review by Peng, Z., Wang, C., Chen, X., & Chen, Z."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777835898,
+    "mdate": 1760640055255,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission312/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

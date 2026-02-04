@@ -1,0 +1,417 @@
+[
+  {
+    "id": "zxil6EdA1o",
+    "forum": "71C5p8pm6s",
+    "replyto": "71C5p8pm6s",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents IVTFuse, a vision-language guided infrared-visible image fusion network incorporating Frequency-Strip Attention (FSA) and Hybrid Pooling Attention (HPA) modules. The architecture is well-designed and technically sound, with appropriate experimental methodology using standard benchmarks and metrics. The FSA and HPA modules are well-motivated, providing complementary frequency-domain and spatial attention mechanisms. However, the cross-attention mechanism could be better explained, and the choice of hyperparameters lacks justification. The model shows only modest improvements over FILM despite added complexity.\n\nThe paper is generally well-written and organized, with clear descriptions of the modules and a helpful overview figure. Some technical details, such as how text embeddings guide fusion and inconsistent notation, could be improved. The relationship between parameter count and architectural choices could be better explained.\n\nThe work addresses an important problem with valuable integration of language guidance, but the improvements are incremental and the approach requires accurate text descriptions, limiting practical applicability. The computational overhead may also limit real-time use.\n\nThe paper builds on existing work, with the FSA and HPA modules as novel but incremental contributions. Implementation details are generally good, with training procedures, architecture, and loss functions described, and a promise to release code. Some details about FSA and HPA could be clearer.\n\nEthical considerations and limitations are adequately addressed, including dependence on accurate text and privacy concerns. The related work section is comprehensive and well-positioned relative to prior work.\n\nSpecific issues include lack of some implementation details, table formatting, limited efficiency comparisons, and a not fully comprehensive ablation study.\n\nOverall, this is a solid incremental contribution with sound technical approach and meaningful improvements, but the advances are incremental and practical limitations somewhat limit the impact."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission23/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775823951,
+    "mdate": 1760632148348,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "qxqSqe0tUf",
+    "forum": "71C5p8pm6s",
+    "replyto": "71C5p8pm6s",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Dimensionality mismatch in Section 3.3: FIR/FVIS are described with channel dimension D=32, yet cross-attention expects tokens of dimension d=256; an explicit projection from D→d before cross-attention is missing (pages 5–6).\n- Normalization misstatement: The paper describes an L1 normalization that is said to be “effectively a softmax” (page 6, Eq. 2 and surrounding text). L1 normalization is not equivalent to a softmax and does not guarantee positivity; clarify and/or use a true softmax or another appropriate normalization.\n- Efficiency/real-time claim: Abstract and introduction suggest feasibility for real-time, but Table 3 (page 8) reports ~130 ms per 288×384 image on an RTX 4090 (~7.7 FPS), which is not generally considered real-time. The claim should be qualified.\n- Metric computation specifics: For VIF and Qabf, the exact computation protocol (e.g., how references are combined for multi-modal fusion) is not fully specified; adding these details would aid reproducibility and interpretation.\n- Baseline reporting: It is unclear whether baseline metrics were reproduced under identical settings or taken from prior works; clarifying the source and ensuring uniform evaluation strengthens the fairness of comparisons."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776857475,
+    "mdate": 1760640266076,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "n1jAmiT6Ok",
+    "forum": "71C5p8pm6s",
+    "replyto": "71C5p8pm6s",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes IVTFuse, a novel tri-modal network for infrared-visible image fusion (IVF) that leverages textual descriptions to guide the fusion process. The core contributions are a unified architecture that processes infrared, visible, and text modalities simultaneously, and two novel lightweight attention modules: Frequency Strip Attention (FSA) and Hybrid Pooling Attention (HPA). These modules are designed to enhance modality-specific features in the frequency and spatial domains, respectively. Textual guidance from a pre-trained BLIP model is injected via cross-attention at multiple hierarchical stages. The architecture is built upon an efficient Restormer backbone. The authors conduct extensive experiments on three public benchmarks, demonstrating that IVTFuse achieves state-of-the-art performance, outperforming ten recent methods across a comprehensive set of evaluation metrics.\n\nStrengths:\n1. Technical Quality and Novelty: The method is technically sound and well-motivated, introducing FSA and HPA modules tailored to IVF challenges. The integration within a multi-stage, text-guided Restormer framework is elegant and effective, advancing language-guided fusion with a more integrated and specialized architecture compared to prior work like FILM.\n2. Exceptional Experimental Evaluation: The empirical validation is thorough, comparing against ten state-of-the-art methods, including FILM. Quantitative results show consistent top-tier performance across three datasets and six metrics, demonstrating superiority, robustness, and generalizability. Visual results qualitatively support the quantitative gains.\n3. Rigorous Ablation Studies: The ablation study systematically validates each key component (FSA, HPA, text guidance), showing each contributes positively and are complementary, with the full model achieving the best performance.\n4. Clarity and Reproducibility: The paper is well-written, organized, and easy to follow. Methodology and architecture are described in detail, and all necessary details for reproducibility are provided, including code.\n5. Thoughtful Discussion of Limitations and Ethics: The paper includes a section on limitations and societal implications, discussing model fragility to noisy text and ethical implications in surveillance, demonstrating maturity and responsibility.\n\nWeaknesses:\n1. Increased Computational Cost: The method is significantly slower at inference time compared to FILM, which may limit real-time applicability. A discussion on model acceleration could be beneficial.\n\nOverall Assessment:\nThis is an outstanding paper that presents a significant advancement in infrared-visible image fusion, introducing a novel, sophisticated architecture that leverages multimodal information to achieve a new state-of-the-art. The claims are backed by rigorous and convincing evidence, the paper is exceptionally clear, and all components for reproducibility are provided. The thoughtful engagement with limitations and societal implications further elevates its quality. This work is a perfect fit for a top-tier conference and sets a new benchmark for future research in this area. It is a clear and enthusiastic recommendation for acceptance."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission23/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775823759,
+    "mdate": 1760632148515,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "go6e47GfUk",
+    "forum": "71C5p8pm6s",
+    "replyto": "71C5p8pm6s",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper proposes IVTFuse, a tri-modal infrared-visible image fusion network that incorporates textual guidance via a BLIP text encoder and introduces two lightweight attention modules: Frequency Strip Attention (FSA) and Hybrid Pooling Attention (HPA). The architecture is built on Restormer blocks and uses cross-attention with text to modulate visual features. Experiments on three public IVF datasets (MSRS, M3FD, RoadScene) show improved performance over 10 recent methods, including FILM. Ablations indicate both FSA and HPA contribute and that mismatched text harms performance. The authors release code.\n\nStrengths include a clear architecture, strong quantitative results, useful ablations, reproducibility, and an honest discussion of limitations and societal implications. Weaknesses are: (1) limited novelty of the core modules, with FSA and HPA being incremental and lacking comparison to strong attention baselines; (2) efficiency claims are not supported by runtime evidence, as IVTFuse is slower than FILM; (3) claims of improved semantic fidelity are not substantiated by downstream task evaluations; (4) dependence on external captioning with no robustness strategy; (5) missing or underspecified comparisons and analysis, including lack of attention map diagnostics and some architectural details; (6) generalization and fairness of comparisons could be improved by confirming identical pipelines and releasing captions.\n\nSuggestions include adding strong attention baselines in ablations, providing downstream evaluations, calibrating efficiency claims, adding robustness experiments, visualizing cross-attention, and clarifying architectural specifics.\n\nConclusion: The work is solid and carefully executed with promising results and a clean tri-modal design. However, the novelty is incremental, efficiency claims are unsupported, and evaluation does not convincingly substantiate semantic gains. With stronger comparisons, robustness analysis, and task-driven evaluations, it could be a compelling contribution. As it stands, the recommendation is a borderline reject under top-tier standards."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission23/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775823561,
+    "mdate": 1760632148714,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "bMoel0eNBU",
+    "forum": "71C5p8pm6s",
+    "replyto": "71C5p8pm6s",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- ChatGPT by OpenAI"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777981020,
+    "mdate": 1760640265418,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "CKm4cG424C",
+    "forum": "71C5p8pm6s",
+    "replyto": "71C5p8pm6s",
+    "content": {
+      "title": {
+        "value": "Interesting approach to vision-language guided IR-VIS Fusion"
+      },
+      "summary": {
+        "value": "The paper proposed a tri-modal image fusion network which combines infrared (IR), visible (VIS) and textual descriptions to produce fused images for human and computer vision tasks. The method includes three main components:\n- Frequency strip attention module that captures frequency-specific structures\n- Hybrid pooling attention that enhance modality-specific feature extraction\n- Pre-trained BLIP text encoder, which encodes the text from ChatGPT injected at different fusion stages. \nThe proposed architecture outperforms several models on IR-VIS fusion benchmarks datasets. The authors also conduct ablation studies to demonstrate the effectiveness of each component."
+      },
+      "strengths_and_weaknesses": {
+        "value": "Strengths:\n- The two proposed attention modules are thorougly described and shown to improve performance through ablation experiments.\n- The proposed model is evaluated on three standard IR-VIS fusion datasets and outperforms the baselines across multiple quantitative metrics in most of the cases\n- The code is publicly available, which supports reproducibility and transparency\n\nWeaknesses:\n- The structure and writing quality of the paper could be significantly improved. The introduction is well-written. On the other hand, the related work section is overly compressed and the full version is relegated to an appendix. Similarly, the conclusion is placed in the appendix, which is hinders readability. The method section is detailed but it's a dense wall of text that is quite hard to follow. \n- As acknowledged by the authors, the impact of the language modality is not fully explored. The authors perform an ablation where they swap the text input with random captions. A missing experiment is the evaluation of the architecture without any text input at all (i.e., removing the BLIP fusion entirely) to isolate the contribution of the language branch.\n- The discussion of results lacks qualitative depth. The paper includes a visual comparison between different methods, but no interpretability analysis (e.g., attention maps) is provided to help understand where the proposed model improves over baselines like FILM. From the visual examples presented in Figure 2, the qualitative difference between IVTFuse and FILM is not obvious."
+      },
+      "quality": {
+        "value": 3
+      },
+      "clarity": {
+        "value": 2
+      },
+      "significance": {
+        "value": 3
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "- I'd suggest the authors to provide a cleaner organization of the paper: restore the related work and conclusion to the main body and improve the readability of the methods section.\n- A missing experiment is a no-text ablation to isolate the effect of the BLIP encoder and provide a clearer picture of how much the language modality contributes to performance. \n- I believe the paper would benefit from a more in-depth qualitative analysis of the results, including attention visualizations to better illustrate the impact of the proposed modules and text guidance.\n- minor: the acronym VIS is not explained"
+      },
+      "limitations": {
+        "value": "Yes"
+      },
+      "overall": {
+        "value": 4
+      },
+      "confidence": {
+        "value": 3
+      },
+      "ethical_concerns": {
+        "value": "N/A"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission23/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759628728170,
+    "mdate": 1760632148827,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AFuL"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission23/Reviewer_AFuL"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "71C5p8pm6s",
+    "forum": "71C5p8pm6s",
+    "content": {
+      "title": {
+        "value": "IVTFuse: An Efficient Vision-Language Guided Infrared-Visible Image Fusion Network with Frequency-Strip and Hybrid Pooling Attention Modules"
+      },
+      "authors": {
+        "value": [
+          "Zixuan Liu",
+          "Siavash H. Khajavi",
+          "Guangkai Jiang",
+          "Xinru Liu"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "~Zixuan_Liu4",
+          "~Siavash_H._Khajavi1",
+          "~Guangkai_Jiang1",
+          "~Xinru_Liu4"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "Image fusion",
+          "Vision-language model"
+        ]
+      },
+      "abstract": {
+        "value": "Infrared-visible image fusion (IVF) aims to combine complementary thermal and visible information into a single image that is informative for both human observation and computer vision tasks. However, existing fusion methods often struggle to preserve both the fine details and the semantic context of a scene, especially when relying solely on image-based features. We propose $\\textbf{IVTFuse}$, a novel vision-language guided fusion network that addresses these challenges by incorporating textual semantic guidance and frequency-aware attention mechanisms. IVTFuse introduces two lightweight modules: $\\textit{Frequency Strip Attention}$ (FSA) and $\\textit{Hybrid Pooling Attention}$ (HPA), within each modality-specific encoder to adaptively enhance crucial structures and regions. Meanwhile, a text description of the scene is encoded by a pre-trained BLIP model and injected into the fusion process through cross-attention, providing high-level context to guide feature merging. Our architecture is built on efficient Restormer-based transformers and maintains a compact model size, making it feasible for real-time applications. Extensive experiments on standard infrared-visible fusion benchmarks show that IVTFuse outperforms 10 state-of-the-art methods across three public IVF datasets, producing fused images with improved detail and semantic fidelity."
+      },
+      "pdf": {
+        "value": "/pdf/90731a32f1aa6626c580d1b984299c41ea4b5c94.pdf"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\nliu2025ivtfuse,\ntitle={{IVTF}use: An Efficient Vision-Language Guided Infrared-Visible Image Fusion Network with Frequency-Strip and Hybrid Pooling Attention Modules},\nauthor={Zixuan Liu and Siavash H. Khajavi and Guangkai Jiang and Xinru Liu},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=71C5p8pm6s}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/fc256484b92cf7cf6f555a0f424694c085aea0d0.zip"
+      },
+      "paperhash": {
+        "value": "liu|ivtfuse_an_efficient_visionlanguage_guided_infraredvisible_image_fusion_network_with_frequencystrip_and_hybrid_pooling_attention_modules"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission23/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1754937590695,
+    "pdate": 1759960933049,
+    "odate": 1758112145415,
+    "mdate": 1760583085032,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission23/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission23/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "0PjWo1RQK0",
+    "forum": "71C5p8pm6s",
+    "replyto": "71C5p8pm6s",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission23/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948917279,
+    "mdate": 1760632262632,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

@@ -1,0 +1,424 @@
+[
+  {
+    "id": "vTjZPavAJG",
+    "forum": "MIjY6VNtY0",
+    "replyto": "MIjY6VNtY0",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Metric inconsistency: Coverage is defined as prediction density per token and should be invariant to the evaluation agent, yet Coverage values for the same De-id model vary across Tables 1–6 (pages 6–7), suggesting miscalculation, evaluator-dependent denominators, or reporting errors.\n- Weakly justified Recall-Proxy: RecallProxyd = |Cd| / Navg (Appendix B.3) uses the average number of predictions across agents as a surrogate for the number of gold entities; this can bias comparisons and is not calibrated or validated as a recall estimator.\n- Notation issue: Eq. (4) omits explicit dependence on the note x, even though evaluation requires both x and the model’s predictions; this should be corrected for clarity.\n- Ambiguity in evaluator outputs and aggregation: The text states each Evaluation Agent outputs a strict JSON object {\"Number of Correct Pairs\": N}, but majority voting relies on per-model summaries/tables; the data structure and per-note/per-model aggregation procedure are not precisely specified.\n- LLM-based majority voting over numeric tables is unnecessary and may reduce reproducibility; a deterministic numeric aggregator (e.g., argmax with tie-breaking rules) would be more appropriate unless the added value of LLM-based reasoning is empirically demonstrated.\n- Human evaluation (Table 9, page 7) lacks detail: scales for Q1–Q3 are not defined, Q1 values of 0.00 for most models are unexplained, and no inter-rater agreement is reported.\n- Statistical reporting gaps: Asterisks in Table 8 are not defined, and mean ± std are reported without stating the source of variation (across notes, runs, or seeds); no significance tests or rank-correlation analyses are provided.\n- Normalization procedure for entity spans is under-specified (methods, rules, or prompts), limiting reproducibility and making it hard to assess the robustness of evaluator judgments.\n- Potential evaluator bias and stability are not quantified (e.g., kappa across evaluation agents, sensitivity of results to prompt/temperature settings, or to the number and composition of evaluators).\n- Limited dataset (100 notes from a single institution) restricts generalizability; although acknowledged in Appendix C, results would benefit from multi-institution or cross-domain validation."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776758731,
+    "mdate": 1760640166918,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "paEqthh2LQ",
+    "forum": "MIjY6VNtY0",
+    "replyto": "MIjY6VNtY0",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces TEAM-PHI, a novel multi-agent framework for automatically evaluating and selecting the best models for de-identifying Protected Health Information (PHI) in clinical notes. The framework addresses the challenge of limited expert-annotated data by using multiple Large Language Models (LLMs) as independent evaluation agents, whose judgments are aggregated via an LLM-based majority voting mechanism. Experiments on real-world clinical notes show that TEAM-PHI's automated rankings align closely with gold-standard and human expert evaluations. The technical quality is exceptionally high, with a well-conceived, robust, and methodologically sound approach. The design, including decoupling of De-id models and evaluation agents, and the use of a multi-agent ensemble, is elegant and logical. Experimental validation is comprehensive, with strong evidence supporting the framework's validity. The paper is complete, honest about limitations, and exceptionally clear and well-organized. The significance is substantial, offering a practical, automated solution to a major bottleneck in clinical NLP, with potential to accelerate privacy-preserving technologies and research. The work is highly original in its application, design, and rigor, introducing a multi-agent ensemble and LLM-based majority voting in this sensitive domain. Reproducibility is exemplary, with code and detailed methodology provided. Ethical considerations are handled appropriately. In conclusion, this is an outstanding, technically deep, and rigorously validated paper that sets a new standard for evaluating de-identification systems and deserves the highest possible recommendation."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission269/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775552508,
+    "mdate": 1760632215571,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "pDwhuaTkee",
+    "forum": "MIjY6VNtY0",
+    "replyto": "MIjY6VNtY0",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents TEAM-PHI, a multi-agent framework for evaluating and selecting PHI de-identification models in clinical notes without heavy reliance on human annotations. The technical approach is sound, using multiple LLM-based evaluation agents and majority voting, with validation through ground-truth and human assessment. The paper is clearly written, well-organized, and provides sufficient methodological detail. The work addresses a significant problem in healthcare NLP, and the finding that Llama-70B is a top performer is valuable. However, the contribution is somewhat incremental, applying established techniques to a specific domain rather than introducing fundamentally new methods. The evaluation is limited to 100 notes from a single institution, raising concerns about generalizability. The authors provide good implementation details, but reproducibility is limited by dataset sharing restrictions. Ethical considerations are well-addressed. The related work section is relevant but could be more comprehensive. Strengths include addressing a practical need, thorough validation, clear methodology, and attention to privacy. Concerns include limited evaluation scope, potential evaluator bias, computational costs, and modest improvement over single-agent evaluation. Overall, the work is technically solid and practically relevant, but broader evaluation and clearer differentiation from existing methods would strengthen the contribution."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission269/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775552752,
+    "mdate": 1760632215261,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "mNRk0LgGhw",
+    "forum": "MIjY6VNtY0",
+    "replyto": "MIjY6VNtY0",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777979887,
+    "mdate": 1760640166236,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "gdVdGgYIVk",
+    "forum": "MIjY6VNtY0",
+    "replyto": "MIjY6VNtY0",
+    "content": {
+      "title": {
+        "value": "TEAM-PHI, a multi-agent framework --good clarity in writing but computationally expensive"
+      },
+      "summary": {
+        "value": "TEAM-PHI is a multi-agent LLM-based framework that automates evaluation and selection of PHI de-identification models via independent Evaluation Agents and LLM majority voting, but the approach is computationally expensive, the human assessment methods and provenance are under-described, and relying on evaluator agreement as a proxy for recall risks inflated scores if agents share systematic blind spots."
+      },
+      "strengths_and_weaknesses": {
+        "value": "Strengths-- \nMulti-agent judging combined with LLM majority voting is an innovative way to stabilize LLM-as-judge approaches. Concepts were proposed by human.\nExperiments on 100 fully annotated clinical notes show that TEAM-PHI reliably ranks models (with Llama-70B consistently identified as top performer), and its automated rankings align closely with human experts and gold-label evaluations.\nGood quality figures and graphs generated by LLMs.\nIncludes single-agent evaluations, aggregated multi-agent voting, comparison to gold-standard annotations (Table 8, p.7), and human expert assessment (Table 9, p.7).\nThe paper provides prompts, model links, evaluation metrics, and compute resources in appendices\n\nWeakness\n\nThe human assessment component is insufficiently described; it is unclear whether the evaluation sample is synthetic or drawn from real-world annotations, and how experts were instructed and calibrated.\n\nThe framework relies on evaluator agreement as a proxy for recall when gold labels are masked. If multiple evaluators share systematic blind spots (for example, consistently under-detecting particular PHI types), this proxy can produce artificially inflated recall estimates.\n\nThe experimental setup is computationally expensive: running multiple large LLMs as both de-identifiers and evaluators reportedly required ≈200 GPU-hours on dual H100s. This cost profile limits practicality for large-scale or real-time deployment unless much lighter evaluators or more efficient strategies are adopted.\n\nPerformance is uneven across entity types: PERSON detection is robust, but DATE/TIME recognition shows high variability across evaluators (see Tables 1–6).\n\nThe framework has not been demonstrated on a broader set of PHI categories or on more complex annotation scenarios (e.g., longitudinal identifiers, nested or overlapping spans), limiting claims of generality."
+      },
+      "quality": {
+        "value": 2
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 3
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "Validate TEAM-PHI on larger, multi-institution, multi-specialty corpora (e.g., across i2b2, MIMIC-III/IV, or synthetic corpora).\n\nTest scenarios where evaluators systematically fail on specific PHI categories (e.g., obfuscated dates) to measure resilience.\n\nExplore smaller distilled evaluators or active-learning strategies to reduce GPU cost.\n\nExplicitly evaluate whether evaluator agreement disproportionately fails for certain demographics (names, locations, etc.).\n\nIncorporating limited human-expert oversight could improve reliability and mitigate evaluator blind spots."
+      },
+      "limitations": {
+        "value": "Yes"
+      },
+      "overall": {
+        "value": 5
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": "None"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission269/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759431251384,
+    "mdate": 1760632216171,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission269/Reviewer_CXQP"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission269/Reviewer_CXQP"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "MIjY6VNtY0",
+    "forum": "MIjY6VNtY0",
+    "content": {
+      "title": {
+        "value": "Towards Automatic Evaluation and Selection of PHI De-identification Models via Multi-Agent Collaboration"
+      },
+      "authors": {
+        "value": [
+          "Guanchen Wu",
+          "Zuhui Chen",
+          "Yuzhang Xie",
+          "Carl Yang"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "~Guanchen_Wu1",
+          "zc2748@columbia.edu",
+          "~Yuzhang_Xie1",
+          "~Carl_Yang1"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "Protected Health Information",
+          "PHI",
+          "De-identification",
+          "Clinical notes",
+          "Large Language Models",
+          "LLM",
+          "Multi-Agent",
+          "Automated evaluation"
+        ]
+      },
+      "abstract": {
+        "value": "Protected health information (PHI) de-identification is critical for enabling the safe reuse of clinical notes, yet evaluating and comparing PHI de-identification models typically depends on costly, small-scale expert annotations. We present TEAM-PHI, a multi-agent evaluation and selection framework that uses large language models (LLMs) to automatically measure de-identification quality and select the best-performing model without heavy reliance on gold labels. TEAM-PHI deploys multiple Evaluation Agents, each independently judging the correctness of PHI extractions and outputting structured metrics. Their results are then consolidated through an LLM-based majority voting mechanism that integrates diverse evaluator perspectives into a single, stable, and reproducible ranking. Experiments on a real-world clinical note corpus demonstrate that TEAM-PHI produces consistent and accurate rankings: despite variation across individual evaluators, LLM-based voting reliably converges on the same top-performing systems. Further comparison with ground-truth annotations and human evaluation confirms that the framework’s automated rankings closely match supervised evaluation. By combining independent evaluation agents with LLM majority voting, TEAM-PHI offers a practical, secure, and cost-effective solution for automatic evaluation and best-model selection in PHI de-identification, even when ground-truth labels are limited."
+      },
+      "pdf": {
+        "value": "/pdf/cab9a610e9c6be20a11f9a4f8dde872ff2f8e5d4.pdf"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\nwu2025towards,\ntitle={Towards Automatic Evaluation and Selection of {PHI} De-identification Models via Multi-Agent Collaboration},\nauthor={Guanchen Wu and Zuhui Chen and Yuzhang Xie and Carl Yang},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=MIjY6VNtY0}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/94526419f1da698460ffee3a3b9ebae84214c145.zip"
+      },
+      "paperhash": {
+        "value": "wu|towards_automatic_evaluation_and_selection_of_phi_deidentification_models_via_multiagent_collaboration"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission269/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/Submission269/-/Camera_Ready"
+    ],
+    "cdate": 1758001342455,
+    "pdate": 1759960943917,
+    "odate": 1758112145415,
+    "mdate": 1760839329232,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission269/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission269/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "EiIZV799HB",
+    "forum": "MIjY6VNtY0",
+    "replyto": "MIjY6VNtY0",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission269/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948894159,
+    "mdate": 1760632290939,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "42bcqqftvn",
+    "forum": "MIjY6VNtY0",
+    "replyto": "MIjY6VNtY0",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes TEAM-PHI, a multi-agent LLM-based framework for automatic evaluation and selection of PHI de-identification models without heavy reliance on gold-standard annotations. The system uses multiple LLM 'Evaluation Agents' to independently judge predicted PHI entities, outputting strict JSON counts, and aggregates results via an LLM-based majority voting mechanism to rank models. Experiments on 100 annotated clinical notes (withheld gold) show that majority voting yields consistent rankings, with Llama-70B repeatedly selected as best. External validation is provided via ground-truth evaluation and a human study. The framework is clearly diagrammed and implementation details are discussed.\n\nStrengths include addressing an important, high-stakes problem, clear system design, empirical alignment with supervised F1, practical implementation transparency, and a sensible multi-agent ensemble approach. Weaknesses include under-justified evaluation metrics (especially the 'Recall-Proxy'), use of an LLM for numeric aggregation (raising reproducibility concerns), limited dataset and generalizability, potential evaluator–model entanglement, insufficient detail in human evaluation, lack of ablation and robustness checks, and some ambiguities in definitions and reporting.\n\nThe paper's core idea—LLMs as multi-agent judges for De-id when labels are scarce—is timely, but the novelty is mainly in application rather than new theory. The contribution would be stronger with a principled recall estimator or more extensive validation. Reproducibility is partially addressed, but LLM-based aggregation without deterministic specification is a concern. Ethics and limitations are acknowledged.\n\nActionable suggestions include replacing LLM-based aggregation with deterministic methods, revisiting the recall proxy, controlling for evaluator–model overlap, expanding validation (datasets, agreement metrics, ablations), clarifying human evaluation, and releasing prompts/code for reproducibility.\n\nVerdict: The direction is promising with encouraging initial evidence, but current methodological weaknesses, unnecessary LLM aggregation, limited dataset, and incomplete bias controls prevent confident acceptance at a high-standard venue. With stronger recall estimation, deterministic aggregation, expanded validation, and clearer human evaluation, this could become a compelling contribution.\n\nOverall recommendation: Borderline reject."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission269/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775552315,
+    "mdate": 1760632215962,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission269/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

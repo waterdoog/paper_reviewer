@@ -1,0 +1,334 @@
+[
+  {
+    "id": "wprP6MbBYd",
+    "forum": "wprP6MbBYd",
+    "content": {
+      "title": {
+        "value": "LECTOR: LLM-Enhanced Concept-based Test-Oriented Repetition"
+      },
+      "keywords": {
+        "value": [
+          "Spaced Repetition",
+          "Large Language Models"
+        ]
+      },
+      "TLDR": {
+        "value": "To clear confusion and help scores align, LECTOR brings semantic AI by design."
+      },
+      "abstract": {
+        "value": "Spaced repetition systems are fundamental to efficient learning and memory retention, but existing algorithms often struggle with semantic interference and personalized adaptation. We present LECTOR (\\textbf{L}LM-\\textbf{E}nhanced \\textbf{C}oncept-based \\textbf{T}est-\\textbf{O}riented \\textbf{R}epetition), a novel adaptive scheduling algorithm specifically designed for test-oriented learning scenarios, particularly language examinations where success rate is paramount. LECTOR leverages large language models for semantic analysis while incorporating personalized learning profiles, addressing the critical challenge of semantic confusion in vocabulary learning by utilizing LLM-powered semantic similarity assessment and integrating it with established spaced repetition principles. Our comprehensive evaluation against six baseline algorithms (SSP-MMC, SM2, HLR, FSRS, ANKI, THRESHOLD) across 100 simulated learners over 100 days demonstrates significant improvements: LECTOR achieves a 90.2\\% success rate compared to 88.4\\% for the best baseline (SSP-MMC), representing a 2.0\\% relative improvement. The algorithm shows particular strength in handling semantically similar concepts, reducing confusion-induced errors while maintaining computational efficiency. Our results establish LECTOR as a promising direction for intelligent tutoring systems and adaptive learning platforms."
+      },
+      "pdf": {
+        "value": "/pdf/c407340c04fd898872f36829861b1f6bcd8431df.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025lector,\ntitle={{LECTOR}: {LLM}-Enhanced Concept-based Test-Oriented Repetition},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=wprP6MbBYd}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1755867569152,
+    "odate": 1758112145415,
+    "mdate": 1759960933659,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission44/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission44/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "kavy4Fk54c",
+    "forum": "wprP6MbBYd",
+    "replyto": "wprP6MbBYd",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces LECTOR, a novel SRS algorithm leveraging LLMs to address semantic interference in vocabulary learning. The approach is promising and original, integrating semantic similarity and learner profiles into review scheduling, and shows a modest improvement over strong baselines in simulation. However, the paper is fundamentally incomplete: it lacks critical methodological details (key functions and equations are undefined), the evaluation setup is opaque (the simulated learner model is unspecified), and no statistical analysis is provided. These omissions render the work non-reproducible and unverifiable, failing to meet publication standards. The writing is clear except in the methodology, and the significance and originality are high, but the technical quality and reproducibility are severely lacking. Major revisions are required to fully specify the method, detail the experimental setup, and provide statistical rigor. I recommend rejection in its current form, though the idea has strong potential if these issues are addressed."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission44/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775389747,
+    "mdate": 1760632152115,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "c6TFKqVSWW",
+    "forum": "wprP6MbBYd",
+    "replyto": "wprP6MbBYd",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Underspecified core algorithmic components: missing definitions for F_k in Eq. (5), unclear mapping from Φ to σ_i,j(t) and α_i,j(t), and inconsistent notation hi,j(t) vs. τi,j(t).\n- No statistical significance tests, error bars, or confidence intervals; yet the text claims statistical significance.\n- Undefined Efficiency Score used for key comparisons (Table 1).\n- Simulation/generative model for learner performance not described (how recall is generated, how mastery evolves, initialization of variables, noise).\n- Unclear and potentially contradictory computational scaling claims versus the quadratic cost of pairwise semantic matrices.\n- Fairness of comparisons: success rates compared under different total attempt budgets; no iso-budget or iso-time evaluation.\n- No ablation studies to isolate contributions of semantic similarity vs. personalization and other factors.\n- No validation/calibration of LLM semantic similarity against baselines (e.g., embeddings) or human judgments; no sensitivity analyses to prompt design or LLM variability.\n- Reproducibility is insufficient at present: critical hyperparameters (e.g., λ), metric definitions, and algorithmic details are missing; code/data not yet available."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776698328,
+    "mdate": 1760639963045,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "YAtNWHTJ92",
+    "forum": "wprP6MbBYd",
+    "replyto": "wprP6MbBYd",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents LECTOR (LLM-Enhanced Concept-based Test-Oriented Repetition), a novel spaced repetition algorithm that integrates large language models for semantic analysis with personalized learning profiles. The paper is technically sound, with a well-motivated approach and clear mathematical formulation. The experimental design is comprehensive, comparing LECTOR against six baseline algorithms across 100 simulated learners over 100 days. LECTOR achieves a 90.2% success rate compared to 88.4% for the best baseline, a statistically significant and practically meaningful improvement.\n\nThe paper is well-written and clearly structured, with detailed methodology and informative figures and tables. The work addresses a real limitation in existing systems—the lack of semantic awareness—and is particularly relevant for test-oriented learning scenarios. The integration of In-Context Learning for semantic analysis and the multi-dimensional optimization approach are original contributions.\n\nReproducibility is strong, with sufficient methodological detail and a commitment to releasing code and datasets. Limitations are honestly discussed, including computational overhead, dependency on external LLM services, and evaluation scope. Areas for improvement include the lack of statistical significance testing, reliance on simulated learners, and dependency on external LLMs. Minor issues include figure readability and related work positioning.\n\nOverall, this is a solid, technically sound, and well-executed contribution that advances the state of the art in educational technology by integrating LLM capabilities for semantic analysis. The limitations are acknowledged and do not undermine the core contributions."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission44/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775389913,
+    "mdate": 1760632151962,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "9KFnO5Zc4b",
+    "forum": "wprP6MbBYd",
+    "replyto": "wprP6MbBYd",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces LECTOR, a spaced repetition scheduling algorithm that incorporates LLM-based semantic similarity and personalization for test-oriented learning. While the idea is timely and the focus on semantic distractors is clear, the methodology is critically underspecified: key algorithmic components and the simulator are not defined in enough detail for reproduction. The evaluation is entirely simulation-based, lacks statistical rigor (no error bars or significance testing), and omits important baseline tuning and ablation studies. Metrics are not clearly defined, and essential implementation details are missing despite a reproducibility statement. The empirical gains are small and not validated on real data. The paper is readable and cites relevant literature, but does not compare to simpler semantic baselines or prior work on semantic-aware scheduling. Actionable suggestions include fully specifying the algorithm and simulator, strengthening evaluation with statistical analysis and ablations, improving clarity and reproducibility, and conducting external validation. Overall, the paper addresses an important problem with a promising idea, but the current submission lacks the necessary detail, rigor, and validation to support its claims. I do not recommend acceptance at this stage."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission44/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775389520,
+    "mdate": 1760632152246,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "813B75dQnm",
+    "forum": "wprP6MbBYd",
+    "replyto": "wprP6MbBYd",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission44/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950671358,
+    "mdate": 1760632265038,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "6oBxyzRdp2",
+    "forum": "wprP6MbBYd",
+    "replyto": "wprP6MbBYd",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777704360,
+    "mdate": 1760639962262,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission44/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

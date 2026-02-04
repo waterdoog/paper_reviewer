@@ -1,0 +1,111 @@
+[
+  {
+    "id": "sZJnlQmJQ3",
+    "forum": "AgIg43zlmi",
+    "replyto": "AgIg43zlmi",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Systematic misreporting of statistical results (t-tests, ANOVA, regressions), including direction and significance (e.g., RQ1, RQ2, RQ4, RQ5; pages 5–7).\n- Unsupported headline claims (e.g., “15–25% gains” in abstract) flagged as potentially hallucinated by the human author.\n- Claims about trends beyond available data (e.g., 'decline after round 3' without rounds >3).\n- Contradictions between results and conclusions: hypotheses declared supported despite corrected analyses showing the opposite (e.g., H1, H5).\n- Bayesian TCE results misreported by an order of magnitude; naming inconsistency (TCE vs PCE) and confusion in presentation (page 5–7).\n- Proposed HAD algorithm not implemented or evaluated, despite being positioned as a contribution (multiple footnotes across pages 4–5, 7–8).\n- Questionable methodological choices without sensitivity analyses: exclusion of 'cannot decide' responses; no multiple comparisons correction; inadequate treatment of nested/repeated-measures structure.\n- Figure interpretations inconsistent with underlying data (e.g., Figure 1 narrative on page 5–6).\n- Overstated final claims and RQ coverage inconsistent with corrected findings."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776832690,
+    "mdate": 1760640235107,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission60/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission60/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Da7lc88N7Y",
+    "forum": "AgIg43zlmi",
+    "replyto": "AgIg43zlmi",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777711296,
+    "mdate": 1760640234438,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission60/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission60/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "AgIg43zlmi",
+    "forum": "AgIg43zlmi",
+    "content": {
+      "title": {
+        "value": "Testing Theory-of-Mind in Large Language Model-Based Multi-Agent Design Patterns"
+      },
+      "keywords": {
+        "value": [
+          "Theory of Mind",
+          "Large Language Model",
+          "Multi-Agent Design Patterns",
+          "Multi-Agent Debate",
+          "Mixture of Agents",
+          "Reflection",
+          "ToM Capability Estimator",
+          "Hybrid Adaptive Debate"
+        ]
+      },
+      "abstract": {
+        "value": "Theory of Mind (ToM) forms the bedrock of social intelligence, allowing individuals to ascribe mental states such as beliefs, desires, and intentions to others. For Large Language Models (LLMs), developing reliable ToM is essential to enable seamless human-AI collaboration, ethical reasoning, and adaptive interactions. This paper rigorously examines ToM capabilities in LLM-based Multi-Agent Design Patterns (MADPs), determining whether collaborative frameworks like Multi-Agent Debate (MAD), Mixture of Agents (MoA), and Reflection surpass single-agent baselines in ToM tasks. Utilizing the benchmarks FANToM and Hi-ToM, we evaluate two LLMs—`<qLKSiki>` (70B parameters, optimized for long-context and RLHF) and `<Rc3kmmq>` (14B parameters, focused on reasoning via synthetic alignment)—in pure and hybrid configurations. Across 100 samples per benchmark, MADPs demonstrate 15-25\\% gains in higher-order ToM accuracy over Vanilla and Chain-of-Thought (CoT) baselines, with hybrids narrowing model disparities and parameters exhibiting initial improvements before plateauing due to noise. We uncover primacy/recency biases in Hi-ToM's container mentions, correlating with belief-tracking errors. Innovatively, we propose the ToM Capability Estimator (TCE), a Bayesian hierarchical model for latent ToM quantification, and Hybrid Adaptive Debate (HAD), an algorithm dynamically tuning debates via confidence thresholds for efficiency. Contributions include the first MADP-ToM benchmarking, bias elucidation, TCE for probabilistic analysis, and HAD for practical deployment—advancing socially intelligent AI. Data and code are available as *Supplementary Material* (attachment) to this submission, as well as at: https://anonymous.4open.science/r/Agents4Science_2025_ToM_MADP-ZZZZ."
+      },
+      "pdf": {
+        "value": "/pdf/958f359597e23591e49fa7005affce2f908a9673.pdf"
+      },
+      "supplementary_material": {
+        "value": "/attachment/a9f40670d25938d0cbf802ae23c7550a616ce18f.zip"
+      },
+      "venue": {
+        "value": "Agents4Science 2025 Conference Withdrawn Submission"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Withdrawn_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nli2025testing,\ntitle={Testing Theory-of-Mind in Large Language Model-Based Multi-Agent Design Patterns},\nauthor={Jingkai Li},\nyear={2025},\nurl={https://openreview.net/forum?id=AgIg43zlmi}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/-/Withdrawn_Submission"
+    ],
+    "cdate": 1756440130771,
+    "odate": 1758112145415,
+    "mdate": 1765061683760,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission60/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission60/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

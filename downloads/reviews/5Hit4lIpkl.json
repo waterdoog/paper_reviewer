@@ -1,0 +1,338 @@
+[
+  {
+    "id": "gKG8CfDmgE",
+    "forum": "5Hit4lIpkl",
+    "replyto": "5Hit4lIpkl",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a computational framework combining LLM-generated educational content with Item Response Theory (IRT) for personalized learning. While the topic is relevant and the simulation methodology is sound, there are several significant concerns that impact the paper's contribution.\n\nQuality (3/5): The technical approach is reasonable but limited. The 2-PL IRT model is appropriately chosen and implemented. However, the simulation relies on overly simplified assumptions about learning (virtual students with fixed abilities drawn from a normal distribution). The 30-item question bank is too small to draw robust conclusions about scalability. The human-in-the-loop verification by a single SME introduces potential bias without inter-rater reliability measures.\n\nClarity (4/5): The paper is generally well-written and organized. The methodology is clearly described with sufficient detail for reproduction. The figures and tables effectively communicate the results. However, some sections (particularly the extensive checklist) detract from the main narrative.\n\nSignificance (2/5): While personalized education is important, this work provides limited novel insights. The finding that adaptive item selection outperforms random selection is not surprising and has been established in the CAT literature. The paper acknowledges this is a \"proof-of-concept\" but doesn't sufficiently advance beyond existing knowledge. The simulation-only validation limits practical impact.\n\nOriginality (2/5): The combination of LLMs and IRT is not particularly novel - both technologies are well-established, and their integration is a natural progression. The paper doesn't introduce new theoretical insights or methodological innovations. The adaptive algorithm using Maximum Fisher Information is standard in CAT applications.\n\nReproducibility (4/5): The authors provide good detail about the simulation parameters and claim code availability. The experimental setup is clearly described, though the actual question bank and human verification process could be better documented.\n\nLimitations and Ethics (4/5): The authors adequately acknowledge key limitations including the simulation-based approach, small question bank, and single SME verification. They appropriately discuss ethical considerations around AI bias and the need for human oversight.\n\nMajor Concerns:\n1. The simulation is too simplified to validate real-world effectiveness\n2. The question bank (N=30) is insufficient for robust conclusions\n3. Limited novelty - combines existing methods without significant innovation\n4. Results are largely predictable given the CAT literature\n5. No comparison to other adaptive learning approaches beyond random baselines\n\nMinor Issues:\n- The extensive AI involvement checklist, while interesting, occupies disproportionate space\n- Some claims about \"strong evidence\" are overstated given the simulation-only validation\n- The related work section could better position the contribution relative to existing CAT systems\n\nThe paper presents a competent simulation study but falls short of making a significant contribution to the field. The combination of existing technologies, while potentially useful in practice, doesn't advance our theoretical understanding or provide compelling empirical evidence of effectiveness in real educational settings."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission149/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775329283,
+    "mdate": 1760632180008,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "f0Vs5RCNkb",
+    "forum": "5Hit4lIpkl",
+    "replyto": "5Hit4lIpkl",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission149/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950111425,
+    "mdate": 1760632277496,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ZyCtZtsR6O",
+    "forum": "5Hit4lIpkl",
+    "replyto": "5Hit4lIpkl",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a computational framework that synergizes Large Language Models (LLMs) for educational content generation with Item Response Theory (IRT) for personalized delivery. The authors conduct a large-scale simulation (N=10,000) to evaluate their proposed AI agent against non-adaptive baselines in the domain of AP Chemistry. The results demonstrate statistically significant performance improvements, particularly for students in the lower-to-average ability range.\n\nQuality: The submission is of very high technical quality. The methodological approach is sound, combining state-of-the-art techniques from AI (LLMs) and psychometrics (IRT) in a logical and effective manner. The choice of the 2-PL IRT model, Maximum Fisher Information for item selection, and Maximum Likelihood Estimation for ability updates are standard, appropriate, and well-justified for a proof-of-concept Computerized Adaptive Testing system. The claims made in the abstract and introduction are rigorously supported by the simulation results, with appropriate statistical analysis (t-tests, p-values). A standout feature of this paper is its exceptional honesty and thoroughness in discussing its own weaknesses. The \"Limitations and Future Work\" section is a model of scholarly self-critique, clearly identifying the constraints of a simulation-based study (e.g., simplified student model, small 30-item bank, static IRT parameters) and using them to motivate a clear and well-designed plan for future research.\n\nClarity: The paper is exceptionally well-written and organized. The narrative flows logically from the problem statement to the proposed solution, its evaluation, and its implications. Complex concepts from psychometrics are explained with admirable clarity, making the work accessible to a broad audience. The figures and tables are clear, informative, and directly support the paper's claims. The overall presentation is polished and professional.\n\nSignificance: The work is highly significant. A major historical bottleneck for developing effective intelligent tutoring systems has been the high cost and effort of creating and calibrating large banks of educational content. This paper presents a validated, end-to-end \"methodological blueprint\" that directly addresses this challenge by leveraging LLMs. The finding that the adaptive approach provides the greatest benefit to struggling learners highlights its potential for creating more equitable educational tools. By providing a strong, reproducible baseline, this work serves as an excellent foundation upon which other researchers can build, test alternative models, and push the field forward.\n\nOriginality: While the constituent technologies (LLMs for generation, IRT for adaptation) are not novel in themselves, their synthesis into a complete, operational, and rigorously evaluated framework is a novel and important contribution. The paper's primary originality lies in its system architecture and its function as a reproducible proof-of-concept that justifies and guides future real-world studies. It successfully bridges the gap between AI content generation and psychometric-based personalization.\n\nReproducibility: The authors demonstrate a strong commitment to reproducibility. They state that all code and data will be made available and provide sufficient detail in the methods section—including the number of simulated students, the distribution of their abilities, and the logic of the adaptive algorithm—to allow for the results to be independently verified and reproduced.\n\nEthics and Limitations: The paper excels in this dimension. The authors dedicate specific subsections to a thoughtful discussion of the limitations of their simulation and the ethical responsibilities associated with deploying AI in education. They rightly emphasize the necessity of human-in-the-loop verification to ensure content quality and fairness, and they acknowledge the need for robust data privacy measures. The plan for future work, including a 2x2 factorial study to disentangle the effects of content source and delivery method, is exemplary and demonstrates a deep understanding of rigorous experimental design.\n\nSummary:\nThis is an outstanding paper that is technically sound, clearly articulated, and highly significant. It presents a valuable blueprint for a new generation of adaptive learning systems. The authors' transparency about the work's limitations and their clear vision for future human-subject validation are particularly commendable. The paper is a perfect fit for the Agents4Science conference, both in its subject matter—an AI agent for personalized education—and in its transparent disclosure of how AI was used in the research process itself. This work sets a high standard for methodological rigor and scholarly communication in the emerging field of AI-driven science. It is a complete, compelling, and impactful piece of research."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission149/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775329095,
+    "mdate": 1760632180162,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "JnsSOoZElG",
+    "forum": "5Hit4lIpkl",
+    "replyto": "5Hit4lIpkl",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper presents a simulation blueprint for combining LLM-generated multiple-choice items with a 2-PL IRT-based adaptive selection strategy, evaluated on AP Chemistry. Strengths include a timely problem, sound psychometric methods, informative subgroup analysis, explicit discussion of ethics and limitations, and potential as a baseline for future work. However, there are major concerns: (1) Internal inconsistencies and missing methodological details threaten reproducibility (unclear number of conditions, undefined baselines, incomplete parameter reporting, and contradictory narrative). (2) The evaluation design risks closed-world bias due to oracle alignment and a small item bank without exposure control. (3) Metric choice and effect interpretation are questionable, with no effect sizes or confidence intervals reported. (4) The 2-PL model omits a guessing parameter, which is problematic for MCQs. (5) The scope is limited, with a small, single-expert-seeded item bank. Minor concerns include missing item-level statistics, lack of estimation error analysis, and unclear figure explanations. The work is conceptually incremental, and reproducibility is currently insufficient. Actionable recommendations include resolving inconsistencies, providing full reproducibility materials, defining baselines, adding ablations, reporting effect sizes, expanding the item bank, and considering stronger models and the 3-PL. Verdict: promising direction and clear framing, but significant methodological and reproducibility gaps must be addressed before publication."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission149/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775328851,
+    "mdate": 1760632180360,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "9ORRJtYUfy",
+    "forum": "5Hit4lIpkl",
+    "replyto": "5Hit4lIpkl",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Inconsistent sample size and t-test degrees of freedom: Results report t(19998) as if each comparison used two groups of N=10,000, while Methods state a single cohort of N=10,000 assigned to conditions (implying ~5,000/group and df≈9,998).\n- Baselines under-specified: Fixed-Difficulty baseline is used in Results but not defined in Methods; Figure 2 caption (page 5) mentions “four conditions” without describing a fourth condition anywhere.\n- Ability estimation details missing: MLE update method, convergence criteria, and handling of boundary cases (all-correct/all-incorrect) are not specified; MLE can be undefined/unstable in short tests.\n- Discrimination (a) parameter seeding not specified: Only difficulty (b) mapping is given; missing a-values undermines reproducibility and the validity of MFI-based selection.\n- Contradiction in initialization vs. discussion: Methods set θ_est = 0; Discussion claims starting with a slightly lower initial ability estimate.\n- Figure and section reference inconsistencies: Checklist references wrong sections; statement that Figure 1 has error bars is incorrect; Figure 2 caption claims four conditions (page 5 image).\n- Response generation model not explicitly specified: It should be stated that responses were sampled from 2PL using θ_true and item (a, b).\n- Lack of effect sizes and confidence intervals for main comparisons; only p-values reported.\n- Reproducibility claim lacks concrete artifacts in the manuscript: no URL for code/data; no full item parameter table."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776674605,
+    "mdate": 1760640278818,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "5Hit4lIpkl",
+    "forum": "5Hit4lIpkl",
+    "content": {
+      "title": {
+        "value": "AI-Driven Generation and Evaluation of a Personalized AP Chemistry Question Framework Using Item Response Theory: A Computational Proof-of-Concept"
+      },
+      "keywords": {
+        "value": [
+          "AI",
+          "Agent4Science",
+          "ML",
+          "LLM",
+          "IRT",
+          "AI in education"
+        ]
+      },
+      "abstract": {
+        "value": "This paper presents and evaluates a methodological blueprint for an adaptive learning system that integrates LLM-generated content with Item Response Theory (IRT). We conducted a large-scale simulation (N=10,000) where an agent administered a 30-item AP Chemistry question bank to virtual students, personalizing the question sequence based on real-time ability estimates. Our IRT-personalized agent achieved a statistically significant and robust performance gain over both random selection and fixed-difficulty baselines ($p < 0.0001$). A detailed subgroup analysis revealed that this performance lift extended across all learner ability levels and was most pronounced for students in the lower-to-average ability quartiles. Our findings validate the effectiveness of this synergistic framework and provide a strong, reproducible baseline justifying future human-subject experiments."
+      },
+      "pdf": {
+        "value": "/pdf/d85cd1e4fc87dfdefe807536539177a389a3e478.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "TLDR": {
+        "value": "In a large-scale simulation, an AI agent using LLMs to generate AP Chemistry questions and Item Response Theory (IRT) to personalize them significantly improved virtual student scores, especially for lower-to-average ability learners."
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025aidriven,\ntitle={{AI}-Driven Generation and Evaluation of a Personalized {AP} Chemistry Question Framework Using Item Response Theory: A Computational Proof-of-Concept},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=5Hit4lIpkl}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757836707378,
+    "odate": 1758112145415,
+    "mdate": 1759960938414,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission149/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission149/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "4pEqa1TsB4",
+    "forum": "5Hit4lIpkl",
+    "replyto": "5Hit4lIpkl",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Content and Item Response Theory Analysis of AI-Generated Multiple-Choice Items by Young, M. J., Cho, Y., & Lee, J.\n- Artificial Intelligence-Generated and Human Expert-Designed Vocabulary Tests: A Comparative Study by Luo, Y., Wei, W., & Zheng, Y."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777797989,
+    "mdate": 1760640277987,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission149/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

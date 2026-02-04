@@ -1,0 +1,404 @@
+[
+  {
+    "id": "vlkjLwVoOI",
+    "forum": "vlkjLwVoOI",
+    "content": {
+      "title": {
+        "value": "Integrating Uncertainty Quantification into Robust Multi-Agent Equilibrium Learning"
+      },
+      "keywords": {
+        "value": [
+          "multi-agent reinforcement learning",
+          "uncertainty quantification",
+          "robust RL",
+          "CVaR",
+          "risk-aware equilibrium",
+          "Nash equilibrium",
+          "ensemble critics",
+          "trust region",
+          "exploitability",
+          "distribution shift"
+        ]
+      },
+      "TLDR": {
+        "value": "We fuse ensemble-based uncertainty with CVaR objectives and a risk-aware NashConv to reach ε-RNE; across diverse tasks it maintains ID returns while markedly reducing catastrophic tail failures."
+      },
+      "abstract": {
+        "value": "In multi-agent systems, uncertainty is not a side effect—it is the default state of the world. Random environment changes, limited observations, and shifting opponent strategies make it hard to know payoffs exactly. Classical Nash equilibrium assumes every agent knows the exact, noise-free payoffs of all possible strategies, which rarely holds in practice. To address this gap, we introduce the ε-Robust Nash Equilibrium (ε-RNE), a new solution concept that explicitly accounts for uncertainty using coherent risk measures, implemented here with Conditional Value-at-Risk (CVaR). An ε-RNE ensures that no single agent can improve its risk-adjusted outcome by more than ε through unilateral changes, making strategies more reliable in noisy settings. We design a decentralized learning algorithm that combines deep-ensemble uncertainty estimation, risk-sensitive value calculation, and targeted policy updates, with an approximate best-response check to track progress. We prove convergence to ε-RNE under standard smoothness and bounded-variance assumptions, and show it recovers the classical Nash equilibrium when uncertainty is small or ε → 0. Across cooperative, competitive, and mixed-motive tasks, our method consistently reduces exploitability, lowers performance swings, and better handles distribution shifts compared to risk-neutral and uncertainty-agnostic baselines. This demonstrates that directly modeling uncertainty leads to more stable and trustworthy multi-agent coordination."
+      },
+      "pdf": {
+        "value": "/pdf/0f73b2bfa35697fab25193df0d22a77a70de0d3f.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025integrating,\ntitle={Integrating Uncertainty Quantification into Robust Multi-Agent Equilibrium Learning},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=vlkjLwVoOI}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1756859651902,
+    "odate": 1758112145415,
+    "mdate": 1759960934822,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission74/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission74/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "noehoM45wC",
+    "forum": "vlkjLwVoOI",
+    "replyto": "vlkjLwVoOI",
+    "content": {
+      "title": {
+        "value": "Significant Improvements Required for Publication"
+      },
+      "summary": {
+        "value": "This paper introduces the $\\varepsilon$‑Robust Nash Equilibrium ($\\varepsilon$‑RNE), a novel solution concept for multi‑agent systems that explicitly incorporates uncertainty through Conditional Value‑at‑Risk (CVaR). In contrast to the classical Nash equilibrium— which presumes exact knowledge of payoffs—$\\varepsilon$‑RNE employs risk‑adjusted payoffs, thereby enhancing robustness under stochastic dynamics, partial observability, and non‑stationary opponents. The authors report that ε‑RNE yields a 13-19 % improvement in CVaR relative to the Risk‑Neutral baseline. However, the empirical results do not clearly demonstrate a performance advantage over other strong baselines, such as the Worst‑Case approach, and the current comparison may not necessarily fair. Moreover, several structural, experimental, and presentation issues impede the manuscript’s impact."
+      },
+      "strengths_and_weaknesses": {
+        "value": "- Logical Flow: It is not clear how the objectives defined in Section 2 motivate the variance and KL‑regularization terms introduced in Section 3.3. \n - Also, related to the point above, it is not empirically checked if a trained policy model using the proposed objective function and Algorithm 1 satisfies the $\\varepsilon$‑RNE condition. \n- Empirical Validation: The performance gap does not seem statistically significant. Also, it would be helpful for readers how these baseline methods are selected. \n- Figure Quality: Figure 2 has broken equations and wrong annotations for VaR and CVaR. Figure 3 has too many figures that do not necessarily have common topics/messages.\n- Technical Definitions: Explicitly define VaR in Equation (2) and introduce the notation when it first appears. Also, in Equation (10), $\\pi^{BR}$ is not defined."
+      },
+      "quality": {
+        "value": 1
+      },
+      "clarity": {
+        "value": 1
+      },
+      "significance": {
+        "value": 1
+      },
+      "originality": {
+        "value": 2
+      },
+      "questions": {
+        "value": "The reviewer does not have questions to ask. Improving the overall writing quality is required for quality reviews."
+      },
+      "limitations": {
+        "value": "yes"
+      },
+      "overall": {
+        "value": 2
+      },
+      "confidence": {
+        "value": 2
+      },
+      "ethical_concerns": {
+        "value": "NA"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission74/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759444353389,
+    "mdate": 1760632158075,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission74/Reviewer_WFNt"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission74/Reviewer_WFNt"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "nYIbQ5OhZa",
+    "forum": "vlkjLwVoOI",
+    "replyto": "vlkjLwVoOI",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- CVaR tail convention inconsistency: Eq. (2) (page 2) and Figure 2 (page 4) vs Eq. (8) (pages 3–4) and Table 1 (page 6). The paper averages the bottom α fraction while standard CVaR at level α targets the worst (1−α) tail.\n- Mismatch between theoretical risk measure (coherent risk on returns/losses) and implementation (CVaR over ensemble Q-head predictions). This surrogate does not guarantee coherence with respect to the environment’s return distribution.\n- ε-RNE definition inconsistency: per-state definition in Section 2.2 (page 3) vs aggregated definition and certificate in Appendix A.5 (page 13). The provided lemma certifies only the aggregated notion under exact BR, not the per-state condition stated earlier.\n- Convergence guarantee is overstated: only a definitional certificate and an \"idealized\" monotonicity note are provided; no rigorous convergence proof under the stated assumptions.\n- Approximate best-response stopping rule: using finite-step BR (B=16) without error bounds undermines the validity of the certificate claim; this is only informally acknowledged.\n- OOD shift specification details are insufficient in the main text to fully assess reproducibility and fairness of the robustness claims (pages 5–7).\n- Minor clarity issues: Table 1 notes \"S seeds\" while Appendix states 10 seeds; lack of explicit BR optimization details; normalization of metrics to [0,1] without raw units can obscure effect sizes."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776784654,
+    "mdate": 1760639973401,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "dMNQzKNIPJ",
+    "forum": "vlkjLwVoOI",
+    "replyto": "vlkjLwVoOI",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces ε-Robust Nash Equilibrium (ε-RNE), a risk-aware equilibrium concept using CVaR, and presents a decentralized MARL algorithm leveraging deep-ensemble critics, CVaR-based value targets, KL trust region updates, and a risk-aware exploitability monitor. Experiments show improved robustness under distribution shifts compared to baselines. \n\nStrengths include strong motivation, appealing conceptual contributions, sensible algorithmic design, empirical robustness improvements, and generally clear writing. \n\nHowever, there are major concerns:\n1) The implementation conflates epistemic uncertainty (ensemble head variation) with CVaR over returns, lacking theoretical justification and potentially undermining the risk-aware equilibrium claims.\n2) There is severe confusion and inconsistency in the definition and usage of the α parameter for CVaR, which may invalidate experimental results.\n3) Theoretical claims about convergence and recovery of NE are overstated; no rigorous convergence proof is provided for the proposed algorithm.\n4) Essential evaluation and reproducibility details are missing, making it impossible to verify or reproduce results.\n5) Related work on risk-aware equilibria and distributionally robust games is insufficiently covered.\n6) The validity of the NashConvρ metric and fairness of baselines are questionable, with a need for stronger baselines and validation against exact best responses.\n\nMinor issues include inconsistent notation, unclear sign conventions, incomplete figures/tables, and incomplete citations. \n\nOverall, the idea is promising and potentially impactful, but the conceptual and implementation mismatch for the risk measure, α inconsistency, lack of theoretical support, and reproducibility gaps are serious flaws. The paper is not recommended for acceptance in its current form, but could become strong with substantial revisions addressing these issues."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission74/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775625797,
+    "mdate": 1760632157916,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "c7Yuhi5PL2",
+    "forum": "vlkjLwVoOI",
+    "replyto": "vlkjLwVoOI",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission74/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948931388,
+    "mdate": 1760632267804,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Iommw6yrxm",
+    "forum": "vlkjLwVoOI",
+    "replyto": "vlkjLwVoOI",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777768097,
+    "mdate": 1760639972716,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "8rVp0GAVvs",
+    "forum": "vlkjLwVoOI",
+    "replyto": "vlkjLwVoOI",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces a novel and significant contribution to multi-agent reinforcement learning (MARL) by proposing the ɛ-Robust Nash Equilibrium (ɛ-RNE), a new solution concept that generalizes the classical Nash Equilibrium to account for risk and uncertainty using Conditional Value-at-Risk (CVaR). The authors present a practical, decentralized learning algorithm that combines deep ensembles for uncertainty quantification, CVaR-based value targets for risk aversion, and an uncertainty-guided exploration strategy stabilized by a trust region. They also introduce a risk-aware version of NashConv to empirically measure progress toward ɛ-RNE.\n\nThe paper is technically outstanding, with a principled theoretical foundation, thoughtful algorithmic design, and exemplary experimental rigor. The empirical evaluation spans a diverse set of multi-agent tasks, including out-of-distribution protocols, and demonstrates substantial improvements in robustness and reductions in catastrophic failures compared to strong baselines. The paper is exceptionally well-written, clearly organized, and includes detailed appendices for reproducibility. The significance and impact are very high, providing both conceptual and practical advances for robust and safe multi-agent systems. The work is highly original in its synthesis of known components into a cohesive framework for risk-aware equilibria, and the authors are transparent about limitations and ethical considerations.\n\nOverall, this is a landmark paper that sets a new standard for robust multi-agent learning, combining novel theory, practical algorithms, and strong empirical results. It is an unequivocal strong accept and receives my highest recommendation for the conference."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission74/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775626111,
+    "mdate": 1760632157744,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "7SXaNoAkrj",
+    "forum": "vlkjLwVoOI",
+    "replyto": "vlkjLwVoOI",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces the ε-Robust Nash Equilibrium (ε-RNE), a new solution concept for multi-agent reinforcement learning that incorporates uncertainty quantification through Conditional Value-at-Risk (CVaR). While the paper addresses an important problem and demonstrates empirical improvements, there are several significant concerns.\n\nQuality and Technical Soundness:\nThe technical approach is generally sound, combining deep ensemble uncertainty estimation, CVaR-based risk-adjusted value functions, and a decentralized learning algorithm. However, there are some concerns:\n1. The convergence proof mentioned in the abstract is not provided in the main paper - only sketched in the appendix\n2. The connection between ensemble disagreement and epistemic uncertainty is assumed but not rigorously validated\n3. The best-response approximation with B=16 steps may be insufficient for complex environments\n\nClarity and Organization:\nThe paper is well-written overall with clear motivation and methodology. The figures effectively illustrate the key concepts. However:\n1. The mathematical notation could be more precise in places (e.g., the exact form of the CVaR computation over ensembles)\n2. Some experimental details are relegated to the appendix making reproducibility assessment difficult\n\nSignificance and Impact:\nThe work addresses a fundamental limitation of classical Nash equilibrium in uncertain environments. The consistent improvements across diverse environments (13-19% CVaR improvements, 40-45% reduction in catastrophic failures) are compelling. However:\n1. The environments tested are relatively simple - scalability to complex real-world scenarios remains unclear\n2. The 5x memory overhead from ensembles may limit practical adoption\n3. The improvements, while consistent, are modest in absolute terms\n\nOriginality:\nThe combination of risk-sensitive RL, uncertainty quantification, and equilibrium learning is novel. The ε-RNE concept provides a principled way to incorporate risk preferences into multi-agent systems. However, the individual components (CVaR, deep ensembles, trust regions) are well-established techniques.\n\nReproducibility:\nThe authors promise to release code and provide detailed hyperparameters in the appendix. The experimental setup appears well-documented, though some key details are missing from the main paper.\n\nLimitations and Ethics:\nThe authors adequately discuss computational overhead and potential limitations. The responsible AI statement addresses key concerns including dual-use potential and miscalibration risks.\n\nMajor Concerns:\n1. Theoretical contributions are under-developed - the convergence proof should be in the main paper\n2. The scalability of the approach to more complex, high-dimensional environments is questionable\n3. The relationship between ensemble disagreement and true epistemic uncertainty needs stronger validation\n4. Comparison baselines could be stronger - missing comparisons to other uncertainty-aware MARL methods\n\nMinor Issues:\n1. Some figures (especially Figure 3) are quite dense and could benefit from clearer labeling\n2. The paper could better discuss when the approach might fail or be inappropriate\n3. More analysis of the hyperparameter sensitivity would strengthen the work\n\nOverall, this is a solid contribution that addresses an important problem with a principled approach and demonstrates consistent empirical improvements. However, the theoretical development is incomplete, scalability concerns remain unaddressed, and the improvements, while consistent, are somewhat modest. The work represents meaningful progress but falls short of being groundbreaking."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission74/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775626640,
+    "mdate": 1760632157618,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission74/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

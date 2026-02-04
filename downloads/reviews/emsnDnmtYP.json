@@ -1,0 +1,418 @@
+[
+  {
+    "id": "s46PJ68FAu",
+    "forum": "emsnDnmtYP",
+    "replyto": "emsnDnmtYP",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces Multi-Agent Social Simulation (MASS), a novel framework using Large Language Models (LLMs) as 'intersubjective agents' to simulate complex social processes. The approach leverages LLMs' implicit understanding of social norms and language, grounding the method in theories of intersubjectivity and linguistics. The authors validate MASS by replicating the Card and Krueger (1994) minimum wage experiment, successfully reproducing its key findings and providing auditable 'intention texts' from agents.\n\nStrengths include exceptional originality and significance, methodological rigor (including strong validation against a canonical economics study and use of causal inference methods), intellectual depth and clarity, mechanism transparency via intention texts, and honesty about limitations with a commitment to reproducibility. Weaknesses are minor: the paper could benefit from more detail on the simulation environment, a more systematic analysis of intention texts, and exploration of agent heterogeneity.\n\nOverall, this is a groundbreaking, paradigm-setting paper, recommended for acceptance without hesitation."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission130/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775689867,
+    "mdate": 1760632173085,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "q5QvzVmt9Y",
+    "forum": "emsnDnmtYP",
+    "replyto": "emsnDnmtYP",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission130/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948914045,
+    "mdate": 1760632275418,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "j3tnj7OxRK",
+    "forum": "emsnDnmtYP",
+    "replyto": "emsnDnmtYP",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777877814,
+    "mdate": 1760640059735,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "emsnDnmtYP",
+    "forum": "emsnDnmtYP",
+    "content": {
+      "title": {
+        "value": "Multi-Agent Social Simulation: An Experimental Framework for Language-Native Social Experiments"
+      },
+      "authors": {
+        "value": [
+          "胡晓李",
+          "yang shen",
+          "Keke You"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "~胡晓李1",
+          "124739259@qq.com",
+          "kelcey@cuc.edu.cn"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "Multi-Agent Social Simulation; Research Method; Social Experiment; Social Simulation; Intersubjectivity"
+        ]
+      },
+      "TLDR": {
+        "value": "We introduce MASS, a novel language-native multi-agent methodology and validate its reliability and validity using a minimum-wage simulation; the paper therefore establishes MASS as a reproducible platform for future ex-ante policy experiments."
+      },
+      "abstract": {
+        "value": "We introduce Multi-Agent Social Simulation (MASS), a language-native experimental framework in which large language models (LLMs) act as intersubjective agents. MASS models social processes directly in natural language and executes policy shocks in a controllable, round-based environment while recording both numeric actions and one-sentence intention rationales. We specify a minimal, sufficient protocol (time granularity, exogenous rules, agent autonomy, controlled contrasts, independent replications) and use intention texts to link dialogue chains to causal chains for mechanism audits. As a validity and reliability testbed, we revisit the New Jersey–Pennsylvania minimum-wage case: across 46 weekly rounds and multiple independent replications, MASS reproduces the classic Card–Krueger pattern — post-policy starting wages rise (about $0.65/h), employment effects are statistically indistinguishable from zero, and prices move only mildly; a counterfactual group without the wage floor shows no such pattern. Keeping a single modeling equation (the conditional language-model objective) anchors outputs in the public-language corpus that embodies intersubjectivity. MASS combines experimental control and repeatability with language-based coordination and explanation, offering a low-risk platform for ex-ante policy probing and extreme counterfactuals in the social sciences."
+      },
+      "pdf": {
+        "value": "/pdf/824cfd56a956d85277243f8d054756dc2a0363d9.pdf"
+      },
+      "supplementary_material": {
+        "value": "/attachment/87acd1a5c98c3d3454d9f7e456a63cf1254676b0.zip"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\n2025multiagent,\ntitle={Multi-Agent Social Simulation: An Experimental Framework for Language-Native Social Experiments},\nauthor={胡晓李 and yang shen and Keke You},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=emsnDnmtYP}\n}"
+      },
+      "paperhash": {
+        "value": "|multiagent_social_simulation_an_experimental_framework_for_languagenative_social_experiments"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/Submission130/-/Revision",
+      "Agents4Science/2025/Conference/Submission130/-/Camera_Ready"
+    ],
+    "cdate": 1757781200350,
+    "pdate": 1759960937449,
+    "odate": 1758112145415,
+    "mdate": 1760935504600,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission130/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission130/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Vl6cNHVfEz",
+    "forum": "emsnDnmtYP",
+    "replyto": "emsnDnmtYP",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces MASS, a language-native multi-agent social simulation framework using LLM agents to model economic policy shocks, with a focus on the Card–Krueger minimum wage case. The paper is well-written, clearly organized, and proposes a transparent mechanism for auditing agent intentions. The authors promise reproducibility via artifact release and provide a concise protocol. However, there are major concerns: the environment dynamics are under-specified, making agent incentives and the realism of outcomes unclear; the risk of tautological replication due to LLM corpus priors is not adequately controlled; statistical identification is incomplete, lacking pre-trend checks and robust inference; critical implementation details (model, prompts, parameters) are missing; and the evaluation scope is narrow with insufficient related work coverage. Minor comments include the need for more concrete mechanistic modeling, better motivation for agent group sizes, and improved reporting of confidence intervals. The ethical stance is thoughtful, but more discussion of bias and de-biasing is needed. The paper is promising but currently lacks scientific rigor and completeness. Recommendation: reject, but encourage substantial revision."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission130/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775689437,
+    "mdate": 1760632173426,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Pab7IPCptn",
+    "forum": "emsnDnmtYP",
+    "replyto": "emsnDnmtYP",
+    "content": {
+      "title": {
+        "value": "Review"
+      },
+      "summary": {
+        "value": "This paper proposes Multi-Agent Social Simulation, a language-native framework where LLMs act as intersubjective agents to simulate social processes. The authors argue that MASS bridges gaps between natural experiments and agent-based modeling by combining reproducibility, causal identification and mechanism auditing through intention texts. As validation, the authors revisit the NJP minimum wage case, showing that the framework reproduces the classic findings (wage increase, no clear employment loss, mild price shifts)."
+      },
+      "strengths_and_weaknesses": {
+        "value": "# Strengths:\n1. Clear Motivation: Addresses limitations of natural experiments (lack of control) and ABM (hand-coded rules, lack of language use).\n\n2. Interesting Concept: Using LLMs as intersubjective “agents” is novel and grounded in philosophical and linguistic arguments.\n\n3. Transparency Attempt: The use of intention texts for mechanism auditing is an innovative touch, adding interpretability to multi-agent simulations.\n\n# Weaknesses:\n1. Incomplete Paper: The submission is short, leaves several sections underdeveloped, and does not reach the expected completeness of my own.\n2. Overly Philosophical: Heavy reliance on Husserl/Schutz/Wittgenstein adds conceptual framing but distracts from empirical contribution. Many readers in applied AI/agent systems will find it hard to extract actionable methods.\n3. Technical Novelty: The method is essentially a structured application of multi-agent prompting + DID analysis. The originality lies more in framing than in substantive algorithmic contribution."
+      },
+      "quality": {
+        "value": 2
+      },
+      "clarity": {
+        "value": 2
+      },
+      "significance": {
+        "value": 2
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "1. What sensitivity analyses were performed to test robustness across decoding strategies, model sizes, or prompt formulations?\n\n2. How can MASS results be calibrated to real-world data distributions, beyond DID alignment in a single case? In my concept it's important to find a path to connect to the real-world scenarios.\n\n3. Can you clarify the balance between philosophical framing and empirical contribution? What are the actionable takeaways for practitioners?"
+      },
+      "limitations": {
+        "value": "The authors acknowledge biases, external validity limits, and dependence on corpus/world modeling. However, the practical limitations (e.g., narrow scope, insufficient evaluation) are underdiscussed. Stronger emphasis on when this method should not be trusted would help."
+      },
+      "overall": {
+        "value": 3
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ethical_concerns": {
+        "value": "No major ethical concerns; simulation avoids human subjects. The main caution is about external misuse of results without careful calibration."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission130/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759423126506,
+    "mdate": 1760632173610,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission130/Reviewer_1z32"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission130/Reviewer_1z32"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "1re8B3wYjZ",
+    "forum": "emsnDnmtYP",
+    "replyto": "emsnDnmtYP",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces Multi-Agent Social Simulation (MASS), a framework using LLMs as intersubjective agents to simulate social experiments. The authors test their approach by replicating the classic Card-Krueger minimum wage study, finding that their simulation reproduces the key empirical findings.\n\nQuality:\nThe paper is technically sound with a clear methodology. The choice to validate MASS against the well-established Card-Krueger findings is smart - it provides a known benchmark against which to assess the framework's validity. The difference-in-differences analysis is appropriately implemented with proper controls, clustered standard errors, and multiple replications. The results successfully reproduce the key Card-Krueger pattern (wages up ~$0.65/h, employment effects near zero, mild price effects), while the counterfactual group shows no such pattern. However, the technical contribution is somewhat limited - the core innovation is applying existing LLM capabilities to social simulation rather than developing new AI methods.\n\nClarity:\nThe paper is generally well-written and organized. The theoretical foundations connecting LLMs to intersubjectivity through the training corpus are clearly articulated. The method box provides a concise protocol summary, and the results are presented with appropriate statistical measures. However, some key implementation details are relegated to promised artifacts rather than included in the main text.\n\nSignificance:\nThe work addresses an important gap in social science methodology - the tension between experimental control and realism. MASS offers a potentially valuable middle ground between natural experiments (high realism, low control) and traditional ABM (high control, low realism). The ability to conduct \"zero-risk\" policy experiments with interpretable agent reasoning could be valuable for policy analysis. However, the significance is limited by testing on only one well-studied case, and the generalizability remains unclear.\n\nOriginality:\nWhile multi-agent systems and social simulation exist, the specific combination of language-native agents grounded in intersubjectivity theory appears novel. The philosophical grounding in Husserlian intersubjectivity provides theoretical depth beyond typical LLM applications. However, the core technical approach is relatively straightforward application of existing LLM capabilities.\n\nReproducibility:\nThe authors promise comprehensive artifacts including protocols, seeds, logs, and analysis code. The method box provides key parameters, and statistical procedures are clearly specified. The replication across independent runs (A/B/D groups) strengthens confidence in reproducibility.\n\nLimitations and Ethics:\nThe authors appropriately acknowledge key limitations including corpus biases, external validity dependence on world modeling, and the need to separate simulation from causal identification. The ethical considerations are well-addressed - no human subjects, synthetic outputs only, and explicit positioning as pre-policy exploration rather than predictive truth.\n\nKey Concerns:\n1. Limited validation - only one historical case tested\n2. No comparison against alternative simulation approaches beyond conceptual table\n3. Unclear how well the approach would work for less well-documented phenomena\n4. The \"intention texts\" provide interesting mechanism insights but their reliability as causal explanations is unclear\n5. Heavy reliance on promised artifacts for reproducibility details\n\nStrengths:\n1. Novel and theoretically grounded approach to social simulation\n2. Successful replication of established empirical findings\n3. Clear methodology with proper statistical analysis\n4. Addresses important methodological gap in social sciences\n5. Comprehensive consideration of limitations and ethics\n\nThe paper presents an interesting methodological contribution with solid initial validation, but would benefit from broader empirical testing and more detailed technical exposition."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission130/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775690134,
+    "mdate": 1760632172908,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "0HRJDQC8EZ",
+    "forum": "emsnDnmtYP",
+    "replyto": "emsnDnmtYP",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- DID specification likely misspecified: uses only time fixed effects and agent-clustered SEs; omits unit (agent) fixed effects; no pre-trend/event-study checks.\n- Clustering at the agent level is misaligned with treatment at the state level; potential Moulton bias; no small-sample corrections or alternative inference strategies.\n- World model lacks structural coupling (no demand/cost/profit linkage) between wage, employment, and price; results may reflect unconstrained agent choices rather than emergent economic behavior.\n- Severe NJ:PA imbalance (16:4 agents) without justification; small control group undermines statistical power and precision.\n- High risk of LLM training leakage on the minimum-wage literature; no blinding/masking tests to assess whether results reflect prior narratives rather than simulated mechanisms.\n- Mechanism \"audit\" via one-sentence intentions is anecdotal without systematic coding, validation, or linkage to structural mechanisms.\n- Key implementation details (e.g., price band parameters, environment dynamics, decoding settings) are deferred to artifacts and not specified in the paper, limiting in-text evaluability.\n- Inconsistency between narrative and Table 2 for the control (C) employment DID magnitude; lack of reported standard errors for the table values and no CIs for price."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776807181,
+    "mdate": 1760640060400,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission130/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

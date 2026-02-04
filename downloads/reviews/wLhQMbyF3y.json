@@ -1,0 +1,334 @@
+[
+  {
+    "id": "wLhQMbyF3y",
+    "forum": "wLhQMbyF3y",
+    "content": {
+      "title": {
+        "value": "Adaptive Federated Q-Learning with Importance Averaging: Near-Optimal Sample Complexity and $K$-Independent Communication"
+      },
+      "keywords": {
+        "value": [
+          "Federated Reinforcement Learning"
+        ]
+      },
+      "abstract": {
+        "value": "We revisit federated tabular Q-learning with $K$ decentralized agents that interact with a common MDP under heterogeneous behavior policies and periodically synchronize with a server. We analyze a simple, practical scheme: local asynchronous Q-learning with \\emph{importance averaging} at synchronization and an \\emph{adaptive doubling} communication schedule. Counting \\emph{total} environment steps across all agents, we show that the sample complexity matches a centralized learner up to logarithmic factors and depends on the minimum entry of the \\emph{average} stationary occupancy, not the worst single agent.The number of synchronization rounds is $\\tilde{\\mathcal{O}}\\big((1-\\gamma)^{-1}\\log(1/\\varepsilon)\\big)$, independent of $K$. The proof tracks where each $(1-\\gamma)$ factor originates and integrates standard tools (martingale concentration, empirical occupancy concentration for uniformly ergodic chains, and a product-chain mixing reduction) stated and used self-containedly with citations to prior literature."
+      },
+      "pdf": {
+        "value": "/pdf/0af21d6de218ea2d8b1ae624987f88e7c8e67ed9.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025adaptive,\ntitle={Adaptive Federated Q-Learning with Importance Averaging: Near-Optimal Sample Complexity and \\$K\\$-Independent Communication},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=wLhQMbyF3y}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/7cc6ca6b1f57889ea94221f33c2c1c928a0dcf14.zip"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission317/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1758070486340,
+    "odate": 1758112145415,
+    "mdate": 1759960945994,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission317/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission317/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "hHuTmwRL8F",
+    "forum": "wLhQMbyF3y",
+    "replyto": "wLhQMbyF3y",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Breaking the sample complexity barrier to Q-learning: Mixing time matters by G. Li, Y. Wei, Y. Chen, and Y. Chi\n- Provable self-play algorithms for competitive reinforcement learning by Y. Bai and J. T. Lee\n- Sample efficient reinforcement learning with generative models by Z. Zhang, Y. Zhou, and Q. Gu"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777904589,
+    "mdate": 1760639969847,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "cIQyymcNV1",
+    "forum": "wLhQMbyF3y",
+    "replyto": "wLhQMbyF3y",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper investigates federated Q-learning with K decentralized agents interacting with a common MDP under potentially heterogeneous behavior policies. The authors propose a scheme combining local asynchronous Q-learning with periodic synchronization, featuring importance averaging at the server and an adaptive doubling schedule for local steps between communication rounds. The main contributions are theoretical: a finite-sample analysis shows the algorithm achieves total sample complexity matching a centralized learner up to logarithmic factors, with complexity depending on the average stationary occupancy across agents, and communication rounds required are independent of K. \n\nStrengths include significant theoretical results (sample complexity and K-independent communication complexity), exceptional clarity and presentation, technical soundness, and thorough literature context. Weaknesses are reliance on strong (though standard) assumptions (uniform ergodicity and mixing times), and the incremental nature of the originality (building on prior work, especially [28], with novelty in the combination and analysis). Suggestions include expanding discussion on the uniform mixing time assumption, clarifying the product-chain reduction argument, and providing more experimental details for Figure 2.\n\nOverall, this is a high-quality, well-written paper with rigorous analysis and significant contributions to federated RL, and is strongly recommended for acceptance."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 5
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 5
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission317/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775996787,
+    "mdate": 1760632229429,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "WY2RiDcwiK",
+    "forum": "wLhQMbyF3y",
+    "replyto": "wLhQMbyF3y",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission317/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950061657,
+    "mdate": 1760632302423,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "P1edCNCKFl",
+    "forum": "wLhQMbyF3y",
+    "replyto": "wLhQMbyF3y",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Occupancy concentration (Eq. (4), pages 6–7) is too strong without ensuring expected counts are large: it lacks a condition like K τ_h μ_avg ≳ c log(|S||A|K/δ). As written, it can fail for rare pairs, yet it is used to derive min_{(s,a)} n_h(s,a) ≥ (1/2) K μ_avg τ_h and drive contraction.\n- Textual claim that τ_h ≳ t_mix^max log(·) ensures all pairs receive visits with high probability (page 8, lines 234–236) is incorrect unless K τ_h μ_avg is sufficiently large; rare pairs can still be unvisited.\n- The proof outline for Theorem 1 relies on multiplicative concentration uniformly over all pairs and stages; for small μ_avg the uniform lower bound does not hold early. The argument should be revised to use additive concentration or stage-length conditions incorporating μ_avg.\n- Stepsize selection depends on unknown μ_avg and t_mix^max (page 5, lines 165–172, Theorem 1). Practical guidance or robustness analysis is missing.\n- Minor: Product-chain mixing reference (page 6–7) is unnecessary given agent independence; a union bound over agents with per-chain concentration suffices.\n- Derivation details for the Freedman-based noise term and the precise origins of each (1−γ) factor are mostly sketched; expanding these would improve formal completeness."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776916937,
+    "mdate": 1760639970598,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Has9dQtYZ1",
+    "forum": "wLhQMbyF3y",
+    "replyto": "wLhQMbyF3y",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper presents a clear and practically relevant approach to federated tabular Q-learning, introducing importance averaging, a doubling schedule for synchronization, and focusing on average stationary occupancy (µavg) for coverage. The analysis is well-motivated, the write-up is organized, and the communication complexity result is notable. However, there are significant concerns: (1) The sample complexity exponent in (1−γ) is worse than the best known centralized results, so the claim of 'matching centralized' is overstated unless further clarified or improved. (2) The proofs are incomplete and lack technical detail, making it difficult to verify key steps and constants. (3) Some assumptions (e.g., uniform ergodicity, µavg>0, uniform mixing time) are strong and their practicality is not fully discussed. (4) The dependence on µavg vs. |S||A| is not contextualized with examples or propositions. (5) The communication bound proof is terse and would benefit from more explicit derivation. (6) Even a small empirical illustration would help substantiate the practical claims. Overall, the paper is a useful synthesis with moderate novelty, but the theoretical contribution is weakened by incomplete proofs and an overstated optimality claim. With more rigorous proofs and sharper exponents, it would be much stronger."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission317/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775996505,
+    "mdate": 1760632229549,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "95TkOheTjI",
+    "forum": "wLhQMbyF3y",
+    "replyto": "wLhQMbyF3y",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a theoretical analysis of federated Q-learning with importance averaging, claiming near-optimal sample complexity and K-independent communication rounds. The technical analysis is sound, with correct and well-motivated theorems, and the use of μ_avg as a coverage parameter is an improvement over prior work. The paper is generally clear and well-organized, though some technical details and proof sketches could be more detailed. The contributions are meaningful but incremental, limited by the restriction to tabular settings and strong assumptions such as uniform ergodicity and synchronous communication. The work is an incremental extension of existing federated RL theory, with novelty in the analysis but not a significant conceptual advance. The lack of experimental validation further limits practical relevance. The related work is well-cited, and limitations are discussed. Major concerns include limited practical impact, strong assumptions, lack of experiments, and the incremental nature of the results. Minor issues include clarity of notation and integration of figures. Additionally, the paper was generated >95% by AI, raising concerns about the depth of understanding and genuine research contribution. Overall, the paper is technically correct but does not meet the high standards expected for a top-tier venue due to its limited practical relevance, incremental contributions, and AI involvement."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission317/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775996986,
+    "mdate": 1760632229212,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission317/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "id": "gfZUyPH0Oa",
+    "forum": "I9plFigPxl",
+    "replyto": "I9plFigPxl",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- NASA-TLX Performance scoring/interpretation appears non-standard (Table 1 caption says higher is better) without documenting inversion of the original scale.\n- Contradictory claim that mouse outperformed all dimensions vs. Table 1 showing pointer has higher Performance (page 5 lines 213–218; Table 1 page 6).\n- Inadequate counterbalancing: only two fixed orders with unequal assignment; pointer condition never last, leaving order/learning confounds (page 3 lines 116–121).\n- Critical task details missing: number of trials per condition, target rating distribution, randomization/balancing of targets; undermines reproducibility and interpretation of CIs.\n- Cross-device confounds not controlled: no matching of physical target sizes, pointer gain/acceleration, or viewing distance between tablet and laptop (page 4 lines 155–161).\n- Ambiguous/insufficient definition of error metrics (e.g., \"overshoot\"), especially for the touch condition without hover (Table 3 page 6).\n- Formal contradictions: claims of no PII collected vs. asking for participant names (page 3 lines 103–104 vs. page 4 lines 147–148).\n- Formal inconsistency in questionnaire counts: text says five total, but described protocol implies eight (page 3 lines 96–97).\n- Mischaracterization of mouse as absolute positioning; confusion between absolute and relative mappings (page 7 lines 251–254; page 3 lines 132–134).\n- Wording ambiguity: Figure 1 caption and text imply the experimenter hovered rather than participants (page 4; page 3 lines 113–116).\n- Overclaiming in Abstract/Discussion given overlapping CIs and no inferential tests (e.g., \"improves selection accuracy\" and \"approaching mouse-level precision\").\n- Placing a numerical result (average similarity = 50) in the Methods section rather than Results (page 5 lines 197–200).\n- Reliance on SUS to infer fewer objective errors is inappropriate; SUS is a subjective usability measure (page 5 lines 219–227).\n- Very small, homogeneous sample (n=5, all male) with short sessions; limits generalizability and stability of estimates."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776700793,
+    "mdate": 1760640188892,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ctnkjH7N9m",
+    "forum": "I9plFigPxl",
+    "replyto": "I9plFigPxl",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces a novel software-based 'tablet mouse pointer' technique to restore hover functionality on touchscreens, emulating the desktop 'hover-then-click' paradigm. The authors conduct a user study with five participants, comparing their technique to direct touch and a laptop mouse, measuring speed, accuracy, workload (NASA-TLX), and usability (SUS). Results show improved accuracy and reduced errors over direct touch, but with increased completion time and higher perceived demand. \n\nThe paper is conceptually sound, well-motivated, and exceptionally well-written, with thorough methodological transparency and reproducibility. The problem addressed is significant, and the originality lies in the general-purpose, software-only approach. However, the critical flaw is the severely underpowered evaluation (N=5), making the quantitative results statistically inconclusive and undermining the validity of the claims. The authors are commendably honest about limitations and ethical considerations.\n\nIn conclusion, while the paper is an excellent pilot study with high potential, the insufficient empirical evidence prevents it from being a reliable, generalizable contribution suitable for a top-tier conference. The core claims require validation with a larger, more robust study."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission251/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775395598,
+    "mdate": 1760632209472,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "aShFndJRXq",
+    "forum": "I9plFigPxl",
+    "replyto": "I9plFigPxl",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission251/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950083757,
+    "mdate": 1760632289024,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "I9plFigPxl",
+    "forum": "I9plFigPxl",
+    "content": {
+      "title": {
+        "value": "Restoring Hover on Touchscreens Using a Mouse Pointer"
+      },
+      "keywords": {
+        "value": [
+          "Hover interaction",
+          "Tablet mouse pointer",
+          "Mobile touchscreen",
+          "Virtual pointer",
+          "Usability evaluation",
+          "User experience"
+        ]
+      },
+      "TLDR": {
+        "value": "Tablet mouse pointer enables desktop-style hover and click on touchscreens, improving accuracy and reducing occlusion while remaining usable."
+      },
+      "abstract": {
+        "value": "Hover is a fundamental interaction mechanism in desktop environments, enabling both visual preview before action and physical hover, where users can rest a finger without triggering input. These capabilities are absent on mobile touchscreens due to the direct nature of touch input, resulting in inconsistencies between the desktop and mobile interaction phases. To address this limitation, we introduce the tablet mouse pointer, a novel technique that restores two-phase interaction: hover followed by tap. \n  Five participants performed a dynamic star-rating task under three counterbalanced interaction methods—tablet mouse pointer, tablet touch, and laptop mouse—and we measured workload (NASA-TLX), usability (SUS), and quantitative performance. Results show that the tablet pointer improves selection accuracy and reduces unintended input compared to direct touch, while approaching mouse-level precision, with modest increases in temporal and physical demand. This work demonstrates that desktop-style hover can be effectively simulated on mobile devices, offering a promising path to more precise, preview-rich touchscreen interactions."
+      },
+      "pdf": {
+        "value": "/pdf/aadf9e8414a5f9af6da5efccf62f61a11e3657b2.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "supplementary_material": {
+        "value": "/attachment/91ec750b78c5433b27b15b2676097da2d47a5427.zip"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025restoring,\ntitle={Restoring Hover on Touchscreens Using a Mouse Pointer},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=I9plFigPxl}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757993878855,
+    "odate": 1758112145415,
+    "mdate": 1759960943222,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission251/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission251/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "G4rTb3yK9f",
+    "forum": "I9plFigPxl",
+    "replyto": "I9plFigPxl",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces a 'tablet mouse pointer' for touchscreens, aiming to restore hover-then-activate interactions. A small within-subjects study (n=5) compares the pointer to direct touch and a laptop mouse, showing reduced overshoot and similar attempts to mouse, but slower performance. Subjective ratings favor the pointer for performance but not usability. The paper is well-motivated, with clear limitations and mixed-methods evaluation, but suffers from limited novelty, missing related work, and significant methodological issues: very small, homogeneous sample, cross-device confounds, incomplete counterbalancing, missing trial counts, and lack of inferential statistics. There are inconsistencies in device mapping descriptions and some interpretational errors. The evaluation is limited to a single task, reducing generalizability. While the idea is practical, the evidence is preliminary and the contribution's significance is limited. Substantial revision, broader evaluation, and stronger positioning versus prior work are needed before acceptance."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission251/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775395343,
+    "mdate": 1760632209584,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Ew5TIu117H",
+    "forum": "I9plFigPxl",
+    "replyto": "I9plFigPxl",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents the \"tablet mouse pointer,\" a technique to restore hover interactions on mobile touchscreens by introducing a virtual pointer controlled through finger gestures. While the idea addresses a usability gap between desktop and mobile interfaces, the paper has significant limitations that prevent it from meeting the standards of a top-tier scientific venue. The technical contribution is sound but incremental, lacking substantial originality as similar approaches have been explored previously. The experimental methodology uses standardized measures but is severely limited by a small sample size (n=5) and a single task type, resulting in insufficient statistical power and high uncertainty in the results. The paper is generally well-written and clearly structured, though some technical details and statistical analysis could be improved. The potential impact is limited, with mixed user preferences and evaluation restricted to an artificial task that may not generalize. Major limitations include small sample size, limited scope, missing comparisons, questionable practical value, and insufficient training time. While implementation details are adequate, reproducibility may be limited by hardware requirements. Ethical considerations are minimal and appropriately addressed, but the broader impact discussion is superficial. Overall, the paper is technically competent but incremental, with insufficient evidence to support broader adoption or significant scientific advance."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission251/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775396028,
+    "mdate": 1760632209191,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "0b0VeBDKLt",
+    "forum": "I9plFigPxl",
+    "replyto": "I9plFigPxl",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777891947,
+    "mdate": 1760640188193,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission251/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

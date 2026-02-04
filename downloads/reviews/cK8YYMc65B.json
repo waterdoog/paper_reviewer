@@ -1,0 +1,426 @@
+[
+  {
+    "id": "ud1FbdUQ3x",
+    "forum": "cK8YYMc65B",
+    "replyto": "cK8YYMc65B",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission300/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948887847,
+    "mdate": 1760632299383,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "oBbJlvZJC0",
+    "forum": "cK8YYMc65B",
+    "replyto": "cK8YYMc65B",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper audits decontextualization strategies for long-document scientific QA on PeerQA, evaluating various retrieval methods and decontextualization templates, and comparing oracle (per-paper) versus full-corpus settings. The main findings are that oracle-style evaluation greatly inflates retrieval metrics and that answerability F1 is only weakly coupled to retrieval quality, sometimes matching or exceeding oracle F1 even with poor retrieval. The paper provides practical guidance and a configurable framework.\n\nStrengths include a timely evaluation of the gap between oracle and full-corpus retrieval, useful empirical characterization of chunking and context strategies, an end-to-end perspective highlighting the retrieval–downstream disconnect, and explicit discussion of limitations and ethics.\n\nWeaknesses include underreporting of the cross-encoder reranker, insufficient specification of the answerability classification setup, missing baselines (such as question-only and random-context), and an overstated scaling claim based on limited data. There are also issues with clarity (template naming inconsistencies, ambiguous answer generation scope), reproducibility (missing model and resource details, lack of error bars), and the modest dataset size limiting generalizability. The most novel claim—that answerability F1 is decoupled from retrieval—requires stronger controls to be convincing.\n\nThe paper is well-positioned in related work and thoughtful about ethics and limitations. Actionable suggestions include fully specifying templates, providing complete retriever and reranker details, adding key baselines, reporting error bars, expanding scaling analysis, empirically testing the two-stage pipeline, clarifying splits and metrics, and reporting compute resources.\n\nOverall, the paper addresses an important question and offers useful insights, but methodological and reporting gaps—especially regarding the downstream classifier, reranker, and template definitions—undermine its rigor. With revisions, it could be a strong resource, but in its current form, it is borderline reject due to reproducibility and completeness concerns."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission300/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775858290,
+    "mdate": 1760632225364,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "nZUqj4notX",
+    "forum": "cK8YYMc65B",
+    "replyto": "cK8YYMc65B",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a systematic audit of decontextualization strategies for scientific question answering on the PeerQA dataset. The work examines how different methods of augmenting text passages with structural context (titles, headings) affect retrieval performance across multiple retrieval architectures and granularities.\n\nQuality and Technical Soundness:\nThe paper is technically sound with a well-designed experimental framework. The systematic evaluation across multiple retrieval methods (BM25, TF-IDF, dense retrieval, ColBERT, cross-encoder reranking) and decontextualization templates is comprehensive. The key finding about oracle vs. full-corpus evaluation is particularly valuable - showing that oracle evaluation (per-paper indexing) dramatically inflates performance compared to realistic full-corpus search (R@10=1.000 vs 0.011 for BM25). The experimental design is appropriate and the evaluation metrics (Recall@k, MRR, answerability F1) are well-chosen.\n\nClarity and Organization:\nThe paper is clearly written and well-organized. The methodology is described in sufficient detail for reproduction, and the results are presented systematically with clear tables and comparisons. The distinction between oracle and full-corpus evaluation is explained clearly and its implications are well-articulated.\n\nSignificance and Impact:\nThis work addresses an important gap in understanding decontextualization strategies for scientific QA. The finding that oracle evaluation masks the true difficulty of retrieval is highly significant for the field, as it suggests many previous results may overestimate real-world performance. The practical guidance provided (prioritize paper identification, use paragraph-level chunks, apply measured decontextualization) is actionable and valuable.\n\nOriginality:\nWhile decontextualization has been studied before, this systematic audit across multiple retrieval families and the revelation about oracle vs. full-corpus evaluation provide novel insights. The comprehensive comparison across different granularities and retrieval architectures is original and thorough.\n\nReproducibility:\nThe authors provide detailed experimental setup descriptions and claim to include code and datasets. The framework appears to be configurable and the methodology is described sufficiently for reproduction.\n\nStrengths:\n1. Systematic and comprehensive evaluation across multiple dimensions\n2. Important finding about oracle vs. full-corpus evaluation gap\n3. Surprising result about retrieval-downstream task decoupling\n4. Clear practical guidance for practitioners\n5. Well-designed experimental framework\n6. Good coverage of related work and clear positioning\n\nWeaknesses:\n1. Limited to single dataset (PeerQA) - generalizability unclear\n2. Modest corpus size (90 papers, 24,265 chunks) compared to truly large-scale settings\n3. No statistical significance testing or error bars reported\n4. Limited downstream task evaluation (only answerability classification)\n5. Some implementation details could be more specific (model checkpoints, hyperparameters)\n\nMinor Issues:\n- The paper could benefit from more discussion of computational costs\n- The correlation analysis between retrieval and downstream performance could be expanded\n- Some figures or visualizations would enhance the presentation\n\nEthics and Limitations:\nThe authors adequately address limitations and provide appropriate ethical considerations. The scope limitations are acknowledged, and the authors are transparent about the constraints of their evaluation.\n\nOverall Assessment:\nThis is a solid empirical paper that makes important contributions to understanding decontextualization in scientific QA. The revelation about oracle evaluation inflating performance is significant and will likely influence future evaluation practices. The systematic nature of the study and practical guidance provided make this valuable to the community. While limited to one dataset, the insights are likely to generalize and the methodology could be applied to other domains."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission300/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775858851,
+    "mdate": 1760632225100,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "lZmxKNstJv",
+    "forum": "cK8YYMc65B",
+    "replyto": "cK8YYMc65B",
+    "content": {
+      "title": {
+        "value": "."
+      },
+      "summary": {
+        "value": "This paper offers a useful diagnostic framework to better understand the limitations of QA with retrieval. I think the result is an interesting diagnostic finding. The retrieval-downstream decoupling is also interesting result. The authors test several different configurations and how they perform.\n\nHowever, I also think the contribution might be limited with some results that are not super clear. While this paper starts to draw an interesting picture, additional ablations would be needed to give a more coherent analysis of the work. In summary, this is an interesting paper that would require some additional work to be complete.\n\nThe paper thus offers an interesting diagnostic analysis but I think the general impact of the contribution might be limited and I have some clarity/methodological concerns."
+      },
+      "strengths_and_weaknesses": {
+        "value": "One of my main comment is that I am not 100% convinced the results are surprising: it's true that in the non oracle setting the retrieval performance drops but that is expected. Also I would argue the most common use case for this type of retrieval is to have access to the paper itself. It is my impression that the paper frames oracle evaluation as methodologically flawed, but per-document QA is a common and valid use case (paper reading assistants, peer review tools). The contribution would be stronger if it acknowledged these are different applications with different evaluation requirements.\n\nI am also confused about the \"answerability\" result as I don't understand how that was computed. For example \"We propagate retrieved contexts to answerability classification (binary F1) to measure how retrieval variations influence downstream decision-making.\" - it's not clear to me what this means and how it was done. I guess the answerability comes from PeerQA but I don't understand how it is propagated.\n\nI think the paper should be better organized in presenting the results and ablations would be useful (e.g., exploring \"Answerability is context-independent\" and \"False positives may be informative\" in more details. Right now these are speculations that are very interesting but would require more grounding). The answerability paradox would indeed require more in-depth analyses.\n\nDue to the above I think the paper requires some quality and clarity improvements."
+      },
+      "quality": {
+        "value": 2
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 2
+      },
+      "originality": {
+        "value": 2
+      },
+      "questions": {
+        "value": "Page 3) \"granularities.tive\" typo?\n\nWhy are your results and PeerQA's original results so different? is the setting different? Isn't the difference in performance \"too big\"?"
+      },
+      "limitations": {
+        "value": "."
+      },
+      "overall": {
+        "value": 3
+      },
+      "confidence": {
+        "value": 3
+      },
+      "ethical_concerns": {
+        "value": "."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission300/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759341043353,
+    "mdate": 1760632225505,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission300/Reviewer_gZ4h"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission300/Reviewer_gZ4h"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "cK8YYMc65B",
+    "forum": "cK8YYMc65B",
+    "content": {
+      "title": {
+        "value": "Decontextualization, Everywhere: A Systematic Audit on PeerQA"
+      },
+      "authors": {
+        "value": [
+          "Xanh Ho",
+          "Tian Cheng Xia",
+          "Khoa Duong",
+          "Yun-Ang Wu",
+          "Ha-Thanh Nguyen",
+          "Akiko Aizawa"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "~Xanh_Ho1",
+          "~Tian_Cheng_Xia1",
+          "~Khoa_Duong1",
+          "~Yun-Ang_Wu2",
+          "~Ha-Thanh_Nguyen1",
+          "~Akiko_Aizawa1"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "scientific QA",
+          "dense retrieval",
+          "Decontextualization"
+        ]
+      },
+      "TLDR": {
+        "value": "Decontextualization, Everywhere: A Systematic Audit on PeerQA"
+      },
+      "abstract": {
+        "value": "We audit decontextualization strategies for long-document scientific QA on PeerQA. We sweep sentence- and paragraph-level templates (from minimal content to title+heading) across BM25, TF–IDF, dense retrieval, ColBERT, and cross-encoder reranking, and evaluate with Recall@k, MRR, and answerability F1. A central finding is that oracle-style evaluation (per-paper indexing) dramatically inflates retrieval scores compared to full-corpus search: BM25 achieves R@10=1.000 and MRR$\\approx$0.68 under oracle, but only R@10$\\approx$0.011 and MRR$\\approx$0.015 over the full corpus. Surprisingly, answerability remains robust, with full-corpus configurations matching or exceeding oracle F1. We further show that decontextualization is not one-size-fits-all: sparse methods favor minimal context in oracle settings, while paragraph-level chunks with measured structure (title+heading) work best under realistic full-corpus conditions, and late-interaction models benefit from more aggressive context. We release a configurable framework and provide practical guidance: prioritize paper identification before fine-grained evidence search, prefer paragraph-level chunks, use measured decontextualization, and evaluate end-to-end under full-corpus conditions."
+      },
+      "pdf": {
+        "value": "/pdf/7129828329e62f517291940c806f4789dbd39e40.pdf"
+      },
+      "supplementary_material": {
+        "value": "/attachment/79a394b662368669b71b4db14f114a59115ff80c.zip"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\nho2025decontextualization,\ntitle={Decontextualization, Everywhere: A Systematic Audit on Peer{QA}},\nauthor={Xanh Ho and Tian Cheng Xia and Khoa Duong and Yun-Ang Wu and Ha-Thanh Nguyen and Akiko Aizawa},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=cK8YYMc65B}\n}"
+      },
+      "paperhash": {
+        "value": "ho|decontextualization_everywhere_a_systematic_audit_on_peerqa"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission300/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/Submission300/-/Camera_Ready"
+    ],
+    "cdate": 1758022144006,
+    "pdate": 1759960945120,
+    "odate": 1758112145415,
+    "mdate": 1760949760454,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission300/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission300/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "KWk9o0YgQ4",
+    "forum": "cK8YYMc65B",
+    "replyto": "cK8YYMc65B",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a systematic audit of decontextualization strategies for long-document scientific question answering on the PeerQA dataset. The authors conduct comprehensive experiments varying retrieval models, chunk granularities, and decontextualization templates. The main contributions are: (1) demonstrating that 'oracle' evaluation dramatically inflates retrieval performance compared to realistic full-corpus settings, revealing the true difficulty of the task; and (2) uncovering a 'retrieval-downstream paradox,' where answerability classification performance remains robust despite severe retrieval degradation. The paper is highly significant, with rigorous methodology, novel insights, outstanding clarity, and high standards for reproducibility and ethics. Minor weaknesses include the limited corpus size (90 papers) and the focus on answerability classification as the only downstream task. Overall, this is a fundamental and exemplary contribution that should be accepted and highlighted at the conference."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission300/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775858621,
+    "mdate": 1760632225254,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "CuNJIcb54J",
+    "forum": "cK8YYMc65B",
+    "replyto": "cK8YYMc65B",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Beyond decontextualized sentences: What can ERPs tell us about pragmatics (and semantics)? by Van Berkum and J. Jos"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777713578,
+    "mdate": 1760640073121,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "5LiyICUEec",
+    "forum": "cK8YYMc65B",
+    "replyto": "cK8YYMc65B",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Undefined/underdocumented decontextualization template: ‘aggressive_title’ appears in results but is not defined in Section 3.2; paper inconsistently states 4 vs. 5 templates.\n- Cross-encoder reranker is described in Methods but no results are reported; candidate generation/reranking effectiveness is not evaluated.\n- Downstream answerability classification is under-specified: missing model details, training regime, splits, and hyperparameters; unclear whether context or question-only signals dominate; potential test-set selection of ‘best’ configs.\n- Statistical rigor is limited: no error bars, confidence intervals, or significance testing; correlation analyses lack correlation type, p-values, and sample sizes.\n- Metric mismatch in comparisons: downstream uses overall F1 while baseline uses macro-F1; results are juxtaposed and described as ‘competitive’ despite non-comparability.\n- Potential overfitting via sweeping configurations and reporting ‘best’ on the test set without a separate validation split or correction for multiple comparisons.\n- Overstatement: ‘super-linear’ scaling claim is drawn from a single pair of corpus sizes and should be qualified.\n- Oracle BM25 R@10=1.000 vs. baseline R@10≈0.64 suggests differences in evidence mapping/implementation; more detail needed to rule out annotation alignment issues or leakage.\n- Minor logical tension between advocating two-stage retrieval as ‘necessary’ and suggesting two-stage architectures might be reconsidered; clarify task distinctions (retrieval vs. answerability).\n- Compute/resource details and reproducibility specifics are limited in the main text; no run-time/memory/time reporting."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776870122,
+    "mdate": 1760640074094,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission300/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

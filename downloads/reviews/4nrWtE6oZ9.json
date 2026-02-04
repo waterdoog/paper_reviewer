@@ -1,0 +1,417 @@
+[
+  {
+    "id": "zvKgZELr2o",
+    "forum": "4nrWtE6oZ9",
+    "replyto": "4nrWtE6oZ9",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission287/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948891803,
+    "mdate": 1760632293720,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "vzN0jjqYbP",
+    "forum": "4nrWtE6oZ9",
+    "replyto": "4nrWtE6oZ9",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces Echo, a multi-agent AI system designed for patient-centered pharmacovigilance by mining and analyzing discussions from online health communities, specifically Reddit. The system is composed of four specialized LLM-based agents: an Explorer to extract drug-symptom mentions, an Analyzer to quantify association strength and identify confounders, a Verifier to check novelty against official databases like FAERS, and a Proposer to generate mechanistic hypotheses for novel findings. The authors demonstrate the system's capabilities through quantitative evaluation of its components, identification of novel adverse drug reactions (ADRs), and compelling retrospective case studies suggesting that Echo could have identified significant toxicities months or years before their widespread clinical recognition.\n\nQuality:\nThe paper is of exceptionally high quality. The technical approach is sound, leveraging a modular, multi-agent architecture that is well-suited to the complex, multi-stage problem of pharmacovigilance. Each agent has a clearly defined and logical role, and the overall pipeline is coherent and powerful. The claims are well-supported by the experimental results. The comparison of different Explorer agents (Table 1) is transparent, and the authors provide a thoughtful explanation for the seemingly low recall scores, correctly identifying the fundamental difference between patient-reported concerns and severe events cataloged in official databases. The identification of novel ADRs (Table 2) and the generation of plausible mechanistic hypotheses (Table 4) are impressive demonstrations of the system's capabilities. The work feels complete, moving from data extraction to analysis, verification, hypothesis generation, and even UI design. The authors are commendably honest about the limitations of their work in a dedicated section, which strengthens the paper's credibility.\n\nClarity:\nThe paper is a model of clarity. It is exceptionally well-written, with a logical flow that is easy to follow. The abstract and introduction perfectly frame the problem, the motivation, and the paper's contributions. Figure 1 provides an excellent, intuitive overview of the entire Echo system in action. The methods are described with sufficient detail, and the results are presented clearly and concisely. The case studies, in particular, are powerful narratives that effectively illustrate the system's potential real-world impact. The writing is professional, precise, and of a standard expected at top-tier venues.\n\nSignificance:\nThe significance of this work is profound. Post-marketing drug surveillance is a critical public health function, yet it suffers from well-known limitations such as underreporting and delays. This paper presents a viable and powerful paradigm for augmenting traditional systems by tapping into the rich, real-time data source of patient-generated text. The potential to accelerate the detection of ADRs could have a direct and substantial positive impact on patient safety. Beyond its immediate application, the multi-agent framework—especially the inclusion of a \"Proposer\" agent for mechanistic hypothesis generation—represents a significant step forward for AI in science. It showcases a path from data mining to insight generation, which will undoubtedly inspire and be built upon by researchers in numerous other scientific domains.\n\nOriginality:\nThe paper is highly original. While prior work has explored mining social media for ADRs, Echo's multi-agent architecture and the sophistication of its analysis are novel. The system moves far beyond simple named-entity recognition or co-occurrence counting. The introduction of an Analyzer that considers temporality, patient confidence, and community support is a key innovation. The Verifier systematizes the novelty check, but the most original contribution is the Proposer agent. Using an LLM to automatically synthesize biomedical literature and generate plausible, testable hypotheses for observed phenomena is a groundbreaking concept that pushes the boundaries of AI-driven scientific discovery.\n\nReproducibility:\nThe authors provide a solid basis for reproducibility. They specify the models used (Claude 3.5 Sonnet/Haiku), the data sources, and the overall system architecture. The methodology is described with enough clarity that an expert in the field could implement a similar system. The authors also state in the checklist their intention to release the code and data, which is the gold standard. While the use of proprietary LLMs presents a minor challenge, this is a practical reality of contemporary research, and the authors' transparency and commitment to releasing their own artifacts are sufficient to address this concern.\n\nEthics and Limitations:\nThe authors handle the ethical considerations of this sensitive research area with exemplary care. The dedicated \"Ethics and Limitations\" section is thoughtful and comprehensive. It addresses potential biases in the data, platform-specific data use policies, and the critical privacy concerns of analyzing patient health discussions. The authors responsibly frame Echo as a complementary, hypothesis-generating tool rather than a replacement for rigorous clinical evidence, which is the correct and necessary perspective.\n\nConclusion:\nThis is an outstanding paper that is technically sound, highly original, and addresses a problem of significant societal importance. The proposed Echo system is an elegant and powerful application of multi-agent AI that has the potential to transform pharmacovigilance. The evaluation is thorough and the results are compelling. The paper is exceptionally well-written and sets a high standard for the Agents4Science conference. It is a clear and enthusiastic recommendation for acceptance."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission287/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775639783,
+    "mdate": 1760632220457,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "uVXIVRvesK",
+    "forum": "4nrWtE6oZ9",
+    "replyto": "4nrWtE6oZ9",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Gut microbiome changes in colorectal cancer patients receiving chemotherapy by Qing Yi Gui, Sheng Yi Nian, Hua Hua Shan, et al.\n- Reddit and radiation therapy: A descriptive analysis of posts and comments by Jared Thomas, Steven M. Keoleian, Michael T. Milano, et al.\n- Disproportionality methods for pharmacovigilance in spontaneous reporting systems by A. L. Bate, E. Evans, S. J. Waller, et al."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777925695,
+    "mdate": 1760640281179,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "XpEgnGh2LL",
+    "forum": "4nrWtE6oZ9",
+    "replyto": "4nrWtE6oZ9",
+    "content": {
+      "title": {
+        "value": "Echo: Reddit cancer forums to identify potential adverse drug reactions"
+      },
+      "summary": {
+        "value": "The paper introduces Echo, a multi-agent AI framework for pharmacovigilance that leverages Reddit cancer forums to identify potential adverse drug reactions (ADRs). The system integrates four specialized agents: (i) Explorer (mines drug-symptom mentions), (ii) Analyzer (quantifies associations with temporal, confidence, and community metrics), (iii) Verifier (cross-checks against FDA databases to highlight novel signals), and (iv) Proposer (generates mechanistic hypotheses from biomedical literature). In evaluations using ~187 Reddit posts, Echo surfaced 640 drug-symptom associations, including several absent from official FDA data (e.g., pembrolizumab-induced daytime somnolence). Retrospective case studies suggest Echo could have flagged toxicities such as checkpoint inhibitor pneumonitis earlier than regulatory updates. An interactive visualization interface further supports exploration of associations and hypotheses."
+      },
+      "strengths_and_weaknesses": {
+        "value": "Strengths\nPatient narratives are an underused but valuable source for pharmacovigilance. Echo demonstrates how LLM-based multi-agent collaboration can systematically amplify these voices for early ADR detection.\nClear modular design with four complementary roles provides transparency and interpretability compared to monolithic NLP pipelines.\nExtracted hundreds of associations from a small dataset. Identified high-confidence, potentially novel ADRs absent from FDA databases (Table 2, p.4).\nGenerated mechanistic hypotheses that cite biomedical literature (Table 4, p.5).\nRetrospective validations (e.g., pneumonitis with nivolumab/pembrolizumab, neuromuscular complications, regorafenib hepatotoxicity) show alignment between patient reports and later regulatory findings (pp.6–7).\nInteractive dashboard allows clinicians and researchers to search, filter, and review associations, confounders, and supporting quotes (Figure 2, p.7).\nThe authors acknowledge privacy, representativeness, and bias concerns, and caution that social media–derived signals should be hypothesis-generating rather than definitive (pp.8–9).\n\n\nWeaknesses & Concerns\nOnly 187 Reddit posts were analyzed; This is too small and community-specific to claim broad generalizability across oncology or pharmacovigilance.\nHeavy reliance on Reddit excludes other patient communities and introduces demographic and cultural bias.\nEcho flags associations absent from FAERS as “novel,” but underreporting, terminology mismatches, or unrelated confounders may explain absence. The paper notes this but does not provide systematic cross-validation with EHR or larger datasets.\nThe Analyzer’s metrics (temporal weight, patient confidence, community engagement) are heuristic and may not be robust proxies for true causal strength\nIt remains unclear how stable these metrics are across different forums or phrasing styles.\nWhile Echo surfaces confounders (Table 3, p.4), no causal inference framework is applied. Systematic biases (e.g., patients with severe symptoms posting more) could distort results.\nCase studies are retrospective and cherry-picked. Predictive power in real-world, prospective settings remains untested.\nRunning multiple large LLMs for all four agents raises scalability and reproducibility concerns. The paper lacks compute/resource reporting beyond model descriptions."
+      },
+      "quality": {
+        "value": 2
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 3
+      },
+      "originality": {
+        "value": 2
+      },
+      "questions": {
+        "value": "Apply Echo to larger, more diverse patient communities and EHR-linked datasets to improve generalizability.\n\nIncorporate external pharmacovigilance datasets or clinical chart review to distinguish novelty from underreporting.\n\nIntegrate causal inference techniques to better disentangle drug effects from comorbidities and confounders.\n\nDemonstrate predictive utility by applying Echo to ongoing patient discussions and tracking regulatory recognition over time.\n\nExplore lightweight evaluators or distillation to reduce computational cost for large-scale monitoring.\n\nProvide clearer guidelines for responsible use, particularly around patient privacy, re-identification risks, and integration with regulatory workflows."
+      },
+      "limitations": {
+        "value": "yes"
+      },
+      "overall": {
+        "value": 5
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ethical_concerns": {
+        "value": "None"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission287/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759437635737,
+    "mdate": 1760632220687,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission287/Reviewer_s81z"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission287/Reviewer_s81z"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "RhAyQx7DE3",
+    "forum": "4nrWtE6oZ9",
+    "replyto": "4nrWtE6oZ9",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Evaluation limited to 187 posts with unclear sampling; no train/test separation, no robustness analyses.\n- Use of ln(FAERS_count+1) as a “ground truth score” is not standard and ignores exposure and disproportionality.\n- Recall-only evaluation on a restricted, biased drug set (Table 1, p. 4); no precision, F1, or statistical significance.\n- No systematic mapping/normalization to MedDRA or equivalent when comparing Reddit symptoms to FAERS events.\n- Subjective, unspecified scoring for temporal, confidence, and community metrics; no reproducible scoring rules or validation.\n- Novelty operationalized as zero FAERS count (Table 2, p. 4), conflating underreporting/taxonomy mismatch with true novelty; no systematic literature verification or human adjudication.\n- Confounder identification (Table 3, pp. 4–5) is descriptive; lacks causal framework or quantitative adjustment; no validation.\n- Case studies (pp. 5–7) are anecdotal and not generalized; no measured lead-time across multiple signals.\n- Overstated claims (e.g., “markedly outperforming” in Explorer; p. 3) not supported by provided numbers (Table 1).\n- Potentially incomplete/placeholder references (e.g., Uetake 2018, Zhao 2017; pp. 10–11), raising concerns about citation accuracy.\n- Missing implementation details (prompts, parsing/normalization rules, deduplication, ontology mapping), hindering reproducibility despite stated intent to release code.\n- No inter-annotator agreement or human validation for extraction accuracy, confounder detection, or hypothesis generation; no error analysis."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776789265,
+    "mdate": 1760640282002,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "NzD7PDIHl6",
+    "forum": "4nrWtE6oZ9",
+    "replyto": "4nrWtE6oZ9",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents Echo, a multi-agent AI system for pharmacovigilance that extracts drug-symptom associations from Reddit posts using four specialized language model agents. The approach is technically sound, with a well-designed multi-agent architecture (Explorer, Analyzer, Verifier, Proposer) that addresses complementary aspects of pharmacovigilance. The experimental evaluation compares different language models, identifies novel associations absent from FDA databases, and includes retrospective case studies showing potential early detection capabilities. However, the evaluation is limited by a small dataset (187 Reddit posts) and lacks rigorous validation against ground truth beyond FAERS comparisons. The temporal analysis and confidence scoring are methodologically appropriate, though more detail on scoring mechanisms would be helpful.\n\nThe paper is well-written, clearly organized, and provides comprehensive explanations of the system architecture and user interface. The work addresses an important problem in pharmacovigilance, with the ability to identify novel drug-symptom associations and generate mechanistic hypotheses. The retrospective validation demonstrates potential clinical value, but the impact is constrained by the preliminary nature of the evaluation and the need for more comprehensive validation.\n\nThe multi-agent approach is a novel application of LLMs to pharmacovigilance, and the systematic four-agent architecture with hypothesis generation is innovative. The paper differentiates itself from prior work and provides adequate system descriptions, with a commitment to releasing code and data. Some reproducibility challenges exist due to the use of commercial LLMs, but these are acknowledged.\n\nThe ethics section addresses privacy, reporting bias, and the complementary nature of social media signals. Limitations are honestly discussed, including dataset size, platform restrictions, and potential biases. The related work section is comprehensive and well-positioned within existing literature.\n\nConcerns include the small evaluation dataset, low recall scores, lack of comparison with other automated approaches, reliance on FAERS absence for novelty, and the possibility that some \"novel\" associations are known but not well-documented. Strengths include the innovative architecture, practical relevance, thoughtful confounding factor identification, good retrospective validation, honest discussion of limitations, and clear presentation.\n\nOverall, the work is a solid contribution to AI applications in pharmacovigilance, with a novel technical approach and meaningful potential impact. While the evaluation could be more comprehensive, the paper demonstrates feasibility and value with appropriate caveats about limitations."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission287/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775639988,
+    "mdate": 1760632220306,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "4nrWtE6oZ9",
+    "forum": "4nrWtE6oZ9",
+    "content": {
+      "title": {
+        "value": "Echo: A multi-agent AI system for patient-centered pharmacovigilance"
+      },
+      "authors": {
+        "value": [
+          "Megha Srivastava"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "~Megha_Srivastava1"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "pharmacovigilance",
+          "multi-agent",
+          "biomedicine",
+          "social media"
+        ]
+      },
+      "TLDR": {
+        "value": "Echo is a multi-agent AI system that mines Reddit posts to identify drug-symptom associations missing from official databases. From only 187 posts, it extracted 640 associations, including novel (drug, ADR) relatif"
+      },
+      "abstract": {
+        "value": "Online health communities provide patients with spaces to share experiences, find\nsupport, and voice concerns that may go unacknowledged in clinical encounters.\nThese narratives often include early reports of adverse drug reactions (ADRs), yet\nremain largely absent from formal pharmacovigilance. We present Echo, a multi-\nagent AI system that transforms patient narratives from Reddit into structured drug\nsafety intelligence. Echo deploys four specialized language model agents in concert:\nan Explorer mining social media forums, an Analyzer quantifying associations\nthrough temporal, confidence, and community metrics, a Verifier identifying novel\nsignals absent from FDA databases, and a Proposer generating testable hypotheses\nfrom biomedical literature. As a proof-of-concept, we show that from less than 200\nReddit posts, Echo was able to discover 640 drug-symptom associations, including\nseveral absent from official databases, such as pembrolizumab-induced daytime\nsomnolence. We further show in retrospective case studies that Echo might have\ndetected emerging toxicities, such as checkpoint inhibitor pneumonitis, before\nregulatory recognition. Beyond signal detection, Echo also identifies confounding\nfactors and proposes testable hypotheses. Finally, we build an interactive interface\nto help explore associations, examine patient quotes, and access AI-generated\ninsights. Overall, Echo leverages language models to surface patient-reported\nsignals that may complement regulatory surveillance."
+      },
+      "pdf": {
+        "value": "/pdf/78192599c59a0385e26e62292703f918f1d8e20c.pdf"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\nsrivastava2025echo,\ntitle={Echo: A multi-agent {AI} system for patient-centered pharmacovigilance},\nauthor={Megha Srivastava},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=4nrWtE6oZ9}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/a01657c0ca75352789b115bf055aed65d0d1fd1f.zip"
+      },
+      "paperhash": {
+        "value": "srivastava|echo_a_multiagent_ai_system_for_patientcentered_pharmacovigilance"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission287/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/Submission287/-/Camera_Ready"
+    ],
+    "cdate": 1758016675910,
+    "pdate": 1759960944484,
+    "odate": 1758112145415,
+    "mdate": 1760949612382,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission287/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission287/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "0LqCiLjWke",
+    "forum": "4nrWtE6oZ9",
+    "replyto": "4nrWtE6oZ9",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces Echo, a multi-agent LLM-based pipeline for mining Reddit posts to identify drug–symptom associations for pharmacovigilance. The system is well-motivated, with a clear architecture and thoughtful ethical considerations. Strengths include a compelling use case, coherent system design, plausible qualitative examples, and a useful interactive UI. However, the work suffers from major weaknesses: the dataset is extremely small (187 posts), lacking rigorous evaluation (no precision/recall/F1, no expert adjudication), insufficient methodological transparency (missing prompts, normalization details, thresholds), and unsupported novelty claims (absence from FAERS is not robustly validated). The hypothesis generation component risks hallucination, and bibliographic issues undermine credibility. There is no quantitative comparison to prior systems or classical PV benchmarks. The paper is not currently reproducible, and the claims overstate the evidence given the limited data and missing validation. Actionable suggestions include expanding the dataset, providing gold-standard annotations, detailing the pipeline, calibrating against established methods, vetting outputs with experts, and providing error analyses. Overall, while the system design is promising and the problem important, the empirical foundation is too weak for acceptance at a high-impact venue without substantial improvements."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission287/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775639473,
+    "mdate": 1760632220562,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission287/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

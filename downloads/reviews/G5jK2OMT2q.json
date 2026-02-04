@@ -1,0 +1,420 @@
+[
+  {
+    "id": "y8iqN77CMn",
+    "forum": "G5jK2OMT2q",
+    "replyto": "G5jK2OMT2q",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Complementary team performance: A theory-driven approach to human-ai collaboration by Xusen Wang, Ming Yin, and Chenhao Tan"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777854671,
+    "mdate": 1760640199770,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "nDDFgkK4Z3",
+    "forum": "G5jK2OMT2q",
+    "replyto": "G5jK2OMT2q",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Baseline confound: The baseline fixes human behavior while BiCA enables human surrogate adaptation (Section 4.2 vs 4.1.1), conflating bidirectional adaptation with allowing human learning; this undermines an apples-to-apples comparison.\n- Unsupported headline claims: The paper claims emergent protocols outperform handcrafted ones by 84% and +23% OOD robustness, but no explicit handcrafted-protocol baseline or detailed OOD safety metrics are presented in the main results.\n- Ablation reporting anomalies: Table 6 (page 16) shows repeated exact values (e.g., BAS/CCM = 0.500 for multiple variants) and scales that do not reconcile with Table 2's BAS percentages, suggesting normalization/reporting errors.\n- Statistical testing details insufficient: With S=5 seeds, the unit-of-analysis and independence assumptions are not clearly specified; p-values may be inflated if episodes were treated as independent rather than using seed-level aggregates.\n- Metric definitions underspecified: The SS (safety) component uses a 'Miscalibration' term not defined; normalization details for BAS components and how CE is computed at 'fixed success rate ≥ 0.9' when SR < 0.9 are unclear.\n- Notation and specification issues: Overloaded symbols (P as protocol table vs probability distribution), minor symbol drift (KLcA vs DKL), and the instructor’s action space/σ mapping lack clarity.\n- Representation alignment reproducibility: W2 computation details (cost, regularization, sample sizes) and stability considerations are not provided; these can materially affect results.\n- Navigator experiment lacks comparative baselines and statistical tests, limiting the strength of its conclusions."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776687736,
+    "mdate": 1760640200441,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ZumUb0be2r",
+    "forum": "G5jK2OMT2q",
+    "replyto": "G5jK2OMT2q",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission220/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948898367,
+    "mdate": 1760632286280,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "G5jK2OMT2q",
+    "forum": "G5jK2OMT2q",
+    "content": {
+      "title": {
+        "value": "Co-Alignment: Rethinking Alignment as Bidirectional Human-AI Cognitive Adaptation"
+      },
+      "authors": {
+        "value": [
+          "Yubo Li",
+          "Weiyi Song"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "~Yubo_Li4",
+          "weiyis@andrew.cmu.edu"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "Cognitive alignment",
+          "Human-AI collaboration",
+          "Multi-agent reinforcement learning",
+          "Emergent communication",
+          "Information bottleneck"
+        ]
+      },
+      "TLDR": {
+        "value": "BiCA enables humans and AI to mutually adapt during collaboration instead of AI just conforming to humans (RLHF). Result: 85.5% vs 70.3% task success, better safety, proving co-alignment beats single-directional alignment."
+      },
+      "abstract": {
+        "value": "Current AI alignment through RLHF follows a single-directional paradigm—AI conforms to human preferences while treating human cognition as fixed. We propose a shift to co-alignment through Bidirectional Cognitive Alignment (BiCA), where humans and AI mutually adapt. BiCA uses learnable protocols, representation mapping, and KL-budget constraints for controlled co-evolution. In collaborative navigation, BiCA achieved 85.5\\% success versus 70.3\\% baseline, with 230\\% better mutual adaptation and 332\\% better protocol convergence (p < 0.001). Emergent protocols outperformed handcrafted ones by 84\\%, while bidirectional adaptation unexpectedly improved safety (+23\\% out-of-distribution robustness). The 46\\% synergy improvement demonstrates optimal collaboration exists at the intersection, not union, of human and AI capabilities—validating the shift from single-directional to co-alignment paradigms."
+      },
+      "pdf": {
+        "value": "/pdf/9db0c04b7157a50bfb47a87f4852117fae342c08.pdf"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\nli2025coalignment,\ntitle={Co-Alignment: Rethinking Alignment as Bidirectional Human-{AI} Cognitive Adaptation},\nauthor={Yubo Li and Weiyi Song},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=G5jK2OMT2q}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/6c128d81ad82f208acb67e9408cb4a56ffd0a6c4.zip"
+      },
+      "paperhash": {
+        "value": "li|coalignment_rethinking_alignment_as_bidirectional_humanai_cognitive_adaptation"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission220/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/Submission220/-/Camera_Ready"
+    ],
+    "cdate": 1757957362250,
+    "pdate": 1759960941992,
+    "odate": 1758112145415,
+    "mdate": 1761011269702,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission220/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission220/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "BT1W8z3smM",
+    "forum": "G5jK2OMT2q",
+    "replyto": "G5jK2OMT2q",
+    "content": {
+      "title": {
+        "value": "Review"
+      },
+      "summary": {
+        "value": "This paper introduces Co-Alignment, a framework that reconceptualizes alignment as bidirectional human–AI cognitive adaptation rather than one-way preference optimization. The core idea is both human and AI agents iteratively adapt through shared protocols, mappings, and instructions, forming a process of mutual alignment. To evaluate this, authors build synthetic environments where AI agents and simulated human counterparts co-adapt. They also propose new evaluation to capture degree and stability of alignment. Experimental results show that co-alignment significantly improves success rates, alignment stability, and robustness compared to RLHF-style one-directional baselines."
+      },
+      "strengths_and_weaknesses": {
+        "value": "# Strengths\n1. Novel Framework: Reframes alignment as a two-way adaptive process, shifting the paradigm beyond RLHF.\n\n2. Methodological Completeness: The framework includes clearly defined modules (protocol generator, mapping, instructor) and explicit evaluation metrics.\n\n# Weaknesses\n1. Evaluation Scope: Experiments are limited to small-scale synthetic environments. While these convincingly demonstrate proof-of-concept, results on real-world tasks or larger-scale models would strengthen the case.\n\n2. Scalability: The multi-component framework may face challenges when applied to foundation models or real human-AI interaction scenarios.\n\n3. Societal Implications: Although limitations are acknowledged, more discussion on risks of AI influencing human cognition would be valuable."
+      },
+      "quality": {
+        "value": 4
+      },
+      "clarity": {
+        "value": 4
+      },
+      "significance": {
+        "value": 3
+      },
+      "originality": {
+        "value": 4
+      },
+      "questions": {
+        "value": "Could you provide a sensitivity analysis showing how results change with different parameterizations of the protocol/mapping modules?\n\nHow would co-alignment interact with existing preference-learning methods (RLHF, RLAIF)? Could it be integrated rather than seen as a replacement?\n\nWhat concrete failure modes should practitioners be aware of if deploying BiCA-inspired systems?"
+      },
+      "limitations": {
+        "value": "The authors mention that results are limited to controlled environments and that broader application requires careful calibration. However, risks of human cognitive adaptation to AI guidance should be explored more deeply."
+      },
+      "overall": {
+        "value": 5
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ethical_concerns": {
+        "value": "No direct ethical concerns."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission220/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759462064497,
+    "mdate": 1760632201265,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission220/Reviewer_9pYS"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission220/Reviewer_9pYS"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "9eMex3UqQd",
+    "forum": "G5jK2OMT2q",
+    "replyto": "G5jK2OMT2q",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces Bidirectional Cognitive Alignment (BiCA), a framework for co-adaptation between humans and AI using learned communication protocols, representation mapping, and symmetric KL-budget constraints. The method is well-motivated, reframing alignment as co-adaptation, and thoughtfully combines several algorithmic components, including a protocol generator, representation mapper, instructor network, and a composite PPO-based objective. The paper is well-cited, provides reproducibility details, and covers two tasks with multiple ablations, reporting improvements over a unidirectional baseline.\n\nHowever, the evaluation is limited to toy domains with surrogate humans, and no human-subject study is included. Claims about safety and OOD robustness are not fully substantiated in the main results. Baseline comparisons lack clarity and may not be fair or capacity-matched. The definitions and normalization of new metrics (BAS, CCM) are under-specified, making reproduction difficult. Statistical reporting lacks detail on independence and corrections. There are inconsistencies in ablation results, and technical details (e.g., W2 gradients, instructor network effectiveness, KL budget sensitivity) need clarification. Code and data are not released, which limits reproducibility.\n\nThe paper is generally well-written, with clear figures and organization, and openly discusses limitations and ethical concerns. Overall, while the conceptual shift and engineering are promising, the empirical evidence is not yet sufficient for a top-venue publication. Substantial revisions are needed, including real human evaluations, stronger baselines, clearer metric definitions, consistent reporting, and code release."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission220/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775360187,
+    "mdate": 1760632201074,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "6UECK0BiN4",
+    "forum": "G5jK2OMT2q",
+    "replyto": "G5jK2OMT2q",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces Bidirectional Cognitive Alignment (BiCA), a novel framework for human-AI collaboration that enables both human and AI agents to mutually adapt their internal representations and communication protocols, moving beyond the traditional unidirectional alignment paradigm. The authors formalize BiCA as a multi-agent learning problem and propose a comprehensive framework with five key components, including a protocol generator, representation mapper, and instructor network, optimized via a composite loss function balancing task performance and cognitive drift constraints. The framework is evaluated on two tasks—collaborative navigation (MapTalk) and latent space exploration (Navigator)—demonstrating substantial improvements over a unidirectional baseline in success rate (+21.6%), synergy (+46%), and novel co-alignment metrics. The paper is praised for its originality, technical sophistication, experimental rigor, clarity, and exemplary discussion of limitations and ethical considerations. Weaknesses include reliance on human surrogates rather than real participants, limited baseline comparisons to other MARL algorithms, and a lack of clarity regarding a specific performance claim. Overall, the reviewer strongly recommends acceptance, highlighting the paper's potential to significantly impact the field of human-AI alignment."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission220/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775360395,
+    "mdate": 1760632200745,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "3flbYmIS6y",
+    "forum": "G5jK2OMT2q",
+    "replyto": "G5jK2OMT2q",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes Bidirectional Cognitive Alignment (BiCA), shifting from unidirectional AI alignment (where AI conforms to humans) to mutual human-AI adaptation. While the core idea is conceptually interesting and addresses a real limitation in current alignment approaches, the work has several significant weaknesses that prevent acceptance at a top-tier venue.\n\nQuality and Technical Soundness:\nThe technical approach is reasonable but not particularly novel. The BiCA framework combines established techniques (PPO, Gumbel-Softmax, Wasserstein distance, CCA) in a straightforward manner. The mathematical formulation is sound but incremental. The experimental validation is limited to simple gridworld environments and synthetic tasks (dSprites), which severely limits the generalizability of claims about \"rethinking alignment.\" The use of human surrogates rather than actual humans is a major limitation for a paper claiming to address human-AI collaboration.\n\nSignificance and Impact:\nWhile the bidirectional alignment concept has merit, the experimental validation is too limited to support the broad claims made. The 8×8 gridworld with discrete communication is far from realistic human-AI collaboration scenarios. The paper lacks comparison to other collaborative AI approaches beyond basic RLHF baselines. The claimed improvements (230% better mutual adaptation, 332% better protocol convergence) are based on artificial metrics in toy environments.\n\nOriginality:\nThe specific combination of techniques and the bidirectional framing is novel, but the individual components are well-established. The core insight about mutual adaptation exists in prior work on multi-agent learning and human-robot collaboration, though not framed explicitly as an alternative to RLHF.\n\nClarity and Reproducibility:\nThe paper is generally well-written with clear motivation. However, some technical details are unclear - particularly how the human surrogate actually implements \"cognitively plausible behaviors.\" The experimental setup is described adequately, though the reliance on surrogates makes true reproduction challenging. The mathematical notation is sometimes inconsistent.\n\nExperimental Evaluation:\nThis is the paper's weakest aspect. The environments are too simple, the baselines too limited, and the metrics somewhat artificial. The \"MapTalk\" navigation task, while relevant, doesn't capture the complexity of real human-AI collaboration. The statistical significance testing is appropriate for what was tested, but the external validity is questionable.\n\nEthical Considerations:\nThe paper does address limitations and potential risks in the appendix, including concerns about AI systems influencing human behavior. However, the ethical implications of bidirectional adaptation deserve more thorough treatment in the main text.\n\nMajor Weaknesses:\n1. Extremely limited experimental validation in toy environments\n2. Use of human surrogates rather than actual human participants\n3. Lack of comparison to other collaborative AI approaches\n4. Gap between ambitious claims and modest experimental evidence\n5. Limited technical novelty in the algorithmic contributions\n\nMinor Issues:\n- Some mathematical notation inconsistencies\n- The BAS and CCM metrics, while comprehensive, feel somewhat artificial\n- Limited discussion of computational scalability to larger models\n\nThe paper addresses an important conceptual question about AI alignment, but the execution falls short of supporting its ambitious claims. The experimental validation is insufficient for the scope of claims made, and the technical contributions are relatively incremental."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission220/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775360743,
+    "mdate": 1760632200501,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission220/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

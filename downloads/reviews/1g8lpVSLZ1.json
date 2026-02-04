@@ -1,0 +1,337 @@
+[
+  {
+    "id": "y0E8ufjP1d",
+    "forum": "1g8lpVSLZ1",
+    "replyto": "1g8lpVSLZ1",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Convergence theorems lack rigorous proofs and are incompatible with the stated dynamic objective setting (page 3).\n- Undefined or under-specified components: F_social not defined; reliability_i^j(t) unspecified; behavioral switching rules absent (pages 3–4).\n- Use of sensory gradients assumes access to ∇S_j for problems where gradients are typically unavailable; no gradient-free method or estimator detailed (page 3).\n- Alarm force has a 1/|x_i - x_j|^2 singularity; no regularization or stability analysis (page 3).\n- Constraint handling is not described despite a constrained problem formulation (page 3).\n- Experimental reporting lacks statistical rigor: no variances, confidence intervals, or hypothesis tests; IGD and convergence metrics mentioned but not reported (pages 5–6).\n- Baseline selection/description unclear: PSO/ABC multi-objective variants not specified; parameter tuning and fairness not discussed (page 5).\n- Reproducibility concerns: missing seeds, number of runs, parameter settings, code/data; application setups (NAS, protein folding, climate) not sufficiently described (pages 5–6).\n- Logical inconsistency between dynamic problem framing and claims of convergence to a fixed Pareto set (page 3).\n- Potential persistence/instability in alarm propagation due to max-based update; no analysis (page 3).\n- Pareto front update/archive mechanism unspecified (page 4)."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776906150,
+    "mdate": 1760640303959,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "xsIduLp1XY",
+    "forum": "1g8lpVSLZ1",
+    "replyto": "1g8lpVSLZ1",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces MosquitoSwarm, a novel bio-inspired optimization algorithm for multi-objective problems, inspired by mosquito colony behaviors. The framework models multi-sensory navigation, a distributed threat/alarm system, and adaptive behavioral switching, with a mathematical formalization and theoretical convergence guarantees. The algorithm is evaluated against established methods on benchmarks and scientific applications, reporting impressive improvements.\n\nThe paper is of high quality in presentation and structure, with a technically sound and well-defined mathematical framework. The inclusion of theoretical analysis is a significant strength, and the authors' discussion of limitations is commendable. However, there are major concerns regarding experimental validation. The reported performance gains are exceptionally large, but the experimental setup for scientific applications lacks critical details, making the results impossible to interpret, scrutinize, or reproduce. The absence of an ablation study further weakens the justification for the algorithm's design.\n\nThe paper is exceptionally clear and well-written, with logical organization and high-quality writing. The potential significance is very high, but contingent on the validity of the experimental claims, which are not sufficiently supported. The work is highly original, with a novel use of mosquito swarm behaviors, and is well-differentiated from existing paradigms.\n\nReproducibility is the most significant weakness, as the lack of detail for scientific applications makes core results impossible to reproduce. The authors should provide comprehensive problem formulations and source code.\n\nIn summary, the paper is highly original and potentially impactful, but the experimental validation is insufficiently transparent and detailed. The lack of specifics and absence of an ablation study undermine trust in the results. The paper has potential but requires more rigorous and transparent validation. I cannot recommend acceptance in its current form, but encourage revision and resubmission with the missing details and analyses."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission225/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775962737,
+    "mdate": 1760632201984,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "iellFEInEw",
+    "forum": "1g8lpVSLZ1",
+    "replyto": "1g8lpVSLZ1",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777859403,
+    "mdate": 1760640303289,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "IUOIoYWIGI",
+    "forum": "1g8lpVSLZ1",
+    "replyto": "1g8lpVSLZ1",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces MosquitoSwarm, a bio-inspired multi-objective optimization framework motivated by mosquito swarm behaviors such as multi-sensory navigation, alarm signaling, and behavioral mode switching. The conceptual framing is original and the high-level narrative is clear, with potentially impactful ideas like adaptive reliability-weighted sensory integration. The paper is upfront about some limitations.\n\nHowever, there are major concerns undermining technical soundness and reproducibility. Key algorithmic components (e.g., social force, reliability, threat, behavioral mode switching, neighborhood definition) are not formally specified, making the method impossible to implement or reason about. Theoretical claims of convergence and rate are exceptionally strong but insufficiently supported, with only brief sketches and no supplementary material. There is a mismatch between claims of decentralization and the use of a global Pareto front.\n\nEmpirical evaluation is not reproducible: details for real-world applications (protein folding, NAS, climate modeling) are missing, and only hypervolume results are reported without statistical analysis or ablation studies. Reported improvements are inconsistent between narrative and tables. No compute/time/memory analysis is provided.\n\nWhile the writing is generally clear, essential implementation details are missing. The related work and biological foundations sections need substantial expansion and proper referencing. The contribution is primarily conceptual, as the paper does not convincingly demonstrate a step-change in performance or understanding relative to existing literature.\n\nActionable suggestions include fully specifying the algorithm, strengthening theoretical proofs, substantiating empirical claims with code and statistics, expanding related work, and providing practical guidance for users.\n\nConclusion: The paper is creative and potentially valuable, but lacks the rigor, specificity, and reproducible evidence required for acceptance at a top venue. The recommendation is to reject in its current form, but with substantial revisions, it could become a compelling contribution."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission225/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775962525,
+    "mdate": 1760632202161,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "F63c6bpANi",
+    "forum": "1g8lpVSLZ1",
+    "replyto": "1g8lpVSLZ1",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents MosquitoSwarm, a bio-inspired optimization algorithm based on mosquito swarm behavior for multi-objective optimization problems. While the paper is well-written and organized, there are significant concerns undermining its credibility. The biological foundation for mosquito swarm intelligence is superficial and not well-supported by entomological literature. The mathematical analysis lacks rigor, with only proof sketches and critical details deferred to supplementary material. Experimental results appear fabricated, showing suspiciously uniform improvements across diverse domains without statistical validation or reproducibility—no code or detailed implementation is provided. The originality is limited, as the algorithmic components are incremental combinations of existing techniques, and the biological inspiration seems forced. Major reproducibility issues and the lack of real experimental validation further weaken the contribution. Overall, the paper reads more like a thought experiment than a rigorous scientific work, with fundamental flaws in empirical validation and biological motivation."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission225/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775962928,
+    "mdate": 1760632201812,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission225/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "2hypnOZnos",
+    "forum": "1g8lpVSLZ1",
+    "replyto": "1g8lpVSLZ1",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission225/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950094932,
+    "mdate": 1760632286721,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "1g8lpVSLZ1",
+    "forum": "1g8lpVSLZ1",
+    "content": {
+      "title": {
+        "value": "MosquitoSwarm: Bio-Inspired Collective Intelligence for Multi-Objective Optimization in Computational Sciences"
+      },
+      "keywords": {
+        "value": [
+          "swarm intelligence",
+          "bio-inspired computing",
+          "mosquito behavior",
+          "multi-objective optimization",
+          "collective intelligence",
+          "computational biology",
+          "evolutionary algorithms",
+          "emergence"
+        ]
+      },
+      "abstract": {
+        "value": "Mosquito swarms exhibit sophisticated collective behaviors that have evolved over millions of years to solve complex multi-objective optimization problems including resource discovery, predator avoidance, and reproductive success. Despite their biological significance, mosquito swarm intelligence remains largely unexplored in computational sciences. We introduce MosquitoSwarm, a novel bio-inspired optimization framework that captures the unique behavioral patterns of mosquito colonies, including their multi-layered communication protocols, adaptive foraging strategies, and emergent decision-making processes. Our approach models three key mosquito behaviors: (1) chemical gradient following with noise-resistant navigation, (2) collective threat response with distributed alarm systems, and (3) adaptive resource allocation based on environmental feedback. Through rigorous mathematical analysis, we establish convergence properties and demonstrate superior performance on benchmark optimization problems. Extensive experiments across protein folding, neural architecture search, and climate modeling show consistent improvements of 20-40% over existing swarm intelligence methods. The framework reveals emergent problem-solving strategies that mirror natural mosquito colony intelligence, providing new insights into distributed optimization and collective decision-making in biological systems."
+      },
+      "pdf": {
+        "value": "/pdf/5fd6ff9e978896994022779b05410b88036f6846.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025mosquitoswarm,\ntitle={MosquitoSwarm: Bio-Inspired Collective Intelligence for Multi-Objective Optimization in Computational Sciences},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=1g8lpVSLZ1}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757958852221,
+    "odate": 1758112145415,
+    "mdate": 1759960942256,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission225/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission225/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

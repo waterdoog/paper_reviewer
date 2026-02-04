@@ -1,0 +1,340 @@
+[
+  {
+    "id": "ycBbvnXPfB",
+    "forum": "ycBbvnXPfB",
+    "content": {
+      "title": {
+        "value": "Fairness Agents in Scientific Collaboration: A Research Agenda"
+      },
+      "keywords": {
+        "value": [
+          "Fairness Agents",
+          "GenerativeAI",
+          "Bias",
+          "Intersectionality",
+          "algorithmic fairness"
+        ]
+      },
+      "TLDR": {
+        "value": "This paper proposes Fairness Agents—autonomous agents in scientific workflows that detect, explain, and mitigate bias—introducing a typology, architecture, and use cases to advance inclusive and accountable science."
+      },
+      "abstract": {
+        "value": "This paper introduces the concept of Fairness Agents: autonomous software agents embedded in scientific workflows to detect, explain, and mitigate bias in collaborative knowledge production. While algorithmic fairness has primarily focused on predictive models, scientific collaboration involves complex interpersonal and institutional processes where bias often arises. We identify a research gap at the intersection of multi-agent systems, epistemic justice, and AI fairness. Drawing on a structured literature synthesis, we define Fairness Agents, propose a typology (observer, interventionist, and reflective agents), and outline a functional architecture. We illustrate their relevance through use cases in interdisciplinary research, peer review, and open science. The paper concludes by discussing key design challenges—transparency, trust, and norm conflict—and proposes directions for future evaluation and participatory co-design. Fairness Agents offer a path toward more inclusive and accountable agent-mediated science."
+      },
+      "pdf": {
+        "value": "/pdf/384883684fa60f3f72f82d104b15c407f6615336.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "supplementary_material": {
+        "value": "/attachment/8e43b0c9f76e2934b870fdb13e46ce93ef36658a.pdf"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025fairness,\ntitle={Fairness Agents in Scientific Collaboration: A Research Agenda},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=ycBbvnXPfB}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1754849717514,
+    "odate": 1758112145415,
+    "mdate": 1759960932946,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission22/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission22/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "hLyABk6uVz",
+    "forum": "ycBbvnXPfB",
+    "replyto": "ycBbvnXPfB",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission22/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950676779,
+    "mdate": 1760632262320,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "fDrGy82tvg",
+    "forum": "ycBbvnXPfB",
+    "replyto": "ycBbvnXPfB",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces the concept of 'Fairness Agents' for scientific collaboration workflows, addressing an important intersection of AI fairness, multi-agent systems, and scientific collaboration. However, the work is purely conceptual, lacking technical depth, empirical validation, and detailed functional architecture. Key concepts are introduced superficially, and use cases are too abstract to demonstrate practical applicability. The contribution is preliminary, with no demonstration of practical effectiveness or consideration of community acceptance. The novelty is unclear, as the idea of fairness-aware agents is not new and the paper does not sufficiently distinguish itself from prior work. There is no implementation or evaluation, and critical elements such as technical specifications, evaluation frameworks, and real-world examples are missing. While the topic is timely and the idea has merit, the execution is incomplete and lacks the rigor and depth required for acceptance at a major venue."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission22/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775493642,
+    "mdate": 1760632148247,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "e6iEZ9cUL8",
+    "forum": "ycBbvnXPfB",
+    "replyto": "ycBbvnXPfB",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Literature synthesis lacks a transparent, reproducible methodology (databases, time frame, inclusion/exclusion criteria, screening/coding procedures).\n- Typology derivation is not methodologically grounded (no explicit coding scheme, rationale for category boundaries, or validation via cases/expert review).\n- Architecture is too high-level: no technical specifications for fairness detection/monitoring, intervention algorithms, provenance auditing, or governance/policy enforcement.\n- No formalization of fairness constructs to be monitored in workflows (e.g., operational definitions, measurable indicators, or tension-handling between competing norms).\n- Evaluation plan is insufficiently concrete (no proposed metrics, simulation designs, or user study protocols to test detection accuracy, trust, or effectiveness).\n- Ethical/legal feasibility of interventions (e.g., blocking workflows, rebalancing authorship) is not addressed in terms of governance, consent, accountability, or alignment with institutional policies.\n- Authors acknowledge potential hallucinated/imprecise citations; all references should be verified and scoped to avoid misattribution.\n- Formatting/structure issues (e.g., inconsistent section numbering around pages 3–4) suggest minor formal correctness problems."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776737704,
+    "mdate": 1760639948962,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Lt8GfQIGPH",
+    "forum": "ycBbvnXPfB",
+    "replyto": "ycBbvnXPfB",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Towards autonomous scientific research agents by Chen, T., et al.\n- Working with machines: Impact of algorithmic management by Lee, M. K., et al.\n- Science as a multi-agent system by Zou, J. Y., et al."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777706693,
+    "mdate": 1760639948293,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "AFCQ6Syeo1",
+    "forum": "ycBbvnXPfB",
+    "replyto": "ycBbvnXPfB",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces the concept of \"Fairness Agents\"—autonomous agents designed to monitor, detect, and mitigate bias within scientific collaboration workflows. The authors position this as a \"research agenda\" paper, aiming to define a new area of inquiry at the intersection of multi-agent systems, AI fairness, and science & technology studies (STS). The paper is described as timely, exceptionally well-executed, and sets a high bar for the inaugural Agents4Science conference.\n\nQuality: The paper is of very high quality, with technical soundness grounded in rigorous literature synthesis and a coherent proposed framework. The authors demonstrate a deep understanding of the limitations of current AI fairness research and argue for a shift towards socio-technical processes in science. The proposed typology of Fairness Agents (Observer, Interventionist, Reflective) is intuitive and well-grounded, providing a useful vocabulary for future research. The functional architecture is high-level but offers a sensible scaffold for future development. The authors are transparent about the paper's limitations, noting it is not empirical but foundational.\n\nClarity: The paper is exceptionally clear, well-written, and logically structured. The abstract and introduction effectively frame the problem and contribution. Core concepts are precisely defined, and Table 1 provides a concise summary of the agent typology. The prose is academic and professional, making complex arguments accessible and compelling.\n\nSignificance: The work is potentially groundbreaking, addressing procedural fairness, epistemic inclusion, and credit attribution as AI agents become more embedded in scientific processes. The paper systematically addresses these challenges, moving beyond simple debiasing to a holistic, systems-level view of fairness in science. The use cases (health research, peer review, open science) are highly relevant and illustrate the broad applicability and importance of the agenda. The paper is likely to be influential and seed a significant new research direction.\n\nOriginality: The paper is highly original, synthesizing AI fairness, multi-agent systems, and STS to formalize Fairness Agents for scientific collaboration. The framing through epistemic justice and procedural fairness, rather than statistical metrics, is a sophisticated conceptual leap. The transparency regarding AI-assisted authoring is a novel meta-contribution for the conference.\n\nReproducibility: As a conceptual paper, traditional reproducibility does not apply, but the arguments are clear, the literature review is thorough, and the agenda is well-defined, allowing others to build upon the ideas.\n\nEthics and Limitations: The authors handle ethics masterfully, with the paper motivated by improving the ethical fabric of science. The discussion anticipates ethical challenges such as norm conflict and bias-by-design, and the self-reflective critique strengthens the work. The authors are candid about limitations, including the conceptual nature and use of LLMs, noting issues like shallow synthesis and the need for human curation.\n\nCitations and Related Work: The literature review is excellent, bridging disparate fields and clearly articulating the research gap and the paper's contributions.\n\nOverall Recommendation: This is an outstanding, bold, and insightful paper that defines a new and important research area. It is visionary, technically sound for its type, exceptionally clear, and has the potential for groundbreaking impact. It is precisely the kind of work that should be highlighted at a top-tier conference to inspire and guide the community."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission22/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775493117,
+    "mdate": 1760632148512,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "309HIHvPGW",
+    "forum": "ycBbvnXPfB",
+    "replyto": "ycBbvnXPfB",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This is a conceptual position paper proposing “Fairness Agents” for scientific collaboration. It defines and motivates the concept, provides a typology of agent roles (observer, interventionist, reflective), outlines a three-layer functional architecture (Interaction, Data, Governance), and gives three illustrative use cases (health research teams, peer review, open science). The paper is situated at the intersection of algorithmic fairness, multi-agent systems, and epistemic justice.\n\nStrengths include timely problem framing (extending fairness to scientific processes), a useful conceptual vocabulary, bridging of relevant literatures, and clear articulation of design tensions. However, the paper is limited by insufficient operationalization (lacking concrete detection targets and measurable constructs), an underdeveloped architecture (no concrete data model or policy language), missing interfaces to existing standards, a vague evaluation plan, limited treatment of risks, and under-citation of related work in collaborative governance and mechanism design.\n\nThe paper is conceptually coherent but shallow in technical detail, with plausible claims not substantiated by formal models or empirical studies. Clarity is generally good, though sections are brief and could use more depth. The significance is potentially high if realized, but current impact is speculative due to the lack of artifacts or evaluations. Originality is moderate, with a fresh synthesis but reliance on existing literatures. Reproducibility is not applicable, but a minimal simulation or reference architecture would help. Ethics and limitations are acknowledged but under-addressed, especially regarding privacy, consent, and governance. Citations are solid but miss applied literatures and mechanism design work.\n\nActionable suggestions include formalizing constructs and metrics, fleshing out the architecture, providing concrete mechanisms per agent role, designing an evaluation roadmap, deepening ethical safeguards, and strengthening related work connections.\n\nOverall, this is a promising and timely agenda with clear conceptual framing and typology, but it lacks sufficient operational detail, concrete mechanisms, and evaluation design to meet a high bar for acceptance. With a more rigorous architecture, formalized metrics, and at least a simulation-based prototype, it could be compelling."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission22/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775492871,
+    "mdate": 1760632148678,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission22/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

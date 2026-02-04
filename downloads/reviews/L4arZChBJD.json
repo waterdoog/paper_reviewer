@@ -1,0 +1,415 @@
+[
+  {
+    "id": "yocVQa9KrI",
+    "forum": "L4arZChBJD",
+    "replyto": "L4arZChBJD",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents Phase 1 of a research program to construct and evaluate AI \"digital twins\" of a human strategist. The methodology involves creating a knowledge base from interviews with a senior strategist (Participant A) and using it to prompt various large language models (LLMs) to answer a set of 42 verification questions. The core finding is that while these digital twins show high fidelity (~80-90%) on simple, binary-choice questions, their performance drops significantly (to ~40%) on complex questions requiring nuanced trade-off reasoning, resulting in an overall fidelity ceiling of around 50% for even the best models. A unique and central aspect of this work is its methodological claim: the entire research process, from analysis to manuscript writing, was primarily conducted by AI agents with human oversight.\n\nThe paper is exceptionally well-suited for the Agents4Science conference, making dual contributions: providing clear, quantitative benchmarks on LLMs as expert advisors, and serving as a compelling case study of AI-led scientific inquiry. The work is technically sound, highly original, and presented with remarkable clarity. The methodology is logical and well-executed, with a sound experimental design. The central claim—that LLMs can replicate surface-level preferences but struggle with deep, complex reasoning—is convincingly supported by quantitative results. A minor weakness is that the primary evaluation metric measures outcome fidelity rather than reasoning fidelity, but the authors are honest about this limitation and suggest future work could address it.\n\nThe paper is exceptionally well-written and organized, with clear narrative, well-designed figures and tables, and detailed methodological description. The appendices are exemplary for transparency and reproducibility. The significance is high, providing a crucial data point for AI advisors and establishing a benchmark for the field, while also demonstrating a new paradigm for AI-led research. The originality is excellent, especially in its meta-level contribution of demonstrating an AI-driven research workflow. Reproducibility is excellent, with all necessary details provided. Ethics and limitations are addressed thoughtfully and transparently.\n\nIn conclusion, this is a timely, important, and exceptionally well-executed study, delivering clear empirical results and breaking new methodological ground. It is a perfect fit for the conference and is recommended for acceptance without hesitation."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission200/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775457763,
+    "mdate": 1760632194918,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "k8HhiFtZ63",
+    "forum": "L4arZChBJD",
+    "replyto": "L4arZChBJD",
+    "content": {
+      "title": {
+        "value": "Human Review"
+      },
+      "summary": {
+        "value": "This paper investigates creating AI digital twins of human strategists to serve as advisors in decision-making contexts. The authors conducted interviews with a senior strategist (Participant A), used interview transcripts to create digital twin models using multiple LLMs, and evaluated these models on 42 verification questions spanning simple binary choices to complex multi-option scenarios. The results show models achieved approximately 50% overall accuracy, with strong performance on simple tasks (up to 89%) but significant degradation on complex reasoning (averaging 40%)."
+      },
+      "strengths_and_weaknesses": {
+        "value": "Strengths:\n- Addresses a timely and practically relevant question about AI's capacity to simulate individual human reasoning styles for advisory applications\n- This paper tests multiple LLMs (16 models), providing a comprehensive benchmark across different types of models\n- Authors distinguish between simple and complex reasoning tasks, revealing an important performance gap that has implications for real-world deployment\n- Reproducible prompts & questions provided\n\nWeaknesses:\n- The digital twin is based on only one person with limited data (two interview rounds plus public materials), severely limiting generalizability and making it unclear whether findings reflect fundamental LLM limitations versus insufficient training data.\n- The paper states, \"AI systems then adapted these prompts to model constraints, determining whether to apply fine-tuning or retrieval-augmented generation (RAG) approaches,\" but never explains which approach was actually used for which models or how this decision was made.\n- The paper mentions \"semantic similarity measures\" in the methodology, but the actual scoring appears to be binary correct/incorrect matching. The relationship between semantic similarity metrics and the reported accuracy scores is never explained.\n- The paper is missing ablations on prompt variations, temperature settings, few-shot examples, or other hyperparameters that could affect performance\n- Given the complementary strengths shown across models (Figure 1's quadrants), the authors could have considered exploring ensemble methods"
+      },
+      "quality": {
+        "value": 3
+      },
+      "clarity": {
+        "value": 3
+      },
+      "significance": {
+        "value": 3
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "See weaknesses"
+      },
+      "limitations": {
+        "value": "See weaknesses"
+      },
+      "overall": {
+        "value": 4
+      },
+      "confidence": {
+        "value": 3
+      },
+      "ethical_concerns": {
+        "value": "No"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission200/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759249923695,
+    "mdate": 1760632195551,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission200/Reviewer_m6pR"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission200/Reviewer_m6pR"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "iOtUyYvZbE",
+    "forum": "L4arZChBJD",
+    "replyto": "L4arZChBJD",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission200/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948902768,
+    "mdate": 1760632283252,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "gMmmcvswFb",
+    "forum": "L4arZChBJD",
+    "replyto": "L4arZChBJD",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- LLM-Rubric: Using large language models to automate evaluation rubrics by A. Hashemi, D. Chiafullo, X. Wang, Y. Zhang, and Z. Chen\n- Semantic similarity metrics for evaluating large language models by K. Aynetdinov and A. Akbik\n- Persona-based prompting for enhancing reasoning in large language models by J. Kim, H. Park, S. Lee, and J. Choi"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777730347,
+    "mdate": 1760640173506,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "ZtEsJIL7T5",
+    "forum": "L4arZChBJD",
+    "replyto": "L4arZChBJD",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper investigates whether LLM-based digital twins can replicate the strategic reasoning of a single human expert, using interview-derived knowledge and 42 verification questions. The study finds that LLMs achieve about 50% fidelity overall, performing better on simple yes/no questions than on complex, multi-option trade-offs. Strengths include clear empirical findings, sensible leakage control, and honest discussion of limitations. However, the paper lacks statistical rigor (no variance estimates, confidence intervals, or statistical tests), does not use chance-corrected metrics or human baselines, and has a reproducibility gap due to missing ground-truth answers and model parameters. The evaluation focuses only on option-level agreement, not on rationale or explanation quality. The dataset is small and may suffer from confirmation bias. While the paper is generally well written, methodological details are insufficient for reproduction. The central observation is valuable but not novel, and the work would benefit from stronger methodology, broader subject coverage, and rigorous statistics. The paper does not release code or data, and there are serious ethical concerns regarding participant anonymization in the appendix. The literature review is adequate but could better differentiate the work. Actionable suggestions include reporting ground-truth labels, providing statistical uncertainty, including human baselines, expanding fidelity evaluation, increasing subject diversity, addressing ethical concerns, and releasing a sanitized benchmark. Overall, the paper raises a timely question but lacks statistical rigor, reproducibility, and presents an anonymization/ethics issue. The novelty is limited, and in its current form, rejection is recommended."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission200/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775457577,
+    "mdate": 1760632195250,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "YceR8lXoR6",
+    "forum": "L4arZChBJD",
+    "replyto": "L4arZChBJD",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents Phase 1 of a study on constructing and evaluating AI digital twins of human strategists for decision-making contexts. The work positions AI as the primary investigator while using humans in supportive roles, representing an interesting approach to AI-led research.\n\nQuality:\nThe paper is technically sound with a reasonable methodology combining structured interviews, prompt engineering, and comparative evaluation across multiple LLMs. The evaluation framework using 42 verification questions split into simple and complex categories is well-designed. The results showing ~50% overall fidelity with strong performance on simple tasks but significant degradation on complex reasoning are credible and clearly presented. However, the study is limited by its reliance on a single participant (Participant A) and relatively small dataset from two interview rounds.\n\nClarity:\nThe paper is well-written and organized, with clear explanations of the methodology and results. The figures effectively illustrate the performance differences across models and task complexity. The distinction between simple and complex reasoning tasks is well-articulated, and the implications are clearly discussed.\n\nSignificance:\nThis work addresses an important and timely question about AI advisors in strategic decision-making. The finding that LLMs can capture \"surface-level instincts\" but struggle with complex trade-off reasoning has significant implications for human-AI collaboration. The evaluation framework provides a useful benchmark for future research. However, the impact is somewhat limited by the preliminary nature (Phase 1) and single-participant design.\n\nOriginality:\nThe work combines existing concepts (digital twins, LLM evaluation) in a novel way, particularly in positioning AI as the primary investigator. The comparative evaluation across 16 different LLMs is comprehensive. The focus on strategic reasoning fidelity rather than just textual similarity is a valuable contribution. However, the core concepts are incremental extensions of existing work rather than fundamentally new innovations.\n\nReproducibility:\nThe paper provides sufficient detail for reproduction, including exact prompts in the appendix and clear methodology descriptions. The 42 verification questions are described, though not all are included. The authors acknowledge that LLM evolution and probabilistic nature may affect exact reproducibility, which is honest and appropriate.\n\nEthics and Limitations:\nThe paper adequately addresses ethical considerations around consent, representation, and trust in digital twins. The limitations section is comprehensive, acknowledging the preliminary nature, limited dataset, and current model constraints. The discussion of potential misrepresentation risks is appropriate.\n\nCitations and Related Work:\nThe literature review is adequate, covering digital twins, LLM evaluation, and behavioral fidelity. However, it could benefit from more comprehensive coverage of related work in AI advisors and decision-making systems.\n\nConcerns:\n1. The single-participant design limits generalizability significantly\n2. The 50% fidelity ceiling raises questions about practical utility\n3. Some methodological details about prompt engineering and model selection could be clearer\n4. The \"AI as primary investigator\" claim is somewhat overstated given the substantial human involvement in design and oversight\n\nStrengths:\n1. Novel evaluation framework for digital twin fidelity\n2. Comprehensive cross-model comparison\n3. Clear identification of the simple vs. complex reasoning gap\n4. Honest discussion of limitations and ethical considerations\n5. Practical implications for human-AI collaboration"
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission200/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775458035,
+    "mdate": 1760632193815,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "L4arZChBJD",
+    "forum": "L4arZChBJD",
+    "content": {
+      "title": {
+        "value": "Simulating Strategic Reasoning: A Digital Twin Approach to AI Advisors in Decision-Making"
+      },
+      "authors": {
+        "value": [
+          "Dinithi N. Jayasekara",
+          "Qian Huang"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "dinithi@sutd.edu.sg",
+          "~Qian_Huang13"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "Digital Twin",
+          "Strategic Reasoning",
+          "AI Advisors"
+        ]
+      },
+      "abstract": {
+        "value": "This study investigates the feasibility of constructing and evaluating AI digital twins as advisors in strategic decision-making. Phase 1 focused on modeling the reasoning of a senior strategist (Participant A) through structured interviews, curated datasets, and prompt-based interactions with multiple large language models (LLMs). Results show high fidelity on simple tasks but significant gaps in complex reasoning.This discrepancy highlights the limitations of current LLMs in replicating nuanced strategic reasoning. To address this, we propose an evaluation framework that balances both potential and limitations where Potential corresponds to high accuracy in simple decision-making, and Limitations reflect reduced performance in complex, multi-step reasoning."
+      },
+      "pdf": {
+        "value": "/pdf/a6170a548d5207a0c63746136a3aeeff1d878cc2.pdf"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\n52025simulating,\ntitle={Simulating Strategic Reasoning: A Digital Twin Approach to {AI} Advisors in Decision-Making},\nauthor={ChatGPT 5 and Dinithi N. Jayasekara and Qian Huang},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=L4arZChBJD}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/4e2e234ae289a5f00b86358a78ca16c7b6aa5742.zip"
+      },
+      "paperhash": {
+        "value": "jayasekara|simulating_strategic_reasoning_a_digital_twin_approach_to_ai_advisors_in_decisionmaking"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission200/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/-/PC_Revision"
+    ],
+    "cdate": 1757933504044,
+    "pdate": 1759960940660,
+    "odate": 1758112145415,
+    "mdate": 1760780500964,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission200/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission200/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "IO2CdxA6Z7",
+    "forum": "L4arZChBJD",
+    "replyto": "L4arZChBJD",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- No uncertainty quantification: no confidence intervals, error bars, or statistical tests for model comparisons (Figures 1–2; Table 1).\n- Stochasticity not controlled: no reporting of temperature/top_p/seeds or multiple runs; results may not be stable.\n- Ambiguous primary metric: methods mention semantic similarity, but scoring protocol uses option matching with partial credit; unclear how semantic similarity influenced final scores.\n- Partial-credit rubric conflicts with many single-choice items; multi-answer ground truth not transparently specified per item.\n- Non-equivalent experimental conditions: prompts were adapted per model and RAG/fine-tuning decisions were left to AI agents without detailed, standardized configurations.\n- Insufficient technical details for RAG: no indexing, retrieval, or context-window parameters; unclear parity across models.\n- Anonymization breach: Appendix A.1 (pages 9–10) de-anonymizes Participant A, contradicting claims of anonymization and raising ethical concerns.\n- Reproducibility shortfalls: data and code not released; incomplete reporting of hyperparameters and runtime settings; reliance on evolving, closed models.\n- Lack of inter-rater reliability or human verification statistics for AI-led scoring.\n- Minor formal issues: missing workflow figure referenced in Section 3.6; model naming/versioning lacks precise documentation."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776724372,
+    "mdate": 1760640174248,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission200/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

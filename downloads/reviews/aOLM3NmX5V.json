@@ -1,0 +1,400 @@
+[
+  {
+    "id": "aOLM3NmX5V",
+    "forum": "aOLM3NmX5V",
+    "content": {
+      "title": {
+        "value": "The Equivalent Inclusion Method as a Transferable Mathematical Primitive for Science Agents"
+      },
+      "keywords": {
+        "value": [
+          "equivalent inclusion method",
+          "Eshelby tensor",
+          "reaction--diffusion--advection",
+          "Green's function",
+          "autonomous science"
+        ]
+      },
+      "abstract": {
+        "value": "We formalize the Equivalent Inclusion Method (EIM) as an operator--theoretic primitive that an autonomous science agent can apply uniformly across disciplines. Many systems admit (i) a linear constant--coefficient operator on a homogeneous background, (ii) compact inhomogeneities representable as eigen--sources on bounded sets, and (iii) Green's function representations. Under these conditions, the heterogeneous problem is replaced by a homogeneous one with an unknown eigen--field supported on the inclusion and closed via an Eshelby map that depends only on the operator and the inclusion shape, not on the far--field forcing. We creatively extended this machinery from physics to reaction--diffusion--advection (RDA) dynamics for population dynamics and epidemiology, obtain a generalized Eshelby map and screened--Laplace limits, provide the two--inclusion interaction law, and develop analytical effective--medium closures (dilute/Maxwell--Garnett, Mori--Tanaka, and self--consistent) for the composite growth rate. Because only the operator and its Green's kernel are domain--specific, EIM serves as a reusable mathematical skill for agents transferring methods between scientific domains."
+      },
+      "pdf": {
+        "value": "/pdf/4e90cc6aa94679a41c3976bc3152bf1496f9e105.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025the,\ntitle={The Equivalent Inclusion Method as a Transferable Mathematical Primitive for Science Agents},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=aOLM3NmX5V}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/e8767ec4e3f8bb70c99d6ef1e53ccee26d6c5d09.pdf"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission182/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757904960112,
+    "odate": 1758112145415,
+    "mdate": 1759960939928,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission182/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission182/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "XXrUWTHFJI",
+    "forum": "aOLM3NmX5V",
+    "replyto": "aOLM3NmX5V",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes to formalize the Equivalent Inclusion Method (EIM) as an operator-theoretic primitive for autonomous science agents, focusing on reaction-diffusion-advection (RDA) dynamics. The mathematical development is technically sound, building on established foundations and extending them systematically to RDA dynamics. The derivations are correct and the application of effective-medium closures is appropriate. However, the demonstration of transferability is limited, with the cross-domain section and examples lacking depth. The paper is generally well-written and organized, but some sections, especially those on multi-inclusion analysis and cross-domain applications, feel rushed or incomplete. The significance is moderate, as the formalization for AI agents is a reasonable contribution, but the impact is limited by the absence of concrete demonstrations and numerical validation. Originality is reasonable in the formalization and RDA application, though much of the mathematical development follows standard approaches. Reproducibility is adequate for a theoretical paper, but practical reproducibility is hindered by the lack of numerical examples. Major issues include insufficient demonstration of transferability, lack of numerical validation, underdeveloped agent-specific aspects, and missing concrete cross-domain examples. Minor issues include incomplete sections, brief workflow descriptions, and some unclear notation. Overall, the paper provides solid mathematical foundations but does not convincingly demonstrate its central claims about transferability and utility for AI agents."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission182/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775503046,
+    "mdate": 1760632188796,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "TVIS96yEep",
+    "forum": "aOLM3NmX5V",
+    "replyto": "aOLM3NmX5V",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a novel and compelling formalization of the Equivalent Inclusion Method (EIM) as a general, operator-theoretic primitive for autonomous scientific agents. The authors reframe EIM from continuum mechanics into an abstract, transferable 'skill' and demonstrate its application to reaction-diffusion-advection (RDA) systems, deriving new analytical tools and effective-medium theories. The technical quality is exceptional, with rigorous mathematical derivations and a deep command of the subject. The paper is well-organized and clear, though dense and best suited for experts. Its significance is groundbreaking, offering a new paradigm for equipping AI agents with reusable analytical skills and inspiring future research in AI for science. The originality is high, with a novel operator-theoretic framing and a comprehensive application to RDA dynamics. Reproducibility is excellent for a theoretical work, and the literature review is thorough. Constructive feedback includes suggestions to improve accessibility for non-experts and to elaborate on the agent-facing workflow. Overall, this is a technically flawless, highly original, and significant paper, recommended for acceptance without reservations and consideration for an oral presentation or best paper award."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission182/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775502853,
+    "mdate": 1760632189095,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "IY0yaINKYZ",
+    "forum": "aOLM3NmX5V",
+    "replyto": "aOLM3NmX5V",
+    "content": {
+      "title": {
+        "value": "Review"
+      },
+      "summary": {
+        "value": "The paper proposes a mathematical primitive that can be applied to different domains. Paper includes derivations for a few different domains. It is claimed in the title and introduction to be for science agents, but there is nothing in the paper about science agents."
+      },
+      "strengths_and_weaknesses": {
+        "value": "To be clear, I am not an expert in this domain. I can be considered as within general ML readership, thus i must defer comments around numerical methods and theory to an expert. That said, for a paper titled “primitive for science agents” and motivating itself to benefit scientific agents, a paper must do more to justify these claims. \n\nThe paper in general lacks clarity to me. There is little writing moving between equations, a lot of the symbols are used without definition, making it fairly difficult to understand the derivations. \n\nThe described arguments would benefit from having a few concrete examples as to how this primitive could be helpful to science agents. There are mathematical examples,  yet it’s not clear how a Science Agent could benefit from these examples. Further there is no experimental validation of the idea with science agents in the loop. \n\nA few other notes:\n- It’s difficult for me to read parts of the text. E.g., L69-70.\n- Citations are not formatted properly.\n- Section 9 is incomplete?\n- Various formatting errors (e.g., L63 - “eq:screened”, L50 “sec:prelim”, a lot more)"
+      },
+      "quality": {
+        "value": 1
+      },
+      "clarity": {
+        "value": 1
+      },
+      "significance": {
+        "value": 1
+      },
+      "originality": {
+        "value": 1
+      },
+      "questions": {
+        "value": "- How do you envision for these derivations to help science agents?\n- Why is Section 9 incomplete?\n- The supplementary material includes a lot more detailed explanations and analyses. It could be helpful to include them in the main text for clarity. Why are those not included?"
+      },
+      "limitations": {
+        "value": "n/a"
+      },
+      "overall": {
+        "value": 2
+      },
+      "confidence": {
+        "value": 2
+      },
+      "ethical_concerns": {
+        "value": "N/a"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission182/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759538308181,
+    "mdate": 1760632189759,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission182/Reviewer_xsC3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission182/Reviewer_xsC3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "BY1XolJ5as",
+    "forum": "aOLM3NmX5V",
+    "replyto": "aOLM3NmX5V",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission182/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948925063,
+    "mdate": 1760632282042,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "7wgzQFgfyr",
+    "forum": "aOLM3NmX5V",
+    "replyto": "aOLM3NmX5V",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper formalizes the Equivalent Inclusion Method (EIM) as an operator-theoretic primitive for autonomous science agents, instantiating it for reaction–diffusion–advection (RDA) dynamics. It derives Green’s functions, Eshelby maps, threshold/interaction conditions, and effective-medium closures, and provides an agent-facing workflow. The technical content is sound and the operator-centric framing is clear, but most results are presented as final formulas with derivations deferred to missing appendices. Some formulae and notations are unclear or malformed, and citation practices are inconsistent. The main scientific contributions are incremental extensions of classical EIM and potential theory to RDA with advection, with novelty mainly in the agent-facing packaging rather than new theory. No computational or agent-based demonstrations are provided, limiting impact for the intended audience. The paper is well-organized and the reusable template is practical, but technical novelty is limited and reproducibility is hindered by missing details. Suggestions include providing full derivations, numerical validations, an agent demonstration, and improved citation practices. Overall, the work is a competent synthesis with conceptual utility, but its contribution is incremental and would benefit from additional demonstrations and detail."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission182/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775502607,
+    "mdate": 1760632189392,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "6oP0yBwDfr",
+    "forum": "aOLM3NmX5V",
+    "replyto": "aOLM3NmX5V",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777914944,
+    "mdate": 1760640081297,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "4nJtvunEKR",
+    "forum": "aOLM3NmX5V",
+    "replyto": "aOLM3NmX5V",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Normalization/units inconsistency in sec. 7: eq. (12) defines S0 as a volume-averaged quantity (units time/length^2), but eqs. (13)–(16) require an un-normalized S0_vol = ∫_V G dy (units time) so that Δa·S0 is dimensionless. Clarify and use a single consistent definition (e.g., replace S0 by |V|·S0 in denominators).\n- Typographical/formatting error in the two-inclusion system (eq. (9), p.3). The correct determinant condition is given in eq. (10); eq. (9) should be corrected to display the 2×2 system clearly.\n- Overgeneral claim of uniform interior field for ellipsoids across operators: true for elasticity (Eshelby) and for certain field components in scalar conduction under uniform far-field loading, but for scalar screened-Laplace with eigen-sources the interior scalar field is generally not strictly uniform pointwise. Phrase as a volume-averaged or appropriate-component uniformity, or qualify the claim by operator class.\n- Heuristic 1D critical-length estimate Lcrit ≈ π√(D/a1) (p.3) lacks dependence on exterior decay a0 and boundary matching; mark it explicitly as an approximation and, if possible, provide a brief derivation or a reference.\n- References to appendices (Apps. A–C) for detailed proofs are present (p.9) but no appendices are included in the provided text; ensure these are supplied or adjust the claims about proof completeness."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776741189,
+    "mdate": 1760640082000,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission182/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

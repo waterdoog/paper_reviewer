@@ -1,0 +1,428 @@
+[
+  {
+    "id": "pjpkEHH5YS",
+    "forum": "pjpkEHH5YS",
+    "content": {
+      "title": {
+        "value": "Simulating Two-Sided Job Marketplaces with AI Agents"
+      },
+      "authors": {
+        "value": [
+          "Silvia Terragni",
+          "Behnaz Nojavanasghari",
+          "Frank Yang",
+          "Andrew Rabinovich"
+        ]
+      },
+      "authorids": {
+        "value": [
+          "~Silvia_Terragni1",
+          "~Behnaz_Nojavanasghari1",
+          "~Frank_Yang5",
+          "~Andrew_Rabinovich1"
+        ]
+      },
+      "keywords": {
+        "value": [
+          "Large Language Models",
+          "AI Agents",
+          "Two-Sided Marketplaces",
+          "labor markets",
+          "Simulation Framework",
+          "agent-based computational economics"
+        ]
+      },
+      "TLDR": {
+        "value": "We simulate two-sided marketplaces with LLM agents to study how reasoning and strategic adaptation drive emergent economic behavior"
+      },
+      "abstract": {
+        "value": "We introduce a simulation framework for studying how artificial intelligence agents behave in economic marketplaces. Unlike traditional computer simulations that use predetermined rules, our approach uses large language models (LLMs) as intelligent agents that can make strategic decisions and adapt their behavior over time. The framework includes reputation systems that track agent performance and detailed logging of decision-making processes.\n\nThrough systematic experiments comparing different types of agents, we reveal three key insights: the reasoning capabilities of AI agents create fundamentally different market behaviors, successful marketplaces require compatible decision-making approaches from all participants, and no single performance measure captures market success—instead, there are important trade-offs between transaction volume and match quality. The framework captures both what happens in the market overall and why individual agents make specific decisions.\n\nThis work provides a reproducible research platform for investigating how AI decision-making affects economic outcomes in controlled virtual marketplaces. To support reproducibility and further research, we make the complete simulation framework and analysis tools publicly available as open-source software at \\url{https://github.com/upwork/simploy}.\n  \n  \\textbf{Disclaimer:} This simulation is illustrative, not prescriptive, and highlights the capabilities and limitations of LLMs in synthetic environments. The framework is not designed to model or evaluate real-world labor platforms or populations, and findings should not be used to draw conclusions about existing economic systems."
+      },
+      "pdf": {
+        "value": "/pdf/cb69434e231e942426e8723a61478362034914a7.pdf"
+      },
+      "venue": {
+        "value": "Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference"
+      },
+      "supplementary_material": {
+        "value": "/attachment/7db60315a489372040c4ed9742b9b422369e8786.zip"
+      },
+      "_bibtex": {
+        "value": "@inproceedings{\nterragni2025simulating,\ntitle={Simulating Two-Sided Job Marketplaces with {AI} Agents},\nauthor={Silvia Terragni and Behnaz Nojavanasghari and Frank Yang and Andrew Rabinovich},\nbooktitle={Open Conference of AI Agents for Science 2025},\nyear={2025},\nurl={https://openreview.net/forum?id=pjpkEHH5YS}\n}"
+      },
+      "paperhash": {
+        "value": "terragni|simulating_twosided_job_marketplaces_with_ai_agents"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission242/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit",
+      "Agents4Science/2025/Conference/Submission242/-/Camera_Ready"
+    ],
+    "cdate": 1757980309663,
+    "pdate": 1759960942903,
+    "odate": 1758112145415,
+    "mdate": 1760894046469,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission242/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission242/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "briDQeSJWp",
+    "forum": "pjpkEHH5YS",
+    "replyto": "pjpkEHH5YS",
+    "content": {
+      "title": {
+        "value": "interesting paper"
+      },
+      "summary": {
+        "value": "This is a really interesting paper in a fast developing area. Both the agent based modelling the the two-sided market places are interesting topics and the combination is fascinating."
+      },
+      "strengths_and_weaknesses": {
+        "value": "the submission is teehnically sound and the results are well supported. The results are still somewhat limited but this is an interesting research area."
+      },
+      "quality": {
+        "value": 4
+      },
+      "clarity": {
+        "value": 4
+      },
+      "significance": {
+        "value": 3
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "no quesitons"
+      },
+      "limitations": {
+        "value": "I would like to see more formal results in this area, at the moment it is largely simulation based."
+      },
+      "overall": {
+        "value": 5
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ai_review_score": {
+        "value": 0
+      },
+      "ethical_concerns": {
+        "value": "none"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission242/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759857657207,
+    "mdate": 1760632206832,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission242/Reviewer_t7gQ"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission242/Reviewer_t7gQ"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "XriqSjMSdb",
+    "forum": "pjpkEHH5YS",
+    "replyto": "pjpkEHH5YS",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces a simulation framework using LLM agents to model a two-sided job marketplace, emphasizing reproducibility, agent reasoning transparency, and comparative experiments. Strengths include open-source code, detailed reporting, a multi-level analytical toolkit, and clear ethical disclaimers. However, the paper suffers from internal inconsistencies (e.g., capacity constraint wording, unclear client decision rules, and metric definitions), lacks stronger baselines (omitting classical matching algorithms), and does not validate robustness across models or real-world data. Mechanism details (e.g., hiring rules, job generation) are ambiguously specified, and some example prompts are inconsistent. The empirical contributions are illustrative but not definitive, and the conceptual novelty is moderate. The paper is commended for its reproducibility and interpretability focus, but the ambiguities and lack of rigorous baselines limit the generalizability of its findings. With clarifications and additional experiments, it could become a solid testbed, but in its current form, the recommendation is a borderline reject."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission242/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775522871,
+    "mdate": 1760632207864,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "KZBSNTEhLK",
+    "forum": "pjpkEHH5YS",
+    "replyto": "pjpkEHH5YS",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nNo hallucinated references detected."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777766877,
+    "mdate": 1760640003185,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "A6ifNMZiU1",
+    "forum": "pjpkEHH5YS",
+    "replyto": "pjpkEHH5YS",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces a simulation framework for studying economic behavior in two-sided job marketplaces using Large Language Models (LLMs) as agents. The work is exceptionally well-executed, presenting a robust framework, a methodologically sound set of experiments, and insightful findings. The authors compare different agent configurations (LLM-based vs. random agents for freelancers and clients) and perform an ablation study on a reflection mechanism to understand the impact of agent reasoning and adaptation on market outcomes. The paper is a model of clarity, rigor, and reproducibility, making a significant contribution to the emerging field of AI-driven agent-based modeling.\n\nQuality:\nThe technical quality of this submission is outstanding. The simulation framework is thoughtfully designed, incorporating key elements of real-world marketplaces such as reputation systems, bidding mechanisms, and agent adaptation. The experimental design is rigorous, employing multiple configurations, random baselines, and a crucial ablation study to isolate the effect of the reflection mechanism. The choice of metrics—spanning efficiency (Fill Rate, Bid Efficiency), participation (Hiring Rate), and equity (Gini coefficient)—is comprehensive and allows for a nuanced analysis of market health. The claims are strongly supported by the experimental results, which are presented with 95% confidence intervals and appropriate statistical validation. The authors are also commendably honest and thorough in their discussion of the framework's assumptions and limitations. This is a complete and polished piece of research.\n\nClarity:\nThe paper is exceptionally clear and well-organized. The writing is precise, and the structure flows logically from motivation to methodology, results, and discussion. The authors explicitly state their three primary contributions, which are then systematically delivered. The figures and tables are informative and well-designed. The inclusion of extensive appendices with prompt examples, persona details, and further analysis greatly enhances the reader's understanding and the paper's transparency. The clear articulation of the experimental setup in Section 4.1 provides all the necessary information for a reader to grasp the methodology.\n\nSignificance:\nThe significance of this work is very high. It provides not just a set of findings but a complete, open-source research platform (\"Simploy\") that can enable a wide range of future studies in computational economics and social science. This contribution lowers the barrier for other researchers to conduct rigorous, reproducible experiments with LLM agents. The empirical insights are also impactful. The finding that \"selectivity alignment\" between market participants is critical for market efficiency, and that misaligned cognitive strategies lead to market failure, is a non-obvious and important result. Furthermore, the demonstration of the trade-off between volume-maximizing (high throughput, high equity) and quality-maximizing (high efficiency) market designs provides a valuable lens for analyzing real-world platforms. This work is likely to be highly cited and built upon.\n\nOriginality:\nThe paper is highly original. While the idea of using LLMs for agent-based modeling is gaining traction, this work distinguishes itself through its focus on longitudinal, two-sided market dynamics, its rigorous comparative methodology, and its emphasis on creating a reusable, transparent framework. The authors effectively position their contribution against prior work in macroeconomics (e.g., AI Economist) and short-horizon negotiation tasks, carving out a novel and important research niche. The analysis of how a specific cognitive feature—reflection—causally impacts market-level outcomes is a particularly novel and powerful demonstration of this research paradigm.\n\nReproducibility:\nThis paper is a model of reproducibility. The authors provide a public, anonymized link to a repository containing the full codebase, configuration files, and analysis scripts. The paper itself, along with the appendices, provides exhaustive detail on the experimental setup, parameters, agent architecture, and statistical methods used. This commitment to open science is exemplary and crucial for building a credible new research field.\n\nEthics and Limitations:\nThe authors provide a thoughtful and comprehensive discussion of the limitations and ethical considerations of their work in Section 5. They are careful to state that their simulation is illustrative, not prescriptive, and they explicitly warn against overgeneralizing their findings to real-world labor markets. Their proactive steps to mitigate ethical risks, such as using anonymized identifiers to prevent demographic bias and making the framework open-source for transparency, are highly commendable.\n\nConclusion:\nThis is a groundbreaking paper that sets a new standard for research on LLM-based agent simulations. It is technically flawless, impactful, and presented with exceptional clarity and a strong commitment to reproducibility and ethical research. It is an ideal submission for the inaugural Agents4Science conference and represents a clear and enthusiastic recommendation for acceptance."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 6
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 6
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission242/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775523053,
+    "mdate": 1760632207550,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "9LIPFPqh2T",
+    "forum": "pjpkEHH5YS",
+    "replyto": "pjpkEHH5YS",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Participation Rate is used in Table 1 and Figure 1 (page 6) but not formally defined in the metric list (page 5), creating ambiguity about its precise computation.\n- Likely typo in capacity constraint: “Each freelancer can have at least 3 active jobs at the time” (page 6, line 204) should be “at most 3.”\n- Example prompts conflate two different “success rates” (bid-to-hire vs post-hire completion) without clear distinction (Appendix A.1.2, pages 10–11), risking confusion.\n- Multiple-comparisons correction is not discussed despite many metrics and pairwise comparisons; tests are described as independent t-tests (Appendix E).\n- The composite Market Health Score is used (Figure 1) but its exact formula/weights are not specified in the paper text, limiting interpretability.\n- Random baseline parameters (5% bid probability; 50% client acceptance) are arbitrary and not explored via sensitivity analysis; this could influence comparative outcomes.\n- Same LLM model generates content and acts as agents, potentially inducing homophily/overfitting; cross-model validation is proposed but not executed."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776748203,
+    "mdate": 1760640003998,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "5y9DAG0CUJ",
+    "forum": "pjpkEHH5YS",
+    "replyto": "pjpkEHH5YS",
+    "content": {
+      "decision": {
+        "value": "Accept"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! Congratualations on the acceptance! Please see the reviews below for feedback."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission242/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948897255,
+    "mdate": 1760632288364,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "48fJtQv5cX",
+    "forum": "pjpkEHH5YS",
+    "replyto": "pjpkEHH5YS",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a simulation framework for studying artificial intelligence agents in two-sided job marketplaces, using LLMs as intelligent agents that can make strategic decisions and adapt their behavior over time. The paper is technically sound with a well-designed experimental framework, integrating adaptive prompting, reputation systems, and detailed logging. The comparative experimental design across five configurations and the statistical analysis with 95% confidence intervals and 20 runs per configuration provide reasonable statistical power. The results demonstrate insights about selectivity alignment, trade-offs between transaction volume and match quality, and the importance of reflection mechanisms. The paper is well-written and organized, with clear descriptions of the framework architecture, experimental setup, and results. The work makes meaningful contributions to LLM-based economic simulation, addressing limitations in traditional agent-based modeling and providing valuable insights for AI and economics research. The open-source release enhances its impact. The methodological contributions are novel, particularly in treating LLMs as 'bounded policy approximators' and integrating natural language reasoning traces with quantitative market analysis. Reproducibility is excellent, with complete experimental details and promised code release. The authors demonstrate strong awareness of limitations and ethical considerations, with a comprehensive limitations section. The related work section is appropriate, though some recent work might be missing. Concerns include the 100-round simulation horizon, simplified economic assumptions, reliance on proprietary LLM APIs, and limited market scope. Strengths include the novel methodological approach, strong experimental design, clear practical insights, attention to ethics, comprehensive supplementary materials, and clear demonstration of framework capabilities. Overall, this is a solid contribution that advances the methodology for studying economic behavior with AI agents, is technically sound, clearly presented, and addresses an important problem in an innovative way, with acknowledged limitations."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 5
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 5
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission242/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775523236,
+    "mdate": 1760632207270,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission242/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

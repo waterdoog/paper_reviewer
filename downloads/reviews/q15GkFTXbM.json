@@ -1,0 +1,400 @@
+[
+  {
+    "id": "x0exdPy4xM",
+    "forum": "q15GkFTXbM",
+    "replyto": "q15GkFTXbM",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission328/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759948918341,
+    "mdate": 1760632308077,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "q15GkFTXbM",
+    "forum": "q15GkFTXbM",
+    "content": {
+      "title": {
+        "value": "Indirect Prompt Injection in AI-Native Peer Review: Risks, Detection, and Defenses"
+      },
+      "keywords": {
+        "value": [
+          "AI",
+          "Computer Security"
+        ]
+      },
+      "TLDR": {
+        "value": "We show that subtle stylistic cues can bias AI peer reviewers and propose simple, testable defenses to safeguard AI-native science."
+      },
+      "abstract": {
+        "value": "As AI systems increasingly both generate and evaluate scientific work, the research\npipeline itself becomes an attack surface. We argue that indirect prompt injection\n(IPI) —stylistic or structural choices that appear legitimate to humans but steer\nautomated heuristics—poses a systemic risk for AI-native peer review. Rather than\nreleasing exploits, we adopt a demonstration-through-design methodology, define\nreproducible susceptibility metrics (SI, PS, RV, CCG), and introduce safe tests: the\nParaphrase Invariance Test (PIT) and Claim–Evidence Alignment (CEA). A small\nsynthetic benchmark across three LLM reviewers shows style-only obfuscation\ninflates novelty and overall scores. We conclude with concrete detection and\ngovernance recommendations, providing a defensible foundation for studying and\nmitigating IPI in AI-native science."
+      },
+      "pdf": {
+        "value": "/pdf/6bf8dffc85e1ca5fcf66751ad6dc485c28ccc2c6.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025indirect,\ntitle={Indirect Prompt Injection in {AI}-Native Peer Review: Risks, Detection, and Defenses},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=q15GkFTXbM}\n}"
+      },
+      "supplementary_material": {
+        "value": "/attachment/fbcfae7ac81b3b18a0d3c6a118f198bc38d74f02.pdf"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/Submission328/-/Revision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1758095620685,
+    "odate": 1758112145415,
+    "mdate": 1759960946483,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission328/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission328/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "mZnM8wMJ2Z",
+    "forum": "q15GkFTXbM",
+    "replyto": "q15GkFTXbM",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces the concept of Indirect Prompt Injection (IPI) as a significant threat to AI-native peer review systems, providing a conceptual framework, a reflexive demonstration, and an agenda for safeguards. The strengths include exceptional originality and significance, an innovative reflexive methodology, clarity and organization, constructive and well-reasoned proposals for detection and governance, and exemplary honesty about limitations. The main weaknesses are limited empirical validation (small-scale, synthetic benchmark, lack of statistical rigor) and reproducibility concerns (withholding prompts and data for ethical reasons). Despite these, the paper is praised as a foundational, agenda-setting contribution that is highly relevant for the Agents4Science conference, likely to inspire further research, and outweighs its empirical limitations with its intellectual depth and originality."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 5
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 5
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission328/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775529415,
+    "mdate": 1760632233214,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Yc4ut832MW",
+    "forum": "q15GkFTXbM",
+    "replyto": "q15GkFTXbM",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- PIT-to-metric mismatch: PIT varies paraphrases (aligns with PS), but the paper claims PIT operationalizes RV (variance across reviewer prompts/seeds) (page 9, lines 325–327).\n- Feasibility estimate undercounts calls by ignoring multiple seeds mentioned in the protocol (page 5, lines 144–148 vs. page 4, lines 121–124).\n- Lack of statistical rigor: Table 2 (page 5) reports means without error bars, sample sizes, or significance tests, despite claiming multiple seeds.\n- Reproducibility gaps: prompts, seeds, model versions, and evaluation scripts are not provided; metrics SI/PS/RV/CCG are proposed but not numerically reported.\n- CEA complexity claim is oversimplified; reliable claim/evidence extraction typically exceeds linear-time assumptions (page 9, lines 337–342).\n- Heuristic reviewer baseline uses debatable proxies (e.g., coherence via sentence-length variance) without validation.\n- Stylometric analysis is defined (Appendix A) but not quantified; no effect sizes or comparisons reported."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776750481,
+    "mdate": 1760639999820,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "WwEGdW0Qqd",
+    "forum": "q15GkFTXbM",
+    "replyto": "q15GkFTXbM",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Acl rolling review: A new approach to peer review in nlp by ACL Rolling Review\n- Building an open peer review system: Lessons from iclr by Dragomir Radev et al."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777726275,
+    "mdate": 1760639999073,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "OFITwdGDnx",
+    "forum": "q15GkFTXbM",
+    "replyto": "q15GkFTXbM",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents an interesting and timely investigation into indirect prompt injection (IPI) in AI-native peer review systems, addressing a legitimate concern about the vulnerability of AI reviewers to subtle linguistic manipulations. \n\nStrengths include the novel identification of an underexplored vulnerability, a creative 'demonstration-through-design' methodology, the introduction of practical metrics and defensive protocols, empirical evidence across three LLM reviewers, and a responsible approach to disclosure. \n\nWeaknesses are the limited empirical scope (restricted to synthetic abstracts and three LLMs), unclear distinction between legitimate style and manipulation, reproducibility concerns due to lack of released prompts and data, lack of statistical rigor, and questions about real-world validity given the synthetic nature of the experiments. \n\nTechnically, the proposed metrics and protocols are sound, and the multi-layered analytical framework is useful, though defensive protocols need more validation. The work is significant for the integrity of AI-assisted publishing, raising awareness and providing initial detection tools. Clarity is sometimes compromised by the reflexive design, and minor issues include incomplete citations and questions about AI's role in scientific work.\n\nOverall, the paper tackles an important emerging problem with creative methodology and useful initial solutions. Despite limitations in scope and rigor, the core contribution is valuable and timely, providing a foundation for further research. The contributions outweigh the weaknesses, making this solid preliminary work with clear practical implications as AI reviewers become more common."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission328/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775529879,
+    "mdate": 1760632232946,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "FblfTh274c",
+    "forum": "q15GkFTXbM",
+    "replyto": "q15GkFTXbM",
+    "content": {
+      "title": {
+        "value": "Poor scientific work, but that seems to be the point?"
+      },
+      "summary": {
+        "value": "This work discusses the application of prompt injection attacks to AI reviewers. It has a lengthy discussion of background and conceptual framing and then proposes a number of metrics to evaluate how AI reviewers can be fooled by adversarial attacks. This paper was designed as a prompt injection attack itself to attempt to fool the AI reviewer for the agents4science conference. Overall, this paper is poor scientifically, but it presents an interesting case study in the meta sense for jailbreaking analysis."
+      },
+      "strengths_and_weaknesses": {
+        "value": "Strengths:\n- The work discusses an important topic, prompt injection in AI review, which is a clear limitations of using AI reviewers for scientific papers.\n- The idea of providing a “conceptual and reflective” work focused on the limitations of AI review is an interesting one, but it is not executed well in the writing.\n- The related work is well-written and identifies several important areas of AI reviewing and adversarial attacks on these systems.\n- The metrics described in the paper, while lacking in formal description, seem to have reasonable justification for their use in evaluating prompt injection attacks of AI reviewers.\n\nWeaknesses:\n- The paper features incredibly expository writing throughout most of the sections, launching into almost novel-like writing for most of the paper. This is hard to follow and incredibly unclear. The claims are often grandiose and not grounded in results from the paper.\n- The narrative of the work is incredibly jumbled and hard to follow. The paper claims it does not design an empirical study but then proceeds to describe proposed metrics and experiments. \n- The proposed frameworks are shallow, and no discussion is made of how this differs from previous attempts at formalizing this phenomenon.\n- There is no description of the dataset used or the methods behind generating Table 2. Further in Table 2, the proposed method only increases scores for novelty rather than soundness and clarify. These results are quite confusing, and no comment is made on them.\n- A proposal for a study is made in Section 6, but no experiments are done. This is incredibly weak, why did the authors include it?"
+      },
+      "quality": {
+        "value": 1
+      },
+      "clarity": {
+        "value": 1
+      },
+      "significance": {
+        "value": 1
+      },
+      "originality": {
+        "value": 3
+      },
+      "questions": {
+        "value": "- Did the authors design this prompt injection attack as a separate methodology or was this generated entirely by the AI that wrote the paper? If the AI was able to generate the prompt injection attack entirely autonomously, this is an interesting case of an AI model designing an effective attack on a reviewer system.\n- I will need to see reproducibility results as the results seem to have potentially been fabricated. There are no error bars given and all results on the experiment seem to have little differences. In addition, the authors use very old models for their experiments including GPT-3.5 (how did they get API access?) and an ambiguous “Claude”. \n- Was the Figure 1 generated by AI? It looks like one generated by the image generative model in the ChatGPT interface."
+      },
+      "limitations": {
+        "value": "Evaluating the quality of this research requires defining several levels. If evaluating the paper in terms of its quality of methods, results, etc. as written, it is a poor paper that should not be accepted. There are many concerns highlighted in the “weaknesses” above, and these preclude the paper from being accepted on the merits of the work proposed in the paper. However, the meta-reasoning for prompt injection is quite interesting; it obviously was able to get past the LLM reviewer used for this conference. Thus, this serves as an interesting case study in the meta, but its science overall internally is very poor (as seems to be the intention by the authors)."
+      },
+      "overall": {
+        "value": 1
+      },
+      "confidence": {
+        "value": 4
+      },
+      "ethical_concerns": {
+        "value": "This paper itself contains a prompt injection, which is a direct effort to subvert the Agents4Science evaluation framework. However, it's an interesting demonstration of a prompt injection attack, and the effort to submit such a paper is creative!"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission328/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759100422007,
+    "mdate": 1760632233899,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission328/Reviewer_B8bu"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission328/Reviewer_B8bu"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "BOlthRMPgd",
+    "forum": "q15GkFTXbM",
+    "replyto": "q15GkFTXbM",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper addresses the timely and important issue of indirect prompt injection (IPI) in AI-native peer review. It introduces susceptibility metrics (SI, PS, RV, CCG) and two diagnostic tests—Paraphrase Invariance Test (PIT) and Claim–Evidence Alignment (CEA)—to detect and mitigate stylistic manipulations that may bias LLM-based reviewers. The work is well-motivated, with clear conceptual framing, useful metrics, and a thoughtful discussion of governance and ethical considerations. Initial empirical results suggest that style-only obfuscation can inflate novelty and overall scores across multiple LLM reviewers, supporting the paper’s thesis.\n\nHowever, the empirical evaluation is limited: the benchmark is small, lacks reproducibility (no released prompts, seeds, or detailed rubrics), and does not report statistical rigor (e.g., error bars, hypothesis tests). The novelty of PIT and CEA is under-positioned relative to prior work on paraphrase robustness and claim–evidence verification, and key related literature is not fully cited or contrasted. There are also concerns about potential confounds (semantic drift in paraphrases), insufficient validation of the proposed defenses (not tested on full manuscripts or against adaptive adversaries), and a lack of quantitative linkage to real-world review workflows. Feasibility analysis is coarse, with no concrete resource or throughput measurements.\n\nThe paper is generally clear and readable, though some reflexive/obfuscated passages slightly impede clarity. Its significance is potentially high if validated, as robust AI-native reviewing is crucial, but current evidence is preliminary. Originality is moderate: the focus on IPI in peer review is fresh, but the technical contributions build on known ideas without strong comparative positioning. Reproducibility is weak at present due to missing artifacts and calibration details.\n\nEthically, the paper is careful, avoiding exploit release and addressing governance and fairness. Suggestions for improvement include releasing reproducibility artifacts, increasing statistical rigor, scaling experiments to full manuscripts, validating defenses more thoroughly, clarifying novelty relative to prior work, formalizing the threat model, and providing concrete feasibility data.\n\nOverall, this is a thoughtful and ethically careful agenda-setting paper with promising ideas, but it is currently limited by insufficient empirical validation and reproducibility. With stronger experiments, clearer positioning, and released artifacts, it could become an influential reference for AI-native peer review robustness."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission328/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775529187,
+    "mdate": 1760632233577,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission328/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

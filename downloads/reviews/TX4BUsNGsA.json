@@ -1,0 +1,345 @@
+[
+  {
+    "id": "kEHksTUUIR",
+    "forum": "TX4BUsNGsA",
+    "replyto": "TX4BUsNGsA",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Structured Pruning of Transformer Models by Various authors"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777958190,
+    "mdate": 1760640124261,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "YLaCFDQfIL",
+    "forum": "TX4BUsNGsA",
+    "replyto": "TX4BUsNGsA",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes an entropy-guided token pruning mechanism for Transformers to reduce quadratic attention costs. The methodology is clear and technically sound, with a reasonable entropy-based token scoring approach and a sensible encoder-gate-encoder design. However, the evaluation is limited, relying mostly on synthetic data and only one real dataset (SST-2), where the method leads to substantial accuracy degradation. The theoretical justification is weak, and the novelty is incremental, as the components are well-known and the approach does not clearly outperform simpler baselines. The paper is well-written and reproducible, with detailed implementation and code, but the practical impact is limited due to significant accuracy drops and lack of compelling evidence for real-world advantage. Ethical considerations and limitations are discussed, but the work does not sufficiently differentiate itself from existing methods or provide clear guidance on when its approach is preferable. Overall, the paper is technically competent but addresses an incremental problem with modest practical impact and limited validation."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission244/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775888626,
+    "mdate": 1760632207259,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "TX4BUsNGsA",
+    "forum": "TX4BUsNGsA",
+    "content": {
+      "title": {
+        "value": "Information-Efficient Transformers via Adaptive Token Pruning"
+      },
+      "keywords": {
+        "value": [
+          "Transformers",
+          "token pruning",
+          "entropy-guided pruning",
+          "adaptive computation",
+          "efficient inference",
+          "long-context modeling",
+          "sparsity",
+          "FLOPs reduction",
+          "uncertainty calibration",
+          "SST-2"
+        ]
+      },
+      "TLDR": {
+        "value": "Entropy-guided token pruning halves tokens: ~37.5% FLOPs cut on synthetic (accuracy preserved/slightly better) and ~40% on SST-2 at ρ=0.75 with moderate accuracy drop (0.914→0.827)."
+      },
+      "abstract": {
+        "value": "Transformers suffer from quadratic attention cost, limiting deployment for long\ncontexts on CPUs and edge devices. We propose an entropy-guided token pruning\nmechanism that retains a fixed budget of tokens after an initial attention layer, using\npredictive entropy as a proxy for informativeness. In controlled NumPy simulations\non synthetic sequences (L=64, V=500), pruning to ρ≈0.5 reduces a two-layer\nFLOPs proxy by 37.5% while maintaining accuracy (0.551) and AUC (0.556),\nslightly exceeding both a full encoder and an attention-mass baseline. On SST-2, a\nPyTorch implementation with ρ=0.75 reduces estimated FLOPs by∼40% with\naccuracy 0.827 (vs. 0.914 baseline), illustrating a practical efficiency–accuracy\ntrade-off. We release code and artifacts for both synthetic and real-data tracks,\nand analyze calibration, oracle-overlap, and gate overhead. Our findings suggest\nentropy-guided pruning is a viable efficiency primitive, with optimal budgets\ndepending on task structure and calibration quality."
+      },
+      "pdf": {
+        "value": "/pdf/a3d20066ca88fbf0b1663697434c2ac4099d53f1.pdf"
+      },
+      "supplementary_material": {
+        "value": "/attachment/2547356fb630fb1f93d0ee587580e743e05fce61.zip"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025informationefficient,\ntitle={Information-Efficient Transformers via Adaptive Token Pruning},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=TX4BUsNGsA}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757987935510,
+    "odate": 1758112145415,
+    "mdate": 1759960943051,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission244/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission244/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Qd7lgQ3b09",
+    "forum": "TX4BUsNGsA",
+    "replyto": "TX4BUsNGsA",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces an entropy-guided token pruning mechanism for Transformers, evaluated on synthetic data and SST-2. Strengths include conceptual simplicity, clear exposition, reproducibility emphasis, and explicit discussion of ethics and limitations. However, there are major concerns: (1) synthetic 'training' is simulated, not learned, undermining the validity of synthetic results; (2) real-world evaluation shows substantial accuracy degradation with no strong recovery; (3) theoretical framing is informal and lacks substantiation; (4) efficiency claims rely on proxies without robust hardware validation; (5) the selection signal (keeping low-entropy tokens) is debatable and not ablated; (6) important baselines and related work are missing; (7) statistical reporting is proposed but not executed. Additional issues include near-chance synthetic performance, formatting glitches, and contradictions in reporting. The idea is not novel, and the main contribution lacks strong empirical or theoretical support. While code and artifacts are promised, the scientific value is reduced by the lack of real optimization in synthetic experiments. The paper is transparent about ethics and limitations. Actionable suggestions include replacing simulated training with real learning, improving statistical reporting, running stronger evaluations, comparing alternative selection signals and baselines, reporting real hardware measurements, strengthening theory, expanding datasets, and improving related work coverage. Given the methodological flaws, weak empirical results, reliance on proxies, and limited novelty, the paper is not recommended for acceptance and requires substantial rework."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission244/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775888026,
+    "mdate": 1760632207487,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "GquZxjUcCs",
+    "forum": "TX4BUsNGsA",
+    "replyto": "TX4BUsNGsA",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Synthetic evaluation uses a deterministic 'Trainer' that fabricates improving metrics rather than training models (page 4 lines 132–136). This invalidates statistical comparisons and significance claims for the synthetic track.\n- Latency proxy inconsistency: The reported reduction (83.92 to 22.48; 73.21%) is computed as if the entire pipeline used ρL (Appendix C and page 4 lines 115–117), ignoring that the first attention layer still runs on L tokens. This is not an apples-to-apples two-layer comparison.\n- Resource contradiction: The paper states SST-2 runs are CPU-only (page 5 lines 165–168), but the checklist reports a Colab GPU (Tesla T4) was used (page 15 lines 501–503).\n- Statistical reporting contradiction: Checklist item claims 'Yes' for statistical significance while the justification admits no error bars/confidence intervals yet (page 15 lines 495–498), contradicting Section 9 that details CI and tests.\n- Differentiable gating description is not a true differentiable top-k; it models independent Bernoulli gates with a mean-budget penalty, which may not enforce exact budget constraints during training.\n- SST-2 FLOPs reduction lacks a clear multi-layer accounting model connecting the two-layer proxy (Section 4.5) to DistilBERT's 6-layer architecture; the 40% figure (Table 3, page 8) is plausible but under-specified.\n- Calibration and oracle-overlap analyses are mentioned (page 7 lines 186–191) but not quantified in tables/figures; no ECE values, temperatures, or overlap statistics provided.\n- Significance procedures (DeLong, McNemar, paired bootstrap) are described but not executed in reported results; figures and tables lack CIs/p-values.\n- Minor but notable: The theoretical 'excess risk' bound is only a sketch (page 4–5) without assumptions or proof; checklist overstates theoretical completeness (page 14–15, item 3)."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776880423,
+    "mdate": 1760640124985,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "C6SZmEFib4",
+    "forum": "TX4BUsNGsA",
+    "replyto": "TX4BUsNGsA",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper proposes an information-theoretic approach to token pruning in Transformers, using per-token predictive entropy to select important tokens for subsequent layers. The method is simple, well-motivated, and clearly described, with strong clarity and reproducibility. The use of a synthetic dataset allows for principled analysis, and the paper is exceptionally well-written and transparent about limitations and ethical considerations. However, the empirical evaluation is weak: while the method improves accuracy and reduces FLOPs on synthetic data, it causes a substantial drop in accuracy on the real-world SST-2 benchmark, making the efficiency-accuracy trade-off unappealing for practical use. The experiments are preliminary and lack rigorous statistical validation. Additionally, the related work section is insufficient, failing to compare with established token pruning methods, which limits the ability to contextualize the contribution. Overall, the paper is promising and original, but the weak empirical results and lack of competitive baselines prevent it from being suitable for acceptance at a top-tier conference in its current form."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission244/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775888392,
+    "mdate": 1760632207386,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission244/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "1xJl2SIhP3",
+    "forum": "TX4BUsNGsA",
+    "replyto": "TX4BUsNGsA",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission244/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950087011,
+    "mdate": 1760632288653,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

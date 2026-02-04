@@ -1,0 +1,333 @@
+[
+  {
+    "id": "uzDSdFkpBX",
+    "forum": "SSQqerDh9A",
+    "replyto": "SSQqerDh9A",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Threshold/labeling inconsistency: Examples labeled “Complex” despite falling within the defined “Moderate” band (page 3, lines 87–91 vs. page 4, lines 128–137).\n- Unspecified normalization for the 0–4 RFI scale: component ranges and clipping not defined; a weighted sum with weights summing to 1 does not by itself ensure a 0–4 range (page 3, lines 74–79).\n- D̂_hier computed from only three points; R^2 near 1 is not informative; yet the term contributes to the main score (page 3, lines 93–98).\n- Heuristic weight selection (w1–w4) without empirical calibration or sensitivity analysis; potential fragility of conclusions to weight choices.\n- Evaluation lacks statistical validation: no reported correlations with human ratings or uncertainty; ablations are qualitative; micro-validation is mentioned but not shown in Section 5.\n- Insufficient detail on cross-reference graph construction and D_nav computation (e.g., edge definitions, treatment in snippets, handling of unmatched refs), which affects reproducibility and accuracy."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776954333,
+    "mdate": 1760640129447,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "jFH2OpSKS1",
+    "forum": "SSQqerDh9A",
+    "replyto": "SSQqerDh9A",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission45/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950670772,
+    "mdate": 1760632264922,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "TVpTfovrXp",
+    "forum": "SSQqerDh9A",
+    "replyto": "SSQqerDh9A",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces the Regulatory Fractal-ish Index (RFI), a novel, scope-aware metric for quantifying the structural complexity of regulatory and policy documents. The RFI combines measures of size (section count), hierarchical structure (entropy of heading levels), and interconnectedness (cross-reference density and path length). The core contribution is not just the metric itself, but an entire agentic pipeline that parses text, computes the RFI, and generates a practitioner-focused, one-page policy brief with actionable recommendations. The authors demonstrate the utility of RFI using examples from the U.S. Federal Acquisition Regulation (FAR) and are commendably transparent about the method's scope, limitations, and design choices.\n\nThe paper is of high quality. The technical approach is sound, well-motivated, and transparent. The RFI is constructed from a set of interpretable features that are directly linked to the cognitive burdens faced by readers of complex legal texts (navigational overhead, context-switching, lookup pressure). The weighted-sum approach is straightforward, and the authors' decision to expose the weights in a configuration file is good practice.\n\nThe main weakness lies in the empirical validation. The evaluation in Section 5 serves more as a demonstration or a set of illustrative examples rather than a rigorous validation. While the examples from the FAR are well-chosen to showcase the difference between \"document-mode\" and \"snippet-mode\" and to distinguish RFI from standard readability scores, the claims would be substantially stronger with a more systematic study. For instance, a correlation study between RFI and human expert ratings of complexity across a diverse set of regulations would provide crucial validation for the metric and its chosen weights. Similarly, the ablation study is mentioned only qualitatively; presenting quantitative results showing how the score changes when components are removed would have been much more compelling.\n\nDespite the limited validation, the authors are exceptionally honest about the work's limitations and scope. They explicitly state that RFI is a \"proxy\" and not a formal theory, and they are careful not to overclaim the \"fractal-ish\" aspect of their analysis. This intellectual honesty significantly boosts the perceived quality of the work.\n\nThe paper is exceptionally clear, concise, and well-organized. The abstract and introduction perfectly frame the problem and contributions. The structure is logical, and the writing is of a very high standard, making a potentially dry topic engaging. The \"Design rationale\" subsection (3.1) is particularly effective at explaining the motivation behind the chosen features. The description of the agentic pipeline is clear and provides a good overview of the system's functionality. The paper is a pleasure to read.\n\nThe work has high potential for significant impact, particularly in the fields of legal informatics, public policy, and governance. Regulatory complexity is a major barrier to compliance and public understanding, and existing tools are often inadequate. By providing a transparent, interpretable, and actionable tool, this work could be genuinely useful for regulatory bodies aiming to simplify their documents, as mandated by laws like the Plain Writing Act. The agentic pipeline's ability to generate a plain-English brief is a key innovation that bridges the gap between a quantitative metric and practical application, making the work accessible and valuable to its target non-technical audience. This practitioner-focused approach is a major strength.\n\nThe paper demonstrates strong originality. While measuring legal complexity is not a new idea, the specific formulation of RFI—combining size, hierarchical entropy, and cross-reference network properties in a scope-aware manner—is novel. The most original contribution, however, is the holistic, end-to-end \"agentic\" framing. The focus is not merely on proposing a metric, but on delivering a complete, reproducible tool that produces actionable artifacts for practitioners. This moves beyond typical academic exercises and presents a solution-oriented system, which is a perfect fit for the Agents4Science conference. The \"fractal-ish\" sanity check, while presented cautiously, is also an interesting and novel perspective to bring to this domain.\n\nThe authors have done an excellent job of ensuring reproducibility. They provide clear descriptions of their methods, parsing heuristics, and the components of the RFI score. Crucially, they commit to releasing the code, artifacts (JSON outputs, policy briefs), and environment specifications. The pipeline is described as deterministic, and the compute requirements are minimal, lowering the barrier to replication. This commitment to open and reproducible science is exemplary.\n\nThe discussion of limitations and ethical implications is thorough and responsible. The authors are upfront about the heuristic nature of their parser, the instability of metrics on short texts, and the risk of users \"gaming the metric.\" Their proposed mitigations—pairing RFI with qualitative human review and user testing—are sensible and show a mature understanding of how such tools should be deployed in the real world. The work is ethically sound, using public-domain data and containing a thoughtful discussion of potential negative societal impacts.\n\nThis is a strong, well-written, and impactful paper that presents a novel and practical tool for a real-world problem. Its primary weakness is the limited empirical validation, which should be the focus of future work. However, its strengths—clarity, originality, practitioner focus, and a commendable commitment to reproducibility and ethical considerations—far outweigh this weakness. The work introduces a valuable new tool and a set of ideas that will likely be built upon by others. It is a clear asset to the conference."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 5
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 5
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission45/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759776094943,
+    "mdate": 1760632152277,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "SSQqerDh9A",
+    "forum": "SSQqerDh9A",
+    "content": {
+      "title": {
+        "value": "Fractal-ish Complexity for Regulations: A  Practitioner-Ready, Agentic Benchmark"
+      },
+      "keywords": {
+        "value": [
+          "regulatory complexity; plain language; cross-references; hierarchy; readability; legal  informatics; AI agents; reproducibility."
+        ]
+      },
+      "TLDR": {
+        "value": "We present the Regulatory Fractal-ish Index (RFI), a transparent, scope-aware  signal of textual complexity for regulations and SOP-style documents."
+      },
+      "abstract": {
+        "value": "We present the Regulatory Fractal-ish Index (RFI), a transparent, scope-aware signal of textual complexity for regulations and SOP-style documents. RFI blends (i) size (section count and heading density), (ii) hierarchical spread (entropy of heading levels), and (iii) lookup pressure (cross-reference density), adapting automatically to full documents and short excerpts. A lightweight agentic pipeline parses text, computes RFI, and emits a one-page policy brief with actionable edits (e.g., reduce lookup hops, flatten nesting). We also report a minimal hierarchical scaling check ( ˆ Dhier with R2) across sentences → paragraphs → sections, to reconnect with fractal intuitions without overclaiming. The goal is a tool regulators can actually use, backed by transparent, reproducible computations."
+      },
+      "pdf": {
+        "value": "/pdf/d243af7d79cbf22f471d582c95d7ef83467d0691.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025fractalish,\ntitle={Fractal-ish Complexity for Regulations: A  Practitioner-Ready, Agentic Benchmark},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=SSQqerDh9A}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1755894123301,
+    "odate": 1758112145415,
+    "mdate": 1759960933696,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission45/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission45/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "IcLvnxs4CG",
+    "forum": "SSQqerDh9A",
+    "replyto": "SSQqerDh9A",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents the Regulatory Fractal-ish Index (RFI), a computational tool for measuring structural complexity in regulatory documents. The work is technically sound but limited in scope, with a methodology that combines structural features into a single metric and a basic 'fractal-ish' scaling check. The evaluation is narrow, focusing only on FAR exemplars with minimal validation, which constrains the technical contribution. The paper is well-written, transparent, and accessible, with good attention to usability and reproducibility. However, the significance and originality are modest, as the tool demonstrates limited impact and novelty, and the 'agentic' framing is overstated. The authors are honest about limitations and ethical considerations, and the related work is adequately covered, though the connection to the conference theme is weak. Overall, this is a competent but limited technical contribution, more suited to legal informatics than AI agents for science, with excellent transparency but falling short in impact and novelty for a top-tier venue."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission45/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759776095140,
+    "mdate": 1760632152142,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "6XpLD0MGvQ",
+    "forum": "SSQqerDh9A",
+    "replyto": "SSQqerDh9A",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces the Regulatory Fractal-ish Index (RFI), an interpretable score for structural complexity in regulations and SOP-style documents, combining size/segmentation, hierarchical spread, and lookup pressure, with a fractal-ish scaling check. The approach is deterministic, transparent, and practitioner-focused, with plans for code and artifact release. Strengths include relevance, methodological clarity, reproducibility, and ethical framing. However, the evaluation lacks rigorous validation, technical details are under-specified, and the 'fractal-ish' component's value is questionable. The benchmark claim is overstated, and generalization/robustness is unproven. Suggestions include proper validation, clearer definitions, robustness checks, practitioner impact studies, and justifying the benchmark label. Overall, the paper addresses an important problem with a promising approach, but insufficient empirical support and technical clarity lead to a borderline reject recommendation."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission45/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759776094731,
+    "mdate": 1760632152482,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "1gsv0qaVQ3",
+    "forum": "SSQqerDh9A",
+    "replyto": "SSQqerDh9A",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- QuantGov/RegData: Methodology and datasets on regulatory restrictions by —"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777776224,
+    "mdate": 1760640128767,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission45/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

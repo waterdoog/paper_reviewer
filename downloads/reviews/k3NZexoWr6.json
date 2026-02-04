@@ -1,0 +1,336 @@
+[
+  {
+    "id": "qvr85qmoi1",
+    "forum": "k3NZexoWr6",
+    "replyto": "k3NZexoWr6",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents an AI-guided approach for predicting encapsulation efficiency in liposomal multi-antioxidant formulations containing five key components of the human antioxidant network. The approach is technically sound, utilizing established machine learning methods (Random Forest, XGBoost, Neural Networks) and appropriate experimental characterization techniques (TEM, DLS, zeta potential). However, the technical rigor is limited by vague dataset construction, unclear model validation metrics (only R² values mentioned, no actual numbers), and an 'iterative loop' between AI and experiments that is described but not systematically demonstrated. Statistical analysis is minimal, with only basic descriptive statistics provided.\n\nThe experimental design is reasonable and protocols are detailed, but validation is limited to only one optimized formulation, which is insufficient for demonstrating model reliability. The methods section is generally reproducible, though some AI modeling details (hyperparameters, cross-validation) are missing, and key results (scatter plots, feature importance) are referenced but not shown.\n\nThe application is relevant and timely, focusing on the complete antioxidant network, but the novelty is limited as similar AI approaches have been reported. The work is more of an application study than a methodological advancement. The authors acknowledge important limitations: small dataset, limited diversity, focus only on encapsulation efficiency, and a narrow scope.\n\nMissing elements include actual performance metrics (R², RMSE), feature importance plots, broader experimental validation, comparison with traditional approaches, and statistical significance testing. Strengths are the practical application, comprehensive analytical characterization, detailed protocols, and integration of both hydrophilic and lipophilic antioxidants. Weaknesses include limited validation, insufficient reporting, vague dataset description, missing figures and analyses, and overstated claims about AI-human collaboration.\n\nOverall, while the paper addresses an interesting application and uses appropriate methods, the limited experimental validation, insufficient reporting of model performance, and missing key results significantly impact its contribution. The work reads more like a preliminary study than a complete validation of the AI approach."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission211/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775370357,
+    "mdate": 1760632197456,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "li3AiZDR1e",
+    "forum": "k3NZexoWr6",
+    "replyto": "k3NZexoWr6",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- No reported quantitative ML performance metrics (R², RMSE) or uncertainty; predicted vs. actual comparisons lack statistical analysis and clear interval-generation method (pages 3 and 5; Table 1 on page 6).\n- Dataset not described in size, sources, or composition; unclear if training data included true multi-component co-encapsulation cases while the target output is five-component co-EE% (pages 2–3).\n- Inconsistent scope: claims involve \"multi-omics\" and chitosan-coated liposomes, but these are not defined in the feature space nor in the experimental methods (pages 2 and 5).\n- Purification for lipophilic analytes (vitamin E, CoQ10, ALA) via aqueous dialysis/short SEC is likely insufficient to separate free vs. encapsulated drug; no validation (recovery, mass balance, spiked controls) reported (page 4).\n- Preparation protocol lacks specificity (either/or methods and wide parameter ranges) for the exact formulations used in reported measurements, hindering reproducibility and weakening the AI-to-experiment linkage (page 3).\n- Feature-importance results are asserted without quantitative methods or figures; risk of data leakage and overfitting is not addressed (pages 3 and 5).\n- Analytical assays lack method validation details (LOD/LOQ, matrix effects, recovery, robustness) for all analytes, particularly UV-based assays in complex matrices (page 4).\n- The iterative AI-human loop is described but not quantified (no before/after performance gains), limiting the claim of iterative improvement (page 2)."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776691213,
+    "mdate": 1760640028586,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "k3NZexoWr6",
+    "forum": "k3NZexoWr6",
+    "content": {
+      "title": {
+        "value": "AI-guided prediction of liposomal multi-antioxidant formulations mimicking the human antioxidant network"
+      },
+      "keywords": {
+        "value": [
+          "Antioxidant network",
+          "Liposomes",
+          "Machine learning–based prediction",
+          "Formulation optimization"
+        ]
+      },
+      "TLDR": {
+        "value": "AI models accurately predicted and optimized the co-encapsulation efficiency of five antioxidant components in liposomal formulations."
+      },
+      "abstract": {
+        "value": "The antioxidant network, crucial for protecting the body from oxidative stress (comprising vitamin C, vitamin E, coenzyme Q10, glutathione, and alpha-lipoic acid), faces challenges such as low stability and bioavailability despite its efficacy. Liposomes, as promising drug delivery systems capable of encapsulating both hydrophilic and lipophilic compounds, possess the potential to address these issues. This study aims to utilize artificial intelligence (AI) to predict the encapsulation efficiency (EE\\%) and recommend optimal formulations for these five antioxidant components when co-encapsulated in a single liposome formulation. We constructed AI models, including Random Forest, XGBoost, and Neural Networks, based on multi-omics and experimental data, confirming that key features like lipid composition, hydrophilic/lipophilic drug characteristics, and cholesterol ratio play significant roles in predicting co-encapsulation efficiency. The AI models predicted optimal liposome compositions and manufacturing conditions for the antioxidant network, and liposomes prepared accordingly showed a high correlation between predicted and actual experimental values. Transmission electron microscopy (TEM), dynamic light scattering (DLS), and zeta potential ($\\zeta$-potential) measurements confirmed that the AI-recommended co-encapsulation compositions exhibited excellent morphological characteristics, appropriate particle size, and stable zeta potential. Finally, the actually measured EE\\% showed high efficiency consistent with the AI model's predictions, thereby validating the reliability of AI-based predictions. These results demonstrate that an AI-based approach can significantly enhance the efficiency of developing multi-component liposome formulations for the antioxidant network."
+      },
+      "pdf": {
+        "value": "/pdf/8680ddf2c6eb7ab9eb80292de5ad519ec82669ce.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025aiguided,\ntitle={{AI}-guided prediction of liposomal multi-antioxidant formulations mimicking the human antioxidant network},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=k3NZexoWr6}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757949929081,
+    "odate": 1758112145415,
+    "mdate": 1759960941601,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission211/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission211/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "XyfQmQ4eqG",
+    "forum": "k3NZexoWr6",
+    "replyto": "k3NZexoWr6",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents an AI-guided approach to predict and optimize the co-encapsulation efficiency (EE%) of five antioxidants within a single liposomal formulation, using machine learning models trained on experimental and literature data. The experimental work is detailed, technically sound, and well-characterized, with clear protocols and convincing evidence of successful liposome formulation. The authors are transparent about the study's limitations and provide a novel checklist for AI involvement.\n\nHowever, the paper's main weaknesses are in the evaluation and presentation of the AI component. The manuscript lacks standard quantitative performance metrics (such as RMSE and R² values), and the presentation of predictions is non-standard and unclear, with wide numerical ranges reported instead of point estimates or confidence intervals. Essential figures (feature importance plots and scatter plots of predicted vs. actual values) are missing, and the dataset and code are not available, undermining reproducibility. These issues prevent a fair assessment of the AI's contribution and do not meet the technical standards required for a leading AI conference. While the experimental work is strong, the AI component is underdeveloped and poorly reported. I recommend rejection in its current form, but the work has high potential if the major weaknesses in AI evaluation and presentation are addressed."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission211/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775370095,
+    "mdate": 1760632197612,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "QbCyvaNf7C",
+    "forum": "k3NZexoWr6",
+    "replyto": "k3NZexoWr6",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission211/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950098162,
+    "mdate": 1760632285559,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "JjjwL5joIF",
+    "forum": "k3NZexoWr6",
+    "replyto": "k3NZexoWr6",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper presents an AI-driven approach (Random Forest, XGBoost, Neural Networks) to predict encapsulation efficiency (EE%) for a five-component antioxidant network in liposomes, with experimental validation (TEM, DLS, zeta, EE% assays). Strengths include the relevance of AI in formulation design, a human–AI iterative workflow, experimental follow-up, and outlined analytical methods. However, there are major concerns: (1) Model evaluation and reporting are insufficient—dataset details, learning protocol, and quantitative performance metrics are missing; (2) Reproducibility is limited—AI-recommended formulations and experimental parameters are not fully specified, and replication details are unclear; (3) There are conceptual inconsistencies, such as unsubstantiated 'multi-omics' claims and confusion over chitosan coating; (4) No baselines or ablation studies are provided to contextualize the ML approach. The work is original and significant in its application, but lacks the rigor and clarity needed for strong impact. Recommendations include precise dataset and protocol definition, rigorous metrics, clear experimental alignment, inclusion of baselines, and clarification of claims. The paper is promising but requires substantial improvements in reporting, evaluation, and methodological detail to be suitable for acceptance."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission211/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775369890,
+    "mdate": 1760632197741,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "CnSspXbh6C",
+    "forum": "k3NZexoWr6",
+    "replyto": "k3NZexoWr6",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- Free radicals and their impact on health and antioxidant defenses by Emilio Burgos-Morón, Zulema Abad-Jiménez, Antonio M. de Marañón, Cristina Salom, Amparo Jover, Vanessa Mora, and Enrique Roche\n- Preparation of sulfoamikacin liposome and determination of its encapsulation efficiency by Hui-lin Yang\n- Ai-driven design of drug delivery systems: Strategies and perspectives by J. Wu"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777707838,
+    "mdate": 1760640027900,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission211/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

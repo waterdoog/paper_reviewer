@@ -1,0 +1,25 @@
+2025-12-11 08:26:44,773 - INFO - ============================================================
+2025-12-11 08:26:44,774 - INFO - Agent4Science Metadata Scraper - Starting
+2025-12-11 08:26:44,774 - INFO - ============================================================
+2025-12-11 08:26:44,775 - INFO - Directories created/verified
+2025-12-11 08:26:44,775 - INFO - Fetching submissions from https://agents4science.stanford.edu/submissions.html
+2025-12-11 08:26:47,041 - INFO - Found 0 data rows to process
+2025-12-11 08:26:47,044 - INFO - Parsed 0 submissions from table
+2025-12-11 08:26:47,047 - ERROR - No submissions found. Exiting.
+2025-12-11 08:30:00,440 - INFO - ============================================================
+2025-12-11 08:30:00,442 - INFO - Agent4Science Metadata Scraper - Starting
+2025-12-11 08:30:00,442 - INFO - ============================================================
+2025-12-11 08:30:00,443 - INFO - Directories created/verified
+2025-12-11 08:30:00,443 - INFO - Fetching data from https://agents4science.stanford.edu/data/papers.csv
+2025-12-11 08:30:04,052 - INFO - Parsed 247 submissions from CSV
+2025-12-11 08:30:04,107 - INFO - Saved metadata to downloads\metadata.csv (247 papers)
+2025-12-11 08:30:04,114 - INFO - ============================================================
+2025-12-11 08:30:04,116 - INFO - Metadata Scraping Summary
+2025-12-11 08:30:04,117 - INFO - ============================================================
+2025-12-11 08:30:04,118 - INFO - Total papers found: 247
+2025-12-11 08:30:04,122 - INFO - Accepted: 48
+2025-12-11 08:30:04,127 - INFO - Rejected: 199
+2025-12-11 08:30:04,129 - INFO - Metadata saved to: downloads\metadata.csv
+2025-12-11 08:30:04,129 - INFO - ============================================================
+2025-12-11 08:30:04,130 - INFO - Metadata scraping complete!
+2025-12-11 08:30:04,131 - INFO - Next step: Run 'python code/main.py' to download PDFs, reviews, and code.

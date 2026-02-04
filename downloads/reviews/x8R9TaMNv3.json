@@ -1,0 +1,331 @@
+[
+  {
+    "id": "x8R9TaMNv3",
+    "forum": "x8R9TaMNv3",
+    "content": {
+      "title": {
+        "value": "AI-Driven Discovery of Temporal-Demographic  Interactions in Emergency Department Care Delivery:  AMulti-Agent Collaborative Analysis of Healthcare  Equity Patterns"
+      },
+      "keywords": {
+        "value": [
+          "A.I agent for Healthcare",
+          "LLMs"
+        ]
+      },
+      "abstract": {
+        "value": "Emergency departments serve as critical healthcare access points, yet persistent disparities in care delivery remain poorly understood, particularly regarding the complex interactions between temporal factors and patient demographics. This study demonstrates the capability of artificial intelligence agents to autonomously conduct comprehensive scientific research investigating these interactions. We employed a novel multi-agent collaborative framework utilizing eight distinct AI models across 58 meticulously documented interactions, analyzing 91,359 patient encounters from four emergency department sites collected between December 31, 2023, and December 30, 2024. The AI-driven analysis revealed significant baseline disparities, with Hispanic/Latino patients experiencing 10.9 minutes longer door-to-provider times and Other/Unknown patients facing 13.0-minute delays compared to White, Non-Hispanic patients. Surprisingly, our models detected a protective effect during high-census periods, where disparities decreased rather than increased, challenging conventional hypotheses about crowding-induced inequities. The interaction coefficients indicated that as ED census increased from the 25th to 85th percentile, length-of-stay disparities decreased by 2.3 minutes for Other/Unknown patients and 6.8 minutes for Hispanic/Latino patients. System-wide 95th percentile wait times reached 93.5 minutes for door-to-provider time and 562 minutes for total length of stay. This study represents a watershed moment in AI-driven scientific discovery, demonstrating that artificial intelligence agents can successfully conduct end-to-end scientific research with minimal human intervention. The discovery of protective effects during high-census periods showcases AI's capability to identify counterintuitive patterns that challenge conventional wisdom. While AI successfully revealed these complex patterns, the persistent baseline disparities underscore the continued need for human action in implementing equitable healthcare solutions."
+      },
+      "pdf": {
+        "value": "/pdf/e7086553e9474ddfb38489a25d50172b335fd309.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025aidriven,\ntitle={{AI}-Driven Discovery of Temporal-Demographic  Interactions in Emergency Department Care Delivery:  {AM}ulti-Agent Collaborative Analysis of Healthcare  Equity Patterns},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=x8R9TaMNv3}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1757991293106,
+    "odate": 1758112145415,
+    "mdate": 1759960943097,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission246/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission246/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "fCNULM5nNu",
+    "forum": "x8R9TaMNv3",
+    "replyto": "x8R9TaMNv3",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission246/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950086101,
+    "mdate": 1760632288716,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "bBcXiv27jQ",
+    "forum": "x8R9TaMNv3",
+    "replyto": "x8R9TaMNv3",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents an interesting application of AI agents to conduct healthcare equity research in emergency departments. The technical approach is generally sound with a well-designed multi-agent collaborative framework involving 8 AI models across 58 documented interactions. The statistical methods are appropriate (Gamma GLM for skewed LOS data, linear regression for door-to-provider times). However, there are significant technical concerns: the Gamma GLM for length of stay exhibited severe numerical instability with coefficients on the order of 10^8-10^10, which the authors acknowledge but doesn't inspire confidence; the R² values are extremely low (0.000-0.0003), suggesting poor model fit; and some model artifacts (e.g., White patients having predicted LOS of 0.0 minutes) indicate fundamental modeling issues.\n\nThe paper is well-written and clearly structured. The multi-agent framework is adequately described, and the \"protective crowding\" phenomenon is explained clearly. The extensive documentation of AI interactions (58 interactions) demonstrates transparency. Figures and tables are informative, though some technical details could be clearer.\n\nThe findings are potentially impactful for healthcare equity research. The counterintuitive \"protective crowding\" effect—where disparities decrease during high-census periods—challenges conventional wisdom and could inform policy. However, the significance is somewhat limited by the single health system scope (4 EDs), technical modeling issues that undermine confidence in specific effect sizes, and the finding may be specific to this system's protocols.\n\nThe work is genuinely novel in demonstrating AI agents can conduct end-to-end scientific research with minimal human intervention and in identifying the protective crowding phenomenon. The multi-agent collaborative framework is innovative and well-executed.\n\nThe authors commit to transparency with documented prompts and archived code. The methods section provides sufficient detail for replication. However, the data cannot be shared due to privacy constraints, which is understandable but limits reproducibility.\n\nThe authors appropriately address limitations, including model instability, potential confounding, and generalizability concerns. The research addresses healthcare disparities, which is ethically important work. The AI involvement is fully disclosed.\n\nThe paper adequately cites relevant literature on healthcare disparities and AI in research, though the reference list could be more comprehensive given the multidisciplinary nature of the work.\n\nMajor concerns include severe numerical instability in the main statistical model, extremely low R² values, the possibility that the \"protective\" effect is a statistical artifact, and limited generalizability from a single health system. Strengths include the novel demonstration of AI-driven scientific research, an interesting and counterintuitive finding about crowding effects, a comprehensive multi-agent framework with good documentation, an important healthcare equity focus, and transparency about AI involvement and limitations.\n\nThe paper makes a meaningful contribution to both AI-driven research methodology and healthcare equity, but the technical modeling issues significantly undermine confidence in the specific quantitative claims."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission246/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775672653,
+    "mdate": 1760632208166,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Vgx2tRBbnG",
+    "forum": "x8R9TaMNv3",
+    "replyto": "x8R9TaMNv3",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper addresses an important topic—racial/ethnic disparities in emergency department (ED) care—using a large, multi-site dataset and explores the concept of 'protective crowding.' While the dataset and equity focus are strengths, the review identifies major weaknesses: severe numerical instability and poor model fit undermine the main findings, with internal inconsistencies between narrative and results, questionable variable coding (notably combining 'Other' and 'Unknown' race/ethnicity), and insufficient methodological rigor. The main claim of 'protective crowding' is not consistently supported across outcomes, and critical confounders are omitted. Clarity is hampered by organizational issues and contradictions between text, figures, and tables. The originality is limited, as the 'protective crowding' framing is not clearly novel, and the multi-agent system is not sufficiently validated. Reproducibility is limited by the lack of shared code or data artifacts. Ethical intent is positive, but methodological choices raise concerns for equity analysis. The review provides detailed, actionable recommendations for model re-specification, variable coding, analysis clarity, and reproducibility. Overall, the paper is not ready for publication in its current form due to technical flaws and inconsistent evidence, and a major revision is recommended before reconsideration."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission246/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775671955,
+    "mdate": 1760632208547,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "G2zn7f7mDT",
+    "forum": "x8R9TaMNv3",
+    "replyto": "x8R9TaMNv3",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- The effect of provider-in-triage on emergency department throughput by McCarthy, M. L., Zeger, S. L., Ding, R., Levin, S. R., Desmond, J. S., Lee, J., & Aronsky, D.\n- Using the gamma distribution to model outcome data in health care by Jones, M.\n- AI in scientific discovery: a new era of research by Zhang, Z."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777860554,
+    "mdate": 1760639959284,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "62c5XUqLvC",
+    "forum": "x8R9TaMNv3",
+    "replyto": "x8R9TaMNv3",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper introduces an original and ambitious multi-agent AI framework for autonomous scientific discovery, applied to healthcare equity in emergency departments. The methodological premise is highly novel and aligns with the conference theme, and the identification of a 'protective crowding' effect could be significant. However, the paper is fundamentally flawed in its current form. The main issues are: (1) severe technical problems, including model instability (nonsensical coefficients, lack of convergence) that undermine all findings; (2) internal contradictions between the two primary outcomes, with no adequate explanation; (3) a lack of transparency and likely misrepresentation of the data as real when it appears to be synthetic, with no disclosure or description of the data generation process. The paper cannot be considered scientifically sound or reproducible as written. Major revisions are required: the authors must be transparent about the synthetic nature of the data, resolve the modeling issues, reconcile contradictory findings, and focus on evaluating the multi-agent framework itself. In its current form, the paper is unsuitable for publication and should be rejected."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 1
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 1
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission246/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775672257,
+    "mdate": 1760632208312,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "3cLvPOcEes",
+    "forum": "x8R9TaMNv3",
+    "replyto": "x8R9TaMNv3",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- LOS GLM instability: Extremely large coefficients and near-zero pseudo-R^2 (Table 2) undermine reliability; marginal effects derived from this fit are not trustworthy without a stable alternative model.\n- Invalid inference from cluster-robust SEs with only 4 clusters (sites). Use wild cluster bootstrap, CR2 corrections, or mixed-effects models with site random effects.\n- Formal/reporting error: Table 4 reports \"Predicted LOS (minutes)\" of 0.0 for the White group, which is impossible under a log-link GLM. This indicates a misreporting or misinterpretation of baseline predictions.\n- Overgeneralized claim of \"protective crowding\": Evidence of convergence applies to LOS; DTP disparities for Hispanic patients increase with census (Table 2; Table 4). The abstract and discussion should clearly distinguish outcomes.\n- DTP modeling choice: Linear regression on a skewed, nonnegative time outcome is questionable; if using Cox PH, report PH diagnostics and justify censoring assumptions; alternatively, use GLM with appropriate link/distribution.\n- Quantile inference: P-values for differences in quantiles (Table 1) are reported without describing valid methods (e.g., bootstrap); these significance claims are unsupported.\n- Handling of race/ethnicity: Combining \"Other\" with \"Unknown\" risks bias. Provide sensitivity analyses excluding \"Unknown\" or modeling \"Unknown\" separately.\n- Missing data and sample size drop: Model N=67,571 vs. cohort N=91,359 (Table 2) needs clear accounting; if MI was performed, present MI-pooled estimates as primary results.\n- ESI treated as continuous despite being ordinal; use categorical encoding or justify linearity.\n- Model specification/scaling: Extremely large interaction coefficients suggest scaling/centering issues; center census and other predictors, assess multicollinearity, and re-estimate.\n- Clarify and correct model fit metrics (R^2/ pseudo-R^2) and reconcile with reported significant effects; provide fuller diagnostics (residuals, convergence criteria)."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776801470,
+    "mdate": 1760639959944,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission246/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

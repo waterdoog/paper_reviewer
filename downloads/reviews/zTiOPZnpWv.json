@@ -1,0 +1,346 @@
+[
+  {
+    "id": "zTiOPZnpWv",
+    "forum": "zTiOPZnpWv",
+    "content": {
+      "title": {
+        "value": "Integrating Segmented Cell Imaging and Molecular Networks for Drug-Specific Analysis in CM4AI"
+      },
+      "keywords": {
+        "value": [
+          "Multimodal learning",
+          "Protein–protein interaction networks",
+          "Cell morphology",
+          "Network biology",
+          "Deep learning"
+        ]
+      },
+      "TLDR": {
+        "value": "We present an AI-assisted pipeline that integrates single-cell microscopy embeddings with protein–protein interaction networks to reveal drug-specific molecular reprogramming with enhanced resolution, reproducibility, and translational relevance."
+      },
+      "abstract": {
+        "value": "Linking cellular morphology to molecular interaction networks remains a central challenge in biomedical Artificial Intelligent (AI). We present a cell-centric framework that integrates object-level detection with Vision Transformer (ViT) embeddings from microscopy with protein--protein interaction (PPI) representations to construct biologically interpretable hierarchies and reveal condition-specific network reconfiguration. Using a semi-automated, agent-oriented workflow, segmentation is executed via an interactive Large Language Model (LLM)-driven agent bridged to high-performance computing, while embedding, integration, and hierarchy construction proceed through reproducible human--LLM collaboration with auditable prompts, code generation, and logged execution. Applied to 12853 high-content images spanning Untreated, Vorinostat-, and Paclitaxel-treated conditions, the approach preserves global biological structure while sharpening signal fidelity relative to whole-image baselines, enabling single-cell resolution of heterogeneity. Across all conditions, the modified pipeline maintained >95\\% concordance with baseline hierarchies. Gene Ontology analyses recover drug-consistent pathways (e.g., chromatin regulation for Vorinostat; microtubule-associated processes for Paclitaxel) and yield more selective enrichment profiles. The framework establishes a scalable foundation for multimodal integration with additional omics layers and for prospective validation of predicted network rewiring in precision medicine contexts."
+      },
+      "pdf": {
+        "value": "/pdf/9ef8ab0433b93b85c5bcb808c05f1774b8035360.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "supplementary_material": {
+        "value": "/attachment/9e136b746241690cfb221c85bca97ef3eeff33d6.zip"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025integrating,\ntitle={Integrating Segmented Cell Imaging and Molecular Networks for Drug-Specific Analysis in {CM}4{AI}},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=zTiOPZnpWv}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Desk_Rejected_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1758079938037,
+    "odate": 1758112145415,
+    "mdate": 1765061630612,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission321/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission321/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "u5tPLjMp7B",
+    "forum": "zTiOPZnpWv",
+    "replyto": "zTiOPZnpWv",
+    "content": {
+      "desk_reject_comments": {
+        "value": "Paper does not respect the conference requirements (e.g., Checklists and Formatting issues)"
+      },
+      "title": {
+        "value": "Submission Desk Rejected by Program Chairs"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission321/-/Desk_Rejection",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Desk_Rejection",
+    "cdate": 1758131562849,
+    "mdate": 1765059683444,
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "tn4B3ZYUbV",
+    "forum": "zTiOPZnpWv",
+    "replyto": "zTiOPZnpWv",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission321/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950060284,
+    "mdate": 1760632303157,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "YhP7seootX",
+    "forum": "zTiOPZnpWv",
+    "replyto": "zTiOPZnpWv",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a well-written and clearly organized framework for linking single-cell morphology from microscopy images to protein-protein interaction networks, with two main contributions: a technical pipeline for object-centric analysis and a methodological demonstration of a human-LLM collaborative workflow. The strengths include exceptional clarity, a detailed and transparent agent-oriented workflow, strong commitment to reproducibility, and honest discussion of limitations. However, the paper suffers from two major weaknesses: (1) lack of quantitative evaluation of the cell segmentation step, relying only on visual inspection, and (2) unsupported claims of improved signal fidelity and enrichment, as there is no direct, quantitative comparison with the baseline method. While the agent-based orchestration is a significant and relevant contribution, the scientific pipeline lacks rigorous validation of its core claims. The paper has high potential but is incomplete in its current form. The authors are encouraged to provide quantitative segmentation evaluation and direct comparison of enrichment results to substantiate their claims. With these improvements, the paper would be a strong candidate for acceptance, but at present, it cannot be recommended for acceptance."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 3
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 3
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission321/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775572462,
+    "mdate": 1760632231202,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission321/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission321/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "PT1p5EcNkq",
+    "forum": "zTiOPZnpWv",
+    "replyto": "zTiOPZnpWv",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a cell-centric framework that integrates object-level microscopy segmentation with Vision Transformer (ViT) embeddings and protein-protein interaction (PPI) networks for drug-specific analysis. The work builds upon the Cell Maps for AI (CM4AI) initiative by proposing a modified pipeline that uses cell-level rather than whole-image embeddings.\n\nQuality and Technical Soundness:\nThe paper is technically sound in its approach, combining established methods (ViT, Node2Vec, MUSE framework) in a novel way. The modified pipeline shows >95% concordance with baseline hierarchies while providing more selective Gene Ontology enrichment profiles. The experimental design is reasonable, using 12,853 microscopy images across three conditions (Untreated, Paclitaxel, Vorinostat). However, several technical limitations weaken the contribution:\n\n1. No quantitative segmentation evaluation due to lack of ground truth - evaluation relies only on visual inspection\n2. Use of ViT models not pretrained on fluorescence microscopy may miss domain-specific features\n3. Limited statistical rigor - no error bars, confidence intervals, or significance testing reported\n4. Enrichment analyses remain correlative without orthogonal validation\n\nClarity and Organization:\nThe paper is generally well-written and organized. The multi-agent architecture is clearly described, and the methodology section provides sufficient detail for understanding the approach. However, some sections could be clearer, particularly the exact contributions of each agent component and how failures in the agent-driven workflow were handled.\n\nSignificance and Originality:\nThe work addresses an important problem in computational biology - linking cellular morphology to molecular networks. The object-centric approach is a logical improvement over whole-image methods, and the integration with agent-based workflows represents a novel methodological contribution. However, the biological insights are somewhat limited - the drug-specific pathways recovered (chromatin regulation for Vorinostat, microtubule processes for Paclitaxel) are expected given the known mechanisms of action.\n\nReproducibility:\nThe authors provide good reproducibility information, including hyperparameters, compute environment details, and links to code repositories. Fixed random seeds and detailed pipeline descriptions support reproducibility, though the reliance on interactive LLM agents introduces some variability.\n\nAgent-Based Workflow Innovation:\nThe integration of LLMs as co-pilots in the scientific workflow is interesting and timely. The multi-agent architecture with different specialized agents (Planning, Manuscript, Segmentation, etc.) represents a practical approach to AI-assisted research. However, the substantial human oversight required (30-100% manual execution depending on stage) questions whether this truly represents an advance over traditional computational pipelines.\n\nLimitations and Ethics:\nThe authors are appropriately honest about limitations, including the need for human oversight, lack of domain-adapted pretraining, and correlative nature of enrichment analyses. The ethical considerations and broader impacts are adequately addressed.\n\nConcerns:\n1. The biological novelty is limited - the approach confirms known drug mechanisms rather than revealing new insights\n2. The agent-based workflow, while novel, requires extensive human intervention and may not scale effectively\n3. Missing key evaluation metrics (segmentation quality, statistical significance)\n4. The improvement over baseline methods is incremental rather than transformative\n\nOverall Assessment:\nThis is a solid technical paper that makes incremental contributions to multimodal biological data integration. The object-centric approach is sensible and well-executed, and the agent-based workflow represents an interesting methodological innovation. However, the biological insights are limited, the technical advances are incremental, and several evaluation limitations weaken the contribution. The work would benefit from stronger quantitative evaluation and more substantial biological validation."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 4
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 4
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission321/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775572657,
+    "mdate": 1760632230975,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission321/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission321/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Kor3xeS0qA",
+    "forum": "zTiOPZnpWv",
+    "replyto": "zTiOPZnpWv",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Unspecified aggregation from single-cell embeddings to protein-level inputs for co-embedding (Section 2.4): the mapping from {zij_img} to xi for each protein i is not defined.\n- Incomplete training details for co-embedding: missing optimizer, learning rate, batch size, sampler, and exact negative sampling procedure (which space, metric, and schedule for selecting the k nearest negatives).\n- Weak concordance metric: hierarchy comparison uses protein set overlap counts (Figure 2, page 7) rather than formal tree/cluster similarity measures (e.g., ARI/AMI on cuts, cophenetic correlation, Robinson–Foulds distance).\n- GO/KEGG enrichment analysis lacks methodological specifics (background universe, statistical test, multiple testing correction, thresholds), despite displaying “significance plots” (Figure 3, page 8).\n- No quantitative evaluation of segmentation quality; reliance on visual inspection only (Discussion).\n- Claim of “improved downstream predictive accuracy” is not backed by a defined predictive task or metrics in Results.\n- Node2Vec usage is under-specified (graph source/version, edge weighting, p/q, walk length, window size), and the text overstates that inner products reflect likelihood of interaction.\n- Notation/definition ambiguities (e.g., M in Z ∈ R^{M×d} without clear definition; inconsistent granularity between cell-level features and protein-level alignment).\n- Limited ablation and stability analysis: no studies on segmentation parameters, backbones, or multiple seeds/runs; no error bars or confidence intervals."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776765683,
+    "mdate": 1760639942869,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission321/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission321/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "2AsHuT1L7w",
+    "forum": "zTiOPZnpWv",
+    "replyto": "zTiOPZnpWv",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper introduces a modified CellMaps pipeline that segments single cells, extracts ViT features, computes PPI embeddings (Node2Vec), aligns morphology and PPI representations via a MUSE-style triplet co-embedding, and constructs hierarchies validated with Gene Ontology enrichment. The workflow is semi-automated with LLM-driven segmentation and script generation. Experiments on 12,853 immunofluorescent images report high overlap with baseline hierarchies and claim sharper, drug-consistent enrichments.\n\nStrengths include clear motivation for single-cell embeddings, reproducibility efforts (hyperparameters, environment, seeds, code), high concordance with baseline, biological plausibility of enrichments, and a responsible AI statement.\n\nMajor concerns are:\n1) Ambiguity in protein–image mapping and channel usage: The method's central premise is undermined by unclear or omitted use of protein-specific channels in morphology embeddings, and insufficient detail on aggregation of single-cell to protein-level embeddings.\n2) Lack of quantitative evaluation: No retrieval/verification metrics, heterogeneity measures, or strong baseline comparisons are provided to substantiate improvement claims.\n3) Statistical rigor: Enrichment analysis lacks details on background, test statistics, multiple hypothesis correction, and effect sizes; no error bars or confidence intervals are reported.\n4) Segmentation quality: No segmentation accuracy or proxy metrics are provided; method details and failure modes are not quantified.\n5) Methodological gaps: Missing details on MUSE training, Node2Vec hyperparameters, and per-stage runtimes; no comparison to GNN alternatives.\n6) Claims vs. evidence: Strong claims are not quantitatively supported; evidence suggests no degradation rather than improvement.\n\nThe paper is generally readable and well-structured, but the most critical missing piece is a precise description of protein-level aggregation and channel usage. Reproducibility is supported by code and environment details, but key algorithmic and statistical reporting is missing. Ethics and limitations are thoughtfully discussed. Related work is cited, but deeper quantitative comparisons are needed.\n\nActionable suggestions include clarifying protein–image mapping and channel usage, defining and reporting rigorous evaluation metrics, providing segmentation QC, reporting enrichment statistics, adding ablations, reporting per-stage runtimes, and quantifying the impact of agentic orchestration.\n\nVerdict: While the object-centric and agentic workflow ideas are promising, the manuscript lacks critical methodological clarity and rigorous quantitative evaluation to substantiate its claims. The unclear protein–image mapping and omission of protein-specific channels raise concerns about the validity of the alignment. Biological results are suggestive but insufficiently supported. I recommend rejection in the current form, with encouragement to address these points for a stronger future contribution."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission321/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775572223,
+    "mdate": 1760632231524,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission321/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission321/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "id": "wx0UonVZzZ",
+    "forum": "KnkFyU8BmD",
+    "replyto": "KnkFyU8BmD",
+    "content": {
+      "decision": {
+        "value": "Reject"
+      },
+      "comment": {
+        "value": "Thank you for submitting to Agents4Science 2025! We regret to inform you that your submission has not been accepted. Please see the reviews below for more information."
+      },
+      "title": {
+        "value": "Paper Decision"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission301/-/Decision",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Decision",
+    "cdate": 1759950067348,
+    "mdate": 1760632299615,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Program_Chairs"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "la7TCEF738",
+    "forum": "KnkFyU8BmD",
+    "replyto": "KnkFyU8BmD",
+    "content": {
+      "comment": {
+        "value": "**Correctness Check**\n\n### Key Issues Identified:\n\n- Formula/implementation inconsistency: Reported Mt values do not match the stated weighted-sum formula. Example (page 3 table, 2014): with Tt=0.483337, Rt=0.493406, Ct=0.799046 and weights 0.33/0.33/0.34, Mt should be ≈0.5940, not 0.715299.\n- Terminology inconsistency: Abstract frames Mt as a 'life satisfaction' function, while the body uses 'desire'; Mt is alternately called life satisfaction and desire without reconciliation.\n- Scenario reporting mismatch: The text claims the table summarizes values for each scenario, but only a single set of Mt, Tt, Rt, Ct is shown; scenario-specific numerical results are absent.\n- Underspecified normalization and preprocessing: No details on how indicators were normalized to [0,1] (method, reference set, per-year vs. global), whether indices with inverse scales were flipped, handling of missing data, or aggregation strategy (country-level to global).\n- Arbitrary scenario design without plausibility checks: Ad hoc manipulations (e.g., halving Rt post-2010, linear +0.005/year for Ct) lack empirical grounding; no clipping to [0,1] discussed; growth-rate application details missing.\n- No sensitivity/robustness analysis: No tests of how results change with different weights, indicator sets, normalization schemes, or scenario parameters.\n- Lack of validation: The constructed index is not validated against established life satisfaction or well-being measures (e.g., Gallup World Poll/World Happiness Report).\n- Potential indicator sign and construct validity issues: Some indicators (e.g., oil usage) may not positively correlate with the target construct; directionality and construct mapping are not justified.\n- Overreaching conclusions: Claims about the relative importance of culture vs. technology are largely driven by the modeling setup (weighted sum) and forced scenario inputs rather than empirical inference.\n- Reproducibility gaps: Exact indicator list, data processing scripts, and scenario computation details are not provided; Excel-based workflow is not sufficiently specified to reproduce results."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759776744740,
+    "mdate": 1760640175756,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRevCorrectness"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRevCorrectness"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "Vos2vMysCC",
+    "forum": "KnkFyU8BmD",
+    "replyto": "KnkFyU8BmD",
+    "content": {
+      "title": {
+        "value": "AIRev 2"
+      },
+      "summary": {
+        "value": "Summary by AIRev 2"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a simulation study on the impact of technology, resources, and culture on human life satisfaction (\"human desire\"). While the research question is ambitious and relevant, the paper is fundamentally flawed in methodology and concept, undermining its conclusions and scientific validity. \n\nQuality: The technical quality is poor. The model is a simplistic linear combination with no theoretical or empirical justification, ignoring known non-linearities and interactions in life satisfaction. Composite variables are constructed as unweighted averages, making unsupported assumptions about indicator contributions. Parameter choices are arbitrary and lack justification or sensitivity analysis, rendering the simulation results meaningless. There is no model validation against real-world data, so the model's relevance is unproven.\n\nClarity: The paper is well-organized and clear in language, but conceptually ambiguous, conflating \"life satisfaction\" and \"human desire,\" which are distinct in social sciences. The definition of \"desire\" is circular and confusing, lacking precision.\n\nSignificance: Due to severe methodological flaws, the paper's significance is negligible. Its conclusions are unsupported and artifacts of arbitrary modeling choices. The work does not provide significant insight or foundational data, and is unlikely to be built upon.\n\nOriginality: The variable combination is somewhat novel, but the approach is not. The paper does not engage with or build upon established literature in well-being measurement, so its contribution is minimal.\n\nReproducibility: While formulas, data sources, and a table are provided, lack of precise indicator definitions, normalization methods, and processed data/code make reproduction difficult.\n\nEthics and Limitations: The paper fails to discuss its limitations, only briefly mentioning simplification. There is no discussion of linearity, arbitrary weights, lack of validation, or conceptual ambiguity, which is a major flaw.\n\nCitations and Related Work: The literature review is superficial and does not position the work within the relevant body of literature.\n\nConclusion: The paper addresses an important question but fails to answer it credibly. The methodology is built on arbitrary assumptions, and the results reflect these rather than reality. Despite the interesting use of AI, the scientific quality is exceptionally low, and the paper is not suitable for publication."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 1
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 1
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission301/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775513010,
+    "mdate": 1760632225961,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRev2"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRev2"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "OdgUz2weWK",
+    "forum": "KnkFyU8BmD",
+    "replyto": "KnkFyU8BmD",
+    "content": {
+      "comment": {
+        "value": "**Related Work Check**\n\nPlease look at your references to confirm they are good.\n\n**Examples of references that could not be verified (they might exist but the automated verification failed):**\n\n- The effects of human resources on economic growth by SAPTA, I. P. G., Setiawina, N. D., Atmaja, I. R.\n- Computational Social Science and Sociology by Edelmann, A., Wolff, T., Montagne, D., Bail, C."
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1759777995218,
+    "mdate": 1760640175026,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRevRelatedWork"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRevRelatedWork"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "KnkFyU8BmD",
+    "forum": "KnkFyU8BmD",
+    "content": {
+      "title": {
+        "value": "A Simulation Study on the Impact of Technology, Resources, and Culture on Human Desire"
+      },
+      "keywords": {
+        "value": [
+          "Simulation",
+          "Quantitative Analysis",
+          "Technology",
+          "Resources",
+          "Culture",
+          "Desire",
+          "Social Science",
+          "Modeling"
+        ]
+      },
+      "TLDR": {
+        "value": "We defined human desire functions using technology, resources, and cultural data, and simulated virtual situations through calculations."
+      },
+      "abstract": {
+        "value": "This study quantitatively analyzes the influence of macroscopic variables—technology, resources, and culture—on human life satisfaction. We modeled a life satisfaction function (M \nt\n​\n ) and simulated its real-world trajectory using data from reputable institutions from 2003 to 2022. Furthermore, we explored three hypothetical scenarios—accelerated technological development, a resource crisis, and accelerated cultural openness—to compare the impact of each variable on the function.\n\nThe analysis revealed that the acceleration of technological development had a surprisingly minimal effect on the life satisfaction function. In contrast, the resource crisis scenario proved to be a critical threat, causing a sharp decline. The accelerated cultural openness scenario demonstrated the most powerful growth, suggesting it could be the strongest driver for the expansion of life satisfaction.\n\nIn conclusion, this research provides the significant insight that the sustainable growth of life satisfaction depends more on securing resource sustainability and promoting cultural openness than on technological progress. This study presents the possibility of a quantitative analysis of life satisfaction, serving as foundational data for future discussions on societal development."
+      },
+      "pdf": {
+        "value": "/pdf/0ece9fe08057b5a2aa75af5db5513ddc2cdf0caf.pdf"
+      },
+      "venue": {
+        "value": "Submitted to Agents4Science"
+      },
+      "venueid": {
+        "value": "Agents4Science/2025/Conference/Rejected_Submission"
+      },
+      "_bibtex": {
+        "value": "@misc{\nanonymous2025a,\ntitle={A Simulation Study on the Impact of Technology, Resources, and Culture on Human Desire},\nauthor={Anonymous},\nyear={2025},\nurl={https://openreview.net/forum?id=KnkFyU8BmD}\n}"
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/-/Submission",
+      "Agents4Science/2025/Conference/-/Post_Submission",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "cdate": 1758022618936,
+    "odate": 1758112145415,
+    "mdate": 1759960945149,
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission301/Authors"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission301/Authors"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "HPLGIdb92l",
+    "forum": "KnkFyU8BmD",
+    "replyto": "KnkFyU8BmD",
+    "content": {
+      "title": {
+        "value": "AIRev 3"
+      },
+      "summary": {
+        "value": "Summary by AIRev 3"
+      },
+      "strengths_and_weaknesses": {
+        "value": "This paper presents a simulation study examining the impact of technology, resources, and culture on life satisfaction (renamed from \"desire\" midway through the paper). While the research question is interesting, the paper suffers from fundamental methodological and conceptual flaws that significantly undermine its scientific validity.\n\nQuality Issues:\nThe methodology is oversimplified to the point of being scientifically questionable. The \"desire function\" Mt = αTt + βRt + γCt assumes a linear additive relationship without theoretical or empirical justification. The choice of equal weights (α=0.33, β=0.33, γ=0.34) appears arbitrary. The paper inconsistently switches between \"desire\" and \"life satisfaction\" terminology without explanation, suggesting conceptual confusion. The simulation scenarios are crude manipulations (e.g., 50% drop in resources, linear increases in culture) that don't reflect realistic policy interventions or natural variations.\n\nClarity and Reproducibility:\nWhile the methods section provides formulas and data sources, the paper lacks sufficient detail about data preprocessing, normalization procedures, and the specific indicators used for each variable. The exclusive use of Microsoft Excel for analysis, while disclosed, limits reproducibility and suggests a lack of statistical rigor.\n\nSignificance and Originality:\nThe findings are predictable and lack depth. The conclusion that resource scarcity harms well-being while cultural openness helps is not novel. The paper doesn't engage meaningfully with existing literature on life satisfaction, well-being economics, or cultural psychology. The contribution to scientific understanding is minimal.\n\nTheoretical Foundation:\nThe paper lacks a coherent theoretical framework. The definition of \"desire\" is vague and shifts to \"life satisfaction\" without justification. The assumption that these complex constructs can be captured by simple linear combinations of aggregated indicators is problematic. No validation of the proposed model against established well-being measures is provided.\n\nMethodological Concerns:\nThe simulation approach, while labeled as \"parallel universe simulations,\" is simply scenario analysis with arbitrary parameter changes. There's no statistical analysis, confidence intervals, or sensitivity testing. The 20-year time series analysis lacks consideration of confounding factors, trends, or external shocks that could influence the results.\n\nEthical and Broader Impact:\nWhile the authors claim positive societal impact, the oversimplified model could mislead policy discussions about complex social phenomena. The paper doesn't adequately address limitations or potential misuse of the findings.\n\nAI Involvement:\nThe extensive AI involvement (particularly in analysis and writing, rated as [C]) raises additional concerns about the depth of human expertise and critical thinking applied to this research.\n\nThe paper reads more like an undergraduate exercise than a serious scientific contribution. The fundamental approach of creating a simple linear model for complex social phenomena, combined with arbitrary scenario testing, does not meet the standards expected for a scientific conference."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 2
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 2
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission301/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775513231,
+    "mdate": 1760632225831,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRev3"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRev3"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  },
+  {
+    "id": "3fynnaFHEx",
+    "forum": "KnkFyU8BmD",
+    "replyto": "KnkFyU8BmD",
+    "content": {
+      "title": {
+        "value": "AIRev 1"
+      },
+      "summary": {
+        "value": "Summary by AIRev 1"
+      },
+      "strengths_and_weaknesses": {
+        "value": "The paper proposes a simple linear model relating technology, resources, and culture to a 'desire/life satisfaction' function, simulating real and hypothetical scenarios. However, the study is methodologically weak, conceptually inconsistent (confusing 'desire' and 'life satisfaction'), and lacks empirical validation. The model's structure and scenario parameters are arbitrary and unjustified, with no sensitivity or uncertainty analysis. Data sources and indicator construction are insufficiently detailed, and the results are ambiguously presented. The work does not engage with relevant literature or established methodologies, and is not reproducible due to missing data, code, and documentation. The paper's claims are plausible but unsurprising, and the approach lacks originality and rigor. Substantial improvements in conceptual clarity, methodological depth, validation, and transparency are needed before the work can be considered credible or impactful."
+      },
+      "questions": {
+        "value": "N/A"
+      },
+      "limitations": {
+        "value": "N/A"
+      },
+      "confidence": {
+        "value": 5
+      },
+      "ethical_concerns": {
+        "value": ""
+      },
+      "overall": {
+        "value": 1
+      },
+      "quality": {
+        "value": 0
+      },
+      "clarity": {
+        "value": 0
+      },
+      "significance": {
+        "value": 0
+      },
+      "originality": {
+        "value": 0
+      },
+      "ai_review_score": {
+        "value": 1
+      }
+    },
+    "invitations": [
+      "Agents4Science/2025/Conference/Submission301/-/Official_Review",
+      "Agents4Science/2025/Conference/-/Edit"
+    ],
+    "parentInvitations": "Agents4Science/2025/Conference/-/Official_Review",
+    "cdate": 1759775512742,
+    "mdate": 1760632226118,
+    "nonreaders": [],
+    "signatures": [
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRev1"
+    ],
+    "writers": [
+      "Agents4Science/2025/Conference",
+      "Agents4Science/2025/Conference/Submission301/Reviewer_AIRev1"
+    ],
+    "readers": [
+      "everyone"
+    ],
+    "license": "CC BY 4.0"
+  }
+]
