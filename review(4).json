@@ -1,0 +1,116 @@
+{
+  "raven_report_version": "2.0",
+  "skill": "report-interview",
+  "paper": {
+    "file": "papers/UniversalityDiversityHumanSong/MehrSinghKnoxEtAl_UniversalityDiversityHumanSong.pdf",
+    "stem": "UniversalityDiversityHumanSong"
+  },
+  "timestamp": "2026-02-11T17:15:23.341797+00:00",
+  "summary": {
+    "total_findings": 4,
+    "confirmed": 4,
+    "needs_human_review": 0,
+    "dismissed": 0,
+    "sources_included": [
+      "paper_code_alignment",
+      "contrib_exp_alignment",
+      "figure_alignment",
+      "reference_verification"
+    ],
+    "sources_missing": [],
+    "recommendation": "accept"
+  },
+  "content": {
+    "findings": [
+      {
+        "id": "f_001",
+        "source": "paper_code_alignment",
+        "type": "completeness_finding",
+        "priority": "medium",
+        "detail": "Some analysis scripts referenced in the paper are not present in the provided code directory (tonality analysis with Hartigan dip test, bigram power-law fitting, online listener experiment). 13 of ~16+ expected scripts are provided.",
+        "evidence": [
+          "3 of 15 verifiable statements marked unverifiable due to missing scripts",
+          "Tonality analysis (Hartigan dip test) not found in provided R files",
+          "Bigram power-law analysis not found in provided R files",
+          "Paper's GitHub repo (github.com/themusiclab/nhs) may contain additional scripts"
+        ],
+        "verdict": "confirmed",
+        "decided_by": "agent",
+        "agent_reasoning": "Factual completeness issue. The provided code covers the two main analyses (ethnography BPCA and discography classification) but not all analyses described in the paper. The missing scripts are likely in the full GitHub repository."
+      },
+      {
+        "id": "f_002",
+        "source": "paper_code_alignment",
+        "type": "completeness_finding",
+        "priority": "low",
+        "detail": "Code analyzer cannot index R files; analysis was performed manually. R code is the sole implementation language for this paper.",
+        "evidence": [
+          "code_analyzer output: 0 files indexed",
+          "13 R files in analysis/ and functions/ directories",
+          "All code is R (not Python), which is standard for this type of social science research"
+        ],
+        "verdict": "confirmed",
+        "decided_by": "agent",
+        "agent_reasoning": "Factual limitation of the analysis tool. Does not affect paper quality. R is an appropriate and standard choice for this type of statistical analysis."
+      },
+      {
+        "id": "f_003",
+        "source": "figure_alignment",
+        "type": "completeness_finding",
+        "priority": "medium",
+        "detail": "No figures extracted from PDF (availability.figures == false). Paper contains at least 8 figures with quantitative results that cannot be visually verified.",
+        "evidence": [
+          "project.json: availability.figures == false",
+          "Paper references Figs. 1-8 plus supplementary figs. S1-S15",
+          "Key results figures: Fig. 2 (ethnography PCA), Fig. 5 (classification), Fig. 8 (power laws)"
+        ],
+        "verdict": "confirmed",
+        "decided_by": "agent",
+        "agent_reasoning": "Factual - figures exist in the 21MB PDF but were not extracted during preprocessing. This prevents figure-caption verification but does not indicate a paper quality issue."
+      },
+      {
+        "id": "f_004",
+        "source": "contrib_exp_alignment",
+        "type": "partial_support",
+        "priority": "low",
+        "detail": "Contribution 4 (music varies along two dimensions of complexity) is only partially supported: the BPCA identifies dimensions but they explain only 23.9% of variance and fail to predict behavioral context (39.8% centroid accuracy).",
+        "evidence": [
+          "Two BPCA dimensions explain 13.1% + 10.8% = 23.9% of variance",
+          "Centroid classification: 39.8% (overall P = 0.063)",
+          "k-means clustering failed to recover behavioral contexts",
+          "Authors present this as exploratory, not confirmatory"
+        ],
+        "verdict": "confirmed",
+        "decided_by": "agent",
+        "agent_reasoning": "The complexity dimensions are real (BPCA identifies them) but weak (low variance explained, poor predictive power). The authors appropriately frame this as exploratory and discuss limitations."
+      }
+    ],
+    "holistic_review": {
+      "strengths": [
+        "Exceptional scope and rigor: two comprehensive databases (NHS Ethnography with 4,709 descriptions from 60 societies; NHS Discography with 118 recordings from 86 societies) built using systematic probability sampling",
+        "Strong paper-code alignment: 12/15 verifiable statements aligned with R code implementation (80%), with the remaining 3 unverifiable due to missing scripts rather than contradictions",
+        "All 5 claimed contributions are supported by experiments, with 4 strongly supported and 1 partially supported (appropriately presented as exploratory)",
+        "Sophisticated statistical methodology: Bayesian PCA with MCMC, cross-validated LASSO with geographic stratification, Nadeau-Bengio corrected inference, multiple robustness checks",
+        "Multiple independent lines of evidence: ethnographic text analysis, expert listener ratings, naïve listener ratings, music information retrieval, and manual transcriptions",
+        "Excellent reference quality: 13/13 sampled references verified (100%), including key methodological references",
+        "Open science: data and code publicly archived (OSF, Harvard Dataverse, GitHub), with interactive visualizations",
+        "Published in Science (2019), indicating rigorous peer review already completed"
+      ],
+      "weaknesses": [
+        "Figure extraction incomplete, preventing visual verification of 8 main figures and 15 supplementary figures",
+        "Provided code directory contains 13 of ~16+ expected R scripts; some analyses (tonality, bigram power laws) not present in provided code",
+        "R code not automatically indexable by code_analyzer, requiring manual review",
+        "Complexity dimensions analysis (contribution 4) explains only 23.9% of variance and fails to predict behavioral contexts",
+        "Science format with non-standard headings causes project-parser to mark introduction/experiments/conclusion as 'missing' (parser limitation, not paper issue)"
+      ],
+      "questions": [
+        "Are additional analysis scripts (tonality, bigram, online listener) available in the full GitHub repository at github.com/themusiclab/nhs?",
+        "Can figures be extracted from the 21MB PDF for visual verification of key results (Figs. 2, 5, 8)?",
+        "The complexity dimensions explain only 23.9% of variance — have the authors explored whether more dimensions would be informative?"
+      ],
+      "recommendation": "accept",
+      "justification": "This is a landmark study published in Science with exceptional scope, rigorous methodology, and comprehensive experimental validation. The paper's 5 contributions are well-supported: 4 strongly by direct experiments, 1 partially (complexity dimensions, appropriately framed as exploratory). Code-paper alignment is strong (80% with no contradictions found). All 13 sampled references verified. The identified weaknesses are minor: incomplete figure extraction and missing analysis scripts are preprocessing/availability issues, not scientific concerns. The code that is available (BPCA and classification analyses) closely matches the paper's described methods. No high-priority issues found.",
+      "decided_by": "agent"
+    }
+  }
+}
